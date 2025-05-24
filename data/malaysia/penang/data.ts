@@ -210,7 +210,7 @@ export const PENANG_BLOG_POST = [
   {
     id: 14,
     name: "Hawker Stalls at Gurney Drive",
-    image: "/images/country/malaysia/places/penang/blog/gurney_drive.jpg",
+    image: "/images/country/malaysia/places/penang/blog/gurney_drive.jpg.jpg",
     description:
       "Gurney Drive is Penang's most iconic seafront promenade, renowned for its vibrant evening hawker scene. As the sun sets, Gurney Drive Hawker Centre comes alive with the aroma of sizzling woks and spicy broths. This open-air food haven offers authentic Penang street food at budget-friendly prices. Try Char Kway Teow, Penang Laksa, grilled seafood, and local desserts. It's a must-visit for food lovers looking to experience the heart of Penang's culinary culture.",
     location: "Gurney Drive, George Town",
@@ -224,3 +224,14 @@ export const PENANG_BLOG_POST = [
     ],
   },
 ];
+
+
+export const PENANG_RELATED_ARTICLES = [
+    {
+        title: "Top things to do in Kuala Lumpur",
+        category: "Activities",
+        image: "/images/country/malaysia/places/kuala/blog/kl_tower.jpg",
+        slug: "/kuala-lumpur/top-things-to-do",
+      }
+
+]

@@ -91,6 +91,7 @@ export default async function CountryPage({ params }: Props) {
           className="h-full w-full object-cover"
           priority
         />
+
         <div className="absolute inset-0 flex items-end pb-8 px-4 z-20">
           <div className="text-white animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -108,25 +109,25 @@ export default async function CountryPage({ params }: Props) {
         <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <Button asChild className="bg-teal-600 hover:bg-teal-700">
-              <Link href={`/${countryDetails}/top-things-to-do`}>
+              <Link target="_blank" href={`/${countryDetails}/top-things-to-do`}>
                 <Camera className="w-4 h-4 mr-2" />
                 Things to Do
               </Link>
             </Button>
             <Button asChild variant="outline">
-              <Link href={`/${countryDetails}/things-to-know-before-going`}>
+              <Link target="_blank" href={`/${countryDetails}/things-to-know-before-going`}>
                 <MapPin className="w-4 h-4 mr-2" />
                 Travel Guide
               </Link>
             </Button>
             <Button asChild variant="outline">
-              <Link href={`/${countryDetails}/what-to-eat`}>
+              <Link target="_blank" href={`/${countryDetails}/what-to-eat`}>
                 <Utensils className="w-4 h-4 mr-2" />
                 Food Guide
               </Link>
             </Button>
             <Button asChild variant="outline">
-              <Link href="/custom-itinerary">
+              <Link target="_blank" href="/custom-itinerary">
                 <Users className="w-4 h-4 mr-2" />
                 Plan Trip
               </Link>
@@ -157,7 +158,7 @@ export default async function CountryPage({ params }: Props) {
                   categoryIcons[post.category as keyof typeof categoryIcons] ||
                   MapPin;
                 return (
-                  <Link href={`/${countryDetails}/${post.slug}`}>
+                  <Link target="_blank" href={`/${countryDetails}/${post.slug}`}>
                     <Card
                       key={post.slug}
                       className="group hover:shadow-lg transition-all duration-300 animate-scale-in"

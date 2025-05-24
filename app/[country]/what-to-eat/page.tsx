@@ -266,7 +266,7 @@ export default function FoodGuidePage({ params }: { params: { country: string } 
 
                   <div className="mt-8 pt-6 border-t border-gray-200">
                     <Button asChild className="w-full bg-teal-600 hover:bg-teal-700">
-                      <Link href="/custom-itinerary">
+                      <Link target="_blank" href="/custom-itinerary">
                         <MapPin className="w-4 h-4 mr-2" />
                         Plan Your Trip
                       </Link>

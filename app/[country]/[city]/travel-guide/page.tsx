@@ -145,7 +145,7 @@ export default function CityTravelGuidePage({ params }: { params: { country: str
         <div className="relative max-8-xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-white animate-fade-in">
             <div className="flex items-center text-sm mb-2">
-              <Link href={`/${params.country}`} className="text-gray-300 hover:text-white transition-colors">
+              <Link target="_blank" href={`/${params.country}`} className="text-gray-300 hover:text-white transition-colors">
                 {country.name}
               </Link>
               <span className="mx-2">/</span>
@@ -425,7 +425,7 @@ export default function CityTravelGuidePage({ params }: { params: { country: str
 
                   <div className="mt-8 pt-6 border-t border-gray-200">
                     <Button asChild className="w-full bg-teal-600 hover:bg-teal-700">
-                      <Link href="/custom-itinerary">
+                      <Link target="_blank" href="/custom-itinerary">
                         <MapPin className="w-4 h-4 mr-2" />
                         Plan Your Trip
                       </Link>

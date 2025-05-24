@@ -47,7 +47,7 @@ export function PopularDestinations() {
                     variant="outline"
                     className="w-full group-hover:bg-teal-600 group-hover:text-white transition-colors"
                   >
-                    <Link href={`/${destination.slug}`}>
+                    <Link target="_blank" href={`/${destination.slug}`}>
                       Explore
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -60,7 +60,7 @@ export function PopularDestinations() {
 
         <div className="text-center animate-slide-up">
           <Button asChild variant="outline" size="lg">
-            <Link href="/countries">
+            <Link target="_blank" href="/countries">
               View All Destinations
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>

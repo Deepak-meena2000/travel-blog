@@ -48,8 +48,8 @@ const CityBlogListing = ({
               style={{ animationDelay: `${index * 0.1}s` }}
               id={`attraction-${blog.id}`}
             >
-              <div className="w-full p-8 ">
-                <h2 className="text-2xl font-bold text-black italic">
+              <div className="w-full p-8 border-l-8 border-teal-600 ">
+                <h2 className="text-2xl font-semibold text-black">
                   {index + 1}. {blog.name}
                 </h2>
               </div>
@@ -77,7 +77,7 @@ const CityBlogListing = ({
               </div>
 
               <CardContent className="p-8">
-                <p className="text-gray-600 mb-6">{blog.description}</p>
+                <p className="text-gray-600 font-normal mb-6">{blog.description}</p>
 
                 <div className="grid md:grid-cols-2 gap-4">
                   {blog.operationalHours && (
@@ -117,7 +117,12 @@ const CityBlogListing = ({
                         <h4 className="font-semibold text-slate-800 mb-1">
                           Price
                         </h4>
-                        <p className="text-slate-600">{blog.price}</p>
+                        {/* {price} */}
+                        <p className="text-slate-600"
+                          dangerouslySetInnerHTML={{
+                            __html: blog.price,
+                          }}
+                        />
                       </div>
                     </div>
                   )}
@@ -197,12 +202,12 @@ const CityBlogListing = ({
               ))}
             </div>
 
-            <div className="mt-6 p-4 bg-gray-50 rounded-lg text-center">
+            {/* <div className="mt-6 p-4 bg-gray-50 rounded-lg text-center">
               <p className="text-sm text-gray-500 mb-2">ADVERTISEMENT</p>
               <div className="h-32 bg-gray-200 rounded flex items-center justify-center">
                 <span className="text-gray-400">Sidebar Ad</span>
               </div>
-            </div>
+            </div> */}
           </CardContent>
         </Card>
       </div>

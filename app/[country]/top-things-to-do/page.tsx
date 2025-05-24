@@ -324,7 +324,7 @@ export default async function ThingsToDoPage({
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {relatedArticles.map((article, index) => (
-              <Link key={index} href={`/${countryName}`}>
+              <Link target="_blank" key={index} href={`/${countryName}`}>
                 <Card
                   className="group hover:shadow-lg transition-all duration-300 cursor-pointer animate-scale-in"
                   style={{ animationDelay: `${index * 0.1}s` }}

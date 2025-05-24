@@ -25,7 +25,7 @@ export function LatestBlogs() {
             <p className="text-xl text-gray-600">Travel tips, guides, and inspiration for your next adventure</p>
           </div>
           <Button asChild variant="outline" className="hidden md:flex">
-            <Link href="/blog">
+            <Link target="_blank" href="/blog">
               View all articles
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
@@ -63,7 +63,7 @@ export function LatestBlogs() {
                       {post.date}
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
-                      <Link href={`/${post.country}`}>{post.title}</Link>
+                      <Link target="_blank" href={`/${post.country}`}>{post.title}</Link>
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-2">{post.excerpt}</p>
                     <Link
@@ -82,7 +82,7 @@ export function LatestBlogs() {
 
         <div className="text-center mt-12 md:hidden">
           <Button asChild variant="outline" size="lg">
-            <Link href="/blog">
+            <Link target="_blank" href="/blog">
               View all articles
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
