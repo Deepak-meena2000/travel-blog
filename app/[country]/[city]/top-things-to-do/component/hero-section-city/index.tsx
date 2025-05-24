@@ -13,10 +13,14 @@ const HeroSectionCity = ({ cityData }: { cityData: any }) => {
         />
       </div>
       <div className="absolute inset-0 flex items-end pb-8 px-4 z-20">
-        <h1 className="text-2xl md:text-4xl font-bold text-white px-4 py-2 rounded animate-fade-in">
-          Top Things to Do in {cityData.name}
-        </h1>
-      </div>
+          <div className="text-white animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              {cityData.name}
+            </h1>
+
+          </div>
+        </div>
+
     </section>
   );
 };

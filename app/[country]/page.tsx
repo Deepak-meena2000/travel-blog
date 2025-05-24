@@ -48,7 +48,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: `Discover ${country.name} with our comprehensive travel guide. ${country.description}`,
       images: [
         {
-          url: country.image || "/placeholder.svg?height=250&width=400",
+          url:
+            country.country_page_image ||
+            "/placeholder.svg?height=250&width=400",
           width: 400,
           height: 250,
           alt: country.name,
@@ -73,23 +75,23 @@ export default async function CountryPage({ params }: Props) {
     notFound();
   }
 
-  const countryBlogs = blogPosts.filter(
-    (post) => post.country === countryDetails
-  );
+  const countryBlogs = country.blogs;
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96 bg-slate-800">
+      <section className="relative w-full aspect-[14/5] ">
         <Image
-          src={country.image || "/placeholder.svg?height=400&width=800"}
+          src={
+            country.country_page_image ||
+            "/placeholder.svg?height=400&width=800"
+          }
           alt={country.name}
           fill
-          className="object-cover opacity-60"
+          className="h-full w-full object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-slate-800/60" />
-        <div className="relative max-8-xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+        <div className="absolute inset-0 flex items-end pb-8 px-4 z-20">
           <div className="text-white animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               {country.name}
@@ -155,51 +157,46 @@ export default async function CountryPage({ params }: Props) {
                   categoryIcons[post.category as keyof typeof categoryIcons] ||
                   MapPin;
                 return (
-                  <Card
-                    key={post.slug}
-                    className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <CardContent className="p-0">
-                      <div className="relative overflow-hidden rounded-t-lg">
-                        <Image
-                          src={
-                            post.image ||
-                            "/placeholder.svg?height=250&width=400"
-                          }
-                          alt={post.title}
-                          width={400}
-                          height={250}
-                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute top-4 left-4">
-                          <Badge className="bg-teal-600 hover:bg-teal-700 text-white flex items-center gap-1">
-                            <IconComponent className="w-3 h-3" />
-                            {post.category}
-                          </Badge>
+                  <Link href={`/${countryDetails}/${post.slug}`}>
+                    <Card
+                      key={post.slug}
+                      className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <CardContent className="p-0">
+                        <div className="relative overflow-hidden rounded-t-lg">
+                          <Image
+                            src={
+                              post.image ||
+                              "/placeholder.svg?height=250&width=400"
+                            }
+                            alt={post.title}
+                            width={400}
+                            height={250}
+                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute top-4 left-4">
+                            <Badge className="bg-teal-600 hover:bg-teal-700 text-white flex items-center gap-1">
+                              <IconComponent className="w-3 h-3" />
+                              {post.category}
+                            </Badge>
+                          </div>
                         </div>
-                      </div>
-                      <div className="p-6">
-                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                          <Calendar className="w-4 h-4" />
-                          {post.date}
+                        <div className="p-6">
+                          <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
+                            {post.title}
+                          </h3>
+                          <p className="text-gray-600 mb-4 line-clamp-2">
+                            {post.description}
+                          </p>
+                          <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors">
+                            Read more
+                            <ArrowRight className="w-4 h-4 ml-1" />
+                          </div>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
-                          <Link href={`/${post.country}`}>{post.title}</Link>
-                        </h3>
-                        <p className="text-gray-600 mb-4 line-clamp-2">
-                          {post.excerpt}
-                        </p>
-                        <Link
-                          href={`/${post.country}`}
-                          className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors"
-                        >
-                          Read more
-                          <ArrowRight className="w-4 h-4 ml-1" />
-                        </Link>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </Link>
                 );
               })}
             </div>

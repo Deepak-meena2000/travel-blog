@@ -1,3 +1,4 @@
+"use client";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -9,10 +10,11 @@ import {
   Check,
   Info,
 } from "lucide-react";
-
+import { useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-
 import Image from "next/image";
+
 const CityBlogListing = ({
   countryName,
   cityData,
@@ -22,6 +24,17 @@ const CityBlogListing = ({
 }) => {
   const cityBlogPosts = cityData?.blogs;
   const relatedArticles = cityData?.related_articles;
+  const searchParams = useSearchParams();
+  useEffect(() => {
+    const blogNumber = searchParams.get("blog");
+    if (blogNumber) {
+      const element = document.getElementById(`attraction-${blogNumber}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState({}, "", window.location.pathname);
+      }
+    }
+  }, [searchParams]);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -49,7 +62,17 @@ const CityBlogListing = ({
                     height={400}
                     className="w-full h-full object-cover"
                   />
+                  {blog.imageCreditHTML && (
+                    <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: blog.imageCreditHTML,
+                        }}
+                      ></span>
+                    </figcaption>
+                  )}
                 </figure>
+
                 <div className="absolute" />
               </div>
 
@@ -152,7 +175,7 @@ const CityBlogListing = ({
               {relatedArticles.map((article: any, index: any) => (
                 <Link
                   key={index}
-                  href={`/${countryName}`}
+                  href={`/${countryName}/${article.slug}`}
                   className="flex gap-3 group cursor-pointer"
                 >
                   <Image
@@ -160,7 +183,7 @@ const CityBlogListing = ({
                     alt={article.title}
                     width={80}
                     height={60}
-                    className="w-20 h-15 object-cover rounded-lg flex-shrink-0"
+                    className="w-32 h-15 object-cover rounded-lg flex-shrink-0"
                   />
                   <div className="flex-1">
                     <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">

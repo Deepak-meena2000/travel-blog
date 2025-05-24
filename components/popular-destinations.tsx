@@ -17,20 +17,20 @@ export function PopularDestinations() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {destinations.slice(0, 3).map((destination, index) => (
+          {destinations.slice(0, 4).map((destination, index) => (
             <Card
               key={destination.slug}
               className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
-                <div className="relative overflow-hidden rounded-t-lg">
+                <div className="relative overflow-hidden rounded-t-lg aspect-[5/4]">
                   <Image
-                    src={destination.image || "/placeholder.svg"}
+                    src={destination.home_image || "/placeholder.svg"}
                     alt={destination.name}
                     width={400}
                     height={250}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
