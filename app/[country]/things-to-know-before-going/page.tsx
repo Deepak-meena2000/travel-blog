@@ -28,6 +28,8 @@ import { ThankYouSection } from "@/components/thank-you-section";
 import styles from "@/app/index.module.css";
 import { THINGS_TO_KNOW_BEFORE_GOING } from "@/data/malaysia/data";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
+import OverViewCity from "./components/overview";
+import { Badge } from "@/components/ui/badge";
 
 type Props = {
   params: { country: string };
@@ -82,15 +84,24 @@ export default async function TravelGuidePage({
   const countryName = (await params).country;
   const country = destinations.find((d) => d.slug === countryName);
 
+
+
   if (!country) {
     notFound();
   }
 
   // Get travel guide data or use default
-  const guideData =
+  const countryData =
     THINGS_TO_KNOW_BEFORE_GOING[
       countryName as keyof typeof THINGS_TO_KNOW_BEFORE_GOING
-    ].data;
+    ];
+    const guideData = countryData?.data || [];
+    const heading = countryData?.heading || "";
+    const image = countryData?.image || "/placeholder.svg";
+    const description = countryData?.description || "";
+    const overview = countryData?.overview || "";
+
+    const countryRelatedArticles = countryData?.related_articles || [];
 
   return (
     <div className="min-h-screen">
@@ -99,7 +110,7 @@ export default async function TravelGuidePage({
       <section className="relative w-full">
         <div className="aspect-[14/5] w-full">
           <Image
-            src={country.country_page_image || "/placeholder.svg"}
+            src={image}
             alt={country.name}
             width={1200}
             height={100}
@@ -111,48 +122,50 @@ export default async function TravelGuidePage({
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Things to Know Before Going to {country.name}
+              {heading}
             </h1>
             <p className="text-xl text-gray-200 max-w-2xl">
-              Essential travel tips, information, and advice for your trip to{" "}
-              {country.name}
+              {description}
             </p>
           </div>
         </div>
       </section>
 
+      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <OverViewCity countryData={country} />
+      </div>
+
       {/* Main Content */}
       <section className="py-16">
         <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Sidebar */}
-          <div className="space-y-8 w-[65%]">
-            <Card className="sticky top-8 animate-fade-in">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Travel Essentials
-                </h3>
-                <ul className="space-y-3">
-                  {guideData?.map((item, index) => {
-                    const IconComponent = ICON_MAPPING[item.id as unknown as keyof typeof ICON_MAPPING] || Info;
-                    return (
-                      <li key={`sidebar-${item.heading}-${index}`}>
-                        <Link
-                          href={`#${item.heading.toLowerCase().replace(/\s+/g, '-')}`}
-                          className="flex items-center text-gray-600 hover:text-teal-600 transition-colors"
-                        >
-                          <IconComponent className="w-4 h-4 mr-2 text-teal-600" />
-                          <span>{item.heading}</span>
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">
+              {/* Travel Essentials Section */}
+              <Card className="mb-8 animate-fade-in bg-slate-800">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">
+                    {heading}
+                  </h3>
+                  <ul className="space-y-3">
+                    {guideData?.map((item, index) => {
+                      const IconComponent = ICON_MAPPING[item.id as unknown as keyof typeof ICON_MAPPING] || Info;
+                      return (
+                        <li key={`sidebar-${item.heading}-${index}`}>
+                          <Link
+                            href={`#${item.heading.toLowerCase().replace(/\s+/g, '-')}`}
+                            className="flex items-center text-white hover:text-teal-600 transition-colors"
+                          >
+                            <IconComponent className="w-4 h-4 mr-2 text-white" />
+                            <span>{item.heading}</span>
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </CardContent>
+              </Card>
+
               <Tabs defaultValue="essentials" className="animate-fade-in">
                 <TabsContent
                   value="essentials"
@@ -190,6 +203,42 @@ export default async function TravelGuidePage({
                   })}
                 </TabsContent>
               </Tabs>
+            </div>
+
+            {/* Sidebar */}
+            <div className="lg:col-span-1">
+              <Card className="sticky top-8">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    Related Articles
+                  </h3>
+                  <div className="space-y-4">
+                    {countryRelatedArticles.map((article: any, index: any) => (
+                      <Link
+                        key={index}
+                        href={`/${countryName}/${article.slug}`}
+                        className="flex gap-3 group cursor-pointer"
+                      >
+                        <Image
+                          src={article.image || "/placeholder.svg"}
+                          alt={article.title}
+                          width={80}
+                          height={60}
+                          className="w-32 h-20 object-cover rounded-lg flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
+                            {article.title}
+                          </h4>
+                          <Badge variant="secondary" className="text-xs mt-1">
+                            {article.category}
+                          </Badge>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

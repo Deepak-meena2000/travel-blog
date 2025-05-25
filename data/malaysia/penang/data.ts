@@ -170,7 +170,7 @@ export const PENANG_BLOG_POST = [
   {
     id: 11,
     name: "Take a Trishaw Ride",
-    image: "/images/country/malaysia/places/penang/blog/trikshaw.jpg",
+    image: "/images/country/malaysia/places/penang/blog/trikshaw.jpeg",
     description:
       "A trishaw ride through GeorgeTown is a charming way to explore the city's sights at a relaxed pace. These colorful, pedal-powered rickshaws offer guided tours or customized routes, passing through heritage streets, markets, and street art spots. It's perfect for those wanting a unique and nostalgic travel experience.",
     location: "George Town",

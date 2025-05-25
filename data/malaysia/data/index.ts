@@ -1,7 +1,10 @@
-import { Icon } from "lucide-react";
 
 export const THINGS_TO_KNOW_BEFORE_GOING = {
   malaysia: {
+    heading : "Things to Know Before Going to Malaysia",
+    image : "/images/country/malaysia/travel_guide.jpg",
+    description : "Essential travel tips, information, and advice for your trip to Malaysia",
+    overview : "Essential travel tips, information, and advice for your trip to Malaysia",
     data: [
       {
         id: 1,
@@ -98,6 +101,14 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
 
         `
       }
+    ],
+    related_articles : [
+      {
+        slug: "kuala-lumpur/top-things-to-do",
+        title: "Top Things to Do in Kuala Lumpur",
+        image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+        category: "Activities",
+      },
     ],
   },
 };
