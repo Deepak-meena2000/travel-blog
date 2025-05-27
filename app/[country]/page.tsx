@@ -118,17 +118,17 @@ export default async function CountryPage({ params }: Props) {
   }
 
   const countryBlogs = country.blogs as BlogPost[];
-  const travelGuideBlogs = (country.travelGuideBlogs?.data || []) as TravelGuidePost[];
+  const travelGuideBlogs = (country.travelGuideBlogs?.data ||
+    []) as TravelGuidePost[];
   const whatToEat = country.whatToEat as WhatToEat;
   const foodBlogs = country.foodBlogs as BlogPost[];
 
   const latestBlogs = country.latestBlogs as BlogPost[];
 
-
   return (
     <div className="min-h-screen">
       <section className="relative w-full">
-        <div className="aspect-[14/5] w-full">
+        <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
           <Image
             src={
               country.country_page_image ||
@@ -144,10 +144,10 @@ export default async function CountryPage({ params }: Props) {
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold mb-2 lg:mb-4">
               {country.name}
             </h1>
-            <p className="text-xl text-gray-200 max-w-2xl">
+            <p className="text-base text-gray-200 max-w-2xl">
               {country.description}
             </p>
           </div>
@@ -158,7 +158,7 @@ export default async function CountryPage({ params }: Props) {
       <section className="py-8 bg-white border-b">
         <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-0">
+            <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 mb-0">
               <TabsTrigger
                 value="all"
                 className="flex items-center justify-center w-full border border-teal-600 text-teal-600 bg-white data-[state=active]:bg-teal-600 data-[state=active]:text-white data-[state=active]:border-teal-600 data-[state=active]:hover:bg-teal-700 transition-colors"
@@ -197,18 +197,18 @@ export default async function CountryPage({ params }: Props) {
             </TabsList>
 
             {/* Content Section with Tabs */}
-            <section id="content" className="py-16 bg-gray-50">
-              <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
-
-
+            <section id="content" className="my-[7rem] lg:my-0 lg:py-16 bg-gray-50">
+              <div className="max-8-xl mx-auto px-2 sm:px-6 lg:px-8">
                 <TabsContent value="all">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {latestBlogs.slice(0, 6).map((post, index) => {
                       const IconComponent =
-                        categoryIcons[post.category as keyof typeof categoryIcons] ||
-                        MapPin;
+                        categoryIcons[
+                          post.category as keyof typeof categoryIcons
+                        ] || MapPin;
                       return (
                         <Link
+                          target="_blank"
                           key={post.slug}
                           href={`${post.slug}`}
                         >
@@ -257,53 +257,56 @@ export default async function CountryPage({ params }: Props) {
 
                 <TabsContent value="things-to-do">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {countryBlogs.filter(post => post.category === "Activities").map((post, index) => {
-                      const IconComponent = Camera;
-                      return (
-                        <Link
-                          key={post.slug}
-                          href={`/${countryDetails}/${post.slug}`}
-                        >
-                          <Card
-                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
-                            style={{ animationDelay: `${index * 0.1}s` }}
+                    {countryBlogs
+                      .filter((post) => post.category === "Activities")
+                      .map((post, index) => {
+                        const IconComponent = Camera;
+                        return (
+                          <Link
+                            target="_blank"
+                            key={post.slug}
+                            href={`/${countryDetails}/${post.slug}`}
                           >
-                            <CardContent className="p-0">
-                              <div className="relative overflow-hidden rounded-t-lg">
-                                <Image
-                                  src={
-                                    post.image ||
-                                    "/placeholder.svg?height=250&width=400"
-                                  }
-                                  alt={post.title}
-                                  width={400}
-                                  height={250}
-                                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                                />
-                                <div className="absolute top-4 left-4">
-                                  <Badge className="bg-teal-600 hover:bg-teal-700 text-white flex items-center gap-1">
-                                    <IconComponent className="w-3 h-3" />
-                                    {post.category}
-                                  </Badge>
+                            <Card
+                              className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
+                              style={{ animationDelay: `${index * 0.1}s` }}
+                            >
+                              <CardContent className="p-0">
+                                <div className="relative overflow-hidden rounded-t-lg">
+                                  <Image
+                                    src={
+                                      post.image ||
+                                      "/placeholder.svg?height=250&width=400"
+                                    }
+                                    alt={post.title}
+                                    width={400}
+                                    height={250}
+                                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                                  />
+                                  <div className="absolute top-4 left-4">
+                                    <Badge className="bg-teal-600 hover:bg-teal-700 text-white flex items-center gap-1">
+                                      <IconComponent className="w-3 h-3" />
+                                      {post.category}
+                                    </Badge>
+                                  </div>
                                 </div>
-                              </div>
-                              <div className="p-6">
-                                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
-                                  {post.title}
-                                </h3>
-                                <p className="text-gray-600 mb-4 line-clamp-2">
-                                  {post.description}
-                                </p>
-                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors">
-                                  Read more
-                                  <ArrowRight className="w-4 h-4 ml-1" />
+                                <div className="p-6">
+                                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
+                                    {post.title}
+                                  </h3>
+                                  <p className="text-gray-600 mb-4 line-clamp-2">
+                                    {post.description}
+                                  </p>
+                                  <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors">
+                                    Read more
+                                    <ArrowRight className="w-4 h-4 ml-1" />
+                                  </div>
                                 </div>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        </Link>
-                      );
-                    })}
+                              </CardContent>
+                            </Card>
+                          </Link>
+                        );
+                      })}
                   </div>
                 </TabsContent>
 
@@ -312,10 +315,7 @@ export default async function CountryPage({ params }: Props) {
                     {travelGuideBlogs.map((post, index) => {
                       const IconComponent = MapPin;
                       return (
-                        <Link
-                          key={post.slug}
-                          href={post.slug}
-                        >
+                        <Link target="_blank" key={post.slug} href={post.slug}>
                           <Card
                             className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
                             style={{ animationDelay: `${index * 0.1}s` }}
@@ -364,10 +364,7 @@ export default async function CountryPage({ params }: Props) {
                     {foodBlogs.map((post, index) => {
                       const IconComponent = Utensils;
                       return (
-                        <Link
-                          key={post.slug}
-                          href={post.slug}
-                        >
+                        <Link target="_blank" key={post.slug} href={post.slug}>
                           <Card
                             className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
                             style={{ animationDelay: `${index * 0.1}s` }}

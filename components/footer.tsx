@@ -19,13 +19,13 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold">Quick Links</h4>
             <div className="space-y-2">
-              <Link target="_blank" href="/" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
+              <Link href="/" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
                 Home
               </Link>
-              <Link target="_blank" href="/countries" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
+              <Link href="/countries" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
                 Countries
               </Link>
-              <Link target="_blank" href="/about" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
+              <Link href="/about" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
                 About Us
               </Link>
               <Link
@@ -41,16 +41,16 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold">Popular Destinations</h4>
             <div className="space-y-2">
-              <Link target="_blank" href="/bali" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
+              <Link href="/bali" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
                 Bali, Indonesia
               </Link>
-              <Link target="_blank" href="/paris" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
+              <Link href="/paris" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
                 Paris, France
               </Link>
-              <Link target="_blank" href="/kyoto" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
+              <Link href="/kyoto" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
                 Kyoto, Japan
               </Link>
-              <Link target="_blank" href="/countries" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
+              <Link href="/countries" className="block text-gray-300 hover:text-teal-400 transition-colors text-sm">
                 View All Destinations
               </Link>
             </div>

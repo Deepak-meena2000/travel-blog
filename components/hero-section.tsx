@@ -12,7 +12,7 @@ export function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
             <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700">
-              <Link target="_blank" href="/countries">Explore Destinations</Link>
+              <Link href="/countries">Explore Destinations</Link>
             </Button>
             <Button
               asChild
@@ -20,7 +20,7 @@ export function HeroSection() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-slate-800"
             >
-              <Link target="_blank" href="/custom-itinerary">Plan Your Trip</Link>
+              <Link href="/custom-itinerary">Plan Your Trip</Link>
             </Button>
           </div>
         </div>

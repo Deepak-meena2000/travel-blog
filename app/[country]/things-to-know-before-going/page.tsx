@@ -108,7 +108,7 @@ export default async function TravelGuidePage({
       {/* Hero Section */}
 
       <section className="relative w-full">
-        <div className="aspect-[14/5] w-full">
+        <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
           <Image
             src={image}
             alt={country.name}

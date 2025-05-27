@@ -42,7 +42,7 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full">
-        <div className="aspect-[14/5] w-full">
+        <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
           <Image
             src={image || "/placeholder.svg?height=300&width=500"}
             alt={title || "Travel Guide"}
@@ -56,7 +56,7 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
             <div className="flex items-center text-sm mb-2">
-              <Link target="_blank" href={`/${country}`} className="text-gray-300 hover:text-white transition-colors">
+              <Link href={`/${country}`} className="text-gray-300 hover:text-white transition-colors">
                 {countryData.name}
               </Link>
               <span className="mx-2">/</span>

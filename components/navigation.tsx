@@ -12,23 +12,23 @@ export function Navigation() {
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link target="_blank"  href="/" className="text-xl font-bold text-gray-900">
+          <Link href="/" className="text-xl font-bold text-gray-900">
             Nomadic Memo
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link target="_blank"  href="/" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link href="/" className="text-gray-700 hover:text-teal-600 transition-colors">
               Home
             </Link>
-            <Link target="_blank"  href="/countries" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link href="/countries" className="text-gray-700 hover:text-teal-600 transition-colors">
               Countries
             </Link>
-            <Link target="_blank"  href="/about" className="text-gray-700 hover:text-teal-600 transition-colors">
+            <Link href="/about" className="text-gray-700 hover:text-teal-600 transition-colors">
               About Us
             </Link>
             <Button asChild className="bg-teal-600 hover:bg-teal-700">
-              <Link target="_blank"  href="/custom-itinerary">Plan Your Trip</Link>
+              <Link href="/custom-itinerary">Plan Your Trip</Link>
             </Button>
           </div>
 

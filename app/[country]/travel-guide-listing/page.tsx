@@ -34,7 +34,7 @@ const CountryTravelGuideBlogListing = async ({
   return (
     <div className="min-h-screen">
       <section className="relative w-full">
-        <div className="aspect-[14/5] w-full">
+        <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
           <Image
             src={image}
             alt={country.name}
@@ -82,7 +82,6 @@ const CountryTravelGuideBlogListing = async ({
                   MapPin;
                 return (
                   <Link
-                    target="_blank"
                     href={`${post.slug}`}
                   >
                     <Card

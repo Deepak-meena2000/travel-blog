@@ -88,13 +88,13 @@ export default function CountriesPage() {
 
                     <div className="space-y-2">
                       <Button asChild className="w-full bg-teal-600 hover:bg-teal-700">
-                        <Link target="_blank" href={`/${destination.slug}`}>
+                        <Link href={`/${destination.slug}`}>
                           <MapPin className="w-4 h-4 mr-2" />
                           Explore Destination
                         </Link>
                       </Button>
                       <Button asChild variant="outline" className="w-full">
-                        <Link target="_blank" href={`/${destination.slug}/top-things-to-do`}>
+                        <Link href={`/${destination.slug}/top-things-to-do`}>
                           <ArrowRight className="w-4 h-4 mr-2" />
                           Things to Do
                         </Link>
