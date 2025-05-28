@@ -5,7 +5,7 @@ export const destinations = [
     slug: "malaysia",
     name: "Malaysia",
     country: "Malaysia",
-    description: "Experience the charm of the City of Love with iconic landmarks.",
+    description: "Malaysia, Truly Asia",
     home_image: "/images/country/malaysia/malaysia_home.jpg",
     country_page_image: "/images/country/malaysia/malaysia_country.jpg",
     overview : `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.

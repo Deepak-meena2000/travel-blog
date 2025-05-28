@@ -163,7 +163,7 @@ export default function CompleteFoodGuidePage({
 
       {/* Overview Section */}
       <section className="py-8 bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="p-6 rounded-lg border bg-teal-600/75 shadow-md">
             <div className="flex items-center">
               <div className="flex flex-col gap-4">
@@ -332,7 +332,7 @@ export default function CompleteFoodGuidePage({
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <Card className="sticky top-8">
+              <Card className="sticky top-20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
                     Related Articles

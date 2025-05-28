@@ -18,7 +18,8 @@ export function PopularDestinations() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {destinations.slice(0, 4).map((destination, index) => (
-            <Card
+           <Link href={`/${destination.slug}`}>
+             <Card
               key={destination.slug}
               className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -32,12 +33,12 @@ export function PopularDestinations() {
                     height={250}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 left-4">
+                  {/* <div className="absolute top-4 left-4">
                     <span className="bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
                       <MapPin className="w-3 h-3" />
                       {destination.country}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{destination.name}</h3>
@@ -47,14 +48,15 @@ export function PopularDestinations() {
                     variant="outline"
                     className="w-full group-hover:bg-teal-600 group-hover:text-white transition-colors"
                   >
-                    <Link href={`/${destination.slug}`}>
+                    <div >
                       Explore
                       <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
+                    </div>
                   </Button>
                 </div>
               </CardContent>
             </Card>
+           </Link>
           ))}
         </div>
 

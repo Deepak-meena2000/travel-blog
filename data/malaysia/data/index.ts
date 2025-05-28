@@ -2,7 +2,7 @@
 export const THINGS_TO_KNOW_BEFORE_GOING = {
   malaysia: {
     heading : "Things to Know Before Going to Malaysia",
-    image : "/images/country/malaysia/travel_guide.jpg",
+    image : "/images/country/malaysia/things_to_know_before_going_to_malaysia.jpg",
     description : "Essential travel tips, information, and advice for your trip to Malaysia",
     overview : "Essential travel tips, information, and advice for your trip to Malaysia",
     data: [

@@ -124,9 +124,9 @@ export default async function TravelGuidePage({
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {heading}
             </h1>
-            <p className="text-xl text-gray-200 max-w-2xl">
+            {/* <p className="text-xl text-gray-200 max-w-2xl">
               {description}
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
@@ -137,7 +137,7 @@ export default async function TravelGuidePage({
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">
@@ -207,7 +207,7 @@ export default async function TravelGuidePage({
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <Card className="sticky top-8">
+              <Card className="sticky top-20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
                     Related Articles

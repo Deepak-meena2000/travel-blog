@@ -312,7 +312,7 @@ export const KUALA_LUMPUR_RELATED_ARTICLES = [
 export const KAULA_LUMPUR_TRAVEL_GUIDE = {
     title: "Travel Guide to Kuala Lumpur",
     category: "Travel Guide",
-    image: "/images/country/malaysia/places/kuala/blog/metro_ride.jpg",
+    image: "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
     slug: "/kuala-lumpur/travel-guide",
     data: [
       {

@@ -50,10 +50,10 @@ export default async function FoodGuidePage({
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
               What to Eat in {country.name}
             </h1>
-            <p className="text-xl text-gray-200 max-w-2xl">
+            <p className="text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl">
               Discover the best local dishes, street food, and culinary
               experiences in {country.name}
             </p>
@@ -63,11 +63,11 @@ export default async function FoodGuidePage({
 
       {/* Overview Section */}
       <section className="py-8 bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="p-6 rounded-lg border bg-teal-600/75 shadow-md">
             <div className="flex items-center">
               <div className="flex flex-col gap-4">
-                <span className="text-lg text-white font-normal">
+                <span className="text-base md:text-lg text-white font-normal">
                   {overview}
                 </span>
               </div>
@@ -113,31 +113,35 @@ export default async function FoodGuidePage({
                     className="overflow-hidden animate-slide-up"
                     id={`food-${food.id}`}
                   >
-                    <div className="relative">
+                    {/* Title box above the image, styled as in the screenshot */}
+                    <div className="bg-white rounded-t-lg border-l-4 border-teal-500 p-6">
+                      <h2 className="text-xl md:text-2xl font-bold text-black">
+                        {index + 1}. {food.name}
+                      </h2>
+                    </div>
+                    <figure className="aspect-[4/2] relative w-full">
                       <Image
                         src={
-                          food.image || "/placeholder.svg?height=300&width=500"
+                          food.image ||
+                          "/placeholder.svg?height=300&width=500"
                         }
                         alt={food.name}
                         width={800}
                         height={400}
-                        className="w-full h-64 object-cover"
+                        className="w-full object-cover rounded-b-lg"
                       />
-                      {/* <div className="absolute top-4 left-4">
-                        <Badge className="bg-teal-600 text-white flex items-center gap-1">
-                          <Utensils className="w-3 h-3" />
-                          Local Dish
-                        </Badge>
-                      </div> */}
-                    </div>
-
-                    <CardContent className="p-8">
-                      <div className="flex items-center justify-between mb-4">
-                        <h2 className="text-2xl font-bold text-gray-900">
-                          {index + 1}. {food.name}
-                        </h2>
-                      </div>
-                      <p className="text-gray-600 mb-6">{food.description}</p>
+                      {food.imageCreditHTML && (
+                        <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: food.imageCreditHTML,
+                            }}
+                          ></span>
+                        </figcaption>
+                      )}
+                    </figure>
+                    <CardContent className="p-4 lg:p-8">
+                      <p className="text-sm md:text-base text-gray-600 mb-6">{food.description}</p>
 
                       <div className="bg-gray-50 p-6 rounded-lg mb-6">
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
@@ -147,10 +151,10 @@ export default async function FoodGuidePage({
                                 <MapPin className="w-4 h-4 text-teal-600" />
                               </div>
                               <div className="flex items-center gap-2 flex-wrap">
-                                <h3 className="font-semibold text-gray-900">
+                                <h3 className="font-semibold text-sm md:text-base text-gray-900">
                                   Where to Try It:
                                 </h3>
-                                <p className="text-gray-600">
+                                <p className="text-sm md:text-base text-gray-600">
                                   {food.otherInfo.where_to_eat}
                                 </p>
                               </div>
@@ -163,10 +167,10 @@ export default async function FoodGuidePage({
                                 <DollarSign className="w-4 h-4 text-teal-600" />
                               </div>
                               <div className="flex items-center gap-2 flex-wrap">
-                                <h3 className="font-semibold text-gray-900">
+                                <h3 className="font-semibold text-sm md:text-base text-gray-900">
                                   Price Range:
                                 </h3>
-                                <p className="text-gray-600">
+                                <p className="text-sm md:text-base text-gray-600">
                                   {food.otherInfo.range}
                                 </p>
                               </div>
@@ -179,11 +183,11 @@ export default async function FoodGuidePage({
                                 <Utensils className="w-4 h-4 text-teal-600" />
                               </div>
                               <div className="flex items-center gap-2 flex-wrap">
-                                <h3 className="font-semibold text-gray-900">
+                                <h3 className="font-semibold text-sm md:text-base text-gray-900">
                                   Vegetarian Available:
                                 </h3>
                               </div>
-                              <p className="text-gray-600">
+                              <p className="text-sm md:text-base text-gray-600">
                                 {food.otherInfo.vegetarian_available
                                   ? "Yes"
                                   : "No"}
@@ -199,13 +203,13 @@ export default async function FoodGuidePage({
                                 <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
                                   <Info className="w-4 h-4 text-teal-600" />
                                 </div>
-                                <h3 className="font-semibold text-gray-900">
+                                <h3 className="font-semibold text-sm md:text-base text-gray-900">
                                   Tips:
                                 </h3>
                               </div>
                               <ul className="list-disc list-inside space-y-1">
                                 {food.otherInfo.tips.map((tip, i) => (
-                                  <li key={i} className="text-gray-600">
+                                  <li key={i} className="text-sm md:text-base text-gray-600">
                                     {tip}
                                   </li>
                                 ))}
@@ -221,9 +225,9 @@ export default async function FoodGuidePage({
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <Card className="sticky top-8">
+              <Card className="sticky top-20">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
                     Related Articles
                   </h3>
                   <div className="space-y-4">
@@ -241,7 +245,7 @@ export default async function FoodGuidePage({
                           className="w-32 h-20 object-cover rounded-lg flex-shrink-0"
                         />
                         <div className="flex-1">
-                          <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
+                          <h4 className="font-medium text-xs md:text-sm text-gray-900 group-hover:text-teal-600 transition-colors line-clamp-2">
                             {article.title}
                           </h4>
                           <Badge variant="secondary" className="text-xs mt-1">

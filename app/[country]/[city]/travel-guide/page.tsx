@@ -135,7 +135,7 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
             </div>
 
             <div className="lg:col-span-1">
-              <Card className="sticky top-8">
+              <Card className="sticky top-20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
                     Related Articles

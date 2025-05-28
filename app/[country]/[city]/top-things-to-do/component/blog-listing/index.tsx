@@ -9,6 +9,7 @@ import {
   ArrowRight,
   Check,
   Info,
+  Hourglass,
 } from "lucide-react";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
@@ -77,7 +78,9 @@ const CityBlogListing = ({
               </div>
 
               <CardContent className="p-8">
-                <p className="text-gray-600 font-normal mb-6">{blog.description}</p>
+                <p className="text-gray-600 font-normal mb-6">
+                  {blog.description}
+                </p>
 
                 <div className="grid md:grid-cols-2 gap-4">
                   {blog.operationalHours && (
@@ -118,7 +121,8 @@ const CityBlogListing = ({
                           Price
                         </h4>
                         {/* {price} */}
-                        <p className="text-slate-600"
+                        <p
+                          className="text-slate-600"
                           dangerouslySetInnerHTML={{
                             __html: blog.price,
                           }}
@@ -129,7 +133,7 @@ const CityBlogListing = ({
                   {blog.duration && (
                     <div className="flex items-start space-x-4 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
                       <div className="bg-orange-100 p-3 rounded-full">
-                        <Clock className="h-5 w-5 text-orange-600" />
+                        <Hourglass className="h-5 w-5 text-orange-600" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-800 mb-1">
@@ -171,7 +175,7 @@ const CityBlogListing = ({
       </div>
 
       <div className="space-y-8">
-        <Card className="sticky top-8">
+        <Card className="sticky top-20">
           <CardContent className="p-6">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
               Related Articles
