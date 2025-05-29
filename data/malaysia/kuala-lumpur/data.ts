@@ -6,9 +6,16 @@ export const KAULA_LUMPUR_BLOG_POST = [
     description:
       "The KL Tower is a 421-meter-high telecommunications tower in Kuala Lumpur, Malaysia. It is the third tallest freestanding structure in the world and the tallest in Southeast Asia. The tower offers panoramic views of the city and is home to the world's highest outdoor observation deck, the Skydeck, which is 276 meters above ground level. The tower is also known for its unique design, which includes a rotating restaurant and a sky bridge. It is a popular destination for tourists and locals alike.",
     location: "Bukit Nanas, Kuala Lumpur",
-    operationalHours: "9am - 10pm(9:30 Last Entry)",
-    price:
-      "Sky Terrace - 140RM      Observation Deck - 100RM       Combo(Terrace+Observation Deck) - 180 RM     SkyBox - 10RM",
+    operationalHours: `9am - 10pm (9:30 Last Entry) <br />`,
+    price: `
+    Sky Terrace - 140RM
+    <br />
+    Observation Deck - 100RM
+    <br />
+    Combo(Terrace+Observation Deck) - 180 RM
+    <br />
+    SkyBox - 10RM
+    `,
     duration: "2 Hours",
     tips: [
       "Visit an hour early to sunset to watch the evening and night view of city",
@@ -186,7 +193,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
       "Heli Lounge Bar is one of the most unique nightlife spots in Kuala Lumpur. By day it serves as a functioning helicopter pad; by night, it transforms into a rooftop bar offering 360° views of the KL skyline. Located on the 34th floor of Menara KH, this open-air lounge gives unobstructed sights of both the Petronas Towers and KL Tower. The ambiance is casual yet stylish, with DJs spinning tracks as the city lights come alive. It's a perfect sunset or nightcap location with minimal entrance fuss.",
     location: "Menara KH, Jalan Sultan Ismail",
     operationalHours: "Daily, 5:00 PM – 12:00 AM",
-    price: "Free entry with a drink purchase (RM 30+)",
+    price: "Free entry with a drink purchase <br /> (RM 30+)",
     tips: [
       "Arrive before 6:30 PM to catch the sunset",
       "No flip-flops or shorts allowed",
@@ -218,7 +225,13 @@ export const KAULA_LUMPUR_BLOG_POST = [
     image: "/images/country/malaysia/places/kuala/blog/aquaria_klcc.jpg",
     location: "KLCC",
     operationalHours: "Daily, 10:00 AM – 8:00 PM (last entry 7 PM)",
-    price: "RM 69 (Adults), RM 59 (Kids), RM 49 (MyKad)",
+    price: `
+    RM 69 (Adults)
+    <br />
+    RM 59 (Kids)
+    <br />
+    RM 49 (MyKad)
+    `,
     duration: "1.5 to 2 hours",
   },
   {
@@ -238,8 +251,14 @@ export const KAULA_LUMPUR_BLOG_POST = [
     image: "/images/country/malaysia/places/kuala/blog/kl_bird_park.jpg",
     location: "Jalan Cenderawasih, Lake Gardens",
     operationalHours: "Daily, 9:00 AM – 6:00 PM",
-    price: "RM 85 (Adults), RM 60 (Children), Discounts for MyKad",
-    duration: "2 to 2.5 hours",
+    price: `
+    RM 85 (Adults)
+    <br />
+    RM 60 (Children)
+    <br />
+    Discounts for MyKad
+    `,
+    duration:  "2 to 2.5 hours",
     tips: [
       "Bring a hat and water",
       "Mornings are cooler and birds are more active",
@@ -253,7 +272,13 @@ export const KAULA_LUMPUR_BLOG_POST = [
     image: "/images/country/malaysia/places/kuala/blog/national_museum.jpg",
     location: "Jalan Damansara, near KL Sentral",
     operationalHours: "Daily, 9:00 AM – 5:00 PM",
-    price: "RM 5 (Adults), RM 2 (Children), RM 2 (MyKad)",
+    price: `
+    RM 5 (Adults)
+    <br />
+    RM 2 (Children)
+    <br />
+    RM 2 (MyKad)
+    `,
     duration: "1.5 to 2 hours",
   },
   {
@@ -290,7 +315,11 @@ export const KAULA_LUMPUR_BLOG_POST = [
     image: "/images/country/malaysia/places/kuala/blog/genting_highlands.jpg",
     location: "Genting Highlands, Pahang (about 1 hour from KL)",
     operationalHours: "Most attractions open 10:00 AM – 10:00 PM",
-    price: "Cable Car RM 10–18; other attractions priced separately",
+    price: `
+    Cable Car RM 10–18
+    <br />
+    (Other attractions priced separately)
+    `,
     duration: "Full-day trip",
     tips: [
       "Bring a light jacket – it's chilly.",
@@ -310,25 +339,26 @@ export const KUALA_LUMPUR_RELATED_ARTICLES = [
 ];
 
 export const KAULA_LUMPUR_TRAVEL_GUIDE = {
-    title: "Travel Guide to Kuala Lumpur",
-    category: "Travel Guide",
-    image: "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
-    slug: "/kuala-lumpur/travel-guide",
-    data: [
-      {
-        id: 1,
-        heading: "Visa Requirements ?",
-        description: `
+  title: "Travel Guide to Kuala Lumpur",
+  category: "Travel Guide",
+  image:
+    "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
+  slug: "/kuala-lumpur/travel-guide",
+  data: [
+    {
+      id: 1,
+      heading: "Visa Requirements ?",
+      description: `
                 Before entering Malaysia, check the visa requirements based on your nationality. Many travelers can enter visa-free for 14 to 90 days. However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC).
                 <br />
                 <br />
                 <b>Few of visa-free countries</b>: USA, EU member states, Australia, India, China, Canada, Japan, South Korea, South Africa, Vietnam, Thailand, Indonesia, UAE,
                 `,
-      },
-      {
-        id: 2,
-        heading: "What’s MDAC, and the complete process ?",
-        description: `
+    },
+    {
+      id: 2,
+      heading: "What’s MDAC, and the complete process ?",
+      description: `
 
             Malaysia Digital Arrival Card(MDAC), a mandatory online form that all foreign travelers, except Singapore, must complete before entering Malaysia. It's not a visa but a required registration document that streamlines entry procedures and improves border security.
             <br/>
@@ -343,12 +373,12 @@ If you're arriving by land—such as from Thailand or Singapore—the visa and M
 
 
         `,
-      },
-      {
-        id: 3,
-        heading:
-          "Malaysian Currency, where to exchange money and How Much Does It Cost to Travel?",
-        description: `
+    },
+    {
+      id: 3,
+      heading:
+        "Malaysian Currency, where to exchange money and How Much Does It Cost to Travel?",
+      description: `
         <b>Malaysia uses the Malaysian Ringgit (MYR)</b>.
 
         <br/>
@@ -363,12 +393,12 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
 
 
         `,
-      },
+    },
 
-      {
-        id: 4,
-        heading: "Best Time to Visit (Weather)",
-        description: `
+    {
+      id: 4,
+      heading: "Best Time to Visit (Weather)",
+      description: `
 
         Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.
         <br/>
@@ -381,11 +411,11 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
         <br/>
         Mountain areas like <b>Cameron Highlands</b> remain cooler throughout the year, offering a refreshing escape from the tropical heat.
         `,
-      },
-      {
-        id: 5,
-        heading: "Network",
-        description: `
+    },
+    {
+      id: 5,
+      heading: "Network",
+      description: `
         Malaysia has excellent mobile coverage across cities and tourist areas. Major telecom providers include <b>Hotlink (Maxis), Digi, Celcom, and U Mobile.</b>
 <br />
 <br />
@@ -397,11 +427,11 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
 
 
         `,
-      },
-      {
-        id: 6,
-        heading: "Languages",
-        description: `
+    },
+    {
+      id: 6,
+      heading: "Languages",
+      description: `
             The national language is Bahasa Malaysia (Malay), but English is widely spoken, especially in urban centers, tourist areas, and by younger generations.
             <br />
             <br />
@@ -409,14 +439,14 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
 
 
         `,
-      },
-    ],
-    related_articles: [
-      {
-        slug: "/kuala-lumpur/top-things-to-do",
-        title: "Top Things to Do in Kuala Lumpur",
-        image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
-        category: "Activities",
-      },
-    ],
-  };
+    },
+  ],
+  related_articles: [
+    {
+      slug: "/kuala-lumpur/top-things-to-do",
+      title: "Top Things to Do in Kuala Lumpur",
+      image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+      category: "Activities",
+    },
+  ],
+};

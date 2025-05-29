@@ -23,7 +23,7 @@ export const PENANG_BLOG_POST = [
     location: "Air Itam, Penang",
     operationalHours: "6:30 AM – 11:00 PM",
     price:
-      "Funicular train Round Trip: RM12–30 (Standard), RM 40-80(Fast Lane), The Habitat and Skywalk - 60",
+      "Funicular train Round Trip:  <br /> <span >RM 12–30 (Standard)</span>  <br /> <span >RM 40-80 (Fast Lane)</span> <br /> The Habitat and Skywalk - 60",
     duration: "3–4 hours",
     tips: [
       "Visit early or late in the day to avoid crowds and enjoy cooler temperatures",
@@ -54,7 +54,7 @@ export const PENANG_BLOG_POST = [
       "Kek Lok Si is Southeast Asia's largest Buddhist temple and a must-see cultural landmark in Penang. Located on a hillside in Air Itam, it features stunning architecture blending Chinese, Thai, and Burmese styles, with a massive statue of the Goddess of Mercy. The temple complex is beautifully illuminated during Chinese New Year, attracting thousands of visitors. Enjoy panoramic views of the city from the top and explore pagodas, prayer halls, and gardens.",
     location: "Air Itam, Penang (7-8 km from City Centre)",
     operationalHours: "8:00 AM – 6:00 PM Daily",
-    price: "Entry Free, RM16-24 fee for elevator to top pagoda",
+    price: "Entry Free <br /> RM16-24 fee for elevator to top pagoda",
     duration: "2–3 hours",
     tips: [
       "Wear modest clothing to respect the temple's sanctity",
@@ -70,7 +70,11 @@ export const PENANG_BLOG_POST = [
       "Set in a former British military fortress, Penang War Museum offers a haunting yet educational insight into World War II history in Malaysia. Explore underground tunnels, bunkers, and weapon exhibits while learning about the Japanese occupation. The museum features restored fortifications surrounded by dense jungle, providing an immersive experience. Ideal for history buffs and adventurous travelers.",
     location: "Batu Maung, Penang",
     operationalHours: "9:00 AM – 5:00 PM (Closed Mondays)",
-    price: "RM20 (Adult), RM10 (Child)",
+    price: `
+    RM20 (Adult)
+    <br />
+    RM10 (Child)
+    `,
     duration: "2–3 hours",
     tips: [
       "Wear comfortable shoes for walking on uneven terrain",
@@ -97,7 +101,11 @@ export const PENANG_BLOG_POST = [
       "The Blue Mansion is a beautifully preserved heritage home famous for its indigo-blue walls and exquisite Chinese architecture. Built in the late 19th century, it tells the story of Cheong Fatt Tze, a prominent Chinese tycoon. It has even been featured in international films such as the 1993 Oscar-winning French film Indochine. Inside the mansion, you'll discover 38 intricately designed rooms adorned with Art Nouveau stained glass, Straits Chinese floor tiles, and 220 timber-framed windows. Visitors can explore the mansion on a one-hour guided tour or opt for a more immersive experience by staying overnight at its boutique bed and breakfast.",
     location: "City Centre George Town",
     operationalHours: "9:30 AM – 5:30 PM Daily",
-    price: "RM17 (Adult), RM8.50 (Child)",
+    price: `
+    RM17 (Adult)
+    <br />
+    RM8.50 (Child)
+    `,
     duration: "1–2 hours",
     tips: [
       "Book tours in advance as spots can fill up quickly",
@@ -146,7 +154,11 @@ export const PENANG_BLOG_POST = [
       "This museum showcases Penang's rich history, cultural heritage, and contemporary art. Exhibits range from colonial-era artifacts to local crafts and paintings. It's a great place to deepen your understanding of Penang's diverse identity through curated displays and interactive installations.",
     location: "George Town",
     operationalHours: "9:00 AM – 5:00 PM (Closed Mondays)",
-    price: "RM5 (Adult), RM2 (Child)",
+    price: `
+    RM5 (Adult)
+    <br />
+    RM2 (Child)
+    `,
     duration: "1–2 hours",
     tips: [
       "Allocate enough time to explore both history and art sections",
@@ -164,7 +176,11 @@ export const PENANG_BLOG_POST = [
       "Khoo Kongsi is one of Penang's grandest Chinese clan houses, renowned for its ornate architecture and intricate wood carvings. This historic building is a testament to the wealth and influence of the Khoo clan. Visitors can explore halls adorned with detailed murals and sculptures, gaining insight into Chinese traditions and community life.",
     location: "City Centre George Town",
     operationalHours: "9:00 AM – 5:00 PM Daily",
-    price: "RM10 (Adult), RM5 (Child)",
+    price: `
+    RM10 (Adult)
+    <br />
+    RM5 (Child)
+    `,
     duration: "1–2 hours",
   },
   {
@@ -181,7 +197,8 @@ export const PENANG_BLOG_POST = [
   {
     id: 12,
     name: "Penang Botanic Gardens",
-    image: "/images/country/malaysia/places/penang/blog/penang_botanical_garden.jpg",
+    image:
+      "/images/country/malaysia/places/penang/blog/penang_botanical_garden.jpg",
     description:
       "Known locally as the 'Waterfall Gardens,' the Penang Botanic Gardens offer a peaceful green retreat with walking trails, exotic plants, and a picturesque waterfall. It's popular with joggers, nature lovers, and families looking to unwind amidst nature right in the city. The gardens also feature a playground and picnic areas.",
     location: "Jalan Air Terjun, George Town",
@@ -194,12 +211,13 @@ export const PENANG_BLOG_POST = [
     ],
     imageCreditHTML: `
         <a href="https://commons.wikimedia.org/wiki/File:Pg_botanic_gardens_trees.JPG"><u>Dr htgoon</u></a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/"><u>CC0</u></a>, via Wikimedia Commons
-    `
+    `,
   },
   {
     id: 13,
     name: "Batu Ferringhi Beach",
-    image: "/images/country/malaysia/places/penang/blog/batu_ferringhi_beach.jpeg",
+    image:
+      "/images/country/malaysia/places/penang/blog/batu_ferringhi_beach.jpeg",
     description:
       "Batu Ferringhi is Penang's most famous beach, offering golden sands, water sports, and a lively night market. It's ideal for sunbathing, swimming, and enjoying beachside dining. The area features resorts, bars, and entertainment options, making it a favorite for both relaxation and nightlife.",
     location: "Batu Ferringhi, Penang",
@@ -225,13 +243,19 @@ export const PENANG_BLOG_POST = [
   },
 ];
 
+export const PENANG_TRAVEL_GUIDE = {
+  title: "Penang Travel Guide",
+  category: "Travel Guide",
+  image: "/images/country/malaysia/places/penang/things_to_know_penang.jpg",
+  slug: "/penang/travel-guide",
+  data: [],
+};
 
 export const PENANG_RELATED_ARTICLES = [
-    {
-        title: "Top things to do in Kuala Lumpur",
-        category: "Activities",
-        image: "/images/country/malaysia/places/kuala/blog/kl_tower.jpg",
-        slug: "/kuala-lumpur/top-things-to-do",
-      }
-
-]
+  {
+    title: "Top things to do in Kuala Lumpur",
+    category: "Activities",
+    image: "/images/country/malaysia/places/kuala/blog/kl_tower.jpg",
+    slug: "/kuala-lumpur/top-things-to-do",
+  },
+];

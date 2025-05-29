@@ -92,9 +92,12 @@ const CityBlogListing = ({
                         <h4 className="font-semibold text-slate-800 mb-1">
                           Operational Hours
                         </h4>
-                        <p className="text-slate-600">
-                          {blog.operationalHours}
-                        </p>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: blog.operationalHours,
+                          }}
+                          className="text-slate-600"
+                        ></p>
                       </div>
                     </div>
                   )}
@@ -174,47 +177,49 @@ const CityBlogListing = ({
         </div>
       </div>
 
-      {relatedArticles?.length > 0 ? <div className="space-y-8">
-        <Card className="sticky top-20">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Related Articles
-            </h3>
-            <div className="space-y-4">
-              {relatedArticles.map((article: any, index: any) => (
-                <Link
-                  key={index}
-                  href={`/${countryName}/${article.slug}`}
-                  className="flex gap-3 group cursor-pointer"
-                >
-                  <Image
-                    src={article.image || "/placeholder.svg"}
-                    alt={article.title}
-                    width={80}
-                    height={60}
-                    className="w-32 h-15 object-cover rounded-lg flex-shrink-0"
-                  />
-                  <div className="flex-1">
-                    <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
-                      {article.title}
-                    </h4>
-                    <Badge variant="secondary" className="text-xs mt-1">
-                      {article.category}
-                    </Badge>
-                  </div>
-                </Link>
-              ))}
-            </div>
+      {relatedArticles?.length > 0 ? (
+        <div className="space-y-8">
+          <Card className="sticky top-20">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Related Articles
+              </h3>
+              <div className="space-y-4">
+                {relatedArticles.map((article: any, index: any) => (
+                  <Link
+                    key={index}
+                    href={`/${countryName}/${article.slug}`}
+                    className="flex gap-3 group cursor-pointer"
+                  >
+                    <Image
+                      src={article.image || "/placeholder.svg"}
+                      alt={article.title}
+                      width={80}
+                      height={60}
+                      className="w-32 h-15 object-cover rounded-lg flex-shrink-0"
+                    />
+                    <div className="flex-1">
+                      <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
+                        {article.title}
+                      </h4>
+                      <Badge variant="secondary" className="text-xs mt-1">
+                        {article.category}
+                      </Badge>
+                    </div>
+                  </Link>
+                ))}
+              </div>
 
-            {/* <div className="mt-6 p-4 bg-gray-50 rounded-lg text-center">
+              {/* <div className="mt-6 p-4 bg-gray-50 rounded-lg text-center">
               <p className="text-sm text-gray-500 mb-2">ADVERTISEMENT</p>
               <div className="h-32 bg-gray-200 rounded flex items-center justify-center">
                 <span className="text-gray-400">Sidebar Ad</span>
               </div>
             </div> */}
-          </CardContent>
-        </Card>
-      </div> : null}
+            </CardContent>
+          </Card>
+        </div>
+      ) : null}
     </div>
   );
 };

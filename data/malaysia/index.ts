@@ -3,9 +3,9 @@ import {
   KAULA_LUMPUR_BLOG_POST,
   KAULA_LUMPUR_TRAVEL_GUIDE,
 } from "./kuala-lumpur/data";
-import { LANGKAWI_BLOG_POST } from "./langkawi/data";
-import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES } from "./penang/data";
-import { PERHENTIAN_ISLANDS_BLOG_POST } from "./perhentian/data";
+import { LANGKAWI_BLOG_POST, LANGKAWI_TRAVEL_GUIDE } from "./langkawi/data";
+import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES, PENANG_TRAVEL_GUIDE } from "./penang/data";
+import { PERHENTIAN_ISLANDS_BLOG_POST, PERHENTIAN_ISLANDS_TRAVEL_GUIDE } from "./perhentian/data";
 
 export const MALAYSISA_FOOD_DATA = [
   {
@@ -985,6 +985,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       image: "/images/country/malaysia/places/penang/penang.jpg",
       description: `Penang, often dubbed the "Pearl of the Orient," is one of Malaysia's most exciting travel destinations, offering a unique blend of culture, heritage, nature, and food. The island is best known for its UNESCO-listed capital, Georgetown, where colonial architecture, vibrant street art, and multicultural influences come alive. Travelers are drawn to Penang for its rich history, diverse culinary scene(often considered Malaysia's best) and stunning coastal landscapes. Penang is a must-visit destination in Southeast Asia for culture seekers, foodies, and beach lovers alike.`,
       blogs: PENANG_BLOG_POST,
+      travel_guide: PENANG_TRAVEL_GUIDE,
       related_articles: PENANG_RELATED_ARTICLES,
     },
     {
@@ -994,6 +995,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       blogs: LANGKAWI_BLOG_POST,
       image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
       related_articles: [],
+      travel_guide: LANGKAWI_TRAVEL_GUIDE,
     },
     {
       placeName: "Perhentian Islands",
@@ -1001,6 +1003,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       name: "Things to Do in Perhentian Islands",
       blogs: PERHENTIAN_ISLANDS_BLOG_POST,
+      travel_guide: PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
       related_articles: [],
     },
   ],
@@ -1037,6 +1040,30 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
           "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
         description: "Travel Guide about Kuala Lumpur",
         category: "Activities",
+      },
+      {
+        slug: "/malaysia/langkawi/travel-guide",
+        title: "Things to Know Before Going to Langkawi",
+        image:
+          "/images/country/malaysia/places/langkawi/travel_guide_banner.jpg",
+        description: "Travel Guide about Langkawi",
+        category: "Travel Guide",
+      },
+      {
+        slug: "/malaysia/perhentian-islands/travel-guide",
+        title: "Things to Know Before Going to Perhentian Islands",
+        image:
+          "/images/country/malaysia/places/perhentian/things_to_know_perhentian.jpg",
+        description: "Travel Guide about Perhentian Islands",
+        category: "Travel Guide",
+      },
+      {
+        slug: "/malaysia/penang/travel-guide",
+        title: "Things to Know Before Going to Penang",
+        image:
+          "/images/country/malaysia/places/penang/things_to_know_penang.jpg",
+        description: "Travel Guide about Penang",
+        category: "Travel Guide",
       },
     ],
   },

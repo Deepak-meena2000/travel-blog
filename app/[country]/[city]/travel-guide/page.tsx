@@ -56,16 +56,13 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
             <div className="flex items-center text-sm mb-2">
-              <Link href={`/${country}`} className="text-gray-300 hover:text-white transition-colors">
+              {/* <Link href={`/${country}`} className="text-gray-300 hover:text-white transition-colors">
                 {countryData.name}
               </Link>
               <span className="mx-2">/</span>
-              <span>{title}</span>
+              <span>{title}</span> */}
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{title} Travel Guide</h1>
-            <p className="text-xl text-gray-200 max-w-2xl">
-              Essential travel tips, information, and advice for your trip to {title}
-            </p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
           </div>
         </div>
       </section>
@@ -80,7 +77,7 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
               <Card className="mb-8 animate-fade-in bg-slate-800">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">
-                    {title} Travel Guide
+                    {title}
                   </h3>
                   <ul className="space-y-3">
                     {data.map((item, index) => {

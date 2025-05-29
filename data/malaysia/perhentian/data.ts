@@ -7,7 +7,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       "The boat ride to the Perhentian Islands is the beginning of your tropical adventure. Departing from Kuala Besut Jetty, the speedboat takes you through turquoise waters, offering scenic views of the South China Sea. The 30–45 minute ride is exhilarating and a perfect way to feel the sea breeze before hitting the island shores. It’s a thrilling welcome to Malaysia’s east coast paradise and a highlight in itself.",
     location: "Kuala Besut Jetty",
     operationalHours: "Departs from 7am till 4pm (3–4 trips per operator)",
-    price: "RM35–RM70 per person (one-way, depending on boat type)",
+    price: "RM35–RM70 per person <br /> (one-way, depending on boat type)",
     duration: "30–45 minutes",
     tips: [
       "Wear a waterproof jacket and secure your belongings as it can get bumpy.",
@@ -23,7 +23,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       "Water taxis in the Perhentian Islands offer a quick, scenic, and convenient way to travel between beaches, snorkeling spots, and resorts. They function like floating Ubers, making island travel fun and easy.",
     location: "All beaches",
     operationalHours: "All day (night fares are higher)",
-    price: "RM15–RM40 per person (one-way, depending on distance)",
+    price: "RM15–RM40 per person <br /> (one-way, depending on distance)",
     duration: "10–35 minutes",
     tips: [
       "Water taxis operate at night but fares are usually double.",
@@ -33,7 +33,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 4,
     name: "Party at Long Beach",
-    image: "/images/country/malaysia/places/perhentian/long_beach_party.jpg",
+    image: "/images/country/malaysia/places/perhentian/blog/long_beach_party.jpg",
     description:
       "Long Beach on Perhentian Kecil is the center of nightlife on the islands, known for its fire shows, beach bars, live music, and a fun social atmosphere.",
     location: "Long Beach, Perhentian Kecil",
@@ -69,7 +69,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       "Snorkel in crystal-clear waters filled with coral gardens and marine life including sea turtles, clownfish, and reef sharks. Popular sites: Turtle Bay, Shark Point, Coral Garden.",
     location: "All beaches",
     operationalHours: "10am, 2pm",
-    price: "RM30–RM50 for half-day tour (gear included)",
+    price: "RM30–RM50 for half-day tour <br /> (gear included)",
     duration: "3 hours",
     tips: [
       "Go in the morning for better visibility.",
@@ -84,7 +84,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       "Experience world-class diving at sites like Tokong Laut and Sugar Wreck. Encounter turtles, sharks, barracudas, and colorful coral reefs. Dive centers offer PADI certification and beginner sessions.",
     location: "Most beaches",
     operationalHours: "8am, 11am, 2pm",
-    price: "RM200–RM350 per dive; PADI courses from RM1,200",
+    price: "RM200–RM350 per dive <br /> PADI courses from RM 1,200",
     duration: "1–1.5 hours",
     tips: [
       "No experience? Try a fun dive!",
@@ -127,7 +127,8 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 10,
     name: "Island Hopping",
-    image: "/images/country/malaysia/places/perhentian/blog/perhentian_islandhopping.jpg",
+    image:
+      "/images/country/malaysia/places/perhentian/blog/perhentian_islandhopping.jpg",
     description:
       "Join a boat tour to explore hidden coves, snorkeling spots, and scenic beaches like Turtle Beach, Shark Point, and Romantic Beach.",
     location: "Starts from main beaches",
@@ -181,7 +182,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       "Kayak along the coastline to reach hidden coves and coral gardens. Rentals available by hour or day; life jackets included.",
     location: "Available at major beaches",
     operationalHours: "Daylight hours",
-    price: "RM20–RM30 per hour; RM50–RM70 full day",
+    price: "RM20–RM30 per hour <br /> RM50–RM70 full day",
     duration: "1–6 hours",
     tips: [
       "Use waterproof pouches for valuables.",
@@ -191,7 +192,8 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 14,
     name: "Turtle Spotting",
-    image: "/images/country/malaysia/places/perhentian/blog/turtle_spotting.jpg",
+    image:
+      "/images/country/malaysia/places/perhentian/blog/turtle_spotting.jpg",
     description:
       "Spot green and hawksbill turtles in the waters around Perhentian. Best seen in the morning near Turtle Beach or on guided tours.",
     location: "Turtle Beach and snorkeling sites",
@@ -208,7 +210,8 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 15,
     name: "Breakfast by the Seaside",
-    image: "/images/country/malaysia/places/perhentian/blog/seaside_breakfast.jpg",
+    image:
+      "/images/country/malaysia/places/perhentian/blog/seaside_breakfast.jpg",
     description:
       "Start your day with breakfast right by the beach. Enjoy local and Western dishes with ocean views and fresh morning air.",
     location: "Beachfront cafés",
@@ -245,7 +248,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       "Hop on a boat from Perhentian to Redang for a day. Includes snorkeling at Redang Marine Park and relaxing on its pristine beaches.",
     location: "Redang Island (via Perhentian)",
     operationalHours: "Departure: 9am | Return: ~4pm",
-    price: "RM120–RM180 per person (includes gear and transfers)",
+    price: "RM120–RM180 per person <br /> (includes gear and transfers)",
     duration: "Half to full day",
     tips: [
       "Pack reef-safe sunscreen and water.",
@@ -255,7 +258,8 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 18,
     name: "Masjid A R Rahman",
-    image: "/images/country/malaysia/places/perhentian/blog/masjid_ar_rahman.jpg",
+    image:
+      "/images/country/malaysia/places/perhentian/blog/masjid_ar_rahman.jpg",
     description:
       "An overwater mosque on Perhentian Kecil offering stunning views and a peaceful atmosphere. Built as a gift from the Sultan of Terengganu in 2016.",
     location: "Near Kampung Nelayan, Perhentian Kecil",
@@ -270,3 +274,11 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       'Photo by <a target="_blank" href="https://unsplash.com/@suuamr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Suu Amran</u></a> on <a target="_blank" href="https://unsplash.com/photos/a-large-white-building-sitting-on-top-of-a-body-of-water-pgTB0bqWkEY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Unsplash</u></a>',
   },
 ];
+
+export const PERHENTIAN_ISLANDS_TRAVEL_GUIDE = {
+  title: "Perhentian Islands Travel Guide",
+  category: "Travel Guide",
+  image: "/images/country/malaysia/places/perhentian/things_to_know_perhentian.jpg",
+  slug: "/perhentian-islands/travel-guide",
+  data: [],
+};
