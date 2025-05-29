@@ -174,7 +174,7 @@ const CityBlogListing = ({
         </div>
       </div>
 
-      <div className="space-y-8">
+      {relatedArticles?.length > 0 ? <div className="space-y-8">
         <Card className="sticky top-20">
           <CardContent className="p-6">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -214,7 +214,7 @@ const CityBlogListing = ({
             </div> */}
           </CardContent>
         </Card>
-      </div>
+      </div> : null}
     </div>
   );
 };

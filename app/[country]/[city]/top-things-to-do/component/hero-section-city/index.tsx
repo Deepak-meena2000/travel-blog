@@ -3,7 +3,7 @@ import styles from "@/app/index.module.css";
 const HeroSectionCity = ({ cityData }: { cityData: any }) => {
   return (
     <section className="relative w-full">
-      <div className="h-[40vh] w-full">
+      <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
         <Image
           src={cityData.image || "/placeholder.svg"}
           alt={cityData.name}

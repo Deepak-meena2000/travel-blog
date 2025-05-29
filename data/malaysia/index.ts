@@ -3,7 +3,9 @@ import {
   KAULA_LUMPUR_BLOG_POST,
   KAULA_LUMPUR_TRAVEL_GUIDE,
 } from "./kuala-lumpur/data";
+import { LANGKAWI_BLOG_POST } from "./langkawi/data";
 import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES } from "./penang/data";
+import { PERHENTIAN_ISLANDS_BLOG_POST } from "./perhentian/data";
 
 export const MALAYSISA_FOOD_DATA = [
   {
@@ -315,7 +317,7 @@ export const MALAYSISA_FOOD_DATA = [
     },
     imageCreditHTML: `
       <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Kek_Lapis_Sarawak.jpg"><u>bob P-&amp;-S</u></a>, <a href="https://creativecommons.org/licenses/by/2.0"><u>CC BY 2.0</u></a>, via Wikimedia Commons
-    `
+    `,
   },
   {
     id: 19,
@@ -347,7 +349,7 @@ export const MALAYSISA_FOOD_DATA = [
     },
     imageCreditHTML: `
       Image by <a target="_blank" href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Jason Goh</u></a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Pixabay</u></a>
-    `
+    `,
   },
   {
     id: 21,
@@ -379,9 +381,9 @@ export const MALAYSISA_FOOD_DATA = [
         "Ask for less spicy if you're not used to Malaysian heat levels—it can get intense!",
       ],
     },
-    imageCreditHTML : `
+    imageCreditHTML: `
       <a target=”_blank” href="https://commons.wikimedia.org/wiki/File:SAMBAL_BALADO_TERONG_UDANG.jpg"><u>Windi Utari</u></a>, <a href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
-    `
+    `,
   },
 ];
 
@@ -946,13 +948,27 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       description: `Penang, a state on Malaysia's northwest coast, is known for its stunning beaches, historic Georgetown, and the UNESCO World Heritage–listed Penang Hill.`,
       category: "Activities",
     },
+    {
+      slug: "langkawi/top-things-to-do",
+      title: "Top Things to Do in Langkawi",
+      image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
+      description: `Langkawi, Malaysia's largest island, is known for its lush rainforests, crystal-clear waters, and laid-back vibe. The island is home to the Langkawi Sky Bridge, a must-visit attraction for its breathtaking views. Langkawi is also known for its duty-free shopping and delicious local cuisine.`,
+      category: "Activities",
+    },
+    {
+      slug: "perhentian-islands/top-things-to-do",
+      title: "Top Things to Do in Perhentian Islands",
+      image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
+      description: `Perhentian Islands, located off the east coast of Malaysia, is known for its crystal-clear waters, white sandy beaches, and laid-back vibes. The island is primarily made up of two main parts: Pulau Besar (the larger island) and Pulau Kecil (the smaller island). Ideal for budget travelers and beginners in snorkeling or scuba diving, it's a top destination for marine life lovers looking to explore coral reefs and chill in beachfront chalets.`,
+      category: "Activities",
+    },
   ],
 
   cities: [
     {
       placeName: "Kuala Lumpur",
       slug: "kuala-lumpur",
-      name: "Top Things to Do in Kuala Lumpur",
+      name: "Things to Do in Kuala Lumpur",
       image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
       description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
@@ -965,11 +981,27 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       placeName: "Penang",
       slug: "penang",
-      name: "Top Things to Do in Penang",
+      name: "Things to Do in Penang",
       image: "/images/country/malaysia/places/penang/penang.jpg",
       description: `Penang, often dubbed the "Pearl of the Orient," is one of Malaysia's most exciting travel destinations, offering a unique blend of culture, heritage, nature, and food. The island is best known for its UNESCO-listed capital, Georgetown, where colonial architecture, vibrant street art, and multicultural influences come alive. Travelers are drawn to Penang for its rich history, diverse culinary scene(often considered Malaysia's best) and stunning coastal landscapes. Penang is a must-visit destination in Southeast Asia for culture seekers, foodies, and beach lovers alike.`,
       blogs: PENANG_BLOG_POST,
       related_articles: PENANG_RELATED_ARTICLES,
+    },
+    {
+      placeName: "Langkawi",
+      slug: "langkawi",
+      name: "Things to Do in Langkawi",
+      blogs: LANGKAWI_BLOG_POST,
+      image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
+      related_articles: [],
+    },
+    {
+      placeName: "Perhentian Islands",
+      slug: "perhentian-islands",
+      image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
+      name: "Things to Do in Perhentian Islands",
+      blogs: PERHENTIAN_ISLANDS_BLOG_POST,
+      related_articles: [],
     },
   ],
 
@@ -993,14 +1025,16 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       {
         slug: "/malaysia/things-to-know-before-going",
         title: "Things to Know Before Going to Malaysia",
-        image: "/images/country/malaysia/things_to_know_before_going_to_malaysia.jpg",
+        image:
+          "/images/country/malaysia/things_to_know_before_going_to_malaysia.jpg",
         description: "Travel Guide about Malaysia",
         category: "Travel Guide",
       },
       {
         slug: "/malaysia/kuala-lumpur/travel-guide",
         title: "Things to Know Before Going to Kuala Lumpur",
-        image: "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
+        image:
+          "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
         description: "Travel Guide about Kuala Lumpur",
         category: "Activities",
       },

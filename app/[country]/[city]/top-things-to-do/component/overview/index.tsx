@@ -1,5 +1,5 @@
 const OverViewCity = ({ cityData }: { cityData: any }) => {
-  return (
+  return !cityData.overview ? null : (
     <section>
       <div className="mb-8  p-6 rounded-lg border bg-teal-600/75 shadow-md ">
         <div className="flex items-center mb-4">
