@@ -1,11 +1,22 @@
 import {
+  MALAYSIA_SIXTEEN_DAYS_ITINERARY,
+  MALAYSIA_NINE_DAYS_ITINERARY,
+} from "./data";
+import {
   KUALA_LUMPUR_RELATED_ARTICLES,
   KAULA_LUMPUR_BLOG_POST,
   KAULA_LUMPUR_TRAVEL_GUIDE,
 } from "./kuala-lumpur/data";
 import { LANGKAWI_BLOG_POST, LANGKAWI_TRAVEL_GUIDE } from "./langkawi/data";
-import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES, PENANG_TRAVEL_GUIDE } from "./penang/data";
-import { PERHENTIAN_ISLANDS_BLOG_POST, PERHENTIAN_ISLANDS_TRAVEL_GUIDE } from "./perhentian/data";
+import {
+  PENANG_BLOG_POST,
+  PENANG_RELATED_ARTICLES,
+  PENANG_TRAVEL_GUIDE,
+} from "./penang/data";
+import {
+  PERHENTIAN_ISLANDS_BLOG_POST,
+  PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
+} from "./perhentian/data";
 
 export const MALAYSISA_FOOD_DATA = [
   {
@@ -1104,10 +1115,10 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
 
   latestBlogs: [
     {
-      slug: "/malaysia/kuala-lumpur/top-things-to-do",
-      title: "Top Things to Do in Kuala Lumpur",
-      image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
-      description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.`,
+      slug: "/malaysia/places-to-visit",
+      title: "Top places to visit in Malaysia",
+      image: "/images/country/malaysia/places_to_visit.jpg",
+      description: `Best places to vist in Malaysia`,
       category: "Activities",
     },
     {
@@ -1118,11 +1129,93 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       category: "Food Guide",
     },
     {
-      slug: "/malaysia/places-to-visit",
-      title: "Top places to visit in Malaysia",
-      image: "/images/country/malaysia/places_to_visit.jpg",
-      description: `Best places to vist in Malaysia`,
+      slug: "/malaysia/complete-food-guide",
+      title: "A Complete Food Guide",
+      description: "A Complete Food Guide of what to eat in Malaysia",
+      image: "/images/country/malaysia/food_guide.jpg",
+      category: "Food Guide",
+    },
+    {
+      slug: "/malaysia/16-days-itinerary",
+      title: "16 Days Itinerary in Malaysia",
+      image: "/images/country/malaysia/malaysia_country.jpg",
+      description: "16 Days Itinerary in Malaysia",
+      category: "Itinerary",
+    },
+    {
+      slug: "/malaysia/9-days-itinerary",
+      title: "9 Days Itinerary in Malaysia",
+      image: "/images/country/malaysia/malaysia_country.jpg",
+      description: "9 Days Itinerary in Malaysia",
+      category: "Itinerary",
+    },
+    {
+      slug: "kuala-lumpur/top-things-to-do",
+      title: "Top Things to Do in Kuala Lumpur",
+      image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+      description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
+Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
+`,
       category: "Activities",
+    },
+    {
+      slug: "penang/top-things-to-do",
+      title: "Top Things to Do in Penang",
+      image: "/images/country/malaysia/places/penang/penang.jpg",
+      description: `Penang, a state on Malaysia's northwest coast, is known for its stunning beaches, historic Georgetown, and the UNESCO World Heritage–listed Penang Hill.`,
+      category: "Activities",
+    },
+    {
+      slug: "langkawi/top-things-to-do",
+      title: "Top Things to Do in Langkawi",
+      image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
+      description: `Langkawi, Malaysia's largest island, is known for its lush rainforests, crystal-clear waters, and laid-back vibe. The island is home to the Langkawi Sky Bridge, a must-visit attraction for its breathtaking views. Langkawi is also known for its duty-free shopping and delicious local cuisine.`,
+      category: "Activities",
+    },
+    {
+      slug: "perhentian-islands/top-things-to-do",
+      title: "Top Things to Do in Perhentian Islands",
+      image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
+      description: `Perhentian Islands, located off the east coast of Malaysia, is known for its crystal-clear waters, white sandy beaches, and laid-back vibes. The island is primarily made up of two main parts: Pulau Besar (the larger island) and Pulau Kecil (the smaller island). Ideal for budget travelers and beginners in snorkeling or scuba diving, it's a top destination for marine life lovers looking to explore coral reefs and chill in beachfront chalets.`,
+      category: "Activities",
+    },
+    {
+      slug: "/malaysia/things-to-know-before-going",
+      title: "Things to Know Before Going to Malaysia",
+      image:
+        "/images/country/malaysia/things_to_know_before_going_to_malaysia.jpg",
+      description: "Travel Guide about Malaysia",
+      category: "Travel Guide",
+    },
+    {
+      slug: "/malaysia/kuala-lumpur/travel-guide",
+      title: "Things to Know Before Going to Kuala Lumpur",
+      image:
+        "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
+      description: "Travel Guide about Kuala Lumpur",
+      category: "Activities",
+    },
+    {
+      slug: "/malaysia/langkawi/travel-guide",
+      title: "Things to Know Before Going to Langkawi",
+      image: "/images/country/malaysia/places/langkawi/travel_guide_banner.jpg",
+      description: "Travel Guide about Langkawi",
+      category: "Travel Guide",
+    },
+    {
+      slug: "/malaysia/perhentian-islands/travel-guide",
+      title: "Things to Know Before Going to Perhentian Islands",
+      image:
+        "/images/country/malaysia/places/perhentian/things_to_know_perhentian.jpg",
+      description: "Travel Guide about Perhentian Islands",
+      category: "Travel Guide",
+    },
+    {
+      slug: "/malaysia/penang/travel-guide",
+      title: "Things to Know Before Going to Penang",
+      image: "/images/country/malaysia/places/penang/things_to_know_penang.jpg",
+      description: "Travel Guide about Penang",
+      category: "Travel Guide",
     },
   ],
 
@@ -1196,4 +1289,35 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     overview: "Places to visit in Malaysia",
     data: MALAYSIA_PLACES_TO_VISIT,
   },
+
+  nine_days_itinerary: {
+    heading: "9 Days Itinerary in Malaysia",
+    image: "/images/country/malaysia/malaysia_country.jpg",
+    description: "9 Days Itinerary in Malaysia",
+    overview: "9 Days Itinerary in Malaysia",
+    data: MALAYSIA_NINE_DAYS_ITINERARY,
+  },
+  sixteen_days_itinerary: {
+    heading: "16 Days Itinerary in Malaysia",
+    image: "/images/country/malaysia/malaysia_country.jpg",
+    description: "16 Days Itinerary in Malaysia",
+    overview: "16 Days Itinerary in Malaysia",
+    data: MALAYSIA_SIXTEEN_DAYS_ITINERARY,
+  },
+  other_blogs: [
+    {
+      slug: "/malaysia/9-days-itinerary",
+      title: "9 Days Itinerary in Malaysia",
+      image: "/images/country/malaysia/malaysia_country.jpg",
+      description: "9 Days Itinerary in Malaysia",
+      category: "Itinerary",
+    },
+    {
+      slug: "/malaysia/16-days-itinerary",
+      title: "16 Days Itinerary in Malaysia",
+      image: "/images/country/malaysia/malaysia_country.jpg",
+      description: "16 Days Itinerary in Malaysia",
+      category: "Itinerary",
+    },
+  ],
 };

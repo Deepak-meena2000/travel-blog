@@ -21,6 +21,9 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     foodBlogs : MALAYSIA_DATA.food_blogs,
     complete_food_guide : MALAYSIA_DATA.complete_food_guide,
     places_to_visit : MALAYSIA_DATA.places_to_visit,
+    nine_days_itinerary : MALAYSIA_DATA.nine_days_itinerary,
+    sixteen_days_itinerary : MALAYSIA_DATA.sixteen_days_itinerary,
+    other_blogs: MALAYSIA_DATA.other_blogs,
   },
 
 ]

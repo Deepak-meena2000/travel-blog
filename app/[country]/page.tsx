@@ -109,7 +109,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function CountryPage({ params }: Props) {
+export default async function CountryPage({
+  params,
+}: {
+  params: Promise<{ country: string }>;
+}) {
   const countryDetails = (await params).country;
   const country = destinations.find((d) => d.slug === countryDetails);
 
@@ -120,10 +124,11 @@ export default async function CountryPage({ params }: Props) {
   const countryBlogs = country.blogs as BlogPost[];
   const travelGuideBlogs = (country.travelGuideBlogs?.data ||
     []) as TravelGuidePost[];
-  const whatToEat = country.whatToEat as WhatToEat;
   const foodBlogs = country.foodBlogs as BlogPost[];
 
   const latestBlogs = country.latestBlogs as BlogPost[];
+
+  const otherBlogs = country.other_blogs as BlogPost[];
 
   return (
     <div className="min-h-screen">
@@ -188,20 +193,23 @@ export default async function CountryPage({ params }: Props) {
                 Food Guide
               </TabsTrigger>
               <TabsTrigger
-                value="plan-trip"
+                value="other-blogs"
                 className="flex items-center justify-center w-full border border-teal-600 text-teal-600 bg-white data-[state=active]:bg-teal-600 data-[state=active]:text-white data-[state=active]:border-teal-600 data-[state=active]:hover:bg-teal-700 transition-colors"
               >
                 <Users className="w-4 h-4 mr-2" />
-                Plan Trip
+                Itinerary's and more
               </TabsTrigger>
             </TabsList>
 
             {/* Content Section with Tabs */}
-            <section id="content" className="my-[7rem] lg:my-0 lg:py-16 bg-gray-50">
+            <section
+              id="content"
+              className="my-[7rem] lg:my-0 lg:py-16 bg-gray-50"
+            >
               <div className="max-8-xl mx-auto px-2 sm:px-6 lg:px-8">
                 <TabsContent value="all">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {latestBlogs.slice(0, 6).map((post, index) => {
+                    {latestBlogs?.map((post, index) => {
                       const IconComponent =
                         categoryIcons[
                           post.category as keyof typeof categoryIcons
@@ -213,10 +221,10 @@ export default async function CountryPage({ params }: Props) {
                           href={`${post.slug}`}
                         >
                           <Card
-                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
+                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in h-full flex flex-col"
                             style={{ animationDelay: `${index * 0.1}s` }}
                           >
-                            <CardContent className="p-0">
+                            <CardContent className="p-0 flex flex-col h-full">
                               <div className="relative overflow-hidden rounded-t-lg">
                                 <Image
                                   src={
@@ -235,14 +243,16 @@ export default async function CountryPage({ params }: Props) {
                                   </Badge>
                                 </div>
                               </div>
-                              <div className="p-6">
-                                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
-                                  {post.title}
-                                </h3>
-                                <p className="text-gray-600 mb-4 line-clamp-2">
-                                  {post.description}
-                                </p>
-                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors">
+                              <div className="flex flex-col flex-1 p-6 min-h-[160px]">
+                                <div>
+                                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
+                                    {post.title}
+                                  </h3>
+                                  <p className="text-gray-600 mb-4 line-clamp-2">
+                                    {post.description}
+                                  </p>
+                                </div>
+                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors mt-auto">
                                   Read more
                                   <ArrowRight className="w-4 h-4 ml-1" />
                                 </div>
@@ -268,10 +278,10 @@ export default async function CountryPage({ params }: Props) {
                             href={`/${countryDetails}/${post.slug}`}
                           >
                             <Card
-                              className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
+                              className="group hover:shadow-lg transition-all duration-300 animate-scale-in h-full flex flex-col"
                               style={{ animationDelay: `${index * 0.1}s` }}
                             >
-                              <CardContent className="p-0">
+                              <CardContent className="p-0 flex flex-col h-full">
                                 <div className="relative overflow-hidden rounded-t-lg">
                                   <Image
                                     src={
@@ -290,14 +300,16 @@ export default async function CountryPage({ params }: Props) {
                                     </Badge>
                                   </div>
                                 </div>
-                                <div className="p-6">
-                                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
-                                    {post.title}
-                                  </h3>
-                                  <p className="text-gray-600 mb-4 line-clamp-2">
-                                    {post.description}
-                                  </p>
-                                  <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors">
+                                <div className="flex flex-col flex-1 p-6 min-h-[160px]">
+                                  <div>
+                                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
+                                      {post.title}
+                                    </h3>
+                                    <p className="text-gray-600 mb-4 line-clamp-2">
+                                      {post.description}
+                                    </p>
+                                  </div>
+                                  <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors mt-auto">
                                     Read more
                                     <ArrowRight className="w-4 h-4 ml-1" />
                                   </div>
@@ -317,10 +329,10 @@ export default async function CountryPage({ params }: Props) {
                       return (
                         <Link target="_blank" key={post.slug} href={post.slug}>
                           <Card
-                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
+                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in h-full flex flex-col"
                             style={{ animationDelay: `${index * 0.1}s` }}
                           >
-                            <CardContent className="p-0">
+                            <CardContent className="p-0 flex flex-col h-full">
                               <div className="relative overflow-hidden rounded-t-lg">
                                 <Image
                                   src={
@@ -339,14 +351,16 @@ export default async function CountryPage({ params }: Props) {
                                   </Badge>
                                 </div>
                               </div>
-                              <div className="p-6">
-                                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
-                                  {post.title}
-                                </h3>
-                                <p className="text-gray-600 mb-4 line-clamp-2">
-                                  {post.description}
-                                </p>
-                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors">
+                              <div className="flex flex-col flex-1 p-6 min-h-[160px]">
+                                <div>
+                                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
+                                    {post.title}
+                                  </h3>
+                                  <p className="text-gray-600 mb-4 line-clamp-2">
+                                    {post.description}
+                                  </p>
+                                </div>
+                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors mt-auto">
                                   Read more
                                   <ArrowRight className="w-4 h-4 ml-1" />
                                 </div>
@@ -366,10 +380,10 @@ export default async function CountryPage({ params }: Props) {
                       return (
                         <Link target="_blank" key={post.slug} href={post.slug}>
                           <Card
-                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in"
+                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in h-full flex flex-col"
                             style={{ animationDelay: `${index * 0.1}s` }}
                           >
-                            <CardContent className="p-0">
+                            <CardContent className="p-0 flex flex-col h-full">
                               <div className="relative overflow-hidden rounded-t-lg">
                                 <Image
                                   src={
@@ -388,14 +402,16 @@ export default async function CountryPage({ params }: Props) {
                                   </Badge>
                                 </div>
                               </div>
-                              <div className="p-6">
-                                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
-                                  {post.title}
-                                </h3>
-                                <p className="text-gray-600 mb-4 line-clamp-2">
-                                  {post.description}
-                                </p>
-                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors">
+                              <div className="flex flex-col flex-1 p-6 min-h-[160px]">
+                                <div>
+                                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
+                                    {post.title}
+                                  </h3>
+                                  <p className="text-gray-600 mb-4 line-clamp-2">
+                                    {post.description}
+                                  </p>
+                                </div>
+                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors mt-auto">
                                   Read more
                                   <ArrowRight className="w-4 h-4 ml-1" />
                                 </div>
@@ -408,14 +424,61 @@ export default async function CountryPage({ params }: Props) {
                   </div>
                 </TabsContent>
 
-                <TabsContent value="plan-trip">
-                  <div className="flex flex-col items-center justify-center min-h-[200px]">
-                    <Button asChild size="lg" className="mt-4">
-                      <Link href="/custom-itinerary">
-                        <Users className="w-4 h-4 mr-2" />
-                        Start Planning Your Trip
-                      </Link>
-                    </Button>
+                <TabsContent value="other-blogs">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {otherBlogs.map((post, index) => {
+                      const IconComponent =
+                        categoryIcons[
+                          post.category as keyof typeof categoryIcons
+                        ] || MapPin;
+                      return (
+                        <Link
+                          target="_blank"
+                          key={post.slug}
+                          href={`${post.slug}`}
+                        >
+                          <Card
+                            className="group hover:shadow-lg transition-all duration-300 animate-scale-in h-full flex flex-col"
+                            style={{ animationDelay: `${index * 0.1}s` }}
+                          >
+                            <CardContent className="p-0 flex flex-col h-full">
+                              <div className="relative overflow-hidden rounded-t-lg">
+                                <Image
+                                  src={
+                                    post.image ||
+                                    "/placeholder.svg?height=250&width=400"
+                                  }
+                                  alt={post.title}
+                                  width={400}
+                                  height={250}
+                                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                                />
+                                <div className="absolute top-4 left-4">
+                                  <Badge className="bg-teal-600 hover:bg-teal-700 text-white flex items-center gap-1">
+                                    <IconComponent className="w-3 h-3" />
+                                    {post.category}
+                                  </Badge>
+                                </div>
+                              </div>
+                              <div className="flex flex-col flex-1 p-6 min-h-[160px]">
+                                <div>
+                                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors">
+                                    {post.title}
+                                  </h3>
+                                  <p className="text-gray-600 mb-4 line-clamp-2">
+                                    {post.description}
+                                  </p>
+                                </div>
+                                <div className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium transition-colors mt-auto">
+                                  Read more
+                                  <ArrowRight className="w-4 h-4 ml-1" />
+                                </div>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </Link>
+                      );
+                    })}
                   </div>
                 </TabsContent>
               </div>
