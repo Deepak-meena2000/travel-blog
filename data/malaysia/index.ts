@@ -1,11 +1,22 @@
 import {
+  MALAYSIA_SIXTEEN_DAYS_ITINERARY,
+  MALAYSIA_NINE_DAYS_ITINERARY,
+} from "./data";
+import {
   KUALA_LUMPUR_RELATED_ARTICLES,
   KAULA_LUMPUR_BLOG_POST,
   KAULA_LUMPUR_TRAVEL_GUIDE,
 } from "./kuala-lumpur/data";
 import { LANGKAWI_BLOG_POST, LANGKAWI_TRAVEL_GUIDE } from "./langkawi/data";
-import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES, PENANG_TRAVEL_GUIDE } from "./penang/data";
-import { PERHENTIAN_ISLANDS_BLOG_POST, PERHENTIAN_ISLANDS_TRAVEL_GUIDE } from "./perhentian/data";
+import {
+  PENANG_BLOG_POST,
+  PENANG_RELATED_ARTICLES,
+  PENANG_TRAVEL_GUIDE,
+} from "./penang/data";
+import {
+  PERHENTIAN_ISLANDS_BLOG_POST,
+  PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
+} from "./perhentian/data";
 
 export const MALAYSISA_FOOD_DATA = [
   {
@@ -1196,4 +1207,35 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     overview: "Places to visit in Malaysia",
     data: MALAYSIA_PLACES_TO_VISIT,
   },
+
+  nine_days_itinerary: {
+    heading: "9 Days Itinerary in Malaysia",
+    image: "/images/country/malaysia/malaysia_country.jpg",
+    description: "9 Days Itinerary in Malaysia",
+    overview: "9 Days Itinerary in Malaysia",
+    data: MALAYSIA_NINE_DAYS_ITINERARY,
+  },
+  sixteen_days_itinerary: {
+    heading: "16 Days Itinerary in Malaysia",
+    image: "/images/country/malaysia/malaysia_country.jpg",
+    description: "16 Days Itinerary in Malaysia",
+    overview: "16 Days Itinerary in Malaysia",
+    data: MALAYSIA_SIXTEEN_DAYS_ITINERARY,
+  },
+  other_blogs: [
+    {
+      slug: "/malaysia/9-days-itinerary",
+      title: "9 Days Itinerary in Malaysia",
+      image: "/images/country/malaysia/malaysia_country.jpg",
+      description: "9 Days Itinerary in Malaysia",
+      category: "Itinerary",
+    },
+    {
+      slug: "/malaysia/15-days-itinerary",
+      title: "15 Days Itinerary in Malaysia",
+      image: "/images/country/malaysia/malaysia_country.jpg",
+      description: "15 Days Itinerary in Malaysia",
+      category: "Itinerary",
+    },
+  ],
 };
