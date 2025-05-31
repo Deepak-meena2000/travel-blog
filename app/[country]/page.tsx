@@ -209,7 +209,7 @@ export default async function CountryPage({
               <div className="max-8-xl mx-auto px-2 sm:px-6 lg:px-8">
                 <TabsContent value="all">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {latestBlogs.slice(0, 6).map((post, index) => {
+                    {latestBlogs?.map((post, index) => {
                       const IconComponent =
                         categoryIcons[
                           post.category as keyof typeof categoryIcons
