@@ -368,7 +368,7 @@ export const PENANG_RELATED_ARTICLES = [
   {
     title: "Top things to do in Kuala Lumpur",
     category: "Activities",
-    image: "/images/country/malaysia/places/kuala/blog/kl_tower.jpg",
+    image: "/images/country/malaysia/places/kuala_lumpur/blog/kl_tower.jpg",
     slug: "/kuala-lumpur/top-things-to-do",
   },
 ];

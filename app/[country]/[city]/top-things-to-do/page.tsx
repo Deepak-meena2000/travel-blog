@@ -44,9 +44,6 @@ export default async function CityThingsToDoPage({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
                 className="lucide lucide-circle-check-big w-10 h-10 text-teal-600"
               >
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -75,9 +72,6 @@ export default async function CityThingsToDoPage({
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
                       className="lucide lucide-heart w-6 h-6 text-pink-600"
                     >
                       <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
@@ -105,9 +99,6 @@ export default async function CityThingsToDoPage({
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
                       className="lucide lucide-share2 w-6 h-6 text-blue-600"
                     >
                       <circle cx="18" cy="5" r="3"></circle>
@@ -139,9 +130,6 @@ export default async function CityThingsToDoPage({
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
                       className="lucide lucide-book-open w-6 h-6 text-green-600"
                     >
                       <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>

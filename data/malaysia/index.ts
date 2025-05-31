@@ -731,7 +731,7 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     name: "Kuala Lumpur",
     description:
       "Kuala Lumpur, the capital city of Malaysia, is a dynamic blend of modern architecture, cultural landmarks, and street food delights. Gaze up at the Petronas Towers, roam the Batu Caves, and shop till you drop in Bukit Bintang. Savor street food in Jalan Alor and experience the soul of Malaysia in Chinatown and Little India. Locals proudly embrace their multicultural identity, creating a vibrant tapestry of flavors, festivals, and warmth that makes every moment here special.",
-    image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+    image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
     otherInfo: {
       must_do: "Visit KL Tower At sunset, Nightlife at Changkat Avenue",
       time_to_visit:
@@ -941,7 +941,7 @@ export const MALAYSIA_DATA = {
     {
       slug: "kuala-lumpur/top-things-to-do",
       title: "Top Things to Do in Kuala Lumpur",
-      image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+      image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
       description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
 `,
@@ -976,7 +976,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       slug: "kuala-lumpur",
       name: "Things to Do in Kuala Lumpur",
       overview: `overview kuala lumpur`,
-      image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+      image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
       description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
 `,
@@ -1022,7 +1022,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       slug: "kuala-lumpur/top-things-to-do",
       title: "Top Things to Do in Kuala Lumpur",
-      image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+      image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
       category: "Activities",
     },
   ],
@@ -1047,7 +1047,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
         slug: "/malaysia/kuala-lumpur/travel-guide",
         title: "Things to Know Before Going to Kuala Lumpur",
         image:
-          "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
+          "/images/country/malaysia/places/kuala_lumpur/things_to_know_before_going_to_kuala_lumpur.jpg",
         description: "Travel Guide about Kuala Lumpur",
         category: "Activities",
       },
@@ -1090,7 +1090,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       {
         slug: "kuala-lumpur/top-things-to-do",
         title: "Top Things to Do in Kuala Lumpur",
-        image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+        image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
         category: "Activities",
       },
     ],
@@ -1151,7 +1151,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       slug: "/malaysia/kuala-lumpur/top-things-to-do",
       title: "Top Things to Do in Kuala Lumpur",
-      image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+      image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
       description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
 `,
@@ -1190,7 +1190,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       slug: "/malaysia/kuala-lumpur/travel-guide",
       title: "Things to Know Before Going to Kuala Lumpur",
       image:
-        "/images/country/malaysia/places/kuala/things_to_know_before_going_to_kuala_lumpur.jpg",
+        "/images/country/malaysia/places/kuala_lumpur/things_to_know_before_going_to_kuala_lumpur.jpg",
       description: "Travel Guide about Kuala Lumpur",
       category: "Activities",
     },

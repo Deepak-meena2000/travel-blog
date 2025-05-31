@@ -12,8 +12,8 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
          id: 1,
         heading: "Culture & History",
         description: `
-                Malaysia’s rich tapestry of culture and history is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia. 
-                You’ll see this diversity reflected in its <b>festivals, food, languages, and religions</b>. Islam is the official religion, but Malaysia also celebrates Diwali, Chinese New Year, and Christmas. 
+                Malaysia’s rich tapestry of culture and history is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia.
+                You’ll see this diversity reflected in its <b>festivals, food, languages, and religions</b>. Islam is the official religion, but Malaysia also celebrates Diwali, Chinese New Year, and Christmas.
                 <br />
                 <br />
                 Respect local customs: dress modestly when visiting mosques or temples, remove shoes before entering homes or religious places, and avoid public displays of affection. Islam is the dominant religion, and it's wise to be mindful of religious practices, especially during Ramadan.
@@ -26,10 +26,10 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
         id: 2,
         heading: "Visa Requirements",
         description: `
-                Before entering Malaysia, check the <a href="https://www.malaysia.gov.my/portal/subcategory/1543" target="_blank" class="text-teal-600">visa requirements</a> based on your nationality. Many travelers can enter visa-free for 14 to 90 days. For longer stays or for nationalities requiring a visa, apply online via the <b>eVisa or eNTRI</b> systems, which are straightforward and quick. Immigration officials may ask for proof of onward travel and accommodation, so have those ready. 
+                Before entering Malaysia, check the <a href="https://www.malaysia.gov.my/portal/subcategory/1543" target="_blank" class="text-teal-600">visa requirements</a> based on your nationality. Many travelers can enter visa-free for 14 to 90 days. For longer stays or for nationalities requiring a visa, apply online via the <b>eVisa or eNTRI</b> systems, which are straightforward and quick. Immigration officials may ask for proof of onward travel and accommodation, so have those ready.
                 <br />
                 <br />
-                <b>However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC)</b>.  
+                <b>However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC)</b>.
                 <br />
                 <br />
                 <b>Few of visa-free countries:</b> USA, EU member states, Australia, India, China, Canada, Japan, South Korea, South Africa, Vietnam, Thailand, Indonesia, UAE.
@@ -83,7 +83,7 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
         <br/>
         <br/>
         For most of Peninsular Malaysia, the dry season runs from <b>November to August</b>, making it ideal for outdoor travel and beach destinations.
-        <b>The East Coast (Kuala Terengganu, Perhentian Islands) experiences heavy monsoons from November to January</b>. 
+        <b>The East Coast (Kuala Terengganu, Perhentian Islands) experiences heavy monsoons from November to January</b>.
         <br/>
         <br/>
         In <b>Sabah and Sarawak</b>, dry months vary slightly, but March to September is generally pleasant.
@@ -128,8 +128,8 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
             <br />
             <br />
             <li>
-              <b>By Bus:</b> Intercity buses are the most economical way to travel across Malaysia. Major hubs like Kuala Lumpur, Penang, and Johor Bahru are well-connected. 
-Most intercity buses and trains in Malaysia offer comfortable seating, and <b>select routes also feature Business Class</b> options. Consider booking a ticket in advance on platforms like RedBus or Easybook. 
+              <b>By Bus:</b> Intercity buses are the most economical way to travel across Malaysia. Major hubs like Kuala Lumpur, Penang, and Johor Bahru are well-connected.
+Most intercity buses and trains in Malaysia offer comfortable seating, and <b>select routes also feature Business Class</b> options. Consider booking a ticket in advance on platforms like RedBus or Easybook.
             </li>
             <br />
             <li>
@@ -152,13 +152,13 @@ Most intercity buses and trains in Malaysia offer comfortable seating, and <b>se
             Local transportation in Malaysia is both reliable and budget-friendly. In major cities, use <b>Grab</b> for convenient, cashless rides it’s more trustworthy than street taxis. It usually costs around <b>RM10–RM12 for a 5 km ride</b>.
             <br />
             <br />
-Kuala Lumpur has a strong public transport network, including buses, LRT, and MRT. Fares are cheap and schedules are frequent. In tourist towns, you might rely on shared vans, trishaws, or taxis — always ask for the meter or agree on a price. 
+Kuala Lumpur has a strong public transport network, including buses, LRT, and MRT. Fares are cheap and schedules are frequent. In tourist towns, you might rely on shared vans, trishaws, or taxis — always ask for the meter or agree on a price.
             <br />
             <br />
 On islands, transportation may include scooters, bicycles, or boat transfers. Walking is easy in compact towns like George Town or Melaka, making exploration more enjoyable.
             <br />
             <br />
-Renting a scooter is a convenient and budget-friendly way to hop between attractions especially in places like Langkawi, where public transport is limited. 
+Renting a scooter is a convenient and budget-friendly way to hop between attractions especially in places like Langkawi, where public transport is limited.
 <br />
 <li>Scooter rental - <b>RM40–RM60 per day.</li></b>
         `
@@ -167,13 +167,13 @@ Renting a scooter is a convenient and budget-friendly way to hop between attract
         id: 10,
         heading: "Food and Alcohol Costs in Malaysia: What to Expect",
         description: `
-Malaysia’s cuisine is a flavorful mix of Malay, Chinese, and Indian influences—don’t miss dishes like nasi lemak, laksa, and roti canai costs around RM5–RM10, while mid-range meals at local restaurants are typically RM15–RM30. Street food is both delicious and budget-friendly, especially in cities like Penang and Kuala Lumpur. For more insights, explore our in-depth article on Malaysian cuisine - 
+Malaysia’s cuisine is a flavorful mix of Malay, Chinese, and Indian influences—don’t miss dishes like nasi lemak, laksa, and roti canai costs around RM5–RM10, while mid-range meals at local restaurants are typically RM15–RM30. Street food is both delicious and budget-friendly, especially in cities like Penang and Kuala Lumpur. For more insights, explore our in-depth article on Malaysian cuisine -
 <br />
 <br />
 <li>A  <a href="/malaysia/complete-food-guide" target="_blank" class="text-teal-600">complete food guide</a> provide info of what to, when to and the vegetarian options.</li>
 <li> <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600">Must-try dishes</a> you shouldn't miss in Malaysia.</li>
 <br />
-Alcohol is taxed heavily—expect to pay RM15–RM30 ($3–$7 USD) for a beer at bars, and more in upscale places. Supermarkets sell beer from RM8 ($1.70 USD) per can, but alcohol is limited in Muslim-majority areas. 
+Alcohol is taxed heavily—expect to pay RM15–RM30 ($3–$7 USD) for a beer at bars, and more in upscale places. Supermarkets sell beer from RM8 ($1.70 USD) per can, but alcohol is limited in Muslim-majority areas.
 <br />
 <br />
 Langkawi and duty-free zones offer better prices. Always drink responsibly and respect local customs regarding alcohol.
@@ -183,13 +183,13 @@ Langkawi and duty-free zones offer better prices. Always drink responsibly and r
         id: 11,
         heading: "Is Malaysia Safe for Travelers?",
         description: `
-          Malaysia is generally very <b>safe for travelers</b>, with low violent crime rates. Petty theft (like pickpocketing or bag snatching) can happen in crowded areas, so stay alert and keep valuables secure. Always use official taxis or Grab, especially at night. 
+          Malaysia is generally very <b>safe for travelers</b>, with low violent crime rates. Petty theft (like pickpocketing or bag snatching) can happen in crowded areas, so stay alert and keep valuables secure. Always use official taxis or Grab, especially at night.
           <br />
           <br />
-Tap water isn't always safe to drink — use bottled or filtered water. Naturewise, be cautious during hikes or ocean activities, but serious risks are rare. Malaysia is politically stable and welcoming to tourists. Keep emergency numbers handy: 
+Tap water isn't always safe to drink — use bottled or filtered water. Naturewise, be cautious during hikes or ocean activities, but serious risks are rare. Malaysia is politically stable and welcoming to tourists. Keep emergency numbers handy:
 <br />
 <br />
-<b>999 for ambulance or police</b>, and 991 for fire. 
+<b>999 for ambulance or police</b>, and 991 for fire.
         `
       },
       {
@@ -199,7 +199,7 @@ Tap water isn't always safe to drink — use bottled or filtered water. Naturewi
           Malaysia has something for every kind of traveler. Discover the top things to do in Malaysia with our detailed article of <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600">top things to do in Malaysia</a>.
           <br />
           <br />
-One can explore the vibrant capital <b>Kuala Lumpur</b>, with its Petronas Towers, Batu Caves and street food. Wander historic <b>George Town (Penang)</b>, a UNESCO heritage site filled with culture and art. Relax on tropical islands like <b>Langkawi</b>, <b>Perhentian, or Redang</b>. Dive into unforgettable underwater adventures with scuba diving or snorkeling at not only Malaysia’s but world's top marine spots like <b>Sipadan</b> and Lankayan Island. Discover nature in Cameron Highlands or climb Mount Kinabalu in <b>Sabah</b>. Visit <b>Melaka</b> for colonial charm or Borneo for orangutans and rainforests. 
+One can explore the vibrant capital <b>Kuala Lumpur</b>, with its Petronas Towers, Batu Caves and street food. Wander historic <b>George Town (Penang)</b>, a UNESCO heritage site filled with culture and art. Relax on tropical islands like <b>Langkawi</b>, <b>Perhentian, or Redang</b>. Dive into unforgettable underwater adventures with scuba diving or snorkeling at not only Malaysia’s but world's top marine spots like <b>Sipadan</b> and Lankayan Island. Discover nature in Cameron Highlands or climb Mount Kinabalu in <b>Sabah</b>. Visit <b>Melaka</b> for colonial charm or Borneo for orangutans and rainforests.
           <br />
           <br />
 Each destination has its own unique flavor whether you're chasing beaches, tea plantations, food trails, or eco-adventures, Malaysia is full of surprises.
@@ -219,7 +219,7 @@ Each destination has its own unique flavor whether you're chasing beaches, tea p
       {
         slug: "kuala-lumpur/top-things-to-do",
         title: "Top Things to Do in Kuala Lumpur",
-        image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+        image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
         category: "Activities",
       },
        {
@@ -324,7 +324,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/national_museum.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/national_museum.jpg",
             alt: "National Museum",
           },
         ],
@@ -369,7 +369,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/pavilion_kl.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/pavilion_kl.jpg",
             alt: "Pavilion KL",
           },
         ],
@@ -384,7 +384,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/heli_lounge.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/heli_lounge.jpg",
             alt: "Heli Lounge Bar",
           },
         ],
@@ -411,7 +411,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/chinatown.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/chinatown.jpg",
             alt: "Chinatown",
           },
         ],
@@ -463,7 +463,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/bukit_bintang.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/bukit_bintang.jpg",
             alt: "Bukit Bintang",
           },
         ],
@@ -497,7 +497,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/thean_hou_temple.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/thean_hou_temple.jpg",
             alt: "<b><b>Thean Hou Temple</b></b>",
           },
         ],
@@ -517,7 +517,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/batu_caves.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
             alt: "Batu Caves",
           },
         ],
@@ -548,7 +548,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/genting_highlands.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
             alt: "Genting Highlands",
           },
         ],
@@ -574,7 +574,7 @@ Later, explore the colorful <b><b>Thean Hou Temple</b></b>, one of Southeast Asi
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/interact_locals.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/interact_locals.jpg",
             alt: " Islamic Arts Museum Malaysia",
           },
         ],
@@ -601,7 +601,7 @@ For those looking to squeeze in a bit more shopping,<b>Central Market, Suria KLC
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/metro_ride.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/metro_ride.jpg",
             alt: "Metro Ride",
           },
         ],
@@ -636,7 +636,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/petrnos_tower.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/petrnos_tower.jpg",
             alt: "Petronas Twin Towers",
           },
         ],
@@ -658,7 +658,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/batu_caves.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
             alt: "Batu Caves",
           },
         ],
@@ -671,7 +671,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/sultan_abdul_samad.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/sultan_abdul_samad.jpg",
             alt: "<b>Sultan Abdul Samad Building</b>",
           },
         ],
@@ -696,7 +696,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/national_museum.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/national_museum.jpg",
             alt: "National Museum",
           },
         ],
@@ -714,7 +714,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala/blog/botanical_garden.jpg",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/botanical_garden.jpg",
             alt: "Perdana Botanical Garden",
           },
         ],
