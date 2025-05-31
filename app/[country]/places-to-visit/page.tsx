@@ -5,13 +5,15 @@ import { MALAYSIA_PLACES_TO_VISIT } from "@/data/malaysia";
 import { Card, CardContent } from "@/components/ui/card";
 import { ThankYouSection } from "@/components/thank-you-section";
 import styles from "@/app/index.module.css";
+import OverViewSection from "../things-to-know-before-going/components/overview";
+import { MapPin } from "lucide-react";
 
 export default async function PlacesToVisitPage({
   params,
 }: {
-  params: { country: string };
+  params: Promise<{ country: string }>;
 }) {
-  const countryName = params.country;
+  const countryName = (await params).country;
   const country = destinations.find((d) => d.slug === countryName);
   const overview = country?.places_to_visit?.overview || "";
   const description = country?.places_to_visit?.description || "";
@@ -46,23 +48,15 @@ export default async function PlacesToVisitPage({
       </section>
 
       {/* Overview Section */}
-      <section className="py-8 bg-white border-b">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="p-6 rounded-lg border bg-teal-600/75 shadow-md">
-            <div className="flex items-center">
-              <div className="flex flex-col gap-4">
-                <span className="text-lg text-white font-normal">
-                  {overview}
-                </span>
-              </div>
-            </div>
-          </div>
+      <section className="py-8 bg-white">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+          <OverViewSection IconName={MapPin} overview={overview} />
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">

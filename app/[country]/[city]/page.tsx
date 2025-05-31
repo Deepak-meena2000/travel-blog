@@ -112,7 +112,7 @@ const ItineraryPage = async ({
       </section>
 
       {/* Main Content + Sidebar */}
-      <section className="max-w-7xl mx-auto px-2 sm:px-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <section className="max-w-[85rem] mx-auto px-2 sm:px-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Main Content */}
         <div className="lg:col-span-3">
           <div className="space-y-12 sm:space-y-20">

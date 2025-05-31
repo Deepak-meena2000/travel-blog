@@ -1,12 +1,12 @@
 export const THINGS_TO_KNOW_BEFORE_GOING = {
   malaysia: {
-    heading: "Things to Know Before Going to Malaysia",
+    heading: "Malaysia Travel Guide",
     image:
       "/images/country/malaysia/things_to_know_before_going_to_malaysia.jpg",
     description:
       "Essential travel tips, information, and advice for your trip to Malaysia",
     overview:
-      "Essential travel tips, information, and advice for your trip to Malaysia",
+      "Malaysia is a captivating blend of diverse cultures, stunning landscapes, and mouthwatering cuisine. But Before you jet off, it’s important to get familiar with a few essentials that will make your trip smoother. In this article, we cover everything you need to know before visiting Malaysia from visa requirements and currency tips to weather, local customs, dress codes, safety advice, and health precautions. Learn what to pack, how to get around, and how to respect local traditions. Whether it’s your first time in Southeast Asia or you're a seasoned traveler, this guide ensures you arrive in Malaysia informed and ready to explore with confidence.",
     data: [
       {
          id: 1,

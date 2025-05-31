@@ -22,6 +22,8 @@ import {
 import { destinations } from "@/data/destinations";
 import { ThankYouSection } from "@/components/thank-you-section";
 import styles from "@/app/index.module.css";
+import OverViewSection from "../things-to-know-before-going/components/overview";
+import { notFound } from "next/navigation";
 
 interface FoodItem {
   id: number;
@@ -70,21 +72,6 @@ interface Destination {
   };
 }
 
-const globalStyles = `
-  @keyframes bounce-subtle {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  .animate-bounce-subtle {
-    animation: bounce-subtle 2s ease-in-out infinite;
-  }
-`;
-
 export default function CompleteFoodGuidePage({
   params,
 }: {
@@ -95,8 +82,22 @@ export default function CompleteFoodGuidePage({
 
   if (!country) {
     // Optionally, render a fallback UI or redirect
-    return <div>Country not found.</div>;
+    return notFound();
   }
+
+  useEffect(() => {
+    // Handle smooth scrolling
+    if (typeof window !== "undefined") {
+      document.documentElement.style.scrollBehavior = "smooth";
+    }
+    return () => {
+      if (typeof window !== "undefined") {
+        document.documentElement.style.scrollBehavior = "auto";
+      }
+    };
+  }, []);
+
+
 
   const foodGuide = country?.complete_food_guide;
   const relatedArticles = country?.whatToEat?.related_articles || [];
@@ -123,16 +124,6 @@ export default function CompleteFoodGuidePage({
   };
 
   // Smooth scroll for anchor links
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
-    return () => {
-      if (typeof window !== "undefined") {
-        document.documentElement.style.scrollBehavior = "auto";
-      }
-    };
-  }, []);
 
   return (
     <div className="min-h-screen">
@@ -162,23 +153,15 @@ export default function CompleteFoodGuidePage({
       </section>
 
       {/* Overview Section */}
-      <section className="py-8 bg-white border-b">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="p-6 rounded-lg border bg-teal-600/75 shadow-md">
-            <div className="flex items-center">
-              <div className="flex flex-col gap-4">
-                <span className="text-lg text-white font-normal">
-                  {foodGuide?.overview}
-                </span>
-              </div>
-            </div>
-          </div>
+      <section className="py-8 bg-white">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+          <OverViewSection IconName={Coffee} overview={foodGuide?.overview} />
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">
@@ -245,9 +228,7 @@ export default function CompleteFoodGuidePage({
                             <h3 className="text-xl font-bold text-gray-900 mb-4">
                               {food.name}
                             </h3>
-                            <p className="text-gray-600">
-                              {food.description}
-                            </p>
+                            <p className="text-gray-600">{food.description}</p>
                           </CardContent>
                         </Card>
                       ))}
@@ -292,9 +273,11 @@ export default function CompleteFoodGuidePage({
                             {info.description}
                           </p>
                           <ul className="list-disc list-inside text-sm text-gray-600">
-                            {info.highlights.map((highlight: string, i: number) => (
-                              <li key={i}>{highlight}</li>
-                            ))}
+                            {info.highlights.map(
+                              (highlight: string, i: number) => (
+                                <li key={i}>{highlight}</li>
+                              )
+                            )}
                           </ul>
                         </CardContent>
                       </Card>
