@@ -22,13 +22,14 @@ import {
   Currency,
   SpeakerIcon,
   Languages,
+  ListTodo,
 } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { ThankYouSection } from "@/components/thank-you-section";
 import styles from "@/app/index.module.css";
 import { THINGS_TO_KNOW_BEFORE_GOING } from "@/data/malaysia/data";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
-import OverViewCity from "./components/overview";
+import OverViewSection from "./components/overview";
 import { Badge } from "@/components/ui/badge";
 
 type Props = {
@@ -84,8 +85,6 @@ export default async function TravelGuidePage({
   const countryName = (await params).country;
   const country = destinations.find((d) => d.slug === countryName);
 
-
-
   if (!country) {
     notFound();
   }
@@ -95,13 +94,12 @@ export default async function TravelGuidePage({
     THINGS_TO_KNOW_BEFORE_GOING[
       countryName as keyof typeof THINGS_TO_KNOW_BEFORE_GOING
     ];
-    const guideData = countryData?.data || [];
-    const heading = countryData?.heading || "";
-    const image = countryData?.image || "/placeholder.svg";
-    const description = countryData?.description || "";
-    const overview = countryData?.overview || "";
+  const guideData = countryData?.data || [];
+  const heading = countryData?.heading || "";
+  const image = countryData?.image || "/placeholder.svg";
+  const overview = countryData?.overview || "";
 
-    const countryRelatedArticles = countryData?.related_articles || [];
+  const countryRelatedArticles = countryData?.related_articles || [];
 
   return (
     <div className="min-h-screen">
@@ -121,9 +119,7 @@ export default async function TravelGuidePage({
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              {heading}
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{heading}</h1>
             {/* <p className="text-xl text-gray-200 max-w-2xl">
               {description}
             </p> */}
@@ -132,7 +128,7 @@ export default async function TravelGuidePage({
       </section>
 
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-        <OverViewCity countryData={country} />
+        <OverViewSection IconName={ListTodo} overview={overview} />
       </div>
 
       {/* Main Content */}
@@ -149,11 +145,16 @@ export default async function TravelGuidePage({
                   </h3>
                   <ul className="space-y-3">
                     {guideData?.map((item, index) => {
-                      const IconComponent = ICON_MAPPING[item.id as unknown as keyof typeof ICON_MAPPING] || Info;
+                      const IconComponent =
+                        ICON_MAPPING[
+                          item.id as unknown as keyof typeof ICON_MAPPING
+                        ] || Info;
                       return (
                         <li key={`sidebar-${item.heading}-${index}`}>
                           <Link
-                            href={`#${item.heading.toLowerCase().replace(/\s+/g, '-')}`}
+                            href={`#${item.heading
+                              .toLowerCase()
+                              .replace(/\s+/g, "-")}`}
                             className="flex items-center text-white hover:text-teal-600 transition-colors"
                           >
                             <IconComponent className="w-4 h-4 mr-2 text-white" />
@@ -179,7 +180,7 @@ export default async function TravelGuidePage({
                     return (
                       <Card
                         key={`${item.heading}-${index}`}
-                        id={item.heading.toLowerCase().replace(/\s+/g, '-')}
+                        id={item.heading.toLowerCase().replace(/\s+/g, "-")}
                         className="scroll-mt-24"
                       >
                         <CardContent className="p-6">

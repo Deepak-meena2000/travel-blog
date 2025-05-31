@@ -980,6 +980,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       placeName: "Kuala Lumpur",
       slug: "kuala-lumpur",
       name: "Things to Do in Kuala Lumpur",
+      overview: `overview kuala lumpur`,
       image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
       description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
@@ -993,6 +994,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       placeName: "Penang",
       slug: "penang",
       name: "Things to Do in Penang",
+      overview: `Penang, often dubbed the "Pearl of the Orient," is one of Malaysia’s most exciting travel destinations, offering a unique blend of culture, heritage, nature, and food. The island is best known for its UNESCO-listed capital, Georgetown, where colonial architecture, vibrant street art, and multicultural influences come alive. Travelers are drawn to Penang for its rich history, diverse culinary scene(often considered Malaysia’s best) and stunning coastal landscapes. Penang is a must-visit destination in Southeast Asia for culture seekers, foodies, and beach lovers alike.`,
       image: "/images/country/malaysia/places/penang/penang.jpg",
       description: `Penang, often dubbed the "Pearl of the Orient," is one of Malaysia's most exciting travel destinations, offering a unique blend of culture, heritage, nature, and food. The island is best known for its UNESCO-listed capital, Georgetown, where colonial architecture, vibrant street art, and multicultural influences come alive. Travelers are drawn to Penang for its rich history, diverse culinary scene(often considered Malaysia's best) and stunning coastal landscapes. Penang is a must-visit destination in Southeast Asia for culture seekers, foodies, and beach lovers alike.`,
       blogs: PENANG_BLOG_POST,
@@ -1002,6 +1004,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       placeName: "Langkawi",
       slug: "langkawi",
+      overview: `overview langkawi`,
       name: "Things to Do in Langkawi",
       blogs: LANGKAWI_BLOG_POST,
       image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
@@ -1011,6 +1014,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       placeName: "Perhentian Islands",
       slug: "perhentian-islands",
+      overview: `overview perhentian islands`,
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       name: "Things to Do in Perhentian Islands",
       blogs: PERHENTIAN_ISLANDS_BLOG_POST,
@@ -1150,7 +1154,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       category: "Itinerary",
     },
     {
-      slug: "kuala-lumpur/top-things-to-do",
+      slug: "/malaysia/kuala-lumpur/top-things-to-do",
       title: "Top Things to Do in Kuala Lumpur",
       image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
       description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
@@ -1159,21 +1163,21 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       category: "Activities",
     },
     {
-      slug: "penang/top-things-to-do",
+      slug: "/malaysia/penang/top-things-to-do",
       title: "Top Things to Do in Penang",
       image: "/images/country/malaysia/places/penang/penang.jpg",
       description: `Penang, a state on Malaysia's northwest coast, is known for its stunning beaches, historic Georgetown, and the UNESCO World Heritage–listed Penang Hill.`,
       category: "Activities",
     },
     {
-      slug: "langkawi/top-things-to-do",
+      slug: "/malaysia/langkawi/top-things-to-do",
       title: "Top Things to Do in Langkawi",
       image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
       description: `Langkawi, Malaysia's largest island, is known for its lush rainforests, crystal-clear waters, and laid-back vibe. The island is home to the Langkawi Sky Bridge, a must-visit attraction for its breathtaking views. Langkawi is also known for its duty-free shopping and delicious local cuisine.`,
       category: "Activities",
     },
     {
-      slug: "perhentian-islands/top-things-to-do",
+      slug: "/malaysia/perhentian-islands/top-things-to-do",
       title: "Top Things to Do in Perhentian Islands",
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       description: `Perhentian Islands, located off the east coast of Malaysia, is known for its crystal-clear waters, white sandy beaches, and laid-back vibes. The island is primarily made up of two main parts: Pulau Besar (the larger island) and Pulau Kecil (the smaller island). Ideal for budget travelers and beginners in snorkeling or scuba diving, it's a top destination for marine life lovers looking to explore coral reefs and chill in beachfront chalets.`,
@@ -1222,7 +1226,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
   complete_food_guide: {
     heading: "A Complete Food Guide",
     image: "/images/country/malaysia/food_guide.jpg",
-    description: "A Complete Food Guide of what to eat in Malaysia",
+    description: "",
     overview:
       "Malaysia's cuisine is a vibrant tapestry of flavors, influenced by its rich cultural heritage and abundant local ingredients. From street food stalls to high-end restaurants, the food scene offers something for every palate and budget. Here are some must-try dishes during your visit.",
     data: MALAYSIA_COMPLETE_FOOD_GUIDE,
@@ -1285,8 +1289,9 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
   places_to_visit: {
     heading: "Places to visit in Malaysia",
     image: "/images/country/malaysia/places_to_visit.jpg",
-    description: "Places to visit in Malaysia",
-    overview: "Places to visit in Malaysia",
+    description: "",
+    overview:
+      "Malaysia is a diverse Southeast Asian country offering tropical islands, cultural cities, highland retreats, and rich heritage. From modern skyscrapers in Kuala Lumpur to UNESCO-listed towns like George Town and Melaka, Malaysia is perfect for all types of travelers. Nature lovers will enjoy Langkawi’s beaches, Cameron Highlands’ tea plantations, and Borneo’s rainforests. Scuba diving in Sipadan or relaxing in Redang Island are top-rated experiences. Whether you're seeking cultural tours, island hopping, or food adventures, these must-visit destinations in Malaysia offer unforgettable memories. Ideal for solo travelers, couples, and families exploring Malaysia’s best tourist attractions.",
     data: MALAYSIA_PLACES_TO_VISIT,
   },
 
