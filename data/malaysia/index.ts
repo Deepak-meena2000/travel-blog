@@ -29,12 +29,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Street stalls, mamak shops, roadside warungs, and even high-end cafés.",
       range: "RM7–RM15 (basic to premium toppings)",
-      vegetarian_available: true,
-      tips: [
-        "Wear modest clothing to respect the temple's sanctity",
-        "Visit during the evening festival for spectacular lights",
-        "Hike up to the pagoda if you're relatively fit and active",
-      ],
+      vegetarian_available: true
     },
   },
   {
