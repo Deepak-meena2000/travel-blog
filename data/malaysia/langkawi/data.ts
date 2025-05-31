@@ -101,7 +101,9 @@ export const LANGKAWI_BLOG_POST = [
       "Book in advance for sunset season.",
       "Bring sunscreen and a light jacket for cooler evening breezes.",
     ],
-    image: "/images/country/malaysia/places/langkawi/sunset_cruise.jpg",
+    image: "/images/country/malaysia/places/langkawi/blog/sunset_cruise.jpg",
+    imageCreditHTML:
+      "Photo by <a target='_blank' href='https://www.pexels.com/@bertellifotografia/'><u>Matheus Bertelli</u></a> on <a target='_blank' href='https://www.pexels.com/photo/a-sailboat-in-the-ocean-at-sunset-15141424/'><u>Pexels</u></a>",
   },
   {
     name: "Cenang Beach, Langkawi",
@@ -204,7 +206,9 @@ export const LANGKAWI_BLOG_POST = [
     location: "Telaga Tujuh, near Langkawi Cable Car",
     duration: "2 Hours",
     tips: ["Book online to reserve your preferred time slot."],
-    image: "/images/country/malaysia/places/langkawi/skytrex.jpg",
+    image: "/images/country/malaysia/places/langkawi/blog/skytrex_adventure.jpg",
+    imageCreditHTML:
+      "Photo by <a target='_blank' href='https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Outward Bound Costa Rica</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-man-on-a-rope-in-the-middle-of-a-forest-raKxqfjs03Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
   {
     name: "Water Sports",
@@ -224,7 +228,9 @@ export const LANGKAWI_BLOG_POST = [
     price: "Adults: RM45 <br /> Children: RM30",
     location: "Jalan Ayer Hangat, (10 minutes from Kuah)",
     duration: "1-2 Hour",
-    image: "/images/country/malaysia/places/langkawi/wildlifepark.jpg",
+    image: "/images/country/malaysia/places/langkawi/blog/wildlife_park_and_bird_paradise.jpg",
+    imageCreditHTML:
+      "Photo by <a target='_blank' href='https://unsplash.com/@matthewcabret1?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Matthew Cabret</u></a> on <a target='_blank' href='https://unsplash.com/photos/wildlife-photography-flock-of-flamingo-ub1sSvJ_Tbs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
   {
     name: "Oriental Village",
