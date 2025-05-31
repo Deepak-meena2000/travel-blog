@@ -1,3 +1,5 @@
+import { imageConfigDefault } from "next/dist/shared/lib/image-config";
+
 export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 2,
@@ -145,7 +147,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 11,
     name: "Chill at the Beach",
-    image: "/images/country/malaysia/places/perhentian/chill_beach.jpg",
+    image: "/images/country/malaysia/places/perhentian/blog/chill_beach.jpg",
     description:
       "Relax on postcard-perfect beaches with soft white sand and turquoise waters. Long Beach is social and lively, Coral Bay is serene and peaceful.",
     location: "Long Beach, Coral Bay",
@@ -156,6 +158,8 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
       "Carry sunblock and stay hydrated.",
       "Perfect for reading or just relaxing under a palm tree.",
     ],
+    imageCreditHTML:
+      "Photo by <a target='_blank' href='https://unsplash.com/@sasha_india?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Sasha India</u></a> on <a target='_blank' href='https://unsplash.com/photos/palm-trees-under-cloudy-sky-NAQZhTNGIWQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
   {
     id: 12,
@@ -228,7 +232,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 16,
     name: "Kuala Besut – Gateway to the Perhentian Islands",
-    image: "/images/country/malaysia/places/perhentian/kuala_besut.jpg",
+    image: "/images/country/malaysia/places/perhentian/blog/kuala_besut.png",
     description:
       "Kuala Besut is the main jetty town to reach Perhentian Islands. Explore local markets, riverside views, and authentic Malay food while you wait for your boat.",
     location: "Kuala Besut",
