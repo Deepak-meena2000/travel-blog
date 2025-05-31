@@ -4,19 +4,26 @@ import { notFound } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { MapPin, ArrowRight, Info, Calendar, Plane, Utensils, Shield, Check, DollarSign, Wifi, Languages } from "lucide-react"
+import { MapPin, ArrowRight, Info, Calendar, Plane, Utensils, Shield, Check, DollarSign, Wifi, Languages, Pyramid, TrainFront, Bike, Soup, FerrisWheel, BookOpenCheck } from "lucide-react"
 import { destinations } from "@/data/destinations"
 import { ThankYouSection } from "@/components/thank-you-section"
 import styles from "@/app/index.module.css"
 import { Badge } from "@/components/ui/badge"
 
 export const ICON_MAPPING = {
-  "1": Plane,
-  "2": MapPin,
-  "3": DollarSign,
-  "4": Calendar,
-  "5": Wifi,
-  "6": Languages,
+  "1": Pyramid,
+  "2": Plane,
+  "3": MapPin,
+  "4": DollarSign,
+  "5": Calendar,
+  "6": Wifi,
+  "7": Languages,
+  "8": TrainFront,
+  "9": Bike,
+  "10": Soup,
+  "11": Shield,
+  "12": FerrisWheel,
+  "13": BookOpenCheck
 };
 
 

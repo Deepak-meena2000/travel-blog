@@ -22,6 +22,12 @@ import {
   Currency,
   SpeakerIcon,
   Languages,
+  Bike,
+  BookOpenCheck,
+  FerrisWheel,
+  Pyramid,
+  Soup,
+  TrainFront,
 } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { ThankYouSection } from "@/components/thank-you-section";
@@ -36,12 +42,19 @@ type Props = {
 };
 
 export const ICON_MAPPING = {
-  "1": Plane,
-  "2": MapPin,
-  "3": DollarSign,
-  "4": Calendar,
-  "5": Wifi,
-  "6": Languages,
+  "1": Pyramid,
+  "2": Plane,
+  "3": MapPin,
+  "4": DollarSign,
+  "5": Calendar,
+  "6": Wifi,
+  "7": Languages,
+  "8": TrainFront,
+  "9": Bike,
+  "10": Soup,
+  "11": Shield,
+  "12": FerrisWheel,
+  "13": BookOpenCheck
 };
 
 export async function generateMetadata({
@@ -191,11 +204,11 @@ export default async function TravelGuidePage({
                               {item.heading}
                             </h2>
                           </div>
-                          <p
+                          <ul
                             dangerouslySetInnerHTML={{
                               __html: item.description,
                             }}
-                            className="text-gray-600 mb-4"
+                            className={styles.list_style}
                           />
                         </CardContent>
                       </Card>

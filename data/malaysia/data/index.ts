@@ -9,20 +9,36 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
       "Essential travel tips, information, and advice for your trip to Malaysia",
     data: [
       {
-        id: 1,
-        heading: "Visa Requirements ?",
+         id: 1,
+        heading: "Culture & History",
         description: `
-                Before entering Malaysia, check the visa requirements based on your nationality. Many travelers can enter visa-free for 14 to 90 days. However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC).
+                Malaysia’s rich tapestry of culture and history is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia. 
+                You’ll see this diversity reflected in its <b>festivals, food, languages, and religions</b>. Islam is the official religion, but Malaysia also celebrates Diwali, Chinese New Year, and Christmas. 
                 <br />
                 <br />
-                <b>Few of visa-free countries</b>: USA, EU member states, Australia, India, China, Canada, Japan, South Korea, South Africa, Vietnam, Thailand, Indonesia, UAE,
-                `,
+                Respect local customs: dress modestly when visiting mosques or temples, remove shoes before entering homes or religious places, and avoid public displays of affection. Islam is the dominant religion, and it's wise to be mindful of religious practices, especially during Ramadan.
+                <br />
+                <br />
+                Traditional values are strong, especially in rural areas. Learning about the culture enhances your appreciation of Malaysia’s heritage.
+                `
       },
       {
         id: 2,
+        heading: "Visa Requirements",
+        description: `
+                Before entering Malaysia, check the <a href="https://www.malaysia.gov.my/portal/subcategory/1543" target="_blank" class="text-teal-600">visa requirements</a> based on your nationality. Many travelers can enter visa-free for 14 to 90 days. For longer stays or for nationalities requiring a visa, apply online via the <b>eVisa or eNTRI</b> systems, which are straightforward and quick. Immigration officials may ask for proof of onward travel and accommodation, so have those ready. 
+                <br />
+                <br />
+                <b>However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC)</b>.  
+                <br />
+                <br />
+                <b>Few of visa-free countries:</b> USA, EU member states, Australia, India, China, Canada, Japan, South Korea, South Africa, Vietnam, Thailand, Indonesia, UAE.
+                `
+      },
+      {
+        id: 3,
         heading: "What’s MDAC, and the complete process ?",
         description: `
-
             Malaysia Digital Arrival Card(MDAC), a mandatory online form that all foreign travelers, except Singapore, must complete before entering Malaysia. It's not a visa but a required registration document that streamlines entry procedures and improves border security.
             <br/>
             <br/>
@@ -35,18 +51,18 @@ If you're arriving by land—such as from Thailand or Singapore—the visa and M
 <b>Important: </b>Do not fill out the MDAC form earlier than 3 days before your arrival. It must be submitted within the 3 days leading up to your travel date
 
 
-        `,
+        `
       },
       {
-        id: 3,
+        id:4,
         heading:
-          "Malaysian Currency, where to exchange money and How Much Does It Cost to Travel?",
+          "Currency in Malaysia: Exchange Tips & Daily Costs",
         description: `
         <b>Malaysia uses the Malaysian Ringgit (MYR)</b>.
 
         <br/>
         <br/>
-1 USD equals roughly RM4.5.
+1 USD equals ~ RM4.5.
 <br/>
 <br/>
 Exchange money at licensed money changers in malls or city centers for the best rates. Avoid airport kiosks and hotels as they offer poor exchange rates. ATMs are a safe option for direct withdrawals. Always check for hidden fees and ensure the exchanger is authorized and regulated.
@@ -59,40 +75,41 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
       },
 
       {
-        id: 4,
-        heading: "Best Time to Visit (Weather)",
+        id: 5,
+        heading: "Best Time to Visit",
         description: `
 
-        Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.
+        Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.Explore our in-depth city-specific <a href="/malaysia" target="_blank" class="text-teal-600">travel guides</a> travel guides for everything you need to know about the destinations you're visiting in Malaysia.
         <br/>
         <br/>
         For most of Peninsular Malaysia, the dry season runs from <b>November to August</b>, making it ideal for outdoor travel and beach destinations.
+        <b>The East Coast (Kuala Terengganu, Perhentian Islands) experiences heavy monsoons from November to January</b>. 
         <br/>
         <br/>
-        The <b>East Coast (e.g., Perhentian Islands, Redang)</b> experiences heavy monsoons from <b>November to January</b>. In <b>Sabah and Sarawak</b>, dry months vary slightly, but March to September is generally pleasant.
+        In <b>Sabah and Sarawak</b>, dry months vary slightly, but March to September is generally pleasant.
         <br/>
         <br/>
         Mountain areas like <b>Cameron Highlands</b> remain cooler throughout the year, offering a refreshing escape from the tropical heat.
-        `,
+        `
       },
       {
-        id: 5,
+        id: 6,
         heading: "Network",
         description: `
         Malaysia has excellent mobile coverage across cities and tourist areas. Major telecom providers include <b>Hotlink (Maxis), Digi, Celcom, and U Mobile.</b>
 <br />
 <br />
-You can easily purchase a <b>tourist SIM card</b> at airports, convenience stores, or mobile kiosks. 4G coverage is strong in most places, and 5G is expanding in major cities. Plans are affordable — expect to pay around RM20–RM50 for 7–unlimited GB of data.
+You can easily purchase a tourist SIM card at airports, convenience stores, or mobile kiosks. 4G coverage is strong in most places, and 5G is expanding in major cities. Plans are affordable — expect to pay around RM20–RM50 for 7–unlimited GB of data.
 <br />
 <br />
 Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring remote areas or islands, the signal may be weaker, so download maps or important info in advance.
 
 
 
-        `,
+        `
       },
       {
-        id: 6,
+        id: 7,
         heading: "Languages",
         description: `
             The national language is Bahasa Malaysia (Malay), but English is widely spoken, especially in urban centers, tourist areas, and by younger generations.
@@ -103,12 +120,118 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
 
         `,
       },
+      {
+        id: 8,
+        heading: "Getting Around Malaysia",
+        description: `
+            Traveling between cities in Malaysia is affordable and efficient thanks to a well-developed transport network.
+            <br />
+            <br />
+            <li>
+              <b>By Bus:</b> Intercity buses are the most economical way to travel across Malaysia. Major hubs like Kuala Lumpur, Penang, and Johor Bahru are well-connected. 
+Most intercity buses and trains in Malaysia offer comfortable seating, and <b>select routes also feature Business Class</b> options. Consider booking a ticket in advance on platforms like RedBus or Easybook. 
+            </li>
+            <br />
+            <li>
+            <b>By Train:</b> KTM’s intercity and ETS (Electric Train Service) offer comfortable travel between major destinations like KL, Ipoh, and Butterworth (Penang). It's scenic and reliable.
+            </li>
+            <br />
+            <li>
+            <b>By Flight:</b> For longer distances (e.g., Kuala Lumpur to Sabah or Sarawak), flying is fast and convenient. Budget airlines(Super Cheap) like AirAsia and Firefly operate frequent domestic routes.
+            </li>
+            <br />
+            <li>
+            <b>By Car:</b> Renting a car is ideal for flexible road trips, especially in regions like Langkawi, Cameron Highlands, or the East Coast. Highways are well-maintained and signage is in English. Malaysia drives on the left-side.
+            </li>
+        `
+      },
+      {
+        id: 9,
+        heading: "Best Ways to Get Around Malaysian Cities and Towns",
+        description: `
+            Local transportation in Malaysia is both reliable and budget-friendly. In major cities, use <b>Grab</b> for convenient, cashless rides it’s more trustworthy than street taxis. It usually costs around <b>RM10–RM12 for a 5 km ride</b>.
+            <br />
+            <br />
+Kuala Lumpur has a strong public transport network, including buses, LRT, and MRT. Fares are cheap and schedules are frequent. In tourist towns, you might rely on shared vans, trishaws, or taxis — always ask for the meter or agree on a price. 
+            <br />
+            <br />
+On islands, transportation may include scooters, bicycles, or boat transfers. Walking is easy in compact towns like George Town or Melaka, making exploration more enjoyable.
+            <br />
+            <br />
+Renting a scooter is a convenient and budget-friendly way to hop between attractions especially in places like Langkawi, where public transport is limited. 
+<br />
+<li>Scooter rental - <b>RM40–RM60 per day.</li></b>
+        `
+      },
+       {
+        id: 10,
+        heading: "Food and Alcohol Costs in Malaysia: What to Expect",
+        description: `
+Malaysia’s cuisine is a flavorful mix of Malay, Chinese, and Indian influences—don’t miss dishes like nasi lemak, laksa, and roti canai costs around RM5–RM10, while mid-range meals at local restaurants are typically RM15–RM30. Street food is both delicious and budget-friendly, especially in cities like Penang and Kuala Lumpur. For more insights, explore our in-depth article on Malaysian cuisine - 
+<br />
+<br />
+<li>A  <a href="/malaysia/complete-food-guide" target="_blank" class="text-teal-600">complete food guide</a> provide info of what to, when to and the vegetarian options.</li>
+<li> <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600">Must-try dishes</a> you shouldn't miss in Malaysia.</li>
+<br />
+Alcohol is taxed heavily—expect to pay RM15–RM30 ($3–$7 USD) for a beer at bars, and more in upscale places. Supermarkets sell beer from RM8 ($1.70 USD) per can, but alcohol is limited in Muslim-majority areas. 
+<br />
+<br />
+Langkawi and duty-free zones offer better prices. Always drink responsibly and respect local customs regarding alcohol.
+        `
+      },
+       {
+        id: 11,
+        heading: "Is Malaysia Safe for Travelers?",
+        description: `
+          Malaysia is generally very <b>safe for travelers</b>, with low violent crime rates. Petty theft (like pickpocketing or bag snatching) can happen in crowded areas, so stay alert and keep valuables secure. Always use official taxis or Grab, especially at night. 
+          <br />
+          <br />
+Tap water isn't always safe to drink — use bottled or filtered water. Naturewise, be cautious during hikes or ocean activities, but serious risks are rare. Malaysia is politically stable and welcoming to tourists. Keep emergency numbers handy: 
+<br />
+<br />
+<b>999 for ambulance or police</b>, and 991 for fire. 
+        `
+      },
+      {
+        id: 12,
+        heading: "What Are the Must-Visit Places in Malaysia?",
+        description: `
+          Malaysia has something for every kind of traveler. Discover the top things to do in Malaysia with our detailed article of <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600">top things to do in Malaysia</a>.
+          <br />
+          <br />
+One can explore the vibrant capital <b>Kuala Lumpur</b>, with its Petronas Towers, Batu Caves and street food. Wander historic <b>George Town (Penang)</b>, a UNESCO heritage site filled with culture and art. Relax on tropical islands like <b>Langkawi</b>, <b>Perhentian, or Redang</b>. Dive into unforgettable underwater adventures with scuba diving or snorkeling at not only Malaysia’s but world's top marine spots like <b>Sipadan</b> and Lankayan Island. Discover nature in Cameron Highlands or climb Mount Kinabalu in <b>Sabah</b>. Visit <b>Melaka</b> for colonial charm or Borneo for orangutans and rainforests. 
+          <br />
+          <br />
+Each destination has its own unique flavor whether you're chasing beaches, tea plantations, food trails, or eco-adventures, Malaysia is full of surprises.
+        `
+      },
+       {
+        id: 13,
+        heading: "Quick Tips",
+        description: `
+         <li>Be prepared for sudden rain showers, carry a light poncho or umbrella.</li>
+<li>The sun can be intense, so don’t forget sunscreen.</li>
+<li>For essentials like groceries or bottled water, shop at local minimarts or supermarkets.</li>
+        `
+      },
     ],
     related_articles: [
       {
         slug: "kuala-lumpur/top-things-to-do",
         title: "Top Things to Do in Kuala Lumpur",
         image: "/images/country/malaysia/places/kuala/kuala_lumpur.png",
+        category: "Activities",
+      },
+       {
+        slug: "penang/top-things-to-do",
+        title: "Top Things to Do in Penang",
+        image: "/images/country/malaysia/places/penang/penang.jpg",
+        category: "Activities",
+      },
+       {
+        slug: "langakwi/top-things-to-do",
+        title: "Top Things to Do in Langkawi",
+        image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
         category: "Activities",
       },
     ],
