@@ -53,7 +53,7 @@ export default async function FoodGuidePage({
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
               What to Eat in {country.name}
             </h1>
-            <p className="text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl">
+            <p className="text-base text-center md:text-lg lg:text-xl text-gray-200 max-w-2xl">
               Discover the best local dishes, street food, and culinary
               experiences in {country.name}
             </p>
@@ -62,15 +62,21 @@ export default async function FoodGuidePage({
       </section>
 
       {/* Overview Section */}
-      <section className="py-8 bg-white border-b">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="p-6 rounded-lg border bg-teal-600/75 shadow-md">
-            <div className="flex items-center">
-              <div className="flex flex-col gap-4">
-                <span className="text-base md:text-lg text-white font-normal">
-                  {overview}
-                </span>
-              </div>
+      <section className="py-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="flex items-center gap-6 rounded-2xl shadow-xl p-8 backdrop-blur-md bg-white/60 border border-white/40"
+            style={{
+              boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+            }}
+          >
+            <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-teal-400 to-blue-400 shadow-md">
+              <Utensils className="w-8 h-8 text-white" />
+            </div>
+            <div className="flex-1">
+              <span className="text-base md:text-lg text-gray-700 font-normal leading-relaxed">
+                {overview}
+              </span>
             </div>
           </div>
         </div>
@@ -80,32 +86,7 @@ export default async function FoodGuidePage({
       <section className="py-16">
         <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Main Content */}
             <div className="lg:col-span-2">
-              {/* In This Guide Section */}
-              {/* <Card className="mb-8 animate-fade-in bg-slate-800">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">
-                    In This Guide
-                  </h3>
-                  <ul className="space-y-3">
-                    {foods.map((food, index) => (
-                      <li key={food.id}>
-                        <Link
-                          href={`#food-${food.id}`}
-                          className="flex items-center text-white hover:text-teal-600 transition-colors"
-                        >
-                          <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center mr-2 text-teal-600 text-sm">
-                            {index + 1}
-                          </div>
-                          <span>{food.name}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card> */}
-
               <div className="space-y-12">
                 {foods.map((food, index) => (
                   <Card
@@ -122,8 +103,7 @@ export default async function FoodGuidePage({
                     <figure className="aspect-[4/2] relative w-full">
                       <Image
                         src={
-                          food.image ||
-                          "/placeholder.svg?height=300&width=500"
+                          food.image || "/placeholder.svg?height=300&width=500"
                         }
                         alt={food.name}
                         width={800}
@@ -141,7 +121,9 @@ export default async function FoodGuidePage({
                       )}
                     </figure>
                     <CardContent className="p-4 lg:p-8">
-                      <p className="text-sm md:text-base text-gray-600 mb-6">{food.description}</p>
+                      <p className="text-sm md:text-base text-gray-600 mb-6">
+                        {food.description}
+                      </p>
 
                       <div className="bg-gray-50 p-6 rounded-lg mb-6">
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
@@ -209,7 +191,10 @@ export default async function FoodGuidePage({
                               </div>
                               <ul className="list-disc list-inside space-y-1">
                                 {food.otherInfo.tips.map((tip, i) => (
-                                  <li key={i} className="text-sm md:text-base text-gray-600">
+                                  <li
+                                    key={i}
+                                    className="text-sm md:text-base text-gray-600"
+                                  >
                                     {tip}
                                   </li>
                                 ))}
