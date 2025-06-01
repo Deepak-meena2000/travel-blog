@@ -2,17 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
-  MapPin,
-  ArrowRight,
   Utensils,
-  DollarSign,
   Star,
   Info,
-  Clock,
   Coffee,
   IceCream,
   Salad,
@@ -30,6 +25,7 @@ interface FoodItem {
   name: string;
   description: string;
   image: string;
+  imageCreditHTML?: string;
 }
 
 interface FoodCategory {
@@ -96,8 +92,6 @@ export default function CompleteFoodGuidePage({
       }
     };
   }, []);
-
-
 
   const foodGuide = country?.complete_food_guide;
   const relatedArticles = country?.whatToEat?.related_articles || [];
@@ -172,15 +166,18 @@ export default function CompleteFoodGuidePage({
                     Table of Contents
                   </h3>
                   <div className="space-y-3">
-                    {foodGuide?.data.map((category: FoodCategory, idx: number) => (
-                      <a
-                        key={category.id}
-                        href={`#${category.id}`}
-                        className="block text-base text-gray-800 font-medium px-2 py-1 rounded transition-colors duration-150 hover:underline hover:text-teal-700 focus:underline focus:text-teal-800 outline-none"
-                      >
-                        <span className="mr-2 text-gray-500">{idx + 1}.</span>{category.title}
-                      </a>
-                    ))}
+                    {foodGuide?.data.map(
+                      (category: FoodCategory, idx: number) => (
+                        <a
+                          key={category.id}
+                          href={`#${category.id}`}
+                          className="block text-base text-gray-800 font-medium px-2 py-1 rounded transition-colors duration-150 hover:underline hover:text-teal-700 focus:underline focus:text-teal-800 outline-none"
+                        >
+                          <span className="mr-2 text-gray-500">{idx + 1}.</span>
+                          {category.title}
+                        </a>
+                      )
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -216,13 +213,29 @@ export default function CompleteFoodGuidePage({
                           id={`${category.id}-item-${food.id}`}
                         >
                           <div className="relative">
-                            <Image
-                              src={food.image || "/placeholder.svg"}
-                              alt={food.name}
-                              width={800}
-                              height={400}
-                              className="w-full h-64 object-cover"
-                            />
+                            <figure className="relative w-full">
+                              <Image
+                                src={
+                                  food.image ||
+                                  "/placeholder.svg?height=300&width=500"
+                                }
+                                alt={food.name}
+                                width={800}
+                                height={400}
+                                className="w-full h-full object-cover"
+                              />
+                              {food.imageCreditHTML && (
+                                <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
+                                  <span
+                                    dangerouslySetInnerHTML={{
+                                      __html: food.imageCreditHTML,
+                                    }}
+                                  ></span>
+                                </figcaption>
+                              )}
+                            </figure>
+
+                            <div className="absolute" />
                           </div>
                           <CardContent className="p-6">
                             <h3 className="text-xl font-bold text-gray-900 mb-4">
