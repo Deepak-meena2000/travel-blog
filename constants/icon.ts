@@ -21,6 +21,7 @@ import {
   Pin,
   Leaf,
   Building,
+  Check,
 } from "lucide-react";
 
 export const ICONS = {
@@ -40,10 +41,11 @@ export const ICONS = {
   CAR: Car,
   HOTEL: Hotel,
   FOOD: Utensils,
-  SHOPPING : ShoppingBag,
-  SUN : Sun,
-  CLOCK : Clock,
+  SHOPPING: ShoppingBag,
+  SUN: Sun,
+  CLOCK: Clock,
   PIN: Pin,
   LEAF: Leaf,
-  BUILDING : Building
+  BUILDING: Building,
+  CHECK: Check,
 };
