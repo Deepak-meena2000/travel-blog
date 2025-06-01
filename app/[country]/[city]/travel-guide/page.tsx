@@ -1,14 +1,35 @@
-import Image from "next/image"
-import Link from "next/link"
-import { notFound } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { MapPin, ArrowRight, Info, Calendar, Plane, Utensils, Shield, Check, DollarSign, Wifi, Languages, Pyramid, TrainFront, Bike, Soup, FerrisWheel, BookOpenCheck } from "lucide-react"
-import { destinations } from "@/data/destinations"
-import { ThankYouSection } from "@/components/thank-you-section"
-import styles from "@/app/index.module.css"
-import { Badge } from "@/components/ui/badge"
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  MapPin,
+  ArrowRight,
+  Info,
+  Calendar,
+  Plane,
+  Utensils,
+  Shield,
+  Check,
+  DollarSign,
+  Wifi,
+  Languages,
+  Pyramid,
+  TrainFront,
+  Bike,
+  Soup,
+  FerrisWheel,
+  BookOpenCheck,
+} from "lucide-react";
+import { destinations } from "@/data/destinations";
+import { ThankYouSection } from "@/components/thank-you-section";
+import styles from "@/app/index.module.css";
+import { Badge } from "@/components/ui/badge";
+import OverViewSection from "../../things-to-know-before-going/components/overview";
+import TableOfContent from "../../things-to-know-before-going/components/table-of-content";
+import { ICONS } from "@/constants/icon";
 
 export const ICON_MAPPING = {
   "1": Pyramid,
@@ -23,26 +44,35 @@ export const ICON_MAPPING = {
   "10": Soup,
   "11": Shield,
   "12": FerrisWheel,
-  "13": BookOpenCheck
+  "13": BookOpenCheck,
 };
 
-
-
-export default async function CityTravelGuidePage({ params }: { params: { country: string; city: string } }) {
-  const {country, city} = (await params)
+export default async function CityTravelGuidePage({
+  params,
+}: {
+  params: { country: string; city: string };
+}) {
+  const { country, city } = await params;
   const countryData = destinations.find((d) => d.slug === country);
 
   if (!countryData) {
-    notFound()
+    notFound();
   }
 
-  const cityData = countryData?.cities?.find((c) => c.slug === city)
-  const cityTravelGuide = cityData?.travel_guide
-  const {title, image, slug, data,related_articles} = cityTravelGuide || {}
-
+  const cityData = countryData?.cities?.find((c) => c.slug === city);
+  const cityTravelGuide = cityData?.travel_guide;
+  const {
+    title,
+    image,
+    slug,
+    data,
+    related_articles,
+    overview,
+    tableOfContentHeading,
+  } = cityTravelGuide || {};
 
   if (!data) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -73,6 +103,9 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
           </div>
         </div>
       </section>
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <OverViewSection IconName={Plane} overview={overview} />
+      </div>
 
       {/* Main Content */}
       <section className="py-16">
@@ -81,54 +114,50 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
             {/* Main Content */}
             <div className="lg:col-span-2">
               {/* Travel Essentials Section */}
-              <Card className="mb-8 animate-fade-in bg-slate-800">
+              <Card
+                className="mb-8 animate-fade-in"
+                style={{
+                  background: "linear-gradient(90deg, #ffe5d0 0%, #fff 100%)",
+                  border: "1px solid #e0e7ff",
+                  boxShadow: "0 2px 16px rgba(0,0,0,0.04)",
+                }}
+              >
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">
-                    {title}
-                  </h3>
-                  <ul className="space-y-3">
-                    {data.map((item, index) => {
-                      const IconComponent = ICON_MAPPING[item.id as unknown as keyof typeof ICON_MAPPING] || Info;
-                      return (
-                        <li key={`sidebar-${item.heading}-${index}`}>
-                          <Link
-                            href={`#${item.heading.toLowerCase().replace(/\s+/g, '-')}`}
-                            className="flex items-center text-white hover:text-teal-600 transition-colors"
-                          >
-                            <IconComponent className="w-4 h-4 mr-2 text-white" />
-                            <span>{item.heading}</span>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <TableOfContent
+                    heading={tableOfContentHeading}
+                    items={data}
+                  />
                 </CardContent>
               </Card>
 
               <Tabs defaultValue="essentials" className="animate-fade-in">
-                <TabsContent value="essentials" className="space-y-8 animate-slide-up">
+                <TabsContent
+                  value="essentials"
+                  className="space-y-8 animate-slide-up"
+                >
                   {data.map((item, index) => {
-                    const IconComponent = ICON_MAPPING[item.id as unknown as keyof typeof ICON_MAPPING] || Info;
+                    const IconComponent =
+                      ICONS[item?.icon as keyof typeof ICONS] || Info;
                     return (
                       <Card
                         key={`${item.heading}-${index}`}
-                        id={item.heading.toLowerCase().replace(/\s+/g, '-')}
+                        id={item.heading.toLowerCase().replace(/\s+/g, "-")}
                         className="scroll-mt-24"
                       >
                         <CardContent className="p-6">
                           <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                              <IconComponent className="w-5 h-5 text-blue-600" />
+                            <div className="w-10 h-10 bg-white border border-[#ff9776] box-shadow-xl rounded-full flex items-center justify-center">
+                              <IconComponent className="w-5 h-5 text-[#ff9776]" />
                             </div>
-                            <h2 className="text-xl font-bold">
+                            <h2 className="text-base lg:text-xl font-bold">
                               {item.heading}
                             </h2>
                           </div>
-                          <p
+                          <ul
                             dangerouslySetInnerHTML={{
                               __html: item.description,
                             }}
-                            className="text-gray-600 mb-4"
+                            className={`${styles.list_style} text-sm lg:text-base leading-relaxed`}
                           />
                         </CardContent>
                       </Card>
@@ -179,5 +208,5 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
       {/* Thank You Section */}
       <ThankYouSection destination={title || ""} />
     </div>
-  )
+  );
 }

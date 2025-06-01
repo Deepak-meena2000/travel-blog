@@ -12,6 +12,14 @@ import {
   Shield,
   FerrisWheel,
   BookOpenCheck,
+  Car,
+  Hotel,
+  Utensils,
+  ShoppingBag,
+  Sun,
+  Clock,
+  Pin,
+  Leaf,
 } from "lucide-react";
 
 export const ICONS = {
@@ -28,4 +36,12 @@ export const ICONS = {
   SHIELD: Shield,
   FERRIS_WHEEL: FerrisWheel,
   BOOK_OPEN_CHECK: BookOpenCheck,
+  CAR: Car,
+  HOTEL: Hotel,
+  FOOD: Utensils,
+  SHOPPING : ShoppingBag,
+  SUN : Sun,
+  CLOCK : Clock,
+  PIN: Pin,
+  LEAF: Leaf
 };

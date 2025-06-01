@@ -43,7 +43,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
     name: "Petronas Twin Towers",
     description:
       "The Petronas Twin Towers are the crown jewel of Kuala Lumpur's skyline and were once the tallest buildings in the world. Standing 452 meters tall with 88 floors, they are connected by a unique Skybridge at the 41st and 42nd floors. Visitors can tour both the Skybridge and the Observation Deck on the 86th floor for incredible 360° views of the city. The towers are surrounded by the lush KLCC Park and are attached to the luxury Suria KLCC Mall, making this a complete urban experience. Stunning by day and mesmerizing when lit up at night, the towers are a must-visit landmark.",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/petronas_tower.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/petronas_tower.jpg",
     location: "Kuala Lumpur City Centre",
     operationalHours: "Tuesday–Sunday, 9:00 AM – 9:00 PM (Closed Mondays)",
     price: "Adults: RM 80 | Children: RM 33",
@@ -68,7 +69,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 5,
     name: "Party at Changkat Avenue",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/changkat_avenue.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/changkat_avenue.jpg",
     description:
       "Changkat Bukit Bintang is Kuala Lumpur's most energetic nightlife strip, a lively avenue packed with bars, lounges, pubs, and rooftop venues. As night falls, the street transforms into a vibrant party zone filled with music, neon lights, and social buzz. Whether you're in the mood for cocktails, craft beers, dancing, or a casual drink with a view, Changkat offers something for everyone. The atmosphere is cosmopolitan, making it a popular hangout for both locals and travelers. With themed nights, live music, and occasional events, it's the ideal spot to unwind after a day of sightseeing.",
     location: "Changkat Bukit Bintang",
@@ -83,7 +85,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 6,
     name: "Night Fountain Show at KLCC Park",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/klcc_fountain.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/klcc_fountain.jpg",
     description:
       "The Night Fountain Show at KLCC Park is one of Kuala Lumpur's most captivating free attractions. Set in the man-made lake at the base of the Petronas Twin Towers, this choreographed display of water, lights, and music runs nightly and draws both locals and tourists. The fountains dance in sync to a mix of local and international music, creating a magical ambiance, especially with the backdrop of the illuminated towers. Whether you're on a romantic walk or just relaxing after shopping at Suria KLCC, the show offers a peaceful yet mesmerizing experience in the city's bustling core.",
     location: "KLCC Park, outside Suria KLCC",
@@ -99,7 +102,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 7,
     name: "Botanical Garden (Perdana Botanical Gardens)",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/botanical_garden.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/botanical_garden.jpg",
     description:
       "Perdana Botanical Gardens is Kuala Lumpur's oldest and most beautiful public park, offering a serene green escape from the city's hustle. Spanning over 90 hectares, the garden features lush landscapes, a lake, and themed areas like the Orchid Garden, Hibiscus Garden, and Sunken Garden. It's a peaceful retreat perfect for leisurely walks, picnics, jogging, or photography. The park also houses several attractions like the KL Butterfly Park, Bird Park, and Islamic Arts Museum nearby, making it ideal for a half-day outing. With shaded paths and scenic bridges, it's a favorite among families, nature lovers, and wellness seekers.",
     location: "Jalan Kebun Bunga, Tasik Perdana",
@@ -125,7 +129,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 9,
     name: "Relax at an Infinity Pool",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/infinity_pool.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/infinity_pool.jpg",
     description:
       "Kuala Lumpur is home to several high-rise hotels and residences that offer stunning infinity pools with sweeping views of the skyline – particularly the Petronas Towers and KL Tower. Popular options include the rooftop pools at The Face Suites, Banyan Tree KL, or Regalia Residences (some offer day passes). Whether you're swimming at sunrise or lounging at sunset, it's a relaxing and luxurious way to unwind in the city. Infinity pools here are also social media favorites, perfect for that iconic KL backdrop.",
     operationalHours: "typically 7:00 AM – 7:00 PM",
@@ -136,7 +141,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 10,
     name: "Merdeka Square (Dataran Merdeka)",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/merdeka_square.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/merdeka_square.jpg",
     description:
       "Merdeka Square is a historic site where Malaysia's independence was declared in 1957. It's home to one of the tallest flagpoles in the world and surrounded by colonial-era architecture, including the Sultan Abdul Samad Building and St. Mary's Cathedral. The square represents national pride and is a symbolic site for parades, cultural events, and photography. With its open green field and surrounding historical buildings, it offers a contrast to KL's modern cityscape and is ideal for a quiet walk or cultural stop.",
     location: "Jalan Raja, Kuala Lumpur",
@@ -169,7 +175,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 13,
     name: "Bukit Bintang",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/bukit_bintang.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/bukit_bintang.jpg",
     description:
       "Bukit Bintang is Kuala Lumpur's premier shopping and entertainment district, bustling day and night. From luxury malls and boutique shops to street markets and local cafes, it's a haven for retail therapy. The area also features a thriving nightlife scene, with rooftop bars, shisha lounges, karaoke spots, and nightclubs. Street performers and neon-lit streets add energy to the vibe. Whether you're dining at a Michelin-rated restaurant or grabbing snacks at Jalan Alor nearby, Bukit Bintang delivers variety and excitement.",
     tips: [
@@ -207,7 +214,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 16,
     name: "Thean Hou Temple",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/thean_hou_temple.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/thean_hou_temple.jpg",
     description:
       "Thean Hou Temple is one of Southeast Asia's largest and most ornate Chinese temples. Sitting atop Robson Hill, this six-tiered structure is dedicated to the Chinese sea goddess Mazu and is a fusion of Buddhism, Taoism, and Confucianism. Visitors are greeted by stunning architecture, red lanterns, dragon motifs, and panoramic views of the city. The temple is popular for traditional weddings, prayers, and during Chinese festivals like Lunar New Year and Mid-Autumn.",
     location: "65, Persiaran Endah, off Jalan Syed Putra",
@@ -219,7 +227,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
     name: "Interact with Locals",
     description:
       "One of the best ways to truly experience Kuala Lumpur is by interacting with its diverse locals. Malays, Chinese, Indians, and indigenous cultures coexist here, creating a rich cultural blend. Strike up conversations at street food stalls, in markets, while taking a taxi or join guided community tours for deeper insights. Locals are generally friendly, multilingual, and eager to share stories or recommend hidden gems. Visit neighborhoods like Kampung Baru for traditional Malay life, or explore cultural streets during local festivals. It's not just about sights—it's about connection",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/interact_locals.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/interact_locals.jpg",
   },
   {
     id: 18,
@@ -243,7 +252,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
     name: "Central Market (Pasar Seni)",
     description:
       "Central Market is a cultural landmark offering a colorful shopping experience focused on Malaysian arts, crafts, and souvenirs. Housed in a restored Art Deco building, the market is divided into sections representing Malaysia's ethnic communities. You'll find batik fabrics, handmade jewelry, wood carvings, paintings, and street food stalls. Cultural performances and art installations are often hosted here. It's the perfect place to shop for gifts while soaking up the country's artistic spirit.",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/central_market.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/central_market.jpg",
     location: "Jalan Hang Kasturi, near Pasar Seni MRT",
     operationalHours: "Daily, 10:00 AM – 9:00 PM",
   },
@@ -273,7 +283,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
     name: "National Museum (Muzium Negara)",
     description:
       "The National Museum of Malaysia offers a journey through the country's rich past, from prehistoric times to modern independence. Located near the Lake Gardens, the museum's striking traditional Malay architecture houses galleries filled with artifacts, dioramas, weapons, costumes, and cultural exhibits. It's well-organized and informative, offering a deep dive into Malaysia's diverse history, colonial legacy, and development.",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/national_museum.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/national_museum.jpg",
     location: "Jalan Damansara, near KL Sentral",
     operationalHours: "Daily, 9:00 AM – 5:00 PM",
     price: `
@@ -290,7 +301,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
     name: "Sultan Abdul Samad Building",
     description:
       "Located opposite Merdeka Square, the Sultan Abdul Samad Building is a stunning example of Moorish architecture with a clock tower and copper domes. Built in 1897, it once housed British colonial offices and is now used by the Ministry of Communications. The façade is beautifully lit at night, and the building is a popular spot for photography and national events. While you can't go inside, its grandeur is worth admiring from the outside.",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/sultan_abdul_samad.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/sultan_abdul_samad.jpg",
     location: "Jalan Raja, near Merdeka Square",
     operationalHours: "Exterior always viewable; no interior tours",
     price: "Free",
@@ -316,7 +328,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
     name: "Day Trip to Genting Highlands",
     description:
       "Genting Highlands is a popular hill resort an hour from KL, known for its cool climate, theme parks, casinos, shopping, and entertainment. Located at 1,800 meters above sea level, it offers a refreshing escape from the city heat. Highlights include the Skytropolis Indoor Theme Park, SkyAvenue Mall, Genting Premium Outlets, and Resorts World Casino. The Awana Skyway Cable Car ride provides spectacular mountain views. It's perfect for families, couples, and anyone seeking fun or relaxation in a highland setting.",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
     location: "Genting Highlands, Pahang (about 1 hour from KL)",
     operationalHours: "Most attractions open 10:00 AM – 10:00 PM",
     price: `
@@ -345,55 +358,74 @@ export const KUALA_LUMPUR_RELATED_ARTICLES = [
 export const KAULA_LUMPUR_TRAVEL_GUIDE = {
   title: "Travel Guide to Kuala Lumpur",
   category: "Travel Guide",
+  overview:
+    "Kuala Lumpur, the vibrant capital of Malaysia, is a city where luxury meets affordability. From high-end hotels to upscale dining and shopping, KL offers a taste of the good life without breaking the bank. KL is a melting pot of Malay, Chinese, and Indian cultures, reflected in its food, architecture, and festivals. The city blends modern living with deep-rooted culture, creating a unique atmosphere that appeals to all kinds of travelers. Below are some essential tips and insights to help you plan your trip to Kuala Lumpur with ease.",
+  tableOfContentHeading: "View Check List",
   image:
     "/images/country/malaysia/places/kuala_lumpur/things_to_know_before_going_to_kuala_lumpur.jpg",
   slug: "/kuala-lumpur/travel-guide",
   data: [
     {
       id: 1,
-      heading: "Visa Requirements ?",
+      icon: "PLANE",
+      heading: "How to Get to Kuala Lumpur",
       description: `
-                Before entering Malaysia, check the visa requirements based on your nationality. Many travelers can enter visa-free for 14 to 90 days. However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC).
-                <br />
-                <br />
-                <b>Few of visa-free countries</b>: USA, EU member states, Australia, India, China, Canada, Japan, South Korea, South Africa, Vietnam, Thailand, Indonesia, UAE,
+                Getting to Kuala Lumpur is easy and well-supported by international and regional connections.  The main entry point is <b>Kuala Lumpur International Airport (KLIA)</b>, located about 45 km south of the city. The airport is served by major airlines and budget carriers like AirAsia. From KLIA, the KLIA Ekspres train gets you to the city center in under 30 minutes. Buses and taxis are also available, but travel time may vary due to traffic. Overland travel from Singapore and Thailand is possible via trains or long-distance buses.
                 `,
     },
     {
       id: 2,
-      heading: "What’s MDAC, and the complete process ?",
+      heading: "Getting Around Kuala Lumpur",
+      icon: "CAR",
       description: `
-
-            Malaysia Digital Arrival Card(MDAC), a mandatory online form that all foreign travelers, except Singapore, must complete before entering Malaysia. It's not a visa but a required registration document that streamlines entry procedures and improves border security.
-            <br/>
-            <br/>
-<b>All foreign visitors must complete the Malaysia Digital Arrival Card (MDAC) online within 3 days before arrival.</b> You can submit the MDAC on the <a href="https://imigresen-online.imi.gov.my/mdac/main" target="_blank" rel="noopener noreferrer" class="text-teal-600">official immigration website</a>. It’s a quick, free and mandatory process that streamlines immigration clearance. Make sure your passport is valid for at least six months.
-<br/>
-<br/>
-If you're arriving by land—such as from Thailand or Singapore—the visa and MDAC requirements still apply. Always carry a printed copy or a screenshot of your approved MDAC for smoother processing at airport or land border checkpoints.
-<br/>
-<br/>
-<b>Important: </b>Do not fill out the MDAC form earlier than 3 days before your arrival. It must be submitted within the 3 days leading up to your travel date
-
+      Kuala Lumpur offers an efficient and budget-friendly transport system, making it easy to explore the city. The <b>LRT (Light Rail Transit), MRT (Mass Rapid Transit), Monorail</b>, and public buses cover most tourist areas, business districts, and shopping zones.
+      <br />
+      <br />
+      Buy a <b>Touch 'n Go</b> card to access multiple transport modes without the hassle of tickets.
+      <br />
+      <br />
+      Ride-hailing apps like <b>Grab</b> are widely used and often cheaper than taxis. Walking is possible in areas like Bukit Bintang and Chinatown. Avoid driving unless necessary—KL’s traffic and limited parking make public transport a better choice.
+      <br />
+      <br />
+      For airport transfers or longer trips, consider KLIA Ekspres or private transfers. Plan routes with Google Maps or Moovit to avoid getting stuck during peak hours.
+      <br />
+      <br />
+      These passes are available at major LRT, MRT, Monorail, and BRT stations.
+      <br />
+      Below are the estimate prices -
+      <br />
+      <br />
+      <b>Daily pass (MyCity Pass):</b>
+      <br />
+      <br />
+       <li>
+       1-day unlimited rides: RM5 ($1.10 USD)
+       </li>
+       <li>
+       3-day unlimited rides: RM15 ($3.20 USD)
+       </li>
+       <br>
+       <b>Touch 'n Go card:</b> RM10 card + top-up credit
+       <br>
+       <b>Short Grab ride (2–5 km) :</b> RM5–RM10 ($1–$2 USD)
 
         `,
     },
     {
       id: 3,
-      heading:
-        "Malaysian Currency, where to exchange money and How Much Does It Cost to Travel?",
+      heading: "Where to Stay in Kuala Lumpur",
+      icon: "HOTEL",
       description: `
-        <b>Malaysia uses the Malaysian Ringgit (MYR)</b>.
-
-        <br/>
-        <br/>
-1 USD equals roughly RM4.5.
-<br/>
-<br/>
-Exchange money at licensed money changers in malls or city centers for the best rates. Avoid airport kiosks and hotels as they offer poor exchange rates. ATMs are a safe option for direct withdrawals. Always check for hidden fees and ensure the exchanger is authorized and regulated.
-<br/>
-<br/>
-Malaysia is a <b>budget-friendly</b> destination, especially for street food, local transport, and mid-range stays. Backpackers can spend under <b>RM200/day</b>, while mid-range travelers spend around <b>RM300–500/day</b>. Costs can rise in tourist-heavy zones like islands or during peak travel seasons, so budget accordingly.
+        Kuala Lumpur offers a wide range of accommodations to suit every traveler and budget. <b>Bukit Bintang</b> is the most popular area, filled with hotels, restaurants, and shopping malls. Consider booking a stay with <b>rooftop pools</b> and modern amenities in Bukit Bintang, given its proximity to major <b>tourist attractions</b> and excellent public transport connectivity. The area provides numerous options across all price ranges, making it ideal for both budget and mid-range travelers.
+        <br />
+        <br />
+        <b>KLCC (Kuala Lumpur City Centre)</b> is perfect for luxury stays with stunning city views.
+        <br />
+        <br />
+        Backpackers and budget travelers should check out <b>Chinatown or Brickfields</b>, which offer affordable hostels and easy access to transport.
+        <br />
+        <br />
+        <b>Bangsar</b> and <b>Mont Kiara</b> cater to long-term visitors with serviced apartments and expat-friendly cafes.
 
 
         `,
@@ -401,48 +433,119 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
 
     {
       id: 4,
-      heading: "Best Time to Visit (Weather)",
+      heading: "What and where to Eat and Drink in Kuala Lumpur",
+      icon: "FOOD",
       description: `
+      Kuala Lumpur is a food lover’s paradise, offering everything from spicy street eats to international cuisine. Local must-tries include <b>nasi lemak, roti canai, laksa, marshmallow ice cream and satay</b>.
+      <br />
+      <br />
+      For a true taste of <b>Kuala Lumpur’s street food</b>, head to <b>Jalan Alor</b> at night, where the city comes alive with sizzling local flavors. By day, explore <b>Petaling Street in Chinatown</b> for budget-friendly bites and vibrant market vibes. Don’t miss <b>Little India</b>, a top spot for authentic <b>vegetarian dishes</b> and rich <b>Indian cuisine</b>.
+      <br />
+      <br />
+      You can find tasty meals at street stalls for as little as RM5–RM10 ($1–$2 USD), mid-range meals at cafes or restaurants cost RM15–RM30 ($3–$6 USD). KL also has trendy cafes, rooftop bars, and fine dining options for those seeking variety.
+      <br />
+      <br />
+      Alcohol is available but expensive due to taxes—expect to pay RM15–RM30 for a beer at bars
 
-        Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.
-        <br/>
-        <br/>
-        For most of Peninsular Malaysia, the dry season runs from <b>November to August</b>, making it ideal for outdoor travel and beach destinations.
-        <br/>
-        <br/>
-        The <b>East Coast (e.g., Perhentian Islands, Redang)</b> experiences heavy monsoons from <b>November to January</b>. In <b>Sabah and Sarawak</b>, dry months vary slightly, but March to September is generally pleasant.
-        <br/>
-        <br/>
-        Mountain areas like <b>Cameron Highlands</b> remain cooler throughout the year, offering a refreshing escape from the tropical heat.
         `,
     },
     {
       id: 5,
-      heading: "Network",
+      heading: "Where to Shop in Kuala Lumpur",
+      icon: "SHOPPING",
       description: `
-        Malaysia has excellent mobile coverage across cities and tourist areas. Major telecom providers include <b>Hotlink (Maxis), Digi, Celcom, and U Mobile.</b>
-<br />
-<br />
-You can easily purchase a <b>tourist SIM card</b> at airports, convenience stores, or mobile kiosks. 4G coverage is strong in most places, and 5G is expanding in major cities. Plans are affordable — expect to pay around RM20–RM50 for 7–unlimited GB of data.
-<br />
-<br />
-Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring remote areas or islands, the signal may be weaker, so download maps or important info in advance.
-
+        Kuala Lumpur offers everything from high-end malls to vibrant local markets. For luxury brands and designer labels, visit <b>Pavilion KL, Suria KLCC, or The Gardens Mall</b>. Looking for great deals and local treasures? <b>Berjaya Times Square</b> is ideal for affordable fashion, while <b>Central Market</b> is perfect for <b>handmade crafts and unique souvenirs</b> to take back home. Don’t miss <b>Petaling Street in Chinatown</b> for an exciting mix of <b>street shopping and local street food</b>.
+        <br />
+        <br />
+        Credit cards are widely accepted in malls, but carry cash for street vendors and markets.
+        <br />
+        <br />
+        Most malls are open daily from 10 AM to 10 PM and are easily accessible via public transport.
 
 
         `,
     },
     {
       id: 6,
-      heading: "Languages",
+      icon: "SUN",
+      heading: "When Is the Best Time to Visit Kuala Lumpur?",
       description: `
-            The national language is Bahasa Malaysia (Malay), but English is widely spoken, especially in urban centers, tourist areas, and by younger generations.
-            <br />
-            <br />
-            You’ll also hear Mandarin, Cantonese, and Tamil, reflecting Malaysia’s multicultural heritage. Road signs and public information are often bilingual, in Malay and English. Learning a few basic Malay phrases like “terima kasih” (thank you) or “selamat pagi” (good morning) can enhance your travel experience. Most locals are friendly and appreciate visitors who make an effort. Language won't be a major barrier during your trip in Malaysia.
-
+          The best time to visit Kuala Lumpur is during the <b>dry months from May to July and December to February</b>. These periods offer more sunshine and fewer rain showers, making it ideal for sightseeing, outdoor dining, and day trips.
+          <br />
+          <br />
+          However, KL has a <b>tropical climate</b>, meaning it's hot and humid year-round with occasional rain. Afternoon showers are common, so carry an umbrella or raincoat.
+          <br />
+          <br />
+          The temperature generally ranges between <b>25°C and 33°C</b>.
+          <br />
+          <br />
+          Visiting during <b>major festivals</b> like Chinese New Year or Hari Raya can add cultural depth to your trip but expect crowds and higher prices.
+        `,
+    },
+    {
+      id: 7,
+      icon: "CLOCK",
+      heading: "How Long Should You Spend in Kuala Lumpur?",
+      description: `
+         To fully enjoy what Kuala Lumpur has to offer, plan to spend <b>3 to 4 days</b> in the city. This gives you enough time to explore cultural landmarks, try iconic street food, shop at famous malls, and take at least one day trip.
+         <br />
+         <br />
+         If you’re on a tighter schedule, even 2 days can offer a good taste of the city’s highlights.
+         <br />
+         <br />
+         Those traveling at a slower pace or combining KL with remote work may enjoy staying a week or more.
 
         `,
+    },
+    {
+      id: 8,
+      icon: "PIN",
+      heading: "Must-Do Things in Kuala Lumpur",
+      description: `
+        Kuala Lumpur is packed with exciting activities for every traveler. Discover the top things to do in Kuala lumpur.
+        <br />
+        <br />
+        Stroll through colorful neighborhoods like Chinatown and Little India to discover the city’s cultural roots. Explore local food markets and don’t miss trying iconic Malaysian dishes. Visit temples and mosques to appreciate KL’s rich spiritual diversity. Take in panoramic city views from one of the many rooftop lounges. Enjoy a shopping spree or a relaxing spa day—all at surprisingly affordable prices.
+        <br />
+        <br />
+        If you have extra time, join a local cooking class or cultural tour to dig deeper. The mix of tradition, innovation, and hospitality makes KL an unforgettable stop in Southeast Asia. Whether you're a foodie, explorer, or laid-back traveler, there’s something here for you.
+
+        `,
+    },
+    {
+      id: 9,
+      icon: "LEAF",
+      heading: "Best Day Trips from Kuala Lumpur",
+      description: `
+        KL is a great base for day trips that let you explore Malaysia’s diverse offerings.
+        <br />
+        <br />
+        For cooler weather and mountain views, <b>Genting Highlands</b> offers a cable car ride, shopping, and theme parks.
+        <br />
+        <br />
+        History buffs will enjoy <b>Malacca</b>, a UNESCO World Heritage city rich in colonial architecture and local culture—just two hours away by car or bus.
+        <br />
+        <br />
+        Nature lovers should consider <b>FRIM (Forest Research Institute Malaysia)</b> for a walk among rainforest canopies or head to <b>Taman Negara</b>, one of the world’s oldest rainforests.
+        All these destinations are accessible by car, bus, or organized tours.
+
+        `,
+    },
+    {
+      id: 13,
+      icon: "BOOK_OPEN_CHECK",
+      heading: "Quick Tips",
+      description: `
+      <li>Use the <b>Grab app</b> for affordable, safe transport.</li>
+      <li><b>Tap water isn't safe</b>, drink bottled or filtered water.</li>
+      <li>Dress modestly when visiting religious sites.</li>
+      <li>Carry small change for street food and local markets.</li>
+      <li>Watch for pickpockets in crowded areas.</li>
+      <li>Tipping is not mandatory but appreciated.</li>
+      <li><b>Carry an umbrella</b>, weather can change fast.</li>
+      <li>Use a travel SIM or eSIM for mobile data.</li>
+
+      `,
     },
   ],
   related_articles: [
