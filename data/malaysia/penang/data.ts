@@ -359,9 +359,179 @@ export const PENANG_BLOG_POST = [
 export const PENANG_TRAVEL_GUIDE = {
   title: "Penang Travel Guide",
   category: "Travel Guide",
+  overview : `Planning a trip to Penang? This guide covers all the essential things you need to know before you go. From the best time to visit and how to get around, to local customs, travel costs, safety tips, and what to pack we’ve included everything to help you travel smart. Whether you’re a first-time visitor or returning to explore more, this article will help you prepare with confidence. Learn about Penang’s cultural etiquette, useful apps, currency matters, and important dos and don’ts so you can make the most of your trip. With practical advice and insider tips, this guide is your go-to resource for a smooth, enjoyable, and informed travel experience in one of Malaysia’s most exciting destinations.`,
   image: "/images/country/malaysia/places/penang/things_to_know_penang.jpg",
   slug: "/penang/travel-guide",
-  data: [],
+  data: [
+    {
+      id: 1,
+      icon: "INFO",
+      heading: "A Glimpse into Penang’s History & Culture",
+      description: `
+Penang’s rich history and diverse culture are what make it truly unique among Malaysia’s destinations. Once a strategic trading post under British colonial rule, Penang, especially George Town, has preserved its colonial architecture, heritage shophouses, and multicultural roots. The city is a living museum, where <b>Chinese clan houses, Indian temples, Muslim mosques, and British-built churches coexist harmoniously.</b> This cultural blend is reflected in local customs, festivals, languages, and, most notably, food. The population is a vibrant mix of Malays, Chinese, Indians, and Eurasians, each contributing to Penang’s identity. Events like Chinese New Year, Thaipusam, and George Town Festival highlight this diversity. Heritage conservation efforts have helped <b>George Town earn its UNESCO World Heritage status.</b> `,
+    },
+     {
+      id: 2,
+      icon: "PLANE",
+      heading: "How to Reach",
+      description: `
+Penang is easily accessible by air, land, and sea. 
+</br>
+</br>
+<b>By Air:</b>
+</br>
+Penang International Airport (PEN) is well-connected to major Malaysian cities and Southeast Asian hubs like Singapore and Bangkok.
+</br>
+Approximate flight durations:
+<li>Kuala Lumpur: ~1 hour</li>
+<li>Langkawi: ~25 minutes</li>
+<li>Singapore: ~1.5–2 hours</li>
+</li>
+</br>
+<b>By Train:</b>
+</br>
+Take a train from Kuala Lumpur to Butterworth (~4 hours), then hop on a short ferry ride to George Town.
+</br>
+</br>
+<b>By Road:</b>
+</br>
+Driving from Kuala Lumpur takes around 4–5 hours.
+Penang is linked to the mainland via the Penang Bridge and the Second Penang Bridge for easy car access.
+</br>
+</br>
+<b>By Bus:</b>
+</br>
+Budget-friendly express buses run frequently from Kuala Lumpur, Langkawi, and other major cities to Penang.
+</br>
+</br>
+<b>By Ferry:</b>
+</br>
+Scenic ferries connect Penang Island to Butterworth (mainland) and nearby islands. It usually takes around 20-30 mins only.
+A great option for both travelers and vehicles.
+ `,
+    },
+  {
+      id: 3,
+      icon: "CAR",
+      heading: "Getting Around",
+      description: `
+In George Town, many major attractions, street art trails, and local eateries are within walking distance, making it ideal for <b>exploring on foot.</b> For longer journeys, Rapid Penang buses operate an extensive network across the island, reaching destinations like Batu Ferringhi, Penang Hill, and Kek Lok Si Temple. The buses are reliable, air-conditioned, and very budget-friendly.
+For a more local and nostalgic experience, <b>hop on a trishaw</b> for short rides around George Town, perfect for slow-paced sightseeing and unique photo ops. 
+</br>
+</br>
+For faster, more personalized transport, <b>Grab (Southeast Asia’s version of Uber)</b> is widely available and reasonably priced.
+</br>
+<li>Short Grab ride (2–5 km): RM5–RM12 ($1–$2 USD)</li>
+</br>
+If you plan on using public transport frequently, consider purchasing the <b>Penang Tourist Pass</b>, which offers unlimited bus rides for a fixed daily fee. You can purchase the pass at major transit hubs such as Komtar Bus Terminal, Weld Quay Bus Terminal, Bukit Jambul Bus Hub etc.
+</br>
+<li>Rapid Penang Tourist Passport - RM30 per person</li>
+<li>Validity: 7 consecutive days</li>
+`,
+    },
+    {
+      id: 4,
+      icon: "HOTEL",
+      heading: "Where to Stay",
+      description: `Penang offers stays for every budget. 
+      </br>
+      </br>
+George Town is the top choice for travelers, it’s central, cultural, and its proximity to major attractions. Boutique heritage hotels, budget guesthouses, and mid-range stays are widely available here. 
+</br>
+</br>
+For those craving beachside relaxation, Batu Ferringhi offers scenic beachfront resorts, upscale villas, and romantic retreats with sea views. 
+</br>
+</br>
+Luxury seekers can explore Gurney Drive with its upscale hotels and sea views. Backpackers and digital nomads will find plenty of hostels and work-friendly cafes around George Town.
+`,
+    },
+    {
+      id: 5,
+      icon: "FOOD",
+      heading: "What and Where to Eat & Drink",
+      description: `
+Penang is widely regarded as the <b>food capital of Malaysia</b>, celebrated for its diverse and flavorful street food. Start your culinary journey with must-try dishes like char kway teow (stir-fried rice noodles), Penang laksa (tangy fish-based noodle soup), nasi kandar (rice with mixed curries), Hokkien mee (prawn noodle soup), and the sweet, icy cendol dessert. checkout all the must eat dishes in <a href="malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">our what to eat</a> article.  
+</br>
+</br>
+<b>Gurney Drive Hawker Centre</b> and New Lane Night Market are food havens where you can enjoy authentic local dishes at pocket-friendly prices. 
+</br>
+</br>
+For Vegetarian options or Indian cuisine, head to Little India in George Town, offering everything from banana leaf meals to biryani and curries. Chinese kopitiams (coffee shops) and Malay food stalls are scattered across the island. 
+</br>
+</br>
+If you’re after fine dining, Kebaya at Seven Terraces and Indigo at The Blue Mansion offer elevated Peranakan flavors in stunning heritage settings. Love Lane and Chulia Street have vibrant nightlife scenes, perfect for cocktails, craft beer, or chilled evenings at rooftop cafés.
+`,
+    },
+     {
+      id: 6,
+      icon: "SUN",
+      heading: "Best Time to Visit",
+      description: `Penang enjoys a tropical climate year-round, with average temperatures ranging between 26°C and 32°C. The best time to visit is during the dry season from <b>December to April</b>, when you can enjoy sunshine-filled days perfect for sightseeing, island hopping, and festivals. This is also peak tourist season, so book accommodations early.
+      </br>
+</br>
+From <b>May to October, Penang experiences monsoon rains</b>, usually short and heavy in the afternoon, followed by clear skies. While it’s wetter, this season offers lower prices and fewer crowds. 
+</br>
+</br>
+Culture lovers should time their visit around major festivals like <b>Thaipusam in January</b>, the <b>George Town Festival in August, and Chinese New Year</b>, when Penang bursts to life with parades, lanterns, and temple celebrations.
+`,
+    },
+    {
+      id: 7,
+      icon: "CLOCK",
+      heading: "How Long Should You Stay",
+      description: `
+      <b>A 3–4 day trip is ideal for experiencing the best of Penang at a relaxed pace</b>, though longer stays allow for deeper exploration. You can easily combine cultural sightseeing with nature, food adventures, and beach time. 
+George Town’s UNESCO heritage sites, museums, street art, and vibrant local markets can be explored over one or two half-days, leaving time to mix in food tours or café-hopping.
+</br>
+</br>
+Nature lovers can pair a morning trip to Penang Hill and The Habitat with a visit to Kek Lok Si Temple, both located in the Air Itam area. Beach enthusiasts may want to combine Batu Ferringhi with a stop at nearby Entopia Butterfly Farm or the Tropical Spice Garden. 
+Cultural gems like the Clan Jetties, Little India, and temples in Pulau Tikus can be explored together with a trishaw ride or a visit to local street markets.
+</br>
+</br>
+With Penang’s diverse offerings, from heritage and nature to food and shopping, a 3 day trip is perfect for most travelers, while a week or more suits those looking to unwind and explore in depth.
+`,
+    },
+    {
+      id: 8,
+      icon: "CHECK",
+      heading: "Must-Do Things",
+      description: `
+      Penang is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in penang</a> articles to view all.
+      </br>
+      </br>
+Start your trip with a walking tour of <b>George Town’s historic center, explore iconic street art, visit The Blue Mansion</b>, and sample snacks at local cafés. Discover Chinese heritage at Khoo Kongsi and take a trishaw ride for a nostalgic city view. 
+</br>
+</br>
+Visit <b>Kek Lok Si Temple</b> in Air Itam, one of Southeast Asia’s largest Buddhist temples, and then hop on the <b>Penang Hill funicular train</b> for breathtaking island views. Explore nature at The Habitat’s canopy walk or the Penang Botanic Gardens. 
+</br>
+</br>
+Street food is a must so head to Gurney Drive or Chulia Street for the best bites. Dive into the island’s multicultural mix in Little India or visit <b>Tan Jetty</b> for peaceful waterfront views. Don’t forget to snap photos at Umbrella Alley or the famous street murals scattered across the city.
+
+`,
+    },
+    {
+      id: 7,
+      icon: "PlANE",
+      heading: "Quick Travel Tips",
+      description: `
+     <li>Carry cash, especially for hawker stalls and night markets</li>
+     <br/>
+    <li>Early morning is best for attractions like Penang Hill</li>
+    <br/>
+    <li>Respect local customs at religious sites—dress modestly</li>
+  <br/>
+    <li>Stay hydrated—it’s hot and humid</li>
+<br/>
+    <li>Use Grab for cheap, reliable transport</li>
+<br/>
+    <li>Don’t miss the local street food—it’s a highlight of Penang!</li>
+<br/>
+    <li>Keep an umbrella handy—rain can be sudden.</li>
+<br/>
+    <li>Book accommodations near George Town for convenience</li>
+                `,
+    },
+  ],
 };
 
 export const PENANG_RELATED_ARTICLES = [
