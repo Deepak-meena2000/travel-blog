@@ -5,19 +5,12 @@ import {
 } from "./data";
 import {
   KUALA_LUMPUR_RELATED_ARTICLES,
-  KAULA_LUMPUR_BLOG_POST,
   KAULA_LUMPUR_TRAVEL_GUIDE,
+  KAULA_LUMPUR_BLOG_POST,
 } from "./kuala-lumpur/data";
 import { LANGKAWI_BLOG_POST, LANGKAWI_TRAVEL_GUIDE } from "./langkawi/data";
-import {
-  PENANG_BLOG_POST,
-  PENANG_RELATED_ARTICLES,
-  PENANG_TRAVEL_GUIDE,
-} from "./penang/data";
-import {
-  PERHENTIAN_ISLANDS_BLOG_POST,
-  PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
-} from "./perhentian/data";
+import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES, PENANG_TRAVEL_GUIDE } from "./penang/data";
+import { PERHENTIAN_ISLANDS_BLOG_POST, PERHENTIAN_ISLANDS_TRAVEL_GUIDE } from "./perhentian/data";
 
 export const MALAYSISA_FOOD_DATA = [
   {
@@ -49,11 +42,7 @@ export const MALAYSISA_FOOD_DATA = [
       ],
     },
     imageCreditHTML: `
-
-
     <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Roti_Canai_(4553382417).jpg"><u>Geoff Peters from Vancouver, BC, Canada</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0"><u>CC BY 2.0</u></a>, via Wikimedia Commons
-
-
     `,
   },
   {
@@ -78,7 +67,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Laksa",
     description:
       "Laksa is a bold, aromatic noodle soup popular across Malaysia, with two main styles: Curry Laksa and Asam Laksa. Curry Laksa features a rich coconut-based broth with tofu puffs, shrimp, egg, and yellow noodles. Asam Laksa, on the other hand, is tangy and spicy with a mackerel and tamarind-based broth, served with thick rice noodles, mint, cucumber, and pineapple.",
-    image: "/images/country/malaysia/food/laksa.jpg",
     otherInfo: {
       where_to_eat:
         "Local hawker stalls and food courts—try Penang's Air Itam Market for Asam Laksa or KL's Madras Lane for Curry Laksa.",
@@ -86,9 +74,9 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: false,
       tips: [],
     },
+    image: "/images/country/malaysia/food/laksa.jpg",
     imageCreditHTML: `
       Photo by <a target="_blank" href="https://www.pexels.com/@su-la-pyae-54514809"><u>Su La Pyae</u>  </a> on <a target="_blank" href="https://www.pexels.com/photo/delicious-asian-noodle-bowl-with-fresh-herbs-28907751"><u>Pexels</u></a>
-
     `,
   },
   {
@@ -96,7 +84,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Nasi Kandar",
     description:
       "Originating from Penang, Nasi Kandar is a popular Indian Muslim dish where plain or flavored rice is served with an assortment of curries and sides like fried chicken, beef rendang, okra, egg, or squid. The signature touch is the 'banjir' or gravy mix, where multiple curry sauces are poured over the rice. It's a flavor explosion—spicy, savory, and aromatic. The variety of toppings lets you build your own hearty plate.",
-    image: "/images/country/malaysia/food/nasi_kandar.jpg",
     otherInfo: {
       where_to_eat:
         "Nasi Kandar Line Clear (Penang), Kayu Nasi Kandar, Pelita, and other 24-hour mamak eateries.",
@@ -106,6 +93,7 @@ export const MALAYSISA_FOOD_DATA = [
         "Request rice with vegetable sides, dhal, and eggs; avoid meat gravies.",
       ],
     },
+    image: "/images/country/malaysia/food/nasi_kandar.jpg",
     imageCreditHTML: `
       <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Nasi_kandar_Al_hilal.jpg"><u>RAYEESAHAMED</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
     `,
@@ -115,7 +103,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Mee Goreng Mamak",
     description:
       "Mee Goreng Mamak is a beloved Malaysian noodle dish with strong Indian-Muslim influences. It features yellow noodles stir-fried with tofu, potatoes, bean sprouts, eggs, and sometimes squid or chicken, all tossed in a tangy, spicy sauce with a squeeze of lime and a touch of tomato ketchup or chili sauce. Garnished with green chilies and crispy shallots, it's both hearty and flavorful.",
-    image: "/images/country/malaysia/food/mee_goreng.jpg",
     otherInfo: {
       where_to_eat:
         "Mamak stalls, Indian Muslim restaurants, and night markets.",
@@ -126,6 +113,7 @@ export const MALAYSISA_FOOD_DATA = [
         "Always ask for 'kurang pedas' (less spicy) if you're sensitive to chili heat.",
       ],
     },
+    image: "/images/country/malaysia/food/mee_goreng.jpg",
     imageCreditHTML: `
     Photo by <a target="_blank" href="https://unsplash.com/@eprayatama?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>R Eris</u></a> on <a target="_blank" href="https://unsplash.com/photos/a-plate-of-food-on-a-table-with-utensils-i5XurHSjE1M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Unsplash</u></a>
     `,
@@ -135,7 +123,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Rendang",
     description:
       "Rendang is a rich, slow-cooked dry curry usually made with beef, simmered for hours in coconut milk and a mix of aromatic spices like lemongrass, galangal, turmeric, and chili. Originally from Indonesia, it's become a Malaysian staple, especially during festive seasons. The meat becomes incredibly tender, soaking up the thick, flavorful sauce until it almost melts in your mouth.",
-    image: "/images/country/malaysia/food/rendang.jpg",
     otherInfo: {
       where_to_eat:
         "Malay restaurants, Nasi Campur stalls, and during festivals like Hari Raya.",
@@ -143,9 +130,9 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: false,
       tips: [],
     },
+    image: "/images/country/malaysia/food/rendang.jpg",
     imageCreditHTML: `
       Photo by <a target="_blank" href="https://unsplash.com/@kurisuchanxx?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Christian Dala</u></a> on <a target="_blank" href="https://unsplash.com/photos/a-close-up-of-a-bowl-of-food-on-a-table-voSslbaAVtY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Unsplash</u></a>
-
     `,
   },
   {
@@ -153,7 +140,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Hainanese Chicken Rice",
     description:
       "Hainanese Chicken Rice is a simple yet comforting dish featuring poached or roasted chicken served with fragrant rice cooked in chicken broth, accompanied by garlic chili sauce, dark soy sauce, and a light chicken soup. Though originally from China, it's been embraced in Malaysia, especially in cities like Kuala Lumpur and Ipoh.",
-    image: "/images/country/malaysia/food/hainese_checken_rice.jpg",
     otherInfo: {
       where_to_eat:
         "Chinese kopitiams, hawker stalls, and chicken rice shops (e.g., Nam Heong, The Chicken Rice Shop).",
@@ -161,11 +147,9 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: false,
       tips: [],
     },
+    image: "/images/country/malaysia/food/hainese_checken_rice.jpg",
     imageCreditHTML: `
-
     Photo by  <a  target="_blank "href="https://www.pexels.com/@change-c-c-974768353/">Change C.C</a> on <a target="_blank" href="https://www.pexels.com/photo/hainanese-chicken-rice-with-fresh-vegetables-30120279/"><u>Pexels</u></a>
-
-
     `,
   },
   {
@@ -173,7 +157,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Ikan Bakar",
     description:
       "Ikan Bakar means 'grilled fish' in Malay, and it's a smoky, spicy delight widely loved across Malaysia. Fresh fish, commonly stingray, mackerel, or seabass, is marinated with turmeric, chili paste, and tamarind, then grilled over an open flame or charcoal fire, often wrapped in banana leaves to retain moisture and flavor. It's served with sambal belacan (spicy shrimp paste) and a side of rice or ulam (herbs).",
-    image: "/images/country/malaysia/food/ikan_bakar.jpg",
     otherInfo: {
       where_to_eat:
         "Coastal hawker stalls, night markets, and food courts—try Kampung Baru in KL or Medan Ikan Bakar in Melaka.",
@@ -181,6 +164,7 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: false,
       tips: [],
     },
+    image: "/images/country/malaysia/food/ikan_bakar.jpg",
     imageCreditHTML: `
       <a href="https://commons.wikimedia.org/wiki/File:Gurame_bakar_kecap_2.JPG"><u>Gunawan Kartapranata</u></a>, <a href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
     `,
@@ -190,7 +174,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Nasi Campur",
     description:
       "Nasi Campur means 'mixed rice' and is a quintessential Malaysian lunch meal. Diners select plain rice and choose from a wide array of dishes—curried meats, fried fish, stir-fried vegetables, tofu, sambals, and more. It's a flexible, budget-friendly way to taste multiple local flavors on one plate.",
-    image: "/images/country/malaysia/food/nasi_campur.jpg",
     otherInfo: {
       where_to_eat:
         "Warungs, Malay food courts, and roadside stalls. Famous places include Warung Kak Long and Gerai Rahmah.",
@@ -198,9 +181,9 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: true,
       tips: ["Plenty of veggie, egg, and tofu options; avoid meat gravies."],
     },
+    image: "/images/country/malaysia/food/nasi_campur.jpg",
     imageCreditHTML: `
       <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Nasi_Campur.jpg"><u>Fei Tan</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0"><u>CC BY 2.0</u></a>, via Wikimedia Commons
-
     `,
   },
   {
@@ -266,7 +249,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Banana Leaf Rice",
     description:
       "Banana Leaf Rice is a South Indian-inspired Malaysian meal where rice is served on a banana leaf with a variety of vegetable curries, pickles, papadum, and sides like rasam or sambar. You can add meat (chicken, mutton, fish) or keep it vegetarian. The beauty lies in mixing the spicy curries with crunchy, tangy, and savory elements on a fragrant leaf. It's commonly eaten by hand for full flavor.",
-    image: "/images/country/malaysia/food/banana_leaf_rice.jpg",
     otherInfo: {
       where_to_eat:
         "Indian restaurants like Sri Nirwana Maju (Bangsar), Devi's Corner, or Raju's Banana Leaf.",
@@ -274,9 +256,9 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: true,
       tips: ["Free rice and curry refills are common—just ask!"],
     },
+    image: "/images/country/malaysia/food/banana_leaf_rice.jpg",
     imageCreditHTML: `
       <a target="_blank" href="https://commons.wikimedia.org/wiki/File:%E0%B2%AC%E0%B2%BE%E0%B2%B3%E0%B3%86%E0%B2%B2%E0%B3%86_%E0%B2%8A%E0%B2%9F_(Banana_leaf_meal).jpg"><u>Codegeass123</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
-
     `,
   },
   {
@@ -284,13 +266,13 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Teh Tarik",
     description:
       "Teh Tarik, meaning 'pulled tea,' is Malaysia's national drink and a must-try beverage. It's made by 'pulling' strong black tea mixed with condensed milk from one cup to another at a height, creating a frothy top and enhancing flavor. The result is a smooth, sweet, and slightly creamy drink, often enjoyed with breakfast or as a companion to spicy meals. It's loved for its taste and the fun preparation process.",
-    image: "/images/country/malaysia/food/teh_tarik.jpg",
     otherInfo: {
       where_to_eat: "Mamak stalls, kopitiams, Indian Muslim restaurants.",
       range: "RM1.50–RM3",
       vegetarian_available: true,
       tips: [],
     },
+    image: "/images/country/malaysia/food/teh_tarik.jpg",
     innerCreditHTML: `
       <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Teh_tarik_2.jpg"><u>Alpha from Melbourne, Australia</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0"><u>CC BY-SA 2.0</u></a>, via Wikimedia Commons
     `,
@@ -344,7 +326,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Cendol",
     description:
       "Cendol is a beloved icy dessert featuring green pandan-flavored rice flour jelly, coconut milk, shaved ice, and gula Melaka. It's sweet, creamy, and slightly smoky thanks to the palm sugar syrup. Some versions include red beans or glutinous rice for added texture.",
-    image: "/images/country/malaysia/food/cendol.jpg",
     otherInfo: {
       where_to_eat:
         "Penang Road Famous Teochew Cendol (George Town), Jonker 88 (Melaka), or roadside stalls.",
@@ -354,6 +335,7 @@ export const MALAYSISA_FOOD_DATA = [
         "Go for the original version before trying durian cendol—it's intensely flavorful and not for everyone.",
       ],
     },
+    image: "/images/country/malaysia/food/cendol.jpg",
     imageCreditHTML: `
       Image by <a target="_blank" href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Jason Goh</u></a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Pixabay</u></a>
     `,
@@ -378,7 +360,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Sambal Udang",
     description:
       "Sambal Udang is a bold and spicy prawn dish cooked in a fragrant sambal sauce made from chili, garlic, shallots, tamarind, and sometimes belacan (fermented shrimp paste). The prawns absorb the spicy-tangy flavor, resulting in a rich and aromatic seafood delight often paired with steamed rice. A favorite among Malaysians, it's a festive dish as well as a staple in home cooking.",
-    image: "/images/country/malaysia/food/sambal_udang.jpg",
     otherInfo: {
       where_to_eat:
         "Malay restaurants, Nyonya eateries, or places like Village Park or Madam Kwan's.",
@@ -388,6 +369,7 @@ export const MALAYSISA_FOOD_DATA = [
         "Ask for less spicy if you're not used to Malaysian heat levels—it can get intense!",
       ],
     },
+    image: "/images/country/malaysia/food/sambal_udang.jpg",
     imageCreditHTML: `
       <a target=”_blank” href="https://commons.wikimedia.org/wiki/File:SAMBAL_BALADO_TERONG_UDANG.jpg"><u>Windi Utari</u></a>, <a href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
     `,
@@ -406,35 +388,43 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Nasi Lemak",
         description:
           "Nasi Lemak is Malaysia's iconic breakfast dish, beloved across all ethnicities. It features fragrant coconut milk rice served with spicy sambal, crispy anchovies, toasted peanuts, cucumber slices, and a hard-boiled or fried egg. Often accompanied by fried chicken or rendang, it's a satisfying, flavorful meal that fuels locals for the day ahead.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/nasi_lemak.jpg",
       },
       {
         id: 2,
         name: "Roti Canai",
         description:
           "Roti Canai is a flaky, crispy Indian-style flatbread that's a staple Malaysian breakfast, particularly in mamak stalls. Made by flipping and stretching dough until it's thin, then pan-frying until golden, it's typically served with dhal (lentil curry) or meat curries like chicken or beef.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/roti_canai.jpg",
+        imageCreditHTML:
+          "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Roti_Canai_(4553382417).jpg'><u>Geoff Peters from Vancouver, BC, Canada</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
       },
       {
         id: 3,
         name: "Kaya Toast & Soft-Boiled Eggs",
         description:
           "Kaya Toast and Soft-Boiled Eggs offer a simple yet comforting breakfast loved throughout Malaysia and Singapore. The toast is slathered with kaya, a sweet coconut and egg jam, and a generous slab of butter. It's paired with two soft-boiled eggs seasoned with light soy sauce and white pepper.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/kaya_toast.jpg",
+        imageCreditHTML:
+          '<a href="https://www.freepik.com/free-photo/close-up-melted-cheese-sandwich_22894828.htm#fromView=search&page=1&position=2&uuid=b3aed5e0-7599-4c24-9a9e-1c2f6141f918&query=toast+with+kaya">Image by freepik</a>',
       },
       {
         id: 4,
         name: "Chee Cheong Fun",
         description:
           "Chee Cheong Fun is a classic Chinese-Malaysian breakfast made of silky, steamed rice noodle rolls. Served plain or filled with shrimp, char siu, or minced meat, it's topped with sweet soy sauce, chili sauce, sesame seeds, and sometimes fried shallots.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/chee_cheong_fun.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@le_y0u?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>You Le</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-red-plate-topped-with-meat-covered-in-sauce-syjj30AYKRM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
       },
       {
         id: 5,
         name: "Nasi Dagang",
         description:
           "Nasi Dagang is a beloved East Coast Malaysian breakfast, especially in Kelantan and Terengganu. It features aromatic rice steamed in coconut milk and fenugreek seeds, served with rich tuna curry, pickled vegetables (acar), and boiled eggs.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/nasi_dagang.jpg",
+        imageCreditHTML:
+          "<a target = '_blank' href='https://commons.wikimedia.org/wiki/File:Nasi_Dagang_PSU.jpg'><u>Amirudin Mohd Zani</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.5'><u>CC BY 2.5</u></a>, via Wikimedia Commons",
       },
       {
         id: 6,
@@ -456,63 +446,89 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Char Kway Teow",
         description:
           "Char Kway Teow is a beloved Malaysian stir-fried noodle dish, perfect for lunch or dinner. Made with flat rice noodles, it's tossed over high heat with prawns, Chinese sausage, bean sprouts, eggs, and chives in a savory dark soy sauce.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/char_kyaw_teow.jpg",
+        imageCreditHTML: `
+          <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Malaysian_Char_Kuey_Teow.jpg"><u>Foodi-elaine</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
+        `,
       },
       {
         id: 8,
         name: "Laksa",
         description:
           "Laksa is a spicy noodle soup with rich regional variations across Malaysia. The two most popular types are Curry Laksa, a coconut-based broth with egg noodles, tofu puffs, chicken, and shrimp, and Asam Laksa, a tangy fish-based soup with tamarind and mackerel.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/laksa.jpg",
+        imageCreditHTML: `
+            Photo by <a target="_blank" href="https://www.pexels.com/@su-la-pyae-54514809"><u>Su La Pyae</u>  </a> on <a target="_blank" href="https://www.pexels.com/photo/delicious-asian-noodle-bowl-with-fresh-herbs-28907751"><u>Pexels</u></a>
+          `,
       },
       {
         id: 9,
         name: "Nasi Kandar",
         description:
           "Nasi Kandar is a northern Malaysian specialty from Penang, popular for lunch or dinner. It features steamed rice served with an array of flavorful curries, gravies, and side dishes like fried chicken, beef rendang, okra, boiled eggs, and more.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/nasi_kandar.jpg",
+        imageCreditHTML: `
+            <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Nasi_kandar_Al_hilal.jpg"><u>RAYEESAHAMED</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
+          `,
       },
       {
         id: 10,
         name: "Mee Goreng Mamak",
         description:
           "Mee Goreng Mamak is a spicy, tangy fried noodle dish commonly eaten for lunch or dinner. Yellow noodles are wok-fried with tofu, potatoes, bean sprouts, eggs, and sometimes seafood or chicken, flavored with soy sauce, tomato ketchup, and chili paste.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/mee_goreng.jpg",
+        imageCreditHTML: `
+          Photo by <a target="_blank" href="https://unsplash.com/@eprayatama?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>R Eris</u></a> on <a target="_blank" href="https://unsplash.com/photos/a-plate-of-food-on-a-table-with-utensils-i5XurHSjE1M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Unsplash</u></a>
+          `,
       },
       {
         id: 11,
         name: "Rendang",
         description:
           "Rendang is a slow-cooked dry curry originating from the Minangkabau culture, and it's a staple in Malaysian and Indonesian cuisine. Typically made with beef, it's simmered for hours in coconut milk and a fragrant blend of lemongrass, galangal, garlic, ginger, and chili until tender and richly caramelized.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/rendang.jpg",
+        imageCreditHTML: `
+            Photo by <a target="_blank" href="https://unsplash.com/@kurisuchanxx?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Christian Dala</u></a> on <a target="_blank" href="https://unsplash.com/photos/a-close-up-of-a-bowl-of-food-on-a-table-voSslbaAVtY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"><u>Unsplash</u></a>
+          `,
       },
       {
         id: 12,
         name: "Hainanese Chicken Rice",
         description:
           "Hainanese Chicken Rice is a simple yet beloved dish that pairs poached or roasted chicken with fragrant rice cooked in chicken broth and garlic. Served with chili sauce, ginger paste, and soy sauce, it's light yet flavorful.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/hainese_checken_rice.jpg",
+        imageCreditHTML: `
+          Photo by  <a  target="_blank "href="https://www.pexels.com/@change-c-c-974768353/">Change C.C</a> on <a target="_blank" href="https://www.pexels.com/photo/hainanese-chicken-rice-with-fresh-vegetables-30120279/"><u>Pexels</u></a>
+          `,
       },
       {
         id: 13,
         name: "Ikan Bakar",
         description:
           "Ikan Bakar, or grilled fish, is a smoky and spicy seafood dish perfect for lunch or dinner by the beach or at a night market. Fresh whole fish like stingray or mackerel is marinated with turmeric, chili paste, and spices, then wrapped in banana leaves and grilled over charcoal.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/ikan_bakar.jpg",
+        imageCreditHTML: `
+            <a href="https://commons.wikimedia.org/wiki/File:Gurame_bakar_kecap_2.JPG"><u>Gunawan Kartapranata</u></a>, <a href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
+          `,
       },
       {
         id: 14,
         name: "Nasi Campur",
         description:
           "Nasi Campur, or 'mixed rice,' is a highly customizable Malaysian meal where you pick a portion of rice and choose from a variety of sides like curries, stir-fried vegetables, fried chicken, sambal, eggs, tofu, and more.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/nasi_campur.jpg",
+        imageCreditHTML: `
+            <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Nasi_Campur.jpg"><u>Fei Tan</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0"><u>CC BY 2.0</u></a>, via Wikimedia Commons
+          `,
       },
       {
         id: 15,
         name: "Nasi Dalca",
         description:
           "Nasi Dalca is a flavorful Malaysian-Indian dish combining spiced rice with dalca, a thick mildly spiced lentil and vegetable curry. The rice is often cooked with aromatic spices and served with additional curries, pickles, and fried chicken or beef.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/nasi_dalca.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@yosuke_ota?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Yosuke Ota</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-plate-of-food-kK-ARrS8ieo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
       },
     ],
   },
@@ -527,14 +543,14 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Satay",
         description:
           "Satay is one of Malaysia's most iconic street foods, skewers of marinated meat (usually chicken or beef) grilled over open flames and served with a rich peanut sauce, cucumber, onions, and compressed rice cakes (ketupat).",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/satay.jpg",
       },
       {
         id: 17,
         name: "Rojak",
         description:
           "Rojak is a bold, tangy Malaysian fruit and vegetable salad that's a true flavor bomb. Commonly made with cucumber, jicama, pineapple, tofu puffs, and dough fritters, it's tossed in a thick shrimp paste sauce blended with sugar, chili, and lime.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/rujak.jpg",
       },
       {
         id: 18,
@@ -548,7 +564,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Murtabak",
         description:
           "Murtabak is a thick, stuffed pan-fried flatbread that's popular across Malaysia, especially during Ramadan and at night bazaars. It's filled with spiced minced meat (usually beef or chicken), eggs, and onions, folded in a thin dough, and griddled until golden brown.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/martabak.jpg",
       },
       {
         id: 20,
@@ -570,28 +586,37 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Banana Leaf Rice",
         description:
           "Banana Leaf Rice is a traditional South Indian vegetarian meal widely available in Malaysian Indian restaurants. Served on a banana leaf, it typically includes white or parboiled rice, various vegetable curries, pickles, papadum, and dhal.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/banana_leaf_rice.jpg",
+        imageCreditHTML: `
+            <a target="_blank" href="https://commons.wikimedia.org/wiki/File:%E0%B2%AC%E0%B2%BE%E0%B2%B3%E0%B3%86%E0%B2%B2%E0%B3%86_%E0%B2%8A%E0%B2%9F_(Banana_leaf_meal).jpg"><u>Codegeass123</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
+          `,
       },
       {
         id: 22,
         name: "Vegetarian Mee Goreng",
         description:
           "Mee Goreng can easily be made vegetarian and is widely available at Indian-Muslim (mamak) eateries and vegetarian stalls. Made with yellow noodles stir-fried in a mix of soy sauce, ketchup, and chili, it's tossed with tofu, cabbage, bean sprouts, and sometimes potatoes or tomatoes.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/mee_goreng.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@eprayatama?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>R Eris</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-plate-of-food-on-a-table-with-utensils-i5XurHSjE1M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
       },
       {
         id: 23,
         name: "Putu Mayam",
         description:
           "Putu Mayam (also known as Idiyappam) is a light, sweet South Indian-inspired breakfast or snack, often enjoyed by vegetarians. It consists of fine rice flour noodles served cold with shredded coconut and brown palm sugar.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/putu_mayam.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@yosuke_ota?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Yosuke Ota</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-plate-of-food-kK-ARrS8ieo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
       },
       {
         id: 24,
         name: "Popiah",
         description:
           "Popiah is a fresh spring roll made with a thin crepe-like skin and filled with a mix of shredded jicama, carrots, tofu, and lettuce. Vegetarian versions exclude meat and sometimes include mushrooms, bean curd, or glass noodles.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/popiah.jpg",
+        imageCreditHTML:
+          "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Lumpia_at_Teh_Jawa,_Purwokerto_Station,_Purwokerto_2015-03-20.jpg'><u>Crisco 1492</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0'><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons",
       },
     ],
   },
@@ -606,14 +631,19 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Teh Tarik",
         description:
           "Teh Tarik is Malaysia's national drink, a frothy, creamy pulled milk tea made with strong black tea and condensed milk. The name means 'pulled tea,' referring to the dramatic pouring technique between two cups, which cools and aerates the drink, creating its signature foam.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/teh_tarik.jpg",
+        innerCreditHTML: `
+            <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Teh_tarik_2.jpg"><u>Alpha from Melbourne, Australia</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0"><u>CC BY-SA 2.0</u></a>, via Wikimedia Commons
+          `,
       },
       {
         id: 26,
         name: "Kopi",
         description:
           "Kopi is the traditional Malaysian-style black coffee, robust and often served sweet with condensed or evaporated milk. Brewed using a cloth coffee sock and dark roasted beans (sometimes with added margarine during roasting), it offers a bold, smoky flavor.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/kopi.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@le_y0u?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>You Le</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-red-plate-topped-with-meat-covered-in-sauce-syjj30AYKRM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
       },
       {
         id: 27,
@@ -627,7 +657,9 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Sirap Bandung",
         description:
           "Sirap Bandung is a bright pink, sweet drink made with rose syrup and evaporated or condensed milk, creating a creamy, floral-flavored treat. Popular during festive seasons like Hari Raya and found at roadside drink stalls.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/sirap_bandung.jpg",
+        imageCreditHTML:
+          "<a target = “_blank” href='https://www.freepik.com/free-photo/large-glass-strawberry-milkshake-with-colorful-straws_10991607.htm#fromView=search&page=1&position=0&uuid=928f7d80-39bd-4ffa-82c2-d54604f338b2&query=Sirap+Bandung'><u>Image by Jcomp on Freepik</u></a>",
       },
       {
         id: 29,
@@ -684,7 +716,10 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Cendol",
         description:
           "Cendol is a refreshing iced dessert made with pandan-flavored green jelly noodles, coconut milk, palm sugar syrup (gula Melaka), and shaved ice. Often topped with red beans, glutinous rice, or even durian, Cendol is creamy, sweet, and slightly salty.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/cendol.jpg",
+        imageCreditHTML: `
+            Image by <a target="_blank" href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Jason Goh</u></a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Pixabay</u></a>
+          `,
       },
     ],
   },
@@ -699,28 +734,35 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Sambal Udang",
         description:
           "Sambal Udang is a spicy, flavorful Malaysian side dish made from prawns cooked in a rich sambal sauce. This dish combines the sweetness of fresh prawns with the heat of chili, garlic, tamarind, and belacan (fermented shrimp paste).",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/sambal_udang.jpg",
+        imageCreditHTML: `
+            <a target=”_blank” href="https://commons.wikimedia.org/wiki/File:SAMBAL_BALADO_TERONG_UDANG.jpg"><u>Windi Utari</u></a>, <a href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
+          `,
       },
       {
         id: 37,
         name: "Lemang",
         description:
           "Lemang is a traditional Malay delicacy made of glutinous rice, coconut milk, and salt, cooked slowly in bamboo over an open fire. Often enjoyed during festive seasons like Hari Raya, Lemang has a smoky aroma and sticky texture.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/lemang.jpg",
+        imageCreditHTML:
+          "<a target = “_blank” href='https://commons.wikimedia.org/wiki/File:Lemang_dihidang_bersama_rendang_ayam.jpg'><u>Puiyean88</u></a>, <a target = “_blank” href='https://creativecommons.org/licenses/by-sa/4.0'><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons",
       },
       {
         id: 38,
         name: "Ayam Goreng",
         description:
           "Ayam Goreng, or Malaysian-style fried chicken, is a crunchy and juicy side dish commonly served with rice dishes. Marinated in turmeric, chili, garlic, and spices, the chicken is deep-fried to golden perfection.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/ayam_goreng.jpg",
+        imageCreditHTML:
+          "<a target = “_blank” href='https://www.freepik.com/free-photo/crispy-fried-chicken-plate-with-salad-carrot_6632395.htm#fromView=search&page=1&position=1&uuid=e1be4c2b-2eb6-4d18-8322-424d0163bcd4&query=Ayam+goreng'><u>Image by jcomp on Freepik</u></a>",
       },
       {
         id: 39,
         name: "Durian",
         description:
           "Durian is often called Malaysia's most controversial fruit, famously known as the 'King of Fruits'. Its strong aroma and custard-like texture spark passionate reactions—people either love it or loathe it.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/durian.jpg",
       },
     ],
   },
@@ -1007,7 +1049,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
 `,
       featured: false,
-      blogs: KAULA_LUMPUR_BLOG_POST,
+      blogs : KAULA_LUMPUR_BLOG_POST,
       related_articles: KUALA_LUMPUR_RELATED_ARTICLES,
       travel_guide: KAULA_LUMPUR_TRAVEL_GUIDE,
     },
@@ -1027,9 +1069,9 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       slug: "langkawi",
       overview: `overview langkawi`,
       name: "Things to Do in Langkawi",
-      blogs: LANGKAWI_BLOG_POST,
       image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
       related_articles: [],
+      blogs: LANGKAWI_BLOG_POST,
       travel_guide: LANGKAWI_TRAVEL_GUIDE,
     },
     {
@@ -1038,8 +1080,8 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       overview: `overview perhentian islands`,
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       name: "Things to Do in Perhentian Islands",
-      blogs: PERHENTIAN_ISLANDS_BLOG_POST,
       travel_guide: PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
+      blogs: PERHENTIAN_ISLANDS_BLOG_POST,
       related_articles: [],
     },
   ],
