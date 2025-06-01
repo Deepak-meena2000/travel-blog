@@ -1,3 +1,5 @@
+import { Building, Star, Waves } from "lucide-react";
+
 export const THINGS_TO_KNOW_BEFORE_GOING = {
   malaysia: {
     heading: "Malaysia Travel Guide",
@@ -9,7 +11,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
       "Malaysia is a captivating blend of diverse cultures, stunning landscapes, and mouthwatering cuisine. But Before you jet off, it’s important to get familiar with a few essentials that will make your trip smoother. In this article, we cover everything you need to know before visiting Malaysia from visa requirements and currency tips to weather, local customs, dress codes, safety advice, and health precautions. Learn what to pack, how to get around, and how to respect local traditions. Whether it’s your first time in Southeast Asia or you're a seasoned traveler, this guide ensures you arrive in Malaysia informed and ready to explore with confidence.",
     data: [
       {
-         id: 1,
+        id: 1,
         heading: "Culture & History",
         description: `
                 Malaysia’s rich tapestry of culture and history is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia.
@@ -20,7 +22,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
                 <br />
                 <br />
                 Traditional values are strong, especially in rural areas. Learning about the culture enhances your appreciation of Malaysia’s heritage.
-                `
+                `,
       },
       {
         id: 2,
@@ -33,7 +35,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
                 <br />
                 <br />
                 <b>Few of visa-free countries:</b> USA, EU member states, Australia, India, China, Canada, Japan, South Korea, South Africa, Vietnam, Thailand, Indonesia, UAE.
-                `
+                `,
       },
       {
         id: 3,
@@ -51,12 +53,11 @@ If you're arriving by land—such as from Thailand or Singapore—the visa and M
 <b>Important: </b>Do not fill out the MDAC form earlier than 3 days before your arrival. It must be submitted within the 3 days leading up to your travel date
 
 
-        `
+        `,
       },
       {
-        id:4,
-        heading:
-          "Currency in Malaysia: Exchange Tips & Daily Costs",
+        id: 4,
+        heading: "Currency in Malaysia: Exchange Tips & Daily Costs",
         description: `
         <b>Malaysia uses the Malaysian Ringgit (MYR)</b>.
 
@@ -90,7 +91,7 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
         <br/>
         <br/>
         Mountain areas like <b>Cameron Highlands</b> remain cooler throughout the year, offering a refreshing escape from the tropical heat.
-        `
+        `,
       },
       {
         id: 6,
@@ -106,7 +107,7 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
 
 
 
-        `
+        `,
       },
       {
         id: 7,
@@ -143,7 +144,7 @@ Most intercity buses and trains in Malaysia offer comfortable seating, and <b>se
             <li>
             <b>By Car:</b> Renting a car is ideal for flexible road trips, especially in regions like Langkawi, Cameron Highlands, or the East Coast. Highways are well-maintained and signage is in English. Malaysia drives on the left-side.
             </li>
-        `
+        `,
       },
       {
         id: 9,
@@ -161,9 +162,9 @@ On islands, transportation may include scooters, bicycles, or boat transfers. Wa
 Renting a scooter is a convenient and budget-friendly way to hop between attractions especially in places like Langkawi, where public transport is limited.
 <br />
 <li>Scooter rental - <b>RM40–RM60 per day.</li></b>
-        `
+        `,
       },
-       {
+      {
         id: 10,
         heading: "Food and Alcohol Costs in Malaysia: What to Expect",
         description: `
@@ -177,9 +178,9 @@ Alcohol is taxed heavily—expect to pay RM15–RM30 ($3–$7 USD) for a beer at
 <br />
 <br />
 Langkawi and duty-free zones offer better prices. Always drink responsibly and respect local customs regarding alcohol.
-        `
+        `,
       },
-       {
+      {
         id: 11,
         heading: "Is Malaysia Safe for Travelers?",
         description: `
@@ -190,7 +191,7 @@ Tap water isn't always safe to drink — use bottled or filtered water. Naturewi
 <br />
 <br />
 <b>999 for ambulance or police</b>, and 991 for fire.
-        `
+        `,
       },
       {
         id: 12,
@@ -203,16 +204,16 @@ One can explore the vibrant capital <b>Kuala Lumpur</b>, with its Petronas Tower
           <br />
           <br />
 Each destination has its own unique flavor whether you're chasing beaches, tea plantations, food trails, or eco-adventures, Malaysia is full of surprises.
-        `
+        `,
       },
-       {
+      {
         id: 13,
         heading: "Quick Tips",
         description: `
          <li>Be prepared for sudden rain showers, carry a light poncho or umbrella.</li>
 <li>The sun can be intense, so don’t forget sunscreen.</li>
 <li>For essentials like groceries or bottled water, shop at local minimarts or supermarkets.</li>
-        `
+        `,
       },
     ],
     related_articles: [
@@ -222,13 +223,13 @@ Each destination has its own unique flavor whether you're chasing beaches, tea p
         image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
         category: "Activities",
       },
-       {
+      {
         slug: "penang/top-things-to-do",
         title: "Top Things to Do in Penang",
         image: "/images/country/malaysia/places/penang/penang.jpg",
         category: "Activities",
       },
-       {
+      {
         slug: "langakwi/top-things-to-do",
         title: "Top Things to Do in Langkawi",
         image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
@@ -987,3 +988,116 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
     ],
   },
 ];
+
+export const MALAYSIA_TOP_THINGS_TO_DO = {
+  title: "Malaysia Top Things to Do",
+  image: "/images/country/malaysia/malaysia_country.jpg",
+  data: [
+    {
+      id: 1,
+      title: "Petronas Twin Towers",
+      description:
+        "Visit the iconic 88-story twin skyscrapers in Kuala Lumpur, offering breathtaking views from the observation deck and a skybridge connecting the towers.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Architecture",
+      icon: Building,
+      operationalHours: "9:00 AM - 9:00 PM (Closed Mondays)",
+      location: "Kuala Lumpur City Centre",
+      price: "RM 80 for adults, RM 33 for children",
+      duration: "1-2 hours",
+      tips: [
+        "Book tickets in advance to avoid long queues",
+        "Visit during sunset for spectacular views",
+        "The skybridge is on the 41st floor",
+      ],
+    },
+    {
+      id: 2,
+      title: "Temple Hopping in Ubud",
+      description:
+        "Explore ancient Hindu temples scattered throughout Ubud, each with unique architecture and spiritual significance.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Culture",
+      icon: Star,
+      operationalHours: "6:00 AM - 6:00 PM",
+      location: "Ubud, Bali",
+      price: "IDR 15,000 - 30,000 per temple",
+      duration: "Half day to full day",
+      tips: [
+        "Dress modestly and bring a sarong",
+        "Visit early morning for fewer crowds",
+        "Hire a local guide for cultural insights",
+      ],
+    },
+    {
+      id: 3,
+      title: "Surfing at Kuta Beach",
+      description:
+        "Learn to surf or improve your skills at one of Bali's most famous beaches, perfect for beginners and experienced surfers alike.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "Adventure",
+      icon: Waves,
+      operationalHours: "Best waves: 6:00 AM - 10:00 AM",
+      location: "Kuta, Bali",
+      price: "Surf lessons: $25-40 USD",
+      duration: "2-3 hours per session",
+      tips: [
+        "Book lessons with certified instructors",
+        "Early morning has the best waves",
+        "Apply reef-safe sunscreen",
+      ],
+    },
+  ],
+  related_articles: [
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Best Street Food in Bali: A Culinary Adventure",
+      category: "Food",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Ultimate Guide to Bali's Beaches",
+      category: "Beaches",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Best Street Food in Bali: A Culinary Adventure",
+      category: "Food",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Ultimate Guide to Bali's Beaches",
+      category: "Beaches",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+  ],
+  more_about_data: [
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Best Street Food in Bali: A Culinary Adventure",
+      category: "Food",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Ultimate Guide to Bali's Beaches",
+      category: "Beaches",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Best Street Food in Bali: A Culinary Adventure",
+      category: "Food",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+    {
+      slug: "/malaysia/kuala_lumpur",
+      title: "Ultimate Guide to Bali's Beaches",
+      category: "Beaches",
+      image: "/placeholder.svg?height=150&width=200",
+    },
+  ],
+};

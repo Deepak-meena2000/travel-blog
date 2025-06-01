@@ -1,24 +1,25 @@
 import Image from "next/image";
+import styles from "@/app/index.module.css";
 
 const HeroSection = ({ country }: { country: any }) => {
   return (
-    <section className="relative h-96 bg-slate-800">
-      <Image
-        src={country.image || "/placeholder.svg"}
-        alt={country.name}
-        fill
-        className="object-cover opacity-60"
-      />
-      <div className="absolute inset-0 bg-slate-800/60" />
-      <div className="relative max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="text-white animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Top Things to Do in {country.name}
+    <section className="relative w-full">
+      <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
+        <Image
+          src={country.country_page_image || "/placeholder.svg"}
+          alt={country.name}
+          width={1200}
+          height={100}
+          className="w-full h-full object-cover"
+          priority
+        />
+      </div>
+      <div className={styles.imageGradientOverlay}></div>
+      <div className="absolute  inset-0 flex items-end pb-4 px-4 z-20">
+        <div className="text-white flex justify-center items-center w-full">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            {country.name}
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-2xl">
-            Discover the best attractions, activities, and experiences that{" "}
-            {country.name} has to offer
-          </p>
         </div>
       </div>
     </section>

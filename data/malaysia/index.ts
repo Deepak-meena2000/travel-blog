@@ -1,6 +1,7 @@
 import {
   MALAYSIA_SIXTEEN_DAYS_ITINERARY,
   MALAYSIA_NINE_DAYS_ITINERARY,
+  MALAYSIA_TOP_THINGS_TO_DO,
 } from "./data";
 import {
   KUALA_LUMPUR_RELATED_ARTICLES,
@@ -1345,4 +1346,5 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       category: "Itinerary",
     },
   ],
+  top_things_to_do : MALAYSIA_TOP_THINGS_TO_DO,
 };
