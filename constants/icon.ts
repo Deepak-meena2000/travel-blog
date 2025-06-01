@@ -20,6 +20,7 @@ import {
   Clock,
   Pin,
   Leaf,
+  Building,
 } from "lucide-react";
 
 export const ICONS = {
@@ -43,5 +44,6 @@ export const ICONS = {
   SUN : Sun,
   CLOCK : Clock,
   PIN: Pin,
-  LEAF: Leaf
+  LEAF: Leaf,
+  BUILDING : Building
 };

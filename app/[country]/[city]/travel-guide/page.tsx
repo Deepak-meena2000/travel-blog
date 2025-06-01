@@ -31,22 +31,6 @@ import OverViewSection from "../../things-to-know-before-going/components/overvi
 import TableOfContent from "../../things-to-know-before-going/components/table-of-content";
 import { ICONS } from "@/constants/icon";
 
-export const ICON_MAPPING = {
-  "1": Pyramid,
-  "2": Plane,
-  "3": MapPin,
-  "4": DollarSign,
-  "5": Calendar,
-  "6": Wifi,
-  "7": Languages,
-  "8": TrainFront,
-  "9": Bike,
-  "10": Soup,
-  "11": Shield,
-  "12": FerrisWheel,
-  "13": BookOpenCheck,
-};
-
 export default async function CityTravelGuidePage({
   params,
 }: {
@@ -103,9 +87,11 @@ export default async function CityTravelGuidePage({
           </div>
         </div>
       </section>
-      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-        <OverViewSection IconName={Plane} overview={overview} />
-      </div>
+      {overview ? (
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          <OverViewSection IconName={Plane} overview={overview} />
+        </div>
+      ) : null}
 
       {/* Main Content */}
       <section className="py-16">
@@ -167,40 +153,42 @@ export default async function CityTravelGuidePage({
               </Tabs>
             </div>
 
-            <div className="lg:col-span-1">
-              <Card className="sticky top-20">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    Related Articles
-                  </h3>
-                  <div className="space-y-4">
-                    {related_articles?.map((article: any, index: any) => (
-                      <Link
-                        key={index}
-                        href={`${article.slug}`}
-                        className="flex gap-3 group cursor-pointer"
-                      >
-                        <Image
-                          src={article.image || "/placeholder.svg"}
-                          alt={article.title}
-                          width={80}
-                          height={60}
-                          className="w-32 h-20 object-cover rounded-lg flex-shrink-0"
-                        />
-                        <div className="flex-1">
-                          <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
-                            {article.title}
-                          </h4>
-                          <Badge variant="secondary" className="text-xs mt-1">
-                            {article.category}
-                          </Badge>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            {related_articles?.length > 0 ? (
+              <div className="lg:col-span-1">
+                <Card className="sticky top-20">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">
+                      Related Articles
+                    </h3>
+                    <div className="space-y-4">
+                      {related_articles?.map((article: any, index: any) => (
+                        <Link
+                          key={index}
+                          href={`${article.slug}`}
+                          className="flex gap-3 group cursor-pointer"
+                        >
+                          <Image
+                            src={article.image || "/placeholder.svg"}
+                            alt={article.title}
+                            width={80}
+                            height={60}
+                            className="w-32 h-20 object-cover rounded-lg flex-shrink-0"
+                          />
+                          <div className="flex-1">
+                            <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
+                              {article.title}
+                            </h4>
+                            <Badge variant="secondary" className="text-xs mt-1">
+                              {article.category}
+                            </Badge>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            ) : null}
           </div>
         </div>
       </section>

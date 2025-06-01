@@ -206,7 +206,8 @@ export const LANGKAWI_BLOG_POST = [
     location: "Telaga Tujuh, near Langkawi Cable Car",
     duration: "2 Hours",
     tips: ["Book online to reserve your preferred time slot."],
-    image: "/images/country/malaysia/places/langkawi/blog/skytrex_adventure.jpg",
+    image:
+      "/images/country/malaysia/places/langkawi/blog/skytrex_adventure.jpg",
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Outward Bound Costa Rica</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-man-on-a-rope-in-the-middle-of-a-forest-raKxqfjs03Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
@@ -228,7 +229,8 @@ export const LANGKAWI_BLOG_POST = [
     price: "Adults: RM45 <br /> Children: RM30",
     location: "Jalan Ayer Hangat, (10 minutes from Kuah)",
     duration: "1-2 Hour",
-    image: "/images/country/malaysia/places/langkawi/blog/wildlife_park_and_bird_paradise.jpg",
+    image:
+      "/images/country/malaysia/places/langkawi/blog/wildlife_park_and_bird_paradise.jpg",
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://unsplash.com/@matthewcabret1?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Matthew Cabret</u></a> on <a target='_blank' href='https://unsplash.com/photos/wildlife-photography-flock-of-flamingo-ub1sSvJ_Tbs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
@@ -263,18 +265,211 @@ export const LANGKAWI_BLOG_POST = [
 export const LANGKAWI_TRAVEL_GUIDE = {
   title: "Langkawi Travel Guide",
   category: "Travel Guide",
+  tableOfContentHeading: "Langkawi Travel Guide",
   image: "/images/country/malaysia/places/langkawi/travel_guide_banner.jpg",
   slug: "/langkawi/travel-guide",
   data: [
     {
       id: 1,
-      heading: "Visa Requirements ?",
+      icon: "PLANE",
+      heading: "How to Reach",
       description: `
-                Before entering Malaysia, check the visa requirements based on your nationality. Many travelers can enter visa-free for 14 to 90 days. However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC).
-                <br />
-                <br />
-                <b>Few of visa-free countries</b>: USA, EU member states, Australia, India, China, Canada, Japan, South Korea, South Africa, Vietnam, Thailand, Indonesia, UAE,
+      Langkawi is easily accessible by air and sea, making it one of the most convenient island destinations in Malaysia.
+      <br />
+      <br />
+      The fastest way to get there is by <b>flying directly to Langkawi International Airport (LGK)</b>, which has regular domestic flights from <b>Kuala Lumpur, Penang, Johor Bahru</b>, and international flights from <b>Singapore, Guangzhou, and Doha</b>. Major airlines like <b>AirAsia, Malaysia Airlines, and Firefly</b> operate frequent services, with one-way fares starting around <b>RM80–RM150</b> from Kuala Lumpur.
+      <br />
+      <br />
+      If you're traveling overland, you can take a bus or train to <b>Kuala Perlis, Kuala Kedah, or Penang</b>, then board a <b>ferry to Langkawi</b>. Ferries cost approximately <b>RM18–RM30</b> one way and take about <b>1.5–3 hours</b>, depending on the departure point.
+      <br />
+      <br />
+      Check the ferry schedule and book in advance on operators like Langkawifferryline or Cuticutilangkawi as the ferries aren’t so frequent.
+      <br />
+      <br />
+      <b>Quick Tip: </b>
+      <li>The scenic ferry ride is an experience in itself.</li>
+      <li>Opt for morning flights to enjoy more of the day.</li>
+      <li>Make sure to book the ferry tickets in advance..</li>
+                `,
+    },
+    {
+      id: 2,
+      icon: "CAR",
+      heading: "Getting Around Langkawi",
+      description: `
+     Getting around Langkawi is easy, flexible, and part of the adventure
+      <br />
+      <br />
+      The island doesn’t have public buses, so the most popular way to explore is by <b>renting a scooter or car</b>. Scooter rentals are affordable, typically costing <b>RM40–RM60 per day</b>, and ideal for solo travelers or couples wanting to explore at their own pace. Car rentals start around <b>RM70–RM100 per day</b>, perfect for families or groups
+      <br />
+      <br />
+      <li>Fuel is cheap, usually around <b>RM2.10/liter.</b></li>
+      <br />
+      For those who prefer not to drive, <b>Grab (ride-hailing app)</b> is widely available across Langkawi and offers a safe, convenient way to move between attractions.
+      <br />
+      <br />
+      <li>5km Grab ride: <b>RM10–RM12</b> </li>
+      <br />
+      Langkawi roads are well-maintained and scenic, making drives pleasant whether you're heading to a beach, jungle, or local market.
+                `,
+    },
+    {
+      id: 3,
+      icon: "HOTEL",
+      heading: "Where to Stay in Langkawi",
+      description: `
+    Langkawi offers a wide range of accommodations to suit every budget and travel style. <b>Luxury seekers</b> will love beachfront resorts such as The Datai Langkawi and The Ritz-Carlton, where nightly rates start from <b>RM1,200</b> and include spa access, private beaches, and fine dining. These opulent retreats nestled in the rainforest promise world-class service and spectacular sunrise views.
+    <br />
+    <br />
+    For <b>mid-range travelers</b>, properties like Berjaya Langkawi Resort, Meritus Pelangi Beach Resort, and Casa del Mar offer comfortable rooms, swimming pools, and on-site restaurants for <b>RM300–RM600 per night</b>. Many boast direct beach access at Pantai Cenang or tranquil settings near Datai Bay.
+    <br />
+    <br />
+    <b>Budget-friendly</b> options abound in Cenang Beach and Kuah Town, where guesthouses and hostels range from <b>RM80–RM180 per night</b>. These often include free Wi-Fi, communal lounges, and easy access to local eateries and night markets.
+    <br />
+    <br />
+    For a truly <b>authentic experience</b>, consider an eco-resort or jungle lodge (from <b>RM250 per night</b>) near Machinchang Forest Reserve, where wooden chalets are built on stilts amid the canopy. Some even offer guided nature walks and bird-watching tours.
+                `,
+    },
+    {
+      id: 4,
+      icon: "FOOD",
+      heading: "What and Where to Eat and Drink in Langkawi",
+      description: `
+    Langkawi’s culinary scene is as vibrant as its landscapes, offering everything from hearty street fare to relaxed beachside dining. Start your day with <b>Nasi Lemak</b> (coconut rice with sambal, egg, and anchovies) for around <b>RM6–RM8</b> at local morning stalls in <b>Kuah Town</b>.
+    <br />
+    <br />
+    For lunch or dinner, seek out beachfront warungs serving freshly grilled seafood—expect to pay <b>RM20–RM40</b> for sambal prawns or butter crab. Don’t miss the tangy <b>Laksa Kedah</b>, available at nightly food markets for <b>RM7–RM10</b>.
+    <br />
+    <br />
+    As evening falls, small cafes and food courts offer budget-friendly local favorites like satay, mee goreng, and tropical fruit desserts for <b>RM5–RM15</b>. Beach bars and kiosks set up along Pantai Cenang serve cold duty-free beers for <b>RM12–RM15</b> and creative mocktails for <b>RM20–RM30</b>.
+    <br />
+    <br />
+    With Langkawi’s duty-free status, imported wines and spirits are surprisingly affordable—pick up a bottle to enjoy on the beach at sunset. Whether you’re craving spicy Malay classics or a relaxed seaside snack, the island’s food stalls and markets deliver authentic flavors without breaking the bank.
+    <br />
+    <br />
+    Bring cash for street vendors and night markets, where prices are lowest and the atmosphere is most local.
+
+                `,
+    },
+    {
+      id: 5,
+      icon: "CLOCK",
+      heading: "What’s the street market schedule ?",
+      description: `
+       Langkawi’s night markets (locally known as pasar malam) are a must-visit for food lovers and bargain hunters. Rotating across different towns each night, these lively markets offer a mix of local street food, snacks, clothes, souvenirs, and more. Try dishes like nasi lemak, satay, grilled seafood, and fresh tropical juices at budget-friendly prices. Check out the markets below -
+        <br>
+        <br>
+        <li>Ulu Melaka Market - Mondays</li>
+        <li>Kedawang Market - Tuesdays</li>
+        <li>Kuah Night Market - Wednesdays & Saturdays</li>
+        <li>Bohor Temoyong Night Market - Thursdays</li>
+        <li>Air Hangat Night Market - Fridays</li>
+        <li>Bayas Night Market - Fridays</li>
+        <li>Padang Matsirat Night Market - Sundays</li>
+
+        <br />
+        All Night markets usually starts operating around 6pm till 11pm(Bring Cash)
+
+
+
+                `,
+    },
+    {
+      id: 6,
+      icon: "SHOPPING",
+      heading: "Where to Shop in Langkawi",
+      description: `
+     Langkawi is a <b>duty-free shopping haven</b>, making it the perfect place to stock up on chocolates, liquor, cosmetics, and electronics at significantly reduced prices. Major shopping centers and duty-free outlets offer well-known international brands alongside local specialties. Expect to find premium spirits and wines for <b>30–50% less</b> than mainland prices, with bottles of whisky or champagne starting around <b>RM70</b>. Chocolates and confectioneries can be as low as <b>RM5–RM10 per box</b>, ideal for gifts.
+     <br />
+     <br />
+     For a more authentic experience, visit local handicraft markets and stalls where you can browse handmade batik textiles, woven baskets, and traditional wood carvings. Prices for souvenirs range from <b>RM10</b>  for small keychains or postcardsto <b>RM80–RM150</b> for larger batik wall hangings.
+                `,
+    },
+    {
+      id: 7,
+      icon: "SUN",
+      heading: "When Is the Best Time to Visit Langkawi?",
+      description: `
+    The <b>best time to visit Langkawi</b> is during the dry season from <b>November to April</b>, when sunny skies and calm seas make for perfect beach days, island hopping, and outdoor adventures. During these months, daytime temperatures average <b>28°C–32°C</b>, with low rainfall, ideal for cable car rides, jungle treks, and mangrove tours.
+    <br />
+    <br />
+    Avoid the <b>monsoon season</b> from <b>May to October</b>, when heavy rains and rough seas can disrupt ferries, tours, attractions(SkyBridge) and water activities though you may find lower hotel prices.
+    <br />
+    <br />
+    If you don’t mind occasional showers, <b>September and October</b> offer quieter beaches and discounted accommodations (up to <b>30% off</b>  ).
+    <br />
+    <br />
+    For cultural immersion, plan your visit around local festivals like <b>Hari Raya Aidilfitri</b> (dates vary annually) and the <b>Langkawi International Maritime and Aerospace Exhibition (LIMA)</b> in <b>March</b>, which showcase vibrant celebrations and draw aviation and maritime enthusiasts worldwide.
+                `,
+    },
+    {
+      id: 7,
+      icon: "CLOCK",
+      heading: "How Long to Spend in Langkawi",
+      description: `
+       Choosing the right length of stay in Langkawi depends on your travel style and interests.
+       <br>
+       <br>
+       <li><b>2 Days:</b> Ideal for a quick getaway, this duration lets you tick off signature experiences like the Langkawi Cable Car, Sky Bridge, and a half-day island-hopping tour. It’s perfect if you’re on a tight schedule or combining Langkawi with other Malaysian destinations.</li>
+       <br />
+       <li><b>3-4 Days:</b> The sweet spot for most visitors, this timeframe balances activity and relaxation. You’ll have enough time for a full mangrove tour in Kilim Geoforest Park, a sunset cruise, beach days at Cenang, and sampling local night markets—without feeling rushed.</li>
+       <br />
+       <li><b>5–7 Days (or More):</b> Best for slow-travel enthusiasts or families, a week in Langkawi allows you to delve deeper into jungle stays, waterfall hikes, wildlife parks, and off-the-beaten-path villages. You can also take advantage of duty-free shopping, indulge in water sports at leisure, and even day-trip to nearby islands or marine parks.</li>
+       <br />
+
+                `,
+    },
+    {
+      id: 8,
+      icon: "BUILDING",
+      heading: "SkyCab, SkyBridge & Oriental Village Guide",
+      description: `
+      When you visit Langkawi’s <b>Oriental Village</b>, you’re stepping into the gateway for some of the island’s most iconic experiences: the <b>SkyCab (Langkawi Cable Car)</b>, the <b>SkyBridge</b> and lots of other activities like 3D Art Museum, Eagle SkyWalk, Cultural & Craft Workshops, SkyDom, Animal Zone & Mini Zoo and ATV & Archery Adventures. Designed with a charming Asian architectural style, Oriental Village features over 50 retail outlets, souvenir shops, art galleries, and restaurants offering Malaysian and international cuisine.
+      <br />
+      <br />
+      The tickets can be booked online but prefer to book at the ticket counter cause many activities operate permitting the weather. Tickets for Nature Walk or SkyGlide can be purchased at Top station.
+      <br />
+      <br />
+      <b>General Foreigner Adult Prices</b>
+      <br>
+      <br>
+      <li>Combo Ticket(SkyCable, SkyDom and 3D Art) - RM 85</li>
+      <li>Nature Walk - RM6</li>
+      <li>SkyGlide - RM10</li>
+      <li>Eagle SkyWalk - RM50 </li>
+      <li>SkyBridge - Free(Need to take either Nature walk or SkyGlide)</li>
+      <br />
+      <br />
+      Allocate half day to fully enjoy the SkyCab ride, bridge walk, and all the village’s side-activities without rushing. If you’re short on time, prioritize the cable car + SkyBridge (2–3 hours) and pick one or two village attractions.
+
+
+                `,
+    },
+    {
+      id: 9,
+      icon: "PIN",
+      heading: "Quick Tips for Traveling in Langkawi",
+      description: `
+      <li><b>Stay Connected:</b> Buy a local prepaid SIM (Digi or Maxis) at the airport for cheap data and reliable coverage across the island.</li>
+      <br />
+      <li><b>Rent Wisely:</b> Scooter rentals (RM40–RM60/day) are the cheapest way to get around, inspect brakes and lights before you ride.</li>
+      <br />
+      <li><b>Hydrate & Protect:</b> The tropical sun is intense—carry a refillable water bottle, apply reef-safe sunscreen (SPF 30+), and wear a wide-brim hat.</li>
+      <br />
+      <li><b>Beat the Heat:</b> Plan outdoor activities early (8–11 AM) or late afternoon (4–6 PM) to avoid peak midday temperatures and sudden rain.</li>
+      <br />
+      <li><b>Carry Cash:</b> Many street stalls and boat operators don’t accept cards—keep small denominations (RM1, RM5, RM10) for night markets and tips.</li>
+      <br />
+      <li><b>Pack Smart:</b> Bring lightweight, quick-dry clothing, insect repellent for jungle treks, and a waterproof pouch for your electronics on boat tours.</li>
+      <br />
+      <li><b>Book Tours Ahead:</b> Popular activities like island hopping, mangrove tours, and the cable car sell out in peak season—reserve at least two weeks in advance.</li>
+      <br />
+      <li><b>🛍️ Duty-Free Deals:</b> Take advantage of duty-free prices on chocolates, liquor, and cosmetics—but check your home country’s import limits before you stock up.</li>
+      <br />
+
+
                 `,
     },
   ],
+  related_articles: [],
 };

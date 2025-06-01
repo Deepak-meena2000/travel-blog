@@ -99,9 +99,11 @@ export default async function TravelGuidePage({
         </div>
       </section>
 
-      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-        <OverViewSection IconName={ListTodo} overview={overview} />
-      </div>
+      {overview ? (
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          <OverViewSection IconName={ListTodo} overview={overview} />
+        </div>
+      ) : null}
 
       {/* Main Content */}
       <section className="py-16">
