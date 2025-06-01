@@ -1,4 +1,22 @@
-import { Building, Star, Waves } from "lucide-react";
+import { ICONS } from "@/constants/icon";
+import {
+  Bike,
+  BookOpenCheck,
+  Building,
+  Calendar,
+  DollarSign,
+  FerrisWheel,
+  Languages,
+  MapPin,
+  Plane,
+  Pyramid,
+  Shield,
+  Soup,
+  Star,
+  TrainFront,
+  Waves,
+  Wifi,
+} from "lucide-react";
 
 export const THINGS_TO_KNOW_BEFORE_GOING = {
   malaysia: {
@@ -7,13 +25,14 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
       "/images/country/malaysia/things_to_know_before_going_to_malaysia.jpg",
     description:
       "Essential travel tips, information, and advice for your trip to Malaysia",
-    tableOfContentHeading: "Check List",
+    tableOfContentHeading: "View Check List",
     overview:
       "Malaysia is a captivating blend of diverse cultures, stunning landscapes, and mouthwatering cuisine. But Before you jet off, it’s important to get familiar with a few essentials that will make your trip smoother. In this article, we cover everything you need to know before visiting Malaysia from visa requirements and currency tips to weather, local customs, dress codes, safety advice, and health precautions. Learn what to pack, how to get around, and how to respect local traditions. Whether it’s your first time in Southeast Asia or you're a seasoned traveler, this guide ensures you arrive in Malaysia informed and ready to explore with confidence.",
     data: [
       {
         id: 1,
         heading: "Culture & History",
+        icon: "PYRAMID",
         description: `
                 Malaysia’s rich tapestry of culture and history is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia.
                 You’ll see this diversity reflected in its <b>festivals, food, languages, and religions</b>. Islam is the official religion, but Malaysia also celebrates Diwali, Chinese New Year, and Christmas.
@@ -27,6 +46,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
       },
       {
         id: 2,
+        icon: "PLANE",
         heading: "Visa Requirements",
         description: `
                 Before entering Malaysia, check the <a href="https://www.malaysia.gov.my/portal/subcategory/1543" target="_blank" class="text-teal-600 underline">visa requirements</a> based on your nationality. Many travelers can enter visa-free for 14 to 90 days. For longer stays or for nationalities requiring a visa, apply online via the <b>eVisa or eNTRI</b> systems, which are straightforward and quick. Immigration officials may ask for proof of onward travel and accommodation, so have those ready.
@@ -40,6 +60,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
       },
       {
         id: 3,
+        icon: "MAP_PIN",
         heading: "What’s MDAC, and the complete process ?",
         description: `
             Malaysia Digital Arrival Card(MDAC), a mandatory online form that all foreign travelers, except Singapore, must complete before entering Malaysia. It's not a visa but a required registration document that streamlines entry procedures and improves border security.
@@ -58,6 +79,7 @@ If you're arriving by land—such as from Thailand or Singapore—the visa and M
       },
       {
         id: 4,
+        icon: "DOLLAR_SIGN",
         heading: "Currency in Malaysia: Exchange Tips & Daily Costs",
         description: `
         <b>Malaysia uses the Malaysian Ringgit (MYR)</b>.
@@ -78,6 +100,7 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
 
       {
         id: 5,
+        icon: "PYRAMID",
         heading: "Best Time to Visit",
         description: `
 
@@ -96,6 +119,7 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
       },
       {
         id: 6,
+        icon: "WIFI",
         heading: "Network",
         description: `
         Malaysia has excellent mobile coverage across cities and tourist areas. Major telecom providers include <b>Hotlink (Maxis), Digi, Celcom, and U Mobile.</b>
@@ -112,6 +136,7 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
       },
       {
         id: 7,
+        icon: "LANGUAGES",
         heading: "Languages",
         description: `
             The national language is Bahasa Malaysia (Malay), but English is widely spoken, especially in urban centers, tourist areas, and by younger generations.
@@ -124,6 +149,7 @@ Wi-Fi is available in hotels, cafes, and shopping malls. If you're exploring rem
       },
       {
         id: 8,
+        icon: "TRAIN_FRONT",
         heading: "Getting Around Malaysia",
         description: `
             Traveling between cities in Malaysia is affordable and efficient thanks to a well-developed transport network.
@@ -149,6 +175,7 @@ Most intercity buses and trains in Malaysia offer comfortable seating, and <b>se
       },
       {
         id: 9,
+        icon: "BIKE",
         heading: "Best Ways to Get Around Malaysian Cities and Towns",
         description: `
             Local transportation in Malaysia is both reliable and budget-friendly. In major cities, use <b>Grab</b> for convenient, cashless rides it’s more trustworthy than street taxis. It usually costs around <b>RM10–RM12 for a 5 km ride</b>.
@@ -167,6 +194,7 @@ Renting a scooter is a convenient and budget-friendly way to hop between attract
       },
       {
         id: 10,
+        icon: "SOUP",
         heading: "Food and Alcohol Costs in Malaysia: What to Expect",
         description: `
 Malaysia’s cuisine is a flavorful mix of Malay, Chinese, and Indian influences—don’t miss dishes like nasi lemak, laksa, and roti canai costs around RM5–RM10, while mid-range meals at local restaurants are typically RM15–RM30. Street food is both delicious and budget-friendly, especially in cities like Penang and Kuala Lumpur. For more insights, explore our in-depth article on Malaysian cuisine -
@@ -183,6 +211,7 @@ Langkawi and duty-free zones offer better prices. Always drink responsibly and r
       },
       {
         id: 11,
+        icon: "SHIELD",
         heading: "Is Malaysia Safe for Travelers?",
         description: `
           Malaysia is generally very <b>safe for travelers</b>, with low violent crime rates. Petty theft (like pickpocketing or bag snatching) can happen in crowded areas, so stay alert and keep valuables secure. Always use official taxis or Grab, especially at night.
@@ -196,6 +225,7 @@ Tap water isn't always safe to drink — use bottled or filtered water. Naturewi
       },
       {
         id: 12,
+        icon: "FERRIS_WHEEL",
         heading: "What Are the Must-Visit Places in Malaysia?",
         description: `
           Malaysia has something for every kind of traveler. Discover the top things to do in Malaysia with our detailed article of <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Malaysia</a>.
@@ -209,6 +239,7 @@ Each destination has its own unique flavor whether you're chasing beaches, tea p
       },
       {
         id: 13,
+        icon: "BOOK_OPEN_CHECK",
         heading: "Quick Tips",
         description: `
          <li>Be prepared for sudden rain showers, carry a light poncho or umbrella.</li>

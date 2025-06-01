@@ -1,0 +1,31 @@
+import {
+  Plane,
+  MapPin,
+  DollarSign,
+  Calendar,
+  Bike,
+  Soup,
+  Pyramid,
+  Wifi,
+  Languages,
+  TrainFront,
+  Shield,
+  FerrisWheel,
+  BookOpenCheck,
+} from "lucide-react";
+
+export const ICONS = {
+  PYRAMID: Pyramid,
+  PLANE: Plane,
+  MAP_PIN: MapPin,
+  DOLLAR_SIGN: DollarSign,
+  CALENDAR: Calendar,
+  WIFI: Wifi,
+  LANGUAGES: Languages,
+  TRAIN_FRONT: TrainFront,
+  BIKE: Bike,
+  SOUP: Soup,
+  SHIELD: Shield,
+  FERRIS_WHEEL: FerrisWheel,
+  BOOK_OPEN_CHECK: BookOpenCheck,
+};

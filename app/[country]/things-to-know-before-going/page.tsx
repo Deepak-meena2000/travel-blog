@@ -5,31 +5,7 @@ import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  MapPin,
-  ArrowRight,
-  Info,
-  Calendar,
-  DollarSign,
-  Plane,
-  Wifi,
-  Shield,
-  Utensils,
-  Globe,
-  AlertTriangle,
-  Check,
-  LucideProps,
-  Currency,
-  SpeakerIcon,
-  Languages,
-  Bike,
-  BookOpenCheck,
-  FerrisWheel,
-  Pyramid,
-  Soup,
-  TrainFront,
-  ListTodo,
-} from "lucide-react";
+import { Info, ListTodo } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { ThankYouSection } from "@/components/thank-you-section";
 import styles from "@/app/index.module.css";
@@ -37,25 +13,11 @@ import { THINGS_TO_KNOW_BEFORE_GOING } from "@/data/malaysia/data";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
 import OverViewSection from "./components/overview";
 import { Badge } from "@/components/ui/badge";
+import TableOfContent from "./components/table-of-content";
+import { ICONS } from "@/constants/icon";
 
 type Props = {
   params: { country: string };
-};
-
-export const ICON_MAPPING = {
-  "1": Pyramid,
-  "2": Plane,
-  "3": MapPin,
-  "4": DollarSign,
-  "5": Calendar,
-  "6": Wifi,
-  "7": Languages,
-  "8": TrainFront,
-  "9": Bike,
-  "10": Soup,
-  "11": Shield,
-  "12": FerrisWheel,
-  "13": BookOpenCheck,
 };
 
 export async function generateMetadata({
@@ -102,7 +64,6 @@ export default async function TravelGuidePage({
     notFound();
   }
 
-  // Get travel guide data or use default
   const countryData =
     THINGS_TO_KNOW_BEFORE_GOING[
       countryName as keyof typeof THINGS_TO_KNOW_BEFORE_GOING
@@ -134,9 +95,6 @@ export default async function TravelGuidePage({
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
             <h1 className="text-2xl md:text-5xl font-bold mb-4">{heading}</h1>
-            {/* <p className="text-xl text-gray-200 max-w-2xl">
-              {description}
-            </p> */}
           </div>
         </div>
       </section>
@@ -161,35 +119,10 @@ export default async function TravelGuidePage({
                 }}
               >
                 <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    {/* <ListTodo className="w-7 h-7 text-blue-600 mr-2" /> */}
-                    <h3 className="text-xl font-bold text-gray-900">
-                      {tableOfContentHeading}
-                    </h3>
-                  </div>
-                  <ul className="space-y-3">
-                    {guideData?.map((item, index) => {
-                      const IconComponent =
-                        ICON_MAPPING[
-                          item.id as unknown as keyof typeof ICON_MAPPING
-                        ] || Info;
-                      return (
-                        <li key={`sidebar-${item.heading}-${index}`}>
-                          <Link
-                            href={`#${item.heading
-                              .toLowerCase()
-                              .replace(/\s+/g, "-")}`}
-                            className="flex items-center text-gray-800 hover:text-gray-500 hover:underline transition-colors font-medium"
-                          >
-                            <span className="w-8 h-8 flex items-center justify-center rounded-full mr-2 !bg-white">
-                              <IconComponent className="w-5 h-5 text-[#ff9776]" />
-                            </span>
-                            <span>{item.heading}</span>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <TableOfContent
+                    heading={tableOfContentHeading}
+                    items={guideData}
+                  />
                 </CardContent>
               </Card>
 
@@ -200,9 +133,7 @@ export default async function TravelGuidePage({
                 >
                   {guideData?.map((item, index) => {
                     const IconComponent =
-                      ICON_MAPPING[
-                        item.id as unknown as keyof typeof ICON_MAPPING
-                      ] || Info;
+                      ICONS[item.icon as keyof typeof ICONS] || Info;
                     return (
                       <Card
                         key={`${item.heading}-${index}`}
@@ -211,10 +142,10 @@ export default async function TravelGuidePage({
                       >
                         <CardContent className="p-6">
                           <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                            <div className="w-10 h-10 bg-white border border-[#ff9776] box-shadow-xl rounded-full flex items-center justify-center">
                               <IconComponent className="w-5 h-5 text-[#ff9776]" />
                             </div>
-                            <h2 className="text-xl font-bold">
+                            <h2 className="text-base lg:text-xl font-bold">
                               {item.heading}
                             </h2>
                           </div>
@@ -222,7 +153,7 @@ export default async function TravelGuidePage({
                             dangerouslySetInnerHTML={{
                               __html: item.description,
                             }}
-                            className={styles.list_style}
+                            className={`${styles.list_style} text-sm lg:text-base leading-relaxed`}
                           />
                         </CardContent>
                       </Card>
