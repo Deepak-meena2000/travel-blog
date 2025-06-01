@@ -6,10 +6,11 @@ import {
 import {
   KUALA_LUMPUR_RELATED_ARTICLES,
   KAULA_LUMPUR_TRAVEL_GUIDE,
+  KAULA_LUMPUR_BLOG_POST,
 } from "./kuala-lumpur/data";
-import { LANGKAWI_TRAVEL_GUIDE } from "./langkawi/data";
-import { PENANG_RELATED_ARTICLES, PENANG_TRAVEL_GUIDE } from "./penang/data";
-import { PERHENTIAN_ISLANDS_TRAVEL_GUIDE } from "./perhentian/data";
+import { LANGKAWI_BLOG_POST, LANGKAWI_TRAVEL_GUIDE } from "./langkawi/data";
+import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES, PENANG_TRAVEL_GUIDE } from "./penang/data";
+import { PERHENTIAN_ISLANDS_BLOG_POST, PERHENTIAN_ISLANDS_TRAVEL_GUIDE } from "./perhentian/data";
 
 export const MALAYSISA_FOOD_DATA = [
   {
@@ -1048,6 +1049,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
 `,
       featured: false,
+      blogs : KAULA_LUMPUR_BLOG_POST,
       related_articles: KUALA_LUMPUR_RELATED_ARTICLES,
       travel_guide: KAULA_LUMPUR_TRAVEL_GUIDE,
     },
@@ -1058,6 +1060,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       overview: `Penang, often dubbed the "Pearl of the Orient," is one of Malaysia’s most exciting travel destinations, offering a unique blend of culture, heritage, nature, and food. The island is best known for its UNESCO-listed capital, Georgetown, where colonial architecture, vibrant street art, and multicultural influences come alive. Travelers are drawn to Penang for its rich history, diverse culinary scene(often considered Malaysia’s best) and stunning coastal landscapes. Penang is a must-visit destination in Southeast Asia for culture seekers, foodies, and beach lovers alike.`,
       image: "/images/country/malaysia/places/penang/penang.jpg",
       description: `Penang, often dubbed the "Pearl of the Orient," is one of Malaysia's most exciting travel destinations, offering a unique blend of culture, heritage, nature, and food. The island is best known for its UNESCO-listed capital, Georgetown, where colonial architecture, vibrant street art, and multicultural influences come alive. Travelers are drawn to Penang for its rich history, diverse culinary scene(often considered Malaysia's best) and stunning coastal landscapes. Penang is a must-visit destination in Southeast Asia for culture seekers, foodies, and beach lovers alike.`,
+      blogs: PENANG_BLOG_POST,
       travel_guide: PENANG_TRAVEL_GUIDE,
       related_articles: PENANG_RELATED_ARTICLES,
     },
@@ -1068,6 +1071,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       name: "Things to Do in Langkawi",
       image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
       related_articles: [],
+      blogs: LANGKAWI_BLOG_POST,
       travel_guide: LANGKAWI_TRAVEL_GUIDE,
     },
     {
@@ -1077,6 +1081,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       name: "Things to Do in Perhentian Islands",
       travel_guide: PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
+      blogs: PERHENTIAN_ISLANDS_BLOG_POST,
       related_articles: [],
     },
   ],
