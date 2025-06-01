@@ -1006,6 +1006,13 @@ export const MALAYSIA_PLACES_TO_VISIT = [
 
 export const MALAYSIA_DATA = {
   blogPost: [
+      {
+      slug: "top-things-to-do",
+      title: "Top Things to do in Malaysia",
+      image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
+      description: `Top Things to do in Malaysia`,
+      category: "Activities",
+    },
     {
       slug: "kuala-lumpur/top-things-to-do",
       title: "Top Things to Do in Kuala Lumpur",
@@ -1035,7 +1042,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       description: `Perhentian Islands, located off the east coast of Malaysia, is known for its crystal-clear waters, white sandy beaches, and laid-back vibes. The island is primarily made up of two main parts: Pulau Besar (the larger island) and Pulau Kecil (the smaller island). Ideal for budget travelers and beginners in snorkeling or scuba diving, it's a top destination for marine life lovers looking to explore coral reefs and chill in beachfront chalets.`,
       category: "Activities",
-    },
+    }, 
   ],
 
   cities: [
@@ -1181,6 +1188,13 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
   ],
 
   latestBlogs: [
+    {
+      slug: "/malaysia/top-things-to-do",
+      title: "Top Things to do in Malaysia",
+      image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
+      description: `Top Things to do in Malaysia`,
+      category: "Activities",
+    },
     {
       slug: "/malaysia/places-to-visit",
       title: "Top places to visit in Malaysia",

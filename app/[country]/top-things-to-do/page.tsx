@@ -143,7 +143,9 @@ export default async function ThingsToDoPage({
                               <h4 className="font-semibold text-slate-800 mb-1">
                                 Location
                               </h4>
-                              <p className="text-slate-600">{blog.location}</p>
+                              <p dangerouslySetInnerHTML={{
+                                __html : blog.location
+                              }} className="text-slate-600"/>
                             </div>
                           </div>
                         )}
@@ -156,12 +158,12 @@ export default async function ThingsToDoPage({
                               <h4 className="font-semibold text-slate-800 mb-1">
                                 Price
                               </h4>
-                              <p
-                                className="text-slate-600"
-                                dangerouslySetInnerHTML={{
-                                  __html: blog.price,
-                                }}
-                              />
+                              <ul
+                            dangerouslySetInnerHTML={{
+                              __html: blog.price,
+                            }}
+                            className={`${styles.list_style} text-sm lg:text-base leading-relaxed text-slate-600`}
+                          />
                             </div>
                           </div>
                         )}
@@ -198,9 +200,10 @@ export default async function ThingsToDoPage({
                                   className="flex items-start space-x-3"
                                 >
                                   <Check className="h-3 w-3 text-teal-500 mt-1.5 flex-shrink-0" />
-                                  <p className="text-sm text-slate-600">
-                                    {tip}
-                                  </p>
+                                  <p dangerouslySetInnerHTML={{
+                                    __html : tip
+                                  }} className="text-sm text-slate-600"/>
+                                 
                                 </div>
                               );
                             })}
