@@ -49,14 +49,14 @@ export default async function PlacesToVisitPage({
 
       {/* Overview Section */}
       <section className="py-8 bg-white">
-        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
           <OverViewSection IconName={MapPin} overview={overview} />
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">

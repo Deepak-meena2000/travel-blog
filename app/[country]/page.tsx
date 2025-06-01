@@ -161,7 +161,7 @@ export default async function CountryPage({
 
       {/* Quick Actions as Tabs */}
       <section className="py-8 bg-white border-b">
-        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="all" className="w-full">
             <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 mb-0">
               <TabsTrigger

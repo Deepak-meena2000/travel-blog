@@ -66,7 +66,7 @@ export default async function ThingsToDoPage({
         </div>
       </section>
       <section className="py-8">
-        <div className="flex flex-col gap-12 max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-12 max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
           <OverViewSection IconName={Building} overview={country.overview} />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
