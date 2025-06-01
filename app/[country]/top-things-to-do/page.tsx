@@ -22,7 +22,6 @@ import OverViewSection from "../things-to-know-before-going/components/overview"
 import CityBlogListing from "../[city]/top-things-to-do/component/blog-listing";
 import styles from "@/app/index.module.css";
 import MoreAboutSection from "@/components/more-about";
-import ThankYouForReading from "@/components/thank-you-for-reading";
 
 export default async function ThingsToDoPage({
   params,
@@ -264,7 +263,7 @@ export default async function ThingsToDoPage({
           more_about_data={more_about_data}
           heading={country.name}
         />
-        <ThankYouForReading name={country.name} />
+        <ThankYouSection destination={country.name} />
       </section>
     </>
   );
