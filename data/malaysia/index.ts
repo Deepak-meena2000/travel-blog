@@ -1163,14 +1163,14 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       slug: "/malaysia/16-days-itinerary",
       title: "16 Days Itinerary in Malaysia",
-      image: "/images/country/malaysia/malaysia_country.jpg",
+      image: "/images/country/malaysia/malaysia_16_days_banner.jpg",
       description: "16 Days Itinerary in Malaysia",
       category: "Itinerary",
     },
     {
       slug: "/malaysia/9-days-itinerary",
       title: "9 Days Itinerary in Malaysia",
-      image: "/images/country/malaysia/malaysia_country.jpg",
+      image: "/images/country/malaysia/malaysia_9_days_banner.jpg",
       description: "9 Days Itinerary in Malaysia",
       category: "Itinerary",
     },
@@ -1318,14 +1318,14 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
 
   nine_days_itinerary: {
     heading: "9 Days Itinerary in Malaysia",
-    image: "/images/country/malaysia/malaysia_country.jpg",
+    image: "/images/country/malaysia/malaysia_9_days_banner.jpg",
     description: "9 Days Itinerary in Malaysia",
     overview: "9 Days Itinerary in Malaysia",
     data: MALAYSIA_NINE_DAYS_ITINERARY,
   },
   sixteen_days_itinerary: {
     heading: "16 Days Itinerary in Malaysia",
-    image: "/images/country/malaysia/malaysia_country.jpg",
+    image: "/images/country/malaysia/malaysia_16_days_banner.jpg",
     description: "16 Days Itinerary in Malaysia",
     overview: "16 Days Itinerary in Malaysia",
     data: MALAYSIA_SIXTEEN_DAYS_ITINERARY,
@@ -1334,14 +1334,14 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       slug: "/malaysia/9-days-itinerary",
       title: "9 Days Itinerary in Malaysia",
-      image: "/images/country/malaysia/malaysia_country.jpg",
+      image: "/images/country/malaysia/malaysia_9_days_banner.jpg",
       description: "9 Days Itinerary in Malaysia",
       category: "Itinerary",
     },
     {
       slug: "/malaysia/16-days-itinerary",
       title: "16 Days Itinerary in Malaysia",
-      image: "/images/country/malaysia/malaysia_country.jpg",
+      image: "/images/country/malaysia/malaysia_16_days_banner.jpg",
       description: "16 Days Itinerary in Malaysia",
       category: "Itinerary",
     },

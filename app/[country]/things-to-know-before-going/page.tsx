@@ -55,7 +55,7 @@ export const ICON_MAPPING = {
   "10": Soup,
   "11": Shield,
   "12": FerrisWheel,
-  "13": BookOpenCheck
+  "13": BookOpenCheck,
 };
 
 export async function generateMetadata({
@@ -111,6 +111,7 @@ export default async function TravelGuidePage({
   const heading = countryData?.heading || "";
   const image = countryData?.image || "/placeholder.svg";
   const overview = countryData?.overview || "";
+  const tableOfContentHeading = countryData?.tableOfContentHeading || "";
 
   const countryRelatedArticles = countryData?.related_articles || [];
 
@@ -151,11 +152,21 @@ export default async function TravelGuidePage({
             {/* Main Content */}
             <div className="lg:col-span-2">
               {/* Travel Essentials Section */}
-              <Card className="mb-8 animate-fade-in bg-slate-800">
+              <Card
+                className="mb-8 animate-fade-in"
+                style={{
+                  background: "linear-gradient(90deg, #ffe5d0 0%, #fff 100%)",
+                  border: "1px solid #e0e7ff",
+                  boxShadow: "0 2px 16px rgba(0,0,0,0.04)",
+                }}
+              >
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">
-                    {heading}
-                  </h3>
+                  <div className="flex items-center mb-4">
+                    {/* <ListTodo className="w-7 h-7 text-blue-600 mr-2" /> */}
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {tableOfContentHeading}
+                    </h3>
+                  </div>
                   <ul className="space-y-3">
                     {guideData?.map((item, index) => {
                       const IconComponent =
@@ -168,9 +179,11 @@ export default async function TravelGuidePage({
                             href={`#${item.heading
                               .toLowerCase()
                               .replace(/\s+/g, "-")}`}
-                            className="flex items-center text-white hover:text-teal-600 transition-colors"
+                            className="flex items-center text-gray-800 hover:text-gray-500 hover:underline transition-colors font-medium"
                           >
-                            <IconComponent className="w-4 h-4 mr-2 text-white" />
+                            <span className="w-8 h-8 flex items-center justify-center rounded-full mr-2 !bg-white">
+                              <IconComponent className="w-5 h-5 text-[#ff9776]" />
+                            </span>
                             <span>{item.heading}</span>
                           </Link>
                         </li>
@@ -199,7 +212,7 @@ export default async function TravelGuidePage({
                         <CardContent className="p-6">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                              <IconComponent className="w-5 h-5 text-blue-600" />
+                              <IconComponent className="w-5 h-5 text-[#ff9776]" />
                             </div>
                             <h2 className="text-xl font-bold">
                               {item.heading}
