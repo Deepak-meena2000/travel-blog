@@ -37,7 +37,7 @@ export default async function PlacesToVisitPage({
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-2xl md:text-5xl font-bold mb-4">
               {country?.places_to_visit?.heading}
             </h1>
             <p className="text-xl text-gray-200 max-w-2xl text-center">
@@ -49,14 +49,14 @@ export default async function PlacesToVisitPage({
 
       {/* Overview Section */}
       <section className="py-8 bg-white">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <OverViewSection IconName={MapPin} overview={overview} />
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">
@@ -89,49 +89,56 @@ export default async function PlacesToVisitPage({
                     className="overflow-hidden animate-slide-up"
                     id={`place-${place.id}`}
                   >
+                    <div className="w-full p-8 ">
+                      <h2 className="text-xl lg:text-2xl font-semibold text-black">
+                        {idx + 1}. {place.name}
+                      </h2>
+                    </div>
                     <div className="relative">
                       <Image
                         src={place.image || "/placeholder.svg"}
                         alt={place.name}
                         width={800}
                         height={400}
-                        className="w-full h-64 object-cover"
+                        className="w-full h-80 object-cover"
                       />
                     </div>
-                    <CardContent className="p-8">
-                      <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                        {idx + 1}. {place.name}
-                      </h2>
-                      <p className="text-gray-600 mb-6">{place.description}</p>
+                    <CardContent className="p-4 lg:p-8">
+                      <p className="text-sm lg:text-base leading-relaxed text-gray-600 mb-6">
+                        {place.description}
+                      </p>
                       {place.otherInfo && (
-                        <div className="bg-gray-50 p-6 rounded-lg mb-6">
+                        <div className="bg-gray-50 p-4 lg:p-6 rounded-lg mb-6">
                           <div className="grid grid-cols-1 gap-4">
                             {place.otherInfo.must_do && (
                               <div>
-                                <h3 className="font-semibold text-gray-900 mb-1">
+                                <h3 className="text-sm lg:text-base font-semibold text-gray-900 mb-1">
                                   Must do Things:
                                 </h3>
-                                <p className="text-gray-600">
-                                  {place.otherInfo.must_do}
-                                </p>
+                                <p
+                                  dangerouslySetInnerHTML={{
+                                    __html: place.otherInfo.must_do,
+                                  }}
+                                  className="text-sm lg:text-base text-gray-600"
+                                />
                               </div>
                             )}
                             {place.otherInfo.time_to_visit && (
                               <div>
-                                <h3 className="font-semibold text-gray-900 mb-1">
+                                <h3 className="text-sm lg:text-base font-semibold text-gray-900 mb-1">
                                   Time to Visit:
                                 </h3>
-                                <p className="text-gray-600">
+                                <p className="text-sm lg:text-base text-gray-600">
                                   {place.otherInfo.time_to_visit}
                                 </p>
                               </div>
                             )}
                             {place.otherInfo.how_to_reach && (
                               <div>
-                                <h3 className="font-semibold text-gray-900 mb-1">
+                                <h3 className="text-sm lg:text-base font-semibold text-gray-900 mb-1">
                                   How to Reach:
                                 </h3>
-                                <p className="text-gray-600">
+                                <p className="text-sm lg:text-base text-gray-600">
                                   {place.otherInfo.how_to_reach}
                                 </p>
                               </div>
@@ -139,12 +146,12 @@ export default async function PlacesToVisitPage({
                             {place.otherInfo.guide_link &&
                               place.otherInfo.guide_text && (
                                 <div>
-                                  <h3 className="font-semibold text-gray-900 mb-1">
+                                  <h3 className="text-sm lg:text-base font-semibold text-gray-900 mb-1">
                                     Detailed Guide:
                                   </h3>
                                   <Link
                                     href={place.otherInfo.guide_link}
-                                    className="text-blue-400 underline hover:text-teal-700 font-medium transition-colors"
+                                    className="text-teal-600 underline font-medium"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >

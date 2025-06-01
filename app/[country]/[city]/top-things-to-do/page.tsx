@@ -29,7 +29,7 @@ export default async function CityThingsToDoPage({
     <>
       <HeroSectionCity cityData={cityData} />
       <section className="py-8">
-        <div className="flex flex-col gap-12 max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-12 max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <OverViewSection  IconName={Binoculars} overview={cityData?.overview || ""} />
           <CityBlogListing countryName={countryName} cityData={cityData} />
         </div>

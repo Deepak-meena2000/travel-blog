@@ -26,7 +26,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
         id: 2,
         heading: "Visa Requirements",
         description: `
-                Before entering Malaysia, check the <a href="https://www.malaysia.gov.my/portal/subcategory/1543" target="_blank" class="text-teal-600">visa requirements</a> based on your nationality. Many travelers can enter visa-free for 14 to 90 days. For longer stays or for nationalities requiring a visa, apply online via the <b>eVisa or eNTRI</b> systems, which are straightforward and quick. Immigration officials may ask for proof of onward travel and accommodation, so have those ready.
+                Before entering Malaysia, check the <a href="https://www.malaysia.gov.my/portal/subcategory/1543" target="_blank" class="text-teal-600 underline">visa requirements</a> based on your nationality. Many travelers can enter visa-free for 14 to 90 days. For longer stays or for nationalities requiring a visa, apply online via the <b>eVisa or eNTRI</b> systems, which are straightforward and quick. Immigration officials may ask for proof of onward travel and accommodation, so have those ready.
                 <br />
                 <br />
                 <b>However, all foreign visitors irrespective of visa requirement must complete the Malaysia Digital Arrival Card (MDAC)</b>.
@@ -42,7 +42,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
             Malaysia Digital Arrival Card(MDAC), a mandatory online form that all foreign travelers, except Singapore, must complete before entering Malaysia. It's not a visa but a required registration document that streamlines entry procedures and improves border security.
             <br/>
             <br/>
-<b>All foreign visitors must complete the Malaysia Digital Arrival Card (MDAC) online within 3 days before arrival.</b> You can submit the MDAC on the <a href="https://imigresen-online.imi.gov.my/mdac/main" target="_blank" rel="noopener noreferrer" class="text-teal-600">official immigration website</a>. It’s a quick, free and mandatory process that streamlines immigration clearance. Make sure your passport is valid for at least six months.
+<b>All foreign visitors must complete the Malaysia Digital Arrival Card (MDAC) online within 3 days before arrival.</b> You can submit the MDAC on the <a href="https://imigresen-online.imi.gov.my/mdac/main" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">official immigration website</a>. It’s a quick, free and mandatory process that streamlines immigration clearance. Make sure your passport is valid for at least six months.
 <br/>
 <br/>
 If you're arriving by land—such as from Thailand or Singapore—the visa and MDAC requirements still apply. Always carry a printed copy or a screenshot of your approved MDAC for smoother processing at airport or land border checkpoints.
@@ -79,7 +79,7 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
         heading: "Best Time to Visit",
         description: `
 
-        Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.Explore our in-depth city-specific <a href="/malaysia" target="_blank" class="text-teal-600">travel guides</a> travel guides for everything you need to know about the destinations you're visiting in Malaysia.
+        Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.Explore our in-depth city-specific <a href="/malaysia" target="_blank" class="text-teal-600 underline">travel guides</a> travel guides for everything you need to know about the destinations you're visiting in Malaysia.
         <br/>
         <br/>
         For most of Peninsular Malaysia, the dry season runs from <b>November to August</b>, making it ideal for outdoor travel and beach destinations.
@@ -170,8 +170,8 @@ Renting a scooter is a convenient and budget-friendly way to hop between attract
 Malaysia’s cuisine is a flavorful mix of Malay, Chinese, and Indian influences—don’t miss dishes like nasi lemak, laksa, and roti canai costs around RM5–RM10, while mid-range meals at local restaurants are typically RM15–RM30. Street food is both delicious and budget-friendly, especially in cities like Penang and Kuala Lumpur. For more insights, explore our in-depth article on Malaysian cuisine -
 <br />
 <br />
-<li>A  <a href="/malaysia/complete-food-guide" target="_blank" class="text-teal-600">complete food guide</a> provide info of what to, when to and the vegetarian options.</li>
-<li> <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600">Must-try dishes</a> you shouldn't miss in Malaysia.</li>
+<li>A  <a href="/malaysia/complete-food-guide" target="_blank" class="text-teal-600 underline">complete food guide</a> provide info of what to, when to and the vegetarian options.</li>
+<li> <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Must-try dishes</a> you shouldn't miss in Malaysia.</li>
 <br />
 Alcohol is taxed heavily—expect to pay RM15–RM30 ($3–$7 USD) for a beer at bars, and more in upscale places. Supermarkets sell beer from RM8 ($1.70 USD) per can, but alcohol is limited in Muslim-majority areas.
 <br />
@@ -196,7 +196,7 @@ Tap water isn't always safe to drink — use bottled or filtered water. Naturewi
         id: 12,
         heading: "What Are the Must-Visit Places in Malaysia?",
         description: `
-          Malaysia has something for every kind of traveler. Discover the top things to do in Malaysia with our detailed article of <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600">top things to do in Malaysia</a>.
+          Malaysia has something for every kind of traveler. Discover the top things to do in Malaysia with our detailed article of <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Malaysia</a>.
           <br />
           <br />
 One can explore the vibrant capital <b>Kuala Lumpur</b>, with its Petronas Towers, Batu Caves and street food. Wander historic <b>George Town (Penang)</b>, a UNESCO heritage site filled with culture and art. Relax on tropical islands like <b>Langkawi</b>, <b>Perhentian, or Redang</b>. Dive into unforgettable underwater adventures with scuba diving or snorkeling at not only Malaysia’s but world's top marine spots like <b>Sipadan</b> and Lankayan Island. Discover nature in Cameron Highlands or climb Mount Kinabalu in <b>Sabah</b>. Visit <b>Melaka</b> for colonial charm or Borneo for orangutans and rainforests.

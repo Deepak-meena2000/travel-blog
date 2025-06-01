@@ -60,14 +60,14 @@ export default async function FoodGuidePage({
 
       {/* Overview Section */}
       <section className="py-12">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <OverViewSection IconName={Utensils} overview={overview} />
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <div className="space-y-12">
@@ -110,23 +110,20 @@ export default async function FoodGuidePage({
 
                       <div className="bg-gray-50 p-6 rounded-lg mb-6">
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-                          <div>
-                            <div className="flex items-center gap-2 mb-2">
-                              <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
-                                <MapPin className="w-4 h-4 text-teal-600" />
-                              </div>
-                              <div className="flex items-center gap-2 flex-wrap">
-                                <h3 className="font-semibold text-sm md:text-base text-gray-900">
-                                  Where to Try It:
-                                </h3>
-                                <p className="text-sm md:text-base text-gray-600">
-                                  {food.otherInfo.where_to_eat}
-                                </p>
-                              </div>
+                          <div className="flex  gap-2 mb-2">
+                            <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
+                              <MapPin className="w-4 h-4 text-teal-600" />
+                            </div>
+                            <div className="flex items-center gap-2 mb-2 flex-wrap">
+                              <h3 className="font-semibold text-sm md:text-base text-gray-900">
+                                Where to Try It:
+                              </h3>
+                              <span className="text-sm md:text-base text-gray-600">
+                                {food.otherInfo.where_to_eat}
+                              </span>
                             </div>
                           </div>
 
-                          <div>
                             <div className="flex items-center gap-2 mb-2">
                               <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
                                 <DollarSign className="w-4 h-4 text-teal-600" />
@@ -139,10 +136,8 @@ export default async function FoodGuidePage({
                                   {food.otherInfo.range}
                                 </p>
                               </div>
-                            </div>
                           </div>
 
-                          <div>
                             <div className="flex items-center gap-2 mb-2">
                               <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
                                 <Utensils className="w-4 h-4 text-teal-600" />
@@ -157,7 +152,7 @@ export default async function FoodGuidePage({
                                   ? "Yes"
                                   : "No"}
                               </p>
-                            </div>
+
                           </div>
                         </div>
 
@@ -172,7 +167,7 @@ export default async function FoodGuidePage({
                                   Tips:
                                 </h3>
                               </div>
-                              <ul className="list-disc list-inside space-y-1">
+                              <ul className="ml-4 lg:ml-8 list-disc list-inside space-y-1">
                                 {food.otherInfo.tips.map((tip, i) => (
                                   <li
                                     key={i}

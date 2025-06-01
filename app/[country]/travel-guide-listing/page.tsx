@@ -47,7 +47,7 @@ const CountryTravelGuideBlogListing = async ({
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-2xl md:text-5xl font-bold mb-4">
               {heading}
             </h1>
             <p className="text-xl text-gray-200 max-w-2xl">
@@ -58,7 +58,7 @@ const CountryTravelGuideBlogListing = async ({
       </section>
 
       <section className="py-16 bg-gray-50">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
             <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

@@ -107,7 +107,7 @@ export default async function ThingsToDoPage({
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <section>
             <div className="mb-8 bg-gradient-to-r from-teal-50 to-slate-50 p-6 rounded-lg border border-teal-100 shadow-sm animate-fade-in-up">
               <div className="flex items-center mb-4">
@@ -317,7 +317,7 @@ export default async function ThingsToDoPage({
 
       {/* You May Also Like */}
       <section className="py-16 bg-gray-50">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">
             You May Also Like:
           </h2>

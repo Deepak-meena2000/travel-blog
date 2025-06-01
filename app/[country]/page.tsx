@@ -161,7 +161,7 @@ export default async function CountryPage({
 
       {/* Quick Actions as Tabs */}
       <section className="py-8 bg-white border-b">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="all" className="w-full">
             <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 mb-0">
               <TabsTrigger
@@ -197,7 +197,7 @@ export default async function CountryPage({
                 className="flex items-center justify-center w-full border border-teal-600 text-teal-600 bg-white data-[state=active]:bg-teal-600 data-[state=active]:text-white data-[state=active]:border-teal-600 data-[state=active]:hover:bg-teal-700 transition-colors"
               >
                 <Users className="w-4 h-4 mr-2" />
-                Itinerary's and more
+                Itineraries and more
               </TabsTrigger>
             </TabsList>
 

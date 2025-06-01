@@ -69,14 +69,14 @@ export default async function CityTravelGuidePage({ params }: { params: { countr
               <span className="mx-2">/</span>
               <span>{title}</span> */}
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
+            <h1 className="text-2xl md:text-5xl font-bold mb-4">{title}</h1>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">

@@ -29,7 +29,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Street stalls, mamak shops, roadside warungs, and even high-end cafés.",
       range: "RM7–RM15 (basic to premium toppings)",
-      vegetarian_available: true
+      vegetarian_available: true,
     },
   },
   {
@@ -733,13 +733,13 @@ export const MALAYSIA_PLACES_TO_VISIT = [
       "Kuala Lumpur, the capital city of Malaysia, is a dynamic blend of modern architecture, cultural landmarks, and street food delights. Gaze up at the Petronas Towers, roam the Batu Caves, and shop till you drop in Bukit Bintang. Savor street food in Jalan Alor and experience the soul of Malaysia in Chinatown and Little India. Locals proudly embrace their multicultural identity, creating a vibrant tapestry of flavors, festivals, and warmth that makes every moment here special.",
     image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
     otherInfo: {
-      must_do: "Visit KL Tower At sunset, Nightlife at Changkat Avenue",
+      must_do: `Visit KL Tower At sunset, Nightlife at Changkat Avenue, check out all the <a target="_blank" href="/malaysia/kuala-lumpur/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Kuala Lumpur</a> `,
       time_to_visit:
         "hot and humid year-round, May-July and November-February experience less rainfall",
       how_to_reach:
         "Flights are available to Kuala Lumpur International Airport",
-      guide_text: "Visit our detailed Kuala Lumpur guide with tips",
-      guide_link: "/malaysia/kuala-lumpur/top-things-to-do",
+      guide_text: "Visit our detailed Kuala Lumpur travel guide with tips",
+      guide_link: "/malaysia/kuala-lumpur/travel-guide",
     },
   },
   {
@@ -749,14 +749,16 @@ export const MALAYSIA_PLACES_TO_VISIT = [
       "George Town in Penang is a UNESCO World Heritage Site known for its vibrant street art, colonial buildings, and exceptional street food. A top cultural destination in Malaysia, it offers attractions like Kek Lok Si Temple, Penang Hill, and the Blue Mansion. The city is famous for dishes like char kway teow and Penang laksa. Locals here fiercely preserve their Hokkien, Tamil, and Peranakan traditions. Whether you're exploring museums or wandering Armenian Street, George Town is a must-visit place in Malaysia for history lovers, foodies, and photographers.",
     image: "/images/country/malaysia/places/penang/penang.jpg",
     otherInfo: {
-      must_do:
-        "Explore the street art while taking stoppage to try local food, Explore Jetties, Hike up to Penang Hills",
+      must_do: `
+       Explore the street art while taking stoppage to try local food, Explore Jetties, Hike up to Penang Hills, check out all the <a target="_blank" href="/malaysia/penang/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Penang</a>
+
+      `,
       time_to_visit:
         "hot and humid year-round, November-February for slightly cooler weather",
       how_to_reach: "Flights from Kuala Lumpur are frequently available",
       guide_text:
-        "Visit our detailed Penang guide and things to keep in mind for quick tips",
-      guide_link: "/malaysia/penang/top-things-to-do",
+        "Visit our detailed Penang travel guide and things to keep in mind for quick tips",
+      guide_link: "/malaysia/penang/travel-guide",
     },
   },
   {
@@ -764,80 +766,68 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     name: "Langkawi",
     description:
       "Langkawi's charm lies in its emerald waters, lush rainforests, and a laid-back vibe that slows down time. A must-include in any Malaysia travel itinerary, It's one of the most beautiful places offering attractions like the Langkawi Sky Bridge, Pantai Cenang, and Kilim Geoforest Park. Langkawi is also a duty-free island, perfect for shopping and island hopping. The island community is deeply connected to nature, making eco-tourism not just a trend but a way of life. Every sunset feels like your own private paradise.",
-    image: "/placeholder.svg",
+    image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
     otherInfo: {
-      must_do:
-        "take one of the steepest Cable Car in the world to reach Langkawi Sky Bridge, Check out the Night markets",
+      must_do: `
+      Take one of the steepest Cable Car in the world to reach Langkawi Sky Bridge, eat & shop at the Night markets,  check out all the <a target="_blank" href="/malaysia/langkawi/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in langkawi</a>
+      `,
       time_to_visit: "November to March",
       how_to_reach: "Flights from Kuala Lumpur, Ferries from Kuala Perlis",
-      guide_text: "Visit our detailed Langaki guide and things to do",
-      guide_link: "/malaysia/langkawi",
+      guide_text: "Visit our detailed Langaki travel guide and things to do",
+      guide_link: "/malaysia/langkawi/travel-guide",
     },
   },
   {
     id: 4,
-    name: "Perhentian Islands",
+    name: "Sipadan Island",
     description:
-      "Located off the east coast in Terengganu, these islands offer crystal-clear waters, white sandy beaches, and laid-back vibes. The island is primarily made up of two main parts: Pulau Besar (the larger island) and Pulau Kecil (the smaller island). Ideal for budget travelers and beginners in snorkeling or scuba diving, it's a top destination for marine life lovers looking to explore coral reefs and chill in beachfront chalets.",
-    image: "/placeholder.svg",
+      "Sipadan Island is not only Malaysia's but also one of the world's top dive destinations, located off the coast of Sabah in Malaysian Borneo. Known for its crystal-clear waters and exceptional biodiversity, divers encounter turtles, reef sharks, barracudas, and swirling schools of fish. Access is limited daily to preserve its marine ecosystem, making each dive exclusive. Locals and marine authorities proudly protect Sipadan's pristine beauty. For those seeking an untouched, elite underwater experience, Sipadan is Malaysia's ultimate treasure.",
+    image:
+      "/images/country/malaysia/places/sipadan_islands_places_to_visit.jpg",
     otherInfo: {
-      must_do:
-        "Island Hopping, Explore Underwater world and enjoy the laid-back vibes",
-      time_to_visit: "March-November",
-      how_to_reach: "Ferries from Kuala Besut or Kuala Terengganu",
-      guide_text: "Visit our detailed Perhentian Island guide and things to do",
-      guide_link: "/malaysia/perhentian-islands",
+      must_do: "Scuba dive with turtles and barracudas",
+      time_to_visit: "April–October",
+      how_to_reach:
+        "Fly to Tawau Airport → Drive to Semporna → Boat to Sipadan, permit required",
     },
   },
   {
     id: 5,
-    name: "Redang Island",
-    description:
-      "Redang Island is probably the best place for underwater activities like scuba, snorkeling, sea turtles, and underwater photography in the whole of Western Malaysia. Known for its turquoise waters, luxury resorts, and vibrant coral reefs, it is ideal for intermediate or advanced divers. With its soft white sands and upscale accommodations, Redang attracts both couples and families.",
-    image: "/placeholder.svg",
-    otherInfo: {
-      must_do: "Scuba Diving, Snorkeling and stay at luxury beachfront resorts",
-      time_to_visit: "March-November",
-      how_to_reach: "Ferries from Kuala Besut or Kuala Terengganu",
-      guide_text: "Visit our detailed Perhentian Island guide and things to do",
-      guide_link: "/malaysia/redang-island",
-    },
-  },
-  {
-    id: 6,
     name: "Melaka (Malacca)",
     description:
       "Melaka is a historic city and UNESCO World Heritage Site, it is a living museum where Portuguese, Dutch, British, and Malay cultures intertwine. Stroll along Jonker Street's buzzing night market, explore centuries-old churches and forts, and dive into local flavors like satay celup. Melaka is ideal for cultural sightseeing, food hunting, and weekend trips from Kuala Lumpur. A must-visit for heritage lovers exploring Malaysia.",
-    image: "/placeholder.svg",
+    image: "/images/country/malaysia/places/melaka/melaka_places_to_visit.jpg",
     otherInfo: {
       must_do: "Take a Malacca River Cruise, Shop & eat at Jonker Street",
       time_to_visit: "December-May, slightly cooler",
       how_to_reach: "2 Hours drive from Kuala Lumpur",
       guide_text: "Visit our detailed Malacca guide and things to do",
-      guide_link: "/malaysia/malacca",
-    },
-  },
-  {
-    id: 7,
-    name: "Cameron Highlands",
-    description:
-      "Perfect for those looking to escape the heat, Cameron Highlands is Malaysia's breezy hill station, where misty mornings roll over emerald tea plantations. Walk through mossy forests, pick strawberries fresh from local farms, and sip hot tea with a panoramic view. The local Orang Asli communities and generations-old farmers create a lifestyle rooted in nature. It's a refreshing escape into greenery, tradition, and tranquility.",
-    image: "/placeholder.svg",
-    otherInfo: {
-      must_do:
-        "Visit Boh Tea Plantation, explore Mossy Forest, and go strawberry picking",
-      time_to_visit: "February-April and September-November",
-      how_to_reach: "4 Hours drive or Take Bus from Kuala Lumpur",
-      guide_text: "Optional",
       guide_link: null,
     },
   },
   {
-    id: 8,
+    id: 6,
+    name: "Perhentian Islands",
+    description:
+      "Located off the east coast in Terengganu, these islands offer crystal-clear waters, white sandy beaches, and laid-back vibes. The island is primarily made up of two main parts: Pulau Besar (the larger island) and Pulau Kecil (the smaller island). Ideal for budget travelers and beginners in snorkeling or scuba diving, it's a top destination for marine life lovers looking to explore coral reefs and chill in beachfront chalets.",
+    image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
+    otherInfo: {
+      must_do: `
+      Island Hopping, Explore Underwater world and enjoy the laid-back vibes, check out all the <a target="_blank" href="/malaysia/perhentian-islands/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Perhentian Islands</a>
+      `,
+      time_to_visit: "March-November",
+      how_to_reach: "Ferries from Kuala Besut or Kuala Terengganu",
+      guide_text:
+        "Visit our detailed Perhentian Island travel guide and things to do",
+      guide_link: "/malaysia/perhentian-islands/travel-guide",
+    },
+  },
+  {
+    id: 7,
     name: "Kota Kinabalu",
     description:
       "Kota Kinabalu, the capital of Sabah in Malaysian Borneo, is a gateway to Mount Kinabalu and Tunku Abdul Rahman Marine Park. It's one of the top destinations in East Malaysia for nature, island hopping, and cultural experiences. Wander through local fish markets, where the community's Sabahan pride is evident in every smile and spicy sambal. Whether you're diving, hiking, or relaxing by the beach, Kota Kinabalu offers a diverse and memorable Malaysian travel experience.",
-    image: "/placeholder.svg",
+    image: "/images/country/malaysia/places/kota_kinabalu_places_to_visit.jpg",
     otherInfo: {
       must_do:
         "Climb Mount Kinabalu, Try local Sabahan food, ExploreKinabalu Park",
@@ -848,11 +838,12 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     },
   },
   {
-    id: 9,
+    id: 8,
     name: "Kuala Terengganu",
     description:
       "Kuala Terengganu is a coastal city known for its Islamic heritage, crystal mosque, and access to islands like Redang and Perhentian. It's a culturally rich destination in East Coast Malaysia with traditional Malay villages, colorful street art, and local markets. Don't miss Chinatown and the Terengganu State Museum. Ideal as a base to explore Terengganu's beaches and islands. It's Malaysia's east coast at its most authentic and serene.",
-    image: "/placeholder.svg",
+    image:
+      "/images/country/malaysia/places/kuala_terengganu_places_to_visit.jpg",
     otherInfo: {
       must_do: "Visit Crystal Mosque, Take a walk around Pasar Payang",
       time_to_visit: "February-August",
@@ -862,11 +853,11 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     },
   },
   {
-    id: 10,
+    id: 9,
     name: "Ipoh",
     description:
       "Ipoh, the capital of Perak, is gaining popularity for its colonial charm, cave temples, and famous food scene. Stroll through Old Town's street art and heritage shophouses, then explore limestone caves like Kek Lok Tong. The city's blend of Cantonese roots and chill pace has won over travelers seeking food, stories, and calm beauty wrapped in history. Great for weekend getaways and cultural exploration.",
-    image: "/placeholder.svg",
+    image: "/images/country/malaysia/places/ipoh_places_to_visit.jpg",
     otherInfo: {
       must_do:
         "Visit Kek Lok Tong Cave Temple, Try Ipoh white coffee and bean sprout chicken",
@@ -876,24 +867,28 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     },
   },
   {
-    id: 11,
-    name: "Sipadan Island",
+    id: 10,
+    name: "Cameron Highlands",
     description:
-      "Sipadan Island is not only Malaysia's but also one of the world's top dive destinations, located off the coast of Sabah in Malaysian Borneo. Known for its crystal-clear waters and exceptional biodiversity, divers encounter turtles, reef sharks, barracudas, and swirling schools of fish. Access is limited daily to preserve its marine ecosystem, making each dive exclusive. Locals and marine authorities proudly protect Sipadan's pristine beauty. For those seeking an untouched, elite underwater experience, Sipadan is Malaysia's ultimate treasure.",
-    image: "/placeholder.svg",
+      "Perfect for those looking to escape the heat, Cameron Highlands is Malaysia's breezy hill station, where misty mornings roll over emerald tea plantations. Walk through mossy forests, pick strawberries fresh from local farms, and sip hot tea with a panoramic view. The local Orang Asli communities and generations-old farmers create a lifestyle rooted in nature. It's a refreshing escape into greenery, tradition, and tranquility.",
+    image:
+      "/images/country/malaysia/places/cameron_islands_places_to_visit.jpg",
     otherInfo: {
-      must_do: "Scuba dive with turtles and barracudas",
-      time_to_visit: "April–October",
-      how_to_reach:
-        "Fly to Tawau Airport → Drive to Semporna → Boat to Sipadan, permit required",
+      must_do:
+        "Visit Boh Tea Plantation, explore Mossy Forest, and go strawberry picking",
+      time_to_visit: "February-April and September-November",
+      how_to_reach: "4 Hours drive or Take Bus from Kuala Lumpur",
+      guide_text: "Optional",
+      guide_link: null,
     },
   },
   {
-    id: 12,
+    id: 11,
     name: "Lankayan Island",
     description:
       "Lankayan Island is a secluded coral jewel in the Sulu Sea, perfect for divers and serenity seekers. Known for its turtle hatcheries and macro marine life, it offers a tranquil escape with only one eco-resort on the island. Mornings are for diving, afternoons for relaxing on powdery white sands, and evenings for watching baby turtles return to the sea. The island's tight-knit local staff and conservation efforts reflect its slow, thoughtful rhythm of life.",
-    image: "/placeholder.svg",
+    image:
+      "/images/country/malaysia/places/lankayan_island_top_places_to_visit.jpg",
     otherInfo: {
       must_do:
         "Dive at shipwrecks, Watch turtle hatchlings, Enjoy beach solitude",
@@ -904,11 +899,11 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     },
   },
   {
-    id: 13,
+    id: 12,
     name: "Johor Bahru (JB)",
     description:
       "Johor Bahru is a dynamic southern city that blends modern attractions with heritage charm. It's known for being the gateway to Singapore, Legoland Malaysia, lively street food, and royal palaces. Explore local Malay-Chinese eateries, stroll along Jalan Tan Hiok Nee, or catch a glimpse of history at Sultan Abu Bakar Mosque. The city's blend of cultures, shopping, and family-friendly fun makes it one of Malaysia's rising urban destinations.",
-    image: "/placeholder.svg",
+    image: "/images/country/malaysia/places/johor_bahru_places_to_visit.jpg",
     otherInfo: {
       must_do:
         "Visit Legoland Malaysia, Explore Johor Bahru Old Chinese Temple",
@@ -920,11 +915,11 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     },
   },
   {
-    id: 14,
+    id: 13,
     name: "Tioman Island",
     description:
       "Tioman Island is a tropical paradise off Peninsular Malaysia's east coast, known for lush jungles, coral-rich waters, and laid-back villages. It's popular among backpackers and divers alike. With duty-free status, scenic beaches, and warm local hospitality from small fishing communities, Tioman feels both wild and welcoming. Whether you're snorkeling near Salang or relaxing in Juara, the island moves at a gentler, nature-first pace.",
-    image: "/placeholder.svg",
+    image: "/images/country/malaysia/places/tioman_places_to_visit.jpg",
     otherInfo: {
       must_do: "Snorkel in Salang, Trek through the jungle to waterfalls",
       time_to_visit: "March–October",
@@ -932,6 +927,36 @@ export const MALAYSIA_PLACES_TO_VISIT = [
         "Ferry from Mersing Jetty or fly to Tioman via small charter flights",
       guide_text: "Optional",
       guide_link: null,
+    },
+  },
+  {
+    id: 14,
+    name: "Genting Highlands",
+    description:
+      "Genting Highlands is a cool-climate mountain resort just an hour’s drive from Kuala Lumpur, offering a refreshing escape from the city heat. Set atop lush forested hills, it combines natural beauty with high-altitude thrills featuring indoor and outdoor theme parks, a world-class casino, luxury hotels, shopping malls, and lively entertainment. The scenic Genting Skyway cable car ride is an experience in itself, providing sweeping views of the rainforest below.",
+    image: "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
+    otherInfo: {
+      must_do:
+        "Ride the Genting Skyway, Visit SkyWorlds Theme Park, Explore Chin Swee Caves Temple",
+      time_to_visit: "March–September for cool, dry weather",
+      how_to_reach:
+        " Drive or take a bus from KL to Awana Station, then ride the Genting Skyway cable car",
+      guide_text: "Visit our detailed Genting Highlands guide and things to do",
+      guide_link: null,
+    },
+  },
+  {
+    id: 15,
+    name: "Redang Island",
+    description:
+      "Redang Island is probably the best place for underwater activities like scuba, snorkeling, sea turtles, and underwater photography in the whole of Western Malaysia. Known for its turquoise waters, luxury resorts, and vibrant coral reefs, it is ideal for intermediate or advanced divers. With its soft white sands and upscale accommodations, Redang attracts both couples and families.",
+    image: "/images/country/malaysia/places/perhentian/blog/redang_trip.jpg",
+    otherInfo: {
+      must_do: "Scuba Diving, Snorkeling and stay at luxury beachfront resorts",
+      time_to_visit: "March-November",
+      how_to_reach: "Ferries from Kuala Besut or Kuala Terengganu",
+      guide_text: "Visit our detailed Perhentian Island guide and things to do",
+      guide_link: "/malaysia/perhentian-islands/travel-guide",
     },
   },
 ];

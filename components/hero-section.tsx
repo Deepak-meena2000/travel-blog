@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export function HeroSection() {
   return (
     <section className="bg-slate-800 text-white py-20 lg:py-32">
-      <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Discover Your Next Adventure</h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">

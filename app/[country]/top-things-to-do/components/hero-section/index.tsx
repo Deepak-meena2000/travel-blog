@@ -10,7 +10,7 @@ const HeroSection = ({ country }: { country: any }) => {
         className="object-cover opacity-60"
       />
       <div className="absolute inset-0 bg-slate-800/60" />
-      <div className="relative max-8-xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+      <div className="relative max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
         <div className="text-white animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Top Things to Do in {country.name}

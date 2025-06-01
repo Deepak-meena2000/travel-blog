@@ -132,7 +132,7 @@ export default async function TravelGuidePage({
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex flex-col justify-center items-center w-full">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{heading}</h1>
+            <h1 className="text-2xl md:text-5xl font-bold mb-4">{heading}</h1>
             {/* <p className="text-xl text-gray-200 max-w-2xl">
               {description}
             </p> */}
@@ -140,13 +140,13 @@ export default async function TravelGuidePage({
         </div>
       </section>
 
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <OverViewSection IconName={ListTodo} overview={overview} />
       </div>
 
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">

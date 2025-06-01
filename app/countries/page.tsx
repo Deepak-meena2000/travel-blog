@@ -22,7 +22,7 @@ export default function CountriesPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="bg-slate-800 text-white py-16">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Explore Amazing Destinations</h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ export default function CountriesPage() {
 
       {/* Countries Grid */}
       <section className="py-16">
-        <div className="max-8-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {destinations.map((destination, index) => (
               <Card
