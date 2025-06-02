@@ -12,7 +12,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
     price: "RM35–RM70 per person <br /> (one-way, depending on boat type)",
     duration: "30–45 minutes",
     tips: [
-      "Wear a waterproof jacket and secure your belongings as it can get bumpy.",
+      "Wear a waterproof jacket and secure your belongings as it can get bumpy",
       "Pre-book the tickets online from Easybook or Redbus",
       "Catch the early morning boat to avoid crowds",
     ],

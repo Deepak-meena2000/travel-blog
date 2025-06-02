@@ -30,7 +30,6 @@ export const PENANG_BLOG_POST = [
     duration: "3–4 hours",
     tips: [
       "Visit early or late in the day to avoid crowds and enjoy cooler temperatures",
-      "Evening Walk Add-On for The Habitat and Skywalk (after 5:30 PM): RM18",
       "Check the weather forecast before planning your visit, as some attractions may be closed during heavy rain",
     ],
   },
