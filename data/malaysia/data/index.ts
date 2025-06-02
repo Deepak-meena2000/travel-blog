@@ -1,6 +1,7 @@
 import { ICONS } from "@/constants/icon";
 import {
   Bike,
+  Book,
   BookOpenCheck,
   Building,
   Calendar,
@@ -1030,12 +1031,10 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       title: "Langkawi Cable Car & Sky Bridge (SkyCab)",
       description:
         "The Langkawi Cable Car, also known as SkyCab, is one of the most thrilling experiences on the island. Taking you from the Oriental Village up to Gunung Mat Cincang, it offers panoramic views of Langkawi's rainforest, mountains, and turquoise seas. The 15-minute ride is also one of the world's steepest cable car gradients, at 42 degrees just before the middle station. At the top level located the stunning curved suspension Langkawi Sky Bridge located 660 meters above sea level, offering awe-inspiring views of the rainforest and surrounding islands.It's ideal for those looking to combine adventure with scenic photography. From the top station there is an option to either take a nature walk(10-15 mins) or SkyGlide(Sort of an Elevator) to reach the Sky Bridge. ",
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Architecture",
-      icon: Building,
       operationalHours: "9:30 AM – 6:00 PM (Daily)",
       location: "Oriental Village, Burau Bay, Langkawi",
-      price: "SkyCab: </br><li>RM43 (Adult, Malaysian)</li> <li>RM85 (Adult, Foreigner)</li>SkyBridge entry is free </br>Nature Walk - RM6 </br>SkyGlide - RM 10 ",
+      price:
+        "SkyCab: </br><li>RM43 (Adult, Malaysian)</li> <li>RM85 (Adult, Foreigner)</li>SkyBridge entry is free </br>Nature Walk - RM6 </br>SkyGlide - RM 10 ",
       duration: "3 hours",
       tips: [
         "Combo Tickets include the entry to 3D Art Museum and SkyDom",
@@ -1043,53 +1042,54 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
         "Checkout the Eagle's Nest Skywalk at a middle station",
         "Nature walk is a short hike but a steep one so brace yourself",
       ],
+      image:
+        "/images/country/malaysia/places/langkawi/blog/langkawi_cablecar.jpg",
+      imageCreditHTML:
+        '<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Langkawi_Cable_Car.JPG"><u>RoB</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/3.0"><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons',
     },
     {
       id: 2,
       title: "Sunset at KL Tower",
       description:
         "The KL Tower is one of Malaysia’s most iconic landmarks, standing at 421 meters tall and offering breathtaking 360-degree views of Kuala Lumpur. Built primarily as a telecommunications tower, it also functions as a top tourist attraction with an observation deck, sky deck, revolving restaurant, and thrilling experiences like the glass sky box and skywalk . Nestled atop Bukit Nanas, it combines panoramic city views with a slice of rainforest below.",
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Culture",
-      icon: Star,
       operationalHours: "9 AM-10 PM(9:30 PM Last Entry)",
       location: "Bukit Nanas, Kuala Lumpur",
-      price: "Sky Terrace - 140RM</br> Observation Deck - 100RM</br> Combo(Terrace + Deck) - 180 RM</br> SkyBox - 10RM",
+      price:
+        "Sky Terrace - 140RM</br> Observation Deck - 100RM</br> Combo(Terrace + Deck) - 180 RM</br> SkyBox - 10RM",
       duration: "2 Hours",
       tips: [
         "Visit an hour early to sunset to watch the evening and night view of city",
         "Sky Box tickets will be bought at Sky terrace only, the queue can be long for SKy Box so prepare accordingly",
         "Don’t book in advance as permission to sky terrace depends on weather",
         `Checkout the Discounted price for MyKLD holders & kids on the
-        <a href="https://ticket.kltower.com/" target="_blank" class="text-teal-600 underline">official website</a>`
+        <a href="https://ticket.kltower.com/" target="_blank" class="text-teal-600 underline">official website</a>`,
       ],
+      image: "/images/country/malaysia/places/kuala_lumpur/blog/kl_tower.jpg",
+      imageCreditHTML: null,
     },
     {
       id: 3,
       title: "Batu Caves",
       description:
         "Batu Caves is one of Malaysia’s most iconic spiritual landmarks, located just north of Kuala Lumpur. This massive limestone hill houses a series of caves and cave temples, the most famous being the Temple Cave, accessed by climbing 272 vibrant steps. Dominated by a towering golden statue of Lord Murugan, it’s a major site for Hindu worship and the focal point of the annual Thaipusam festival. In addition to religious significance, the site is also rich in natural wonder. You can explore the Dark Cave (for guided eco-tours) or the colorful Cave Villa, filled with murals and statues. Batu Caves is free to enter, though some attractions charge a fee.",
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
       operationalHours: "6:00 AM – 9:00 PM",
       location: "Gombak, Selangor</br>(30 mins ride from city centre)",
-      price: "Batu Caves - Free</br>Dark Caves & Cave villa <li>RM15-RM20 per adult</li>",
+      price:
+        "Batu Caves - Free</br>Dark Caves & Cave villa <li>RM15-RM20 per adult</li>",
       duration: "2-3 hours",
       tips: [
         "Book lessons with certified instructors",
         "Early morning has the best waves",
         "Apply reef-safe sunscreen",
       ],
+      image: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
+      imageCreditHTML: null,
     },
     {
       id: 4,
       title: "Scuba at Sipadan Island",
       description:
         "Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.",
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
       operationalHours: "7:00 AM – 4:00 PM",
       location: "Sipadan Island",
       price: "Depends on Diving Packages",
@@ -1099,122 +1099,100 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
         "Need to book Diving packages which often include accommodation, meals, equipment rental, and boat transfers",
         "Book in advance as diving is regulated with limited daily permits, making it both exclusive and relatively expensive",
       ],
+      image:
+        "/images/country/malaysia/places/sipadan_islands_places_to_visit.jpg",
+      imageCreditHTML: null,
     },
-     {
+    {
       id: 5,
       title: "Penang Hill & The Habitat",
       description:
         "Penang Hill, or Bukit Bendera, offers a cool, scenic retreat from George Town’s tropical heat. Located 833 meters above sea level, it's famous for its panoramic views, lush greenery, colonial-era bungalows, and a refreshing climate. Visitors typically ascend via the iconic funicular railway, one of the oldest in the world. Nestled within the pristine rainforest atop Penang Hill, The Habitat is an eco-conscious attraction offering immersive experiences in biodiversity and conservation. It features scenic nature trails, themed gardens, and the famed Curtis Crest Tree Top Walk, the highest public viewing point on the island. Penang Hill is ideal for families, nature lovers, and couples seeking a peaceful escape with photo-worthy views of the island and mainland.",
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
       operationalHours: "6:30 AM – 11:00 PM (Daily)",
       location: "Air Itam, Penang",
-      price: "Funicular Train (Round Trip): <li>RM12–RM30 (Standard)</li> <li>RM 40–RM80 (Fast Lane)</li> The Habitat - RM 40-60",
+      price:
+        "Funicular Train (Round Trip): <li>RM12–RM30 (Standard)</li> <li>RM 40–RM80 (Fast Lane)</li> The Habitat - RM 40-60",
       duration: "3-4 hours",
       tips: [
         "Bring a light jacket—it can get cool at the top",
         "Visit early morning for fewer crowds or late evening for sunset viewss",
       ],
+      image: "/images/country/malaysia/places/penang/blog/penang_hill.jpeg",
+      imageCreditHTML: null,
     },
     {
       id: 6,
       title: "Petronas Twin Towers",
       description:
         "The Petronas Twin Towers are the crown jewel of Kuala Lumpur’s skyline and were once the tallest buildings in the world. Standing 452 meters tall with 88 floors, they are connected by a unique Skybridge at the 41st and 42nd floors. Visitors can tour both the Skybridge and the Observation Deck on the 86th floor for incredible 360° views of the city. The towers are surrounded by the lush KLCC Park and are attached to the luxury Suria KLCC Mall, making this a complete urban experience. Stunning by day and mesmerizing when lit up at night, the towers are a must-visit landmark.",
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
       operationalHours: "9:00 AM – 9:00 PM (Closed Mondays)",
       location: "City Centre, Kuala Lumpur",
-      price: "SkyBridge & Obersvational Deck - <li>Adults: RM 80</li>  <li>Children: RM 33</li>",
+      price:
+        "SkyBridge & Obersvational Deck - <li>Adults: RM 80</li>  <li>Children: RM 33</li>",
       duration: "1-2 hours",
       tips: [
         "Book Tickets Online",
         "Combine with KLCC Park and Night Fountains",
       ],
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/petronas_tower.jpg",
+      imageCreditHTML: null,
     },
-     {
+    {
       id: 7,
       title: "Street Arts of Penang & Melaka",
-      description:
-        `Malaysia’s vibrant street art scene is best experienced in the heritage cities of George Town (Penang) and Melaka, where crumbling walls become canvases for creativity. In Penang, world-renowned murals like "Children on a Bicycle" by Ernest Zacharevic have turned alleyways into open-air galleries. The artwork blends humor, nostalgia, and daily life, often incorporating real objects like swings and bicycles. Meanwhile, Melaka's Jonker Street and riverside are adorned with bold, colorful graffiti and cultural motifs depicting local heritage, folklore, and modern messages. Both cities celebrate art as a living part of their identity, making a street art walk an unmissable experience for culture lovers and Instagrammers alike.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Malaysia’s vibrant street art scene is best experienced in the heritage cities of George Town (Penang) and Melaka, where crumbling walls become canvases for creativity. In Penang, world-renowned murals like "Children on a Bicycle" by Ernest Zacharevic have turned alleyways into open-air galleries. The artwork blends humor, nostalgia, and daily life, often incorporating real objects like swings and bicycles. Meanwhile, Melaka's Jonker Street and riverside are adorned with bold, colorful graffiti and cultural motifs depicting local heritage, folklore, and modern messages. Both cities celebrate art as a living part of their identity, making a street art walk an unmissable experience for culture lovers and Instagrammers alike.`,
       operationalHours: "Open 24/7 (outdoor public areas)",
-      location: "<li>George Town (Penang Island)</li><li> Melaka City Centre</li>",
+      location:
+        "<li>George Town (Penang Island)</li><li> Melaka City Centre</li>",
       price: "Free",
       duration: "2-3 hours",
       tips: [
         "Best explored on foot or by bicycle",
         "Start early or go late in the afternoon to beat the heat",
       ],
+      image: "/images/country/malaysia/places/penang/blog/street_art.jpg",
+      imageCreditHTML: null,
     },
     {
       id: 8,
-      title: "Street Arts of Penang & Melaka",
-      description:
-        `Malaysia’s vibrant street art scene is best experienced in the heritage cities of George Town (Penang) and Melaka, where crumbling walls become canvases for creativity. In Penang, world-renowned murals like "Children on a Bicycle" by Ernest Zacharevic have turned alleyways into open-air galleries. The artwork blends humor, nostalgia, and daily life, often incorporating real objects like swings and bicycles. Meanwhile, Melaka's Jonker Street and riverside are adorned with bold, colorful graffiti and cultural motifs depicting local heritage, folklore, and modern messages. Both cities celebrate art as a living part of their identity, making a street art walk an unmissable experience for culture lovers and Instagrammers alike.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "Open 24/7 (outdoor public areas)",
-      location: "<li>George Town (Penang Island)</li><li> Melaka City Centre</li>",
-      price: "Free",
-      duration: "2-3 hours",
-      tips: [
-        "Best explored on foot or by bicycle",
-        "Start early or go late in the afternoon to beat the heat",
-      ],
-    },
-    {
-      id: 9,
       title: "Penang Jetties",
-      description:
-        `The Clan Jetties of Penang are a unique cultural and historical attraction located along the waterfront of George Town, offering a glimpse into the island’s Chinese heritage. Dating back to the 19th century, these wooden jetties were established by Chinese immigrant clans, each building its own jetty over the water as a community village. The most famous is Chew Jetty, where visitors can walk along wooden walkways lined with stilt houses, small shrines, and souvenir stalls. Unlike the more touristy Chew Jetty, Tan Jetty is quieter, making it ideal for travelers seeking a serene atmosphere and stunning photo opportunities. The jetties offer stunning views of the waterfront and are best visited around sunrise or sunset.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `The Clan Jetties of Penang are a unique cultural and historical attraction located along the waterfront of George Town, offering a glimpse into the island’s Chinese heritage. Dating back to the 19th century, these wooden jetties were established by Chinese immigrant clans, each building its own jetty over the water as a community village. The most famous is Chew Jetty, where visitors can walk along wooden walkways lined with stilt houses, small shrines, and souvenir stalls. Unlike the more touristy Chew Jetty, Tan Jetty is quieter, making it ideal for travelers seeking a serene atmosphere and stunning photo opportunities. The jetties offer stunning views of the waterfront and are best visited around sunrise or sunset.`,
       operationalHours: "Open 24/7",
       location: "Weld Quay, George Town, Penang",
       price: "Free",
       duration: "1-2 hours",
+      image: "/images/country/malaysia/places/penang/blog/clan_jetty.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id: 10,
+    {
+      id: 9,
       title: "Chinatown (Petaling Street)",
-      description:
-        `Chinatown, centered on Petaling Street, is a vibrant district bursting with color, culture, and commerce. It’s famous for bargain shopping, Chinese temples, and street food. Here you’ll find knock-off goods, herbal medicine shops, and stalls selling everything from souvenirs to clothes. Street food is a major draw – try roasted duck, wantan mee, and traditional Chinese pastries. Chinatown offers a lively contrast to KL’s glitzy malls.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Chinatown, centered on Petaling Street, is a vibrant district bursting with color, culture, and commerce. It’s famous for bargain shopping, Chinese temples, and street food. Here you’ll find knock-off goods, herbal medicine shops, and stalls selling everything from souvenirs to clothes. Street food is a major draw – try roasted duck, wantan mee, and traditional Chinese pastries. Chinatown offers a lively contrast to KL’s glitzy malls.`,
       operationalHours: "10:00 AM – late nigh",
       location: "Petaling Street, near Pasar Seni MRT",
       tips: [
         "Bargain when shopping",
         "Hold your bag tight as it can get crowded at peak hours",
       ],
+      image: "/images/country/malaysia/places/kuala_lumpur/blog/chinatown.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:11,
+    {
+      id: 10,
       title: "Little India (Brickfields)",
-      description:
-        `Little India, located in the Brickfields neighborhood, is a vibrant district rich in Indian culture, color, and cuisine. With music playing from shopfronts, streets adorned with floral garlands, and the scent of spices in the air, this area offers an immersive cultural experience. Visitors can shop for traditional clothing, jewelry, and souvenirs, or enjoy South Indian meals served on banana leaves. Must-try dishes include dosas, biryani, and sweet treats like laddu. The area also features temples, colonial buildings, and street art.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "Open daily</br> Shops operates from 10:00 AM – 9:00 PM",
+      description: `Little India, located in the Brickfields neighborhood, is a vibrant district rich in Indian culture, color, and cuisine. With music playing from shopfronts, streets adorned with floral garlands, and the scent of spices in the air, this area offers an immersive cultural experience. Visitors can shop for traditional clothing, jewelry, and souvenirs, or enjoy South Indian meals served on banana leaves. Must-try dishes include dosas, biryani, and sweet treats like laddu. The area also features temples, colonial buildings, and street art.`,
+      operationalHours:
+        "Open daily</br> Shops operates from 10:00 AM – 9:00 PM",
       location: "Brickfields",
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/little_india.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:12,
+    {
+      id: 11,
       title: "Island Hopping at Perhentian",
-      description:
-        `Island hopping is one of the top things to do in the Perhentian Islands. A typical tour includes stops at Turtle Beach, Shark Point, and Romantic Beach. You’ll visit hidden coves, and experience the natural beauty of both Perhentian Kecil and Besar. Head to Adam & Eve Beach, it is one of the most secluded spots in Perhentian Kecil. It's the perfect place to watch a quiet, romantic sunset surrounded by jungle and sea. The beach is less crowded and best reached by foot through a scenic forest trail or a short boat ride.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Island hopping is one of the top things to do in the Perhentian Islands. A typical tour includes stops at Turtle Beach, Shark Point, and Romantic Beach. You’ll visit hidden coves, and experience the natural beauty of both Perhentian Kecil and Besar. Head to Adam & Eve Beach, it is one of the most secluded spots in Perhentian Kecil. It's the perfect place to watch a quiet, romantic sunset surrounded by jungle and sea. The beach is less crowded and best reached by foot through a scenic forest trail or a short boat ride.`,
       operationalHours: "7 AM - 6 PM",
       location: "Perhentian Islands",
       price: "RM40–RM70 ",
@@ -1222,274 +1200,249 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       tips: [
         `Visit our detailed <a href="/malaysia/perhentian-islands/top-things-to-do" target="_blank" class="text-teal-600 underline">Perhentian Island travel guide</a> and things to do`,
       ],
+      image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:13,
+    {
+      id: 12,
       title: "Hawker Stalls at Gurney Drive",
-      description:
-        `Gurney Drive is Penang’s most iconic seafront promenade, renowned for its vibrant evening hawker scene. As the sun sets, Gurney Drive Hawker Centre comes alive with the aroma of sizzling woks and spicy broths. This open-air food haven offers authentic Penang street food at budget-friendly prices. Try Char Kway Teow, Penang Laksa, grilled seafood, and local desserts. It's a must-visit for food lovers looking to experience the heart of Penang’s culinary culture.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Gurney Drive is Penang’s most iconic seafront promenade, renowned for its vibrant evening hawker scene. As the sun sets, Gurney Drive Hawker Centre comes alive with the aroma of sizzling woks and spicy broths. This open-air food haven offers authentic Penang street food at budget-friendly prices. Try Char Kway Teow, Penang Laksa, grilled seafood, and local desserts. It's a must-visit for food lovers looking to experience the heart of Penang’s culinary culture.`,
       operationalHours: "5:00 PM – 11:00 PM",
       location: "Gurney Drive, George Town",
       price: "Dishes range from RM5–RM15 ",
       duration: "2 hours day",
       tips: [
         `Arrive early to grab a table`,
-        "Carry cash, Share plates to taste more dishes"
+        "Carry cash, Share plates to taste more dishes",
       ],
     },
     {
-      id:14,
+      id: 13,
       title: "Red Square, Melaka",
-      description:
-        `The iconic Red Square, also known as Dutch Square, is the historic heart of Melaka City and one of Malaysia’s most photographed landmarks. Instantly recognizable by its vivid crimson buildings and colonial Dutch architecture, the square reflects Melaka’s rich colonial past under Portuguese, Dutch, and British rule. Key attractions around the square include the Christ Church (built in 1753), The Stadthuys (once the governor's residence, now a museum), and the Queen Victoria Fountain. The area buzzes with activity—trishaws decked in neon lights and music offer tours, while souvenir shops and local vendors line the streets. With its vibrant colors, historic charm, and easy walkability, Red Square is a perfect introduction to Melaka’s UNESCO-listed heritage.
-`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `The iconic Red Square, also known as Dutch Square, is the historic heart of Melaka City and one of Malaysia’s most photographed landmarks. Instantly recognizable by its vivid crimson buildings and colonial Dutch architecture, the square reflects Melaka’s rich colonial past under Portuguese, Dutch, and British rule. Key attractions around the square include the Christ Church (built in 1753), The Stadthuys (once the governor's residence, now a museum), and the Queen Victoria Fountain. The area buzzes with activity—trishaws decked in neon lights and music offer tours, while souvenir shops and local vendors line the streets. With its vibrant colors, historic charm, and easy walkability, Red Square is a perfect introduction to Melaka’s UNESCO-listed heritage.`,
       operationalHours: "Open 24/7 </br>Museums: 9:00 AM – 5:30 PM",
       location: "Bandar Hilir, Melaka City",
       price: "Free(Museum entry~MYR 10)",
       duration: "1-2 hours",
       tips: [
         `Great for photography, look for reflections in the fountain area`,
-        "Combine with a walk up to St. Paul’s Hill for panoramic views"
+        "Combine with a walk up to St. Paul’s Hill for panoramic views",
       ],
+      image: "/images/country/malaysia/places/melaka/red_square.jpg",
+      imageCreditHTML:
+        "Photo by <a target='_blank' href='https://www.pexels.com/photo/historic-christ-church-melaka-on-a-sunny-day-29238004/'><u>Ihsan Adityawarman</u></a>",
     },
     {
-      id:15,
+      id: 14,
       title: "Explore Food at Jalan Alor Street",
-      description:
-        `Jalan Alor is Kuala Lumpur’s legendary food street, renowned for its buzzing nightlife and mouth watering street food. Located in the heart of Bukit Bintang, this street transforms into a culinary haven as the sun sets. The aroma of grilled satay, spicy noodles, fresh seafood, and exotic fruits fills the air while locals and tourists gather at open-air tables. It’s the best place to sample authentic Malaysian flavors, as well as Chinese, Thai, and even fusion dishes. From budget-friendly snacks to full meals, Jalan Alor offers a true taste of KL’s food culture.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Jalan Alor is Kuala Lumpur’s legendary food street, renowned for its buzzing nightlife and mouth watering street food. Located in the heart of Bukit Bintang, this street transforms into a culinary haven as the sun sets. The aroma of grilled satay, spicy noodles, fresh seafood, and exotic fruits fills the air while locals and tourists gather at open-air tables. It’s the best place to sample authentic Malaysian flavors, as well as Chinese, Thai, and even fusion dishes. From budget-friendly snacks to full meals, Jalan Alor offers a true taste of KL’s food culture.`,
       operationalHours: "5:00 PM – Late midnight",
       location: "Bandar Hilir, Melaka City",
       price: "Dishes range from RM10–RM30",
       duration: "2 hours",
       tips: [
         `Try satay, Marshmallow IceCream and char kway teow`,
-        `Checkout our detailed article on <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">what to eat</a> in malaysia`
+        `Checkout our detailed article on <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">what to eat</a> in malaysia`,
       ],
     },
-     {
-      id:16,
+    {
+      id: 15,
       title: "Snorkeling",
-      description:
-        `Malaysia is a top destination for snorkeling enthusiasts, offering crystal-clear waters, vibrant coral reefs, and an abundance of marine life across both the Peninsular and Bornean coasts. Islands like Perhentian, Redang, Tioman, and Sipadan provide easy access to shallow reefs where you can spot clownfish, parrotfish, sea turtles, and even reef sharks. The best time for snorkeling on the east coast (Perhentian, Redang, Tioman) is March to October, when visibility is at its peak. Whether you're a beginner or an experienced snorkeler, Malaysia offers world-class underwater experiences that are both accessible and affordable.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Malaysia is a top destination for snorkeling enthusiasts, offering crystal-clear waters, vibrant coral reefs, and an abundance of marine life across both the Peninsular and Bornean coasts. Islands like Perhentian, Redang, Tioman, and Sipadan provide easy access to shallow reefs where you can spot clownfish, parrotfish, sea turtles, and even reef sharks. The best time for snorkeling on the east coast (Perhentian, Redang, Tioman) is March to October, when visibility is at its peak. Whether you're a beginner or an experienced snorkeler, Malaysia offers world-class underwater experiences that are both accessible and affordable.`,
       operationalHours: "Daily(7 AM - 4PM)",
       location: "Perhentian Islands, Redang, Tioman, Sipadan, Mataking",
-      price: "MYR 30–100 for half-day tours </br>MYR 120–250 for full-day trips",
+      price:
+        "MYR 30–100 for half-day tours </br>MYR 120–250 for full-day trips",
       duration: "2-4 hours per session",
       tips: [
         `Book early during peak seasons`,
-        `Checkout our complete <a href="/malaysia/scuba-diving" target="_blank" class="text-teal-600 underline">Malaysia diving guide</a>`
+        `Checkout our complete <a href="/malaysia/scuba-diving" target="_blank" class="text-teal-600 underline">Malaysia diving guide</a>`,
       ],
+      image: "/images/country/malaysia/places/perhentian/blog/snorkeling.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:17,
+    {
+      id: 16,
       title: "Mangrove Tour (Kilim Geoforest Park)",
-      description:
-        `Kilim Geoforest Park is a UNESCO-recognized mangrove forest with stunning limestone formations, caves, and diverse wildlife. Mangrove boat tours take visitors through narrow waterways where you can spot eagles, monkeys, and exotic birds. The park also features bat caves and floating fish farms. This ecotourism experience highlights the importance of mangroves in protecting the coastline and sustaining local fisheries. It’s both educational and breathtakingly beautiful.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Kilim Geoforest Park is a UNESCO-recognized mangrove forest with stunning limestone formations, caves, and diverse wildlife. Mangrove boat tours take visitors through narrow waterways where you can spot eagles, monkeys, and exotic birds. The park also features bat caves and floating fish farms. This ecotourism experience highlights the importance of mangroves in protecting the coastline and sustaining local fisheries. It’s both educational and breathtakingly beautiful.`,
       operationalHours: "Tours available 9:00 AM – 5:00 PM",
       location: "Hotel Pickup",
       price: "RM80–RM150",
       duration: "Half Day",
+      image: "/images/country/malaysia/places/langkawi/blog/mangrove.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:18,
+    {
+      id: 17,
       title: "Langkawi Night Markets",
-      description:
-        `Langkawi’s night markets offer an authentic taste of local life with bustling stalls selling delicious street food, fresh produce, clothing, and handicrafts. These markets rotate locations nightly in different towns like Kuah, Pantai Cenang, and Temoyong, providing a vibrant atmosphere to explore. Checkout the Night markets schedules here on our Langkawi travel guide. Sample local favorites such as satay, laksa, grilled seafood, kuih (traditional sweets) and many more. It’s an ideal way to immerse yourself in Malaysian culture, meet locals, and find souvenirs.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "Generally 5:00 PM – 11:00 PM </br>(varies by location and day)",
+      description: `Langkawi’s night markets offer an authentic taste of local life with bustling stalls selling delicious street food, fresh produce, clothing, and handicrafts. These markets rotate locations nightly in different towns like Kuah, Pantai Cenang, and Temoyong, providing a vibrant atmosphere to explore. Checkout the Night markets schedules here on our Langkawi travel guide. Sample local favorites such as satay, laksa, grilled seafood, kuih (traditional sweets) and many more. It’s an ideal way to immerse yourself in Malaysian culture, meet locals, and find souvenirs.`,
+      operationalHours:
+        "Generally 5:00 PM – 11:00 PM </br>(varies by location and day)",
       location: `Rotating locations, check daily schedule on our <a href="/malaysia/scuba-diving" target="_blank" class="text-teal-600 underline">Langkawi complete guide</a>`,
       price: "Dishes range from RM2–RM10",
       duration: "2 Hours",
+      image: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",
+      imageCreditHTML: null,
     },
     {
-      id:19,
+      id: 18,
       title: "Relax at an Infinity Pool",
-      description:
-        `Kuala Lumpur is home to several high-rise hotels and residences that offer stunning infinity pools with sweeping views of the skyline – particularly the Petronas Towers and KL Tower. Popular options include the rooftop pools at The Face Suites, Banyan Tree KL, or Regalia Residences (some offer day passes). Whether you're swimming at sunrise or lounging at sunset, it’s a relaxing and luxurious way to unwind in the city. Infinity pools here are also social media favorites, perfect for that iconic KL backdrop.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Kuala Lumpur is home to several high-rise hotels and residences that offer stunning infinity pools with sweeping views of the skyline – particularly the Petronas Towers and KL Tower. Popular options include the rooftop pools at The Face Suites, Banyan Tree KL, or Regalia Residences (some offer day passes). Whether you're swimming at sunrise or lounging at sunset, it’s a relaxing and luxurious way to unwind in the city. Infinity pools here are also social media favorites, perfect for that iconic KL backdrop.`,
       operationalHours: "7:00 AM – 7:00 PM",
       location: `Free for guests</br> RM 30–100 for day passes (if offered)`,
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/infinity_pool.jpg",
+      imageCreditHTML: null,
     },
     {
-      id:20,
+      id: 19,
       title: "A Day at Genting Highlands",
-      description:
-        `Genting Highlands is a popular hill resort an hour from KL, known for its cool climate, theme parks, casinos, shopping, and entertainment. Located at 1,800 meters above sea level, it offers a refreshing escape from the city heat. Highlights include the Skytropolis Indoor Theme Park, SkyAvenue Mall, Genting Premium Outlets, and Resorts World Casino. The Awana Skyway Cable Car ride provides spectacular mountain views. It’s perfect for families, couples, and anyone seeking fun or relaxation in a highland setting.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Genting Highlands is a popular hill resort an hour from KL, known for its cool climate, theme parks, casinos, shopping, and entertainment. Located at 1,800 meters above sea level, it offers a refreshing escape from the city heat. Highlights include the Skytropolis Indoor Theme Park, SkyAvenue Mall, Genting Premium Outlets, and Resorts World Casino. The Awana Skyway Cable Car ride provides spectacular mountain views. It’s perfect for families, couples, and anyone seeking fun or relaxation in a highland setting.`,
       operationalHours: "10:00 AM – 10:00 PM(Attractions)",
       location: `Genting Highlands, Pahang (about 1 hour from KL)`,
       price: "Cable Car RM 10–18</br> Other attractions priced separately",
       duration: "Full-day trip",
       tips: [
         `Bring a light jacket as it can be chilly`,
-        `Buy tickets in advance for cable car/theme parks`
+        `Buy tickets in advance for cable car/theme parks`,
       ],
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:21,
+    {
+      id: 20,
       title: "Melaka River Cruise",
-      description:
-        `The Melaka River Cruise offers a scenic 45-minute journey through the heart of Melaka, showcasing the city's rich heritage and vibrant culture. As you glide along the river, you'll pass by historical landmarks, colonial buildings, traditional Malay villages, and colorful murals that narrate the story of this UNESCO World Heritage Site. The cruise is especially enchanting at night when the riverside is illuminated with lights, creating a magical ambiance.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "9:00 AM–11:30 PM </br>Closed on Friday from 12:15 PM - 2:45 PM",
+      description: `The Melaka River Cruise offers a scenic 45-minute journey through the heart of Melaka, showcasing the city's rich heritage and vibrant culture. As you glide along the river, you'll pass by historical landmarks, colonial buildings, traditional Malay villages, and colorful murals that narrate the story of this UNESCO World Heritage Site. The cruise is especially enchanting at night when the riverside is illuminated with lights, creating a magical ambiance.`,
+      operationalHours:
+        "9:00 AM–11:30 PM </br>Closed on Friday from 12:15 PM - 2:45 PM",
       location: `Taman Rempah Jetty, Muara Jetty`,
       price: "RM30–RM50",
       duration: "Approximately 45 minutes",
       tips: [
         `Opt for an evening cruise to experience the illuminated riverside`,
-        `One day pass can also be purchased to take multiple stops`
+        `One day pass can also be purchased to take multiple stops`,
       ],
+      image: "/images/country/malaysia/places/melaka/blog/melaka_river.jpg",
+      imageCreditHTML:
+        "Photo by <a target='_blank' href='https://unsplash.com/@fajrihfzh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Fajri Hafizh</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-boat-traveling-down-a-river-next-to-tall-buildings-2AWi2LKFvuo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
     },
-     {
-      id:22,
+    {
+      id: 21,
       title: "Kek Lok Si Temple",
-      description:
-        `Kek Lok Si is Southeast Asia’s largest Buddhist temple and a must-see cultural landmark in Penang. Located on a hillside in Air Itam, it features stunning architecture blending Chinese, Thai, and Burmese styles, with a massive statue of the Goddess of Mercy. The temple complex is beautifully illuminated during Chinese New Year, attracting thousands of visitors. Enjoy panoramic views of the city from the top and explore pagodas, prayer halls, and gardens.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "9:00 AM–11:30 PM </br>Closed on Friday from 12:15 PM - 2:45 PM",
+      description: `Kek Lok Si is Southeast Asia’s largest Buddhist temple and a must-see cultural landmark in Penang. Located on a hillside in Air Itam, it features stunning architecture blending Chinese, Thai, and Burmese styles, with a massive statue of the Goddess of Mercy. The temple complex is beautifully illuminated during Chinese New Year, attracting thousands of visitors. Enjoy panoramic views of the city from the top and explore pagodas, prayer halls, and gardens.`,
+      operationalHours:
+        "9:00 AM–11:30 PM </br>Closed on Friday from 12:15 PM - 2:45 PM",
       location: `Taman Rempah Jetty, Muara Jetty`,
       price: "RM30–RM50",
       duration: "Approximately 45 minutes",
       tips: [
         `Opt for an evening cruise to experience the illuminated riverside`,
-        `One day pass can also be purchased to take multiple stops`
+        `One day pass can also be purchased to take multiple stops`,
       ],
+      image:
+        "/images/country/malaysia/places/penang/blog/kek_lok_si_temple.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:23,
+    {
+      id: 22,
       title: "Merdeka Square",
-      description:
-        `Merdeka Square is a historic site where Malaysia’s independence was declared in 1957. It’s home to one of the tallest flagpoles in the world and surrounded by colonial-era architecture, including the Sultan Abdul Samad Building and St. Mary’s Cathedral. The square represents national pride and is a symbolic site for parades, cultural events, and photography. With its open green field and surrounding historical buildings, it offers a contrast to KL’s modern cityscape and is ideal for a quiet walk or cultural stop.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Merdeka Square is a historic site where Malaysia’s independence was declared in 1957. It’s home to one of the tallest flagpoles in the world and surrounded by colonial-era architecture, including the Sultan Abdul Samad Building and St. Mary’s Cathedral. The square represents national pride and is a symbolic site for parades, cultural events, and photography. With its open green field and surrounding historical buildings, it offers a contrast to KL’s modern cityscape and is ideal for a quiet walk or cultural stop.`,
       operationalHours: "Open 24/7 (best visited during daylight)",
       location: `Jalan Raja, Kuala Lumpur`,
       price: "Free",
       duration: "1 hour",
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/merdeka_square.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:24,
+    {
+      id: 23,
       title: "Sunset Cruise, Langkawi",
-      description:
-        `A sunset cruise in Langkawi is an unforgettable way to witness the island’s breathtaking coastline bathed in golden light. These boat tours often include stops for snorkeling, island hopping, or dinner on board. Many cruises offer panoramic views of Langkawi’s limestone cliffs, mangroves, and the famous Pregnant Maiden Lake. Evening cruises combine relaxation, stunning scenery, and sometimes live music or cocktails, creating a romantic or peaceful end to your day. It’s a popular choice for couples and groups alike.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `A sunset cruise in Langkawi is an unforgettable way to witness the island’s breathtaking coastline bathed in golden light. These boat tours often include stops for snorkeling, island hopping, or dinner on board. Many cruises offer panoramic views of Langkawi’s limestone cliffs, mangroves, and the famous Pregnant Maiden Lake. Evening cruises combine relaxation, stunning scenery, and sometimes live music or cocktails, creating a romantic or peaceful end to your day. It’s a popular choice for couples and groups alike.`,
       operationalHours: "Usually departs around 4:30 PM",
       location: `<li>Pantai Cenang </li><li>Kuah Jetty</li>`,
       price: "RM100–RM300 per person </br>(varies by operator and package)",
       duration: "3-4 hours",
-    },
-     {
-      id:25,
-      title: "Book a beachside Resort and Relax",
-      description:
-        `Book a beachside resort in Malaysia and spend your days soaking in sun, sea, and serenity. From the powdery shores of Langkawi and the crystal-clear waters of the Perhentian Islands to the quiet luxury of Pangkor Laut, Malaysia offers beachfront stays to suit every traveler's dream. Wake up to ocean views, take lazy swims, sip coconut water under palm trees, and unwind with a sunset massage or a seaside dinner. Whether you're seeking a romantic escape, a family break, or a solo recharge, chilling at a beachfront resort offers the perfect blend of comfort and nature. It’s not just a stay, it's a slow-paced experience made for true relaxation.`,
-        image: "/placeholder.svg?height=300&width=500",
+      image: "/images/country/malaysia/places/langkawi/blog/sunset_cruise.jpg",
+      imageCreditHTML:
+        "Photo by <a target='_blank' href='https://www.pexels.com/@bertellifotografia/'><u>Matheus Bertelli</u></a> on <a target='_blank' href='https://www.pexels.com/photo/a-sailboat-in-the-ocean-at-sunset-15141424/'><u>Pexels</u></a>",
     },
     {
-      id:26,
+      id: 24,
+      title: "Book a beachside Resort and Relax",
+      description: `Book a beachside resort in Malaysia and spend your days soaking in sun, sea, and serenity. From the powdery shores of Langkawi and the crystal-clear waters of the Perhentian Islands to the quiet luxury of Pangkor Laut, Malaysia offers beachfront stays to suit every traveler's dream. Wake up to ocean views, take lazy swims, sip coconut water under palm trees, and unwind with a sunset massage or a seaside dinner. Whether you're seeking a romantic escape, a family break, or a solo recharge, chilling at a beachfront resort offers the perfect blend of comfort and nature. It’s not just a stay, it's a slow-paced experience made for true relaxation.`,
+      image: "/images/country/malaysia/places/langkawi/blog/beach_resort.jpg",
+      imageCreditHTML: null,
+    },
+    {
+      id: 25,
       title: "3D Art Museum Langkawi",
-      description:
-        `The 3D Art Museum in Langkawi, is one of the largest 3D interactive art galleries in Southeast Asia. Located in the scenic Oriental Village near the Langkawi Cable Car, this vibrant indoor space features over 200 imaginative and hyper-realistic artworks painted across walls, ceilings, and floors. The gallery is divided into themed zones such as fantasy, underwater, safari, illusion, and heritage, offering a unique and immersive experience for all ages. It's a fun, family-friendly escape that also provides a cool break from Langkawi’s outdoor heat.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `The 3D Art Museum in Langkawi, is one of the largest 3D interactive art galleries in Southeast Asia. Located in the scenic Oriental Village near the Langkawi Cable Car, this vibrant indoor space features over 200 imaginative and hyper-realistic artworks painted across walls, ceilings, and floors. The gallery is divided into themed zones such as fantasy, underwater, safari, illusion, and heritage, offering a unique and immersive experience for all ages. It's a fun, family-friendly escape that also provides a cool break from Langkawi’s outdoor heat.`,
+      image: "/images/country/malaysia/places/langkawi/blog/3d_art.jpg",
+      imageCreditHTML: null,
       operationalHours: "9:00 AM – 6:00 PM (Daily)",
       location: `Oriental Village, Langkawi`,
       price: "RM38 (Adult)</br>Included in the SkyCab Combo Ticket",
       duration: "1 hour",
       tips: [
         `Buy the SkyCab Combo Ticket and clubb it with SkyDom and SkyCab`,
-        `Bring a fully charged phone or camera, you’ll want lots of photos!`
+        `Bring a fully charged phone or camera, you’ll want lots of photos!`,
       ],
     },
     {
-      id:27,
+      id: 26,
       title: "KL Forest Eco Park",
-      description:
-        `Located at the base of KL Tower, the KL Forest Eco Park is a hidden rainforest in the heart of the city. It’s one of the oldest forest reserves in Malaysia and offers elevated canopy walkways, nature trails, and a surprising escape into greenery without leaving downtown. You can explore tropical flora, spot small wildlife, and take in views of the city skyline peeking through the trees. The main highlight is the Canopy Walk – a suspension bridge that gives you a treetop-level experience. It’s great for families, couples, or solo travelers wanting a mix of nature and city in one spot.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Located at the base of KL Tower, the KL Forest Eco Park is a hidden rainforest in the heart of the city. It’s one of the oldest forest reserves in Malaysia and offers elevated canopy walkways, nature trails, and a surprising escape into greenery without leaving downtown. You can explore tropical flora, spot small wildlife, and take in views of the city skyline peeking through the trees. The main highlight is the Canopy Walk – a suspension bridge that gives you a treetop-level experience. It’s great for families, couples, or solo travelers wanting a mix of nature and city in one spot.`,
+      image: "/images/country/malaysia/places/kuala_lumpur/blog/kl_forest.jpg",
+      imageCreditHTML: null,
       operationalHours: "Daily, 8:00 AM – 5:30 PM",
       location: `Jalan Raja Chulan, near KL Tower`,
       price: "Free",
       duration: "1-1.5 hour",
-      tips: [
-        `Combine with the KL Tower visit`,
-      ],
+      tips: [`Combine with the KL Tower visit`],
     },
-     {
-      id:28,
+    {
+      id: 27,
       title: "Party at Changkat Avenue",
-      description:
-        `Changkat Bukit Bintang is Kuala Lumpur’s most energetic nightlife strip, a lively avenue packed with bars, lounges, pubs, and rooftop venues. As night falls, the street transforms into a vibrant party zone filled with music, neon lights, and social buzz. Whether you're in the mood for cocktails, craft beers, dancing, or a casual drink with a view, The atmosphere is cosmopolitan, making it a popular hangout for both locals and travelers. With themed nights, live music, and occasional events, it’s the ideal spot to unwind after a day of sightseeing.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Changkat Bukit Bintang is Kuala Lumpur’s most energetic nightlife strip, a lively avenue packed with bars, lounges, pubs, and rooftop venues. As night falls, the street transforms into a vibrant party zone filled with music, neon lights, and social buzz. Whether you're in the mood for cocktails, craft beers, dancing, or a casual drink with a view, The atmosphere is cosmopolitan, making it a popular hangout for both locals and travelers. With themed nights, live music, and occasional events, it’s the ideal spot to unwind after a day of sightseeing.`,
       operationalHours: "Daily, 5:00 PM – 3:00 AM",
       location: `Changkat Bukit `,
       tips: [
         `Avoid taking personal vehicle`,
         "Stays open till late in the night so plan accordingly",
       ],
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/changkat_avenue.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:KL_-_Changkat_Bkt_Bintang_St_Patrick%27s_Day_2012.JPG'><u>Azreey</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/3.0'><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons",
     },
     {
-      id:29,
+      id: 28,
       title: "Cave Temples in Ipoh",
-      description:
-        `The cave temples of Ipoh are among Malaysia’s most unique spiritual and cultural attractions, blending natural limestone formations with centuries-old Buddhist and Taoist traditions. Carved into dramatic karst hills, these sacred sites are not only places of worship but also marvels of architecture and geology. Perak Cave Temple, with its towering Buddha statue and panoramic hilltop views, is the most famous, while Kek Lok Tong stands out for its tranquil garden and peaceful interior cavern. These temples offer a serene escape just outside Ipoh’s city center, perfect for spiritual reflection or simply appreciating nature and artistry intertwined.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `The cave temples of Ipoh are among Malaysia’s most unique spiritual and cultural attractions, blending natural limestone formations with centuries-old Buddhist and Taoist traditions. Carved into dramatic karst hills, these sacred sites are not only places of worship but also marvels of architecture and geology. Perak Cave Temple, with its towering Buddha statue and panoramic hilltop views, is the most famous, while Kek Lok Tong stands out for its tranquil garden and peaceful interior cavern. These temples offer a serene escape just outside Ipoh’s city center, perfect for spiritual reflection or simply appreciating nature and artistry intertwined.`,
       operationalHours: "Daily, 9:00 AM – 5:00 PM",
       location: `Gunung Rapat area, Ipoh, Perak`,
       price: "Free",
       duration: "2–3 hours to visit multiple temples",
+      image: "/images/country/malaysia/places/ipoh/cave_temple.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Parting_shot_of_the_cartoon-ish_statues_and_forecourt_of_Ipoh%27s_Ling_Sen_Tong_cave_temple_(53473288689).jpg'><u>shankar s. from Poona (pune), India, India</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
     },
-     {
-      id:30,
+    {
+      id: 29,
       title: "Interact with Locals",
-      description:
-        `One of the best ways to truly experience Kuala Lumpur is by interacting with its diverse locals. Malays, Chinese, Indians, and indigenous cultures coexist here, creating a rich cultural blend. Strike up conversations at street food stalls, in markets, while taking a taxi or join guided community tours for deeper insights. Locals are generally friendly, multilingual, and eager to share stories or recommend hidden gems. Visit neighborhoods like Kampung Baru for traditional Malay life, or explore cultural streets during local festivals. It’s not just about sights—it’s about connection.`,
-      image: "/placeholder.svg?height=300&width=500",
+      description: `One of the best ways to truly experience Kuala Lumpur is by interacting with its diverse locals. Malays, Chinese, Indians, and indigenous cultures coexist here, creating a rich cultural blend. Strike up conversations at street food stalls, in markets, while taking a taxi or join guided community tours for deeper insights. Locals are generally friendly, multilingual, and eager to share stories or recommend hidden gems. Visit neighborhoods like Kampung Baru for traditional Malay life, or explore cultural streets during local festivals. It’s not just about sights—it’s about connection.`,
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/interact_locals.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:31,
+    {
+      id: 30,
       title: "Melaka Straits Mosque",
-      description:
-        `The Melaka Straits Mosque, also known as Masjid Selat Melaka, is a stunning architectural landmark situated on the man-made island of Pulau Melaka. Built on stilts over the sea, the mosque appears to float when the tide is high, offering a breathtaking sight against the backdrop of the Strait of Malacca. Inaugurated in 2006, its design beautifully blends Middle Eastern and Malay craftsmanship, featuring a striking golden dome and intricate stained-glass windows. Visitors are welcomed to explore the mosque outside of prayer times, provided they adhere to modest dress codes robes and headscarves are available at the entrance.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "<li>9:00 AM – 12:30 PM</li><li>2:30 PM – 4:15 PM</li><li>5:30 PM – 6:30 PM</li>",
+      description: `The Melaka Straits Mosque, also known as Masjid Selat Melaka, is a stunning architectural landmark situated on the man-made island of Pulau Melaka. Built on stilts over the sea, the mosque appears to float when the tide is high, offering a breathtaking sight against the backdrop of the Strait of Malacca. Inaugurated in 2006, its design beautifully blends Middle Eastern and Malay craftsmanship, featuring a striking golden dome and intricate stained-glass windows. Visitors are welcomed to explore the mosque outside of prayer times, provided they adhere to modest dress codes robes and headscarves are available at the entrance.`,
+      operationalHours:
+        "<li>9:00 AM – 12:30 PM</li><li>2:30 PM – 4:15 PM</li><li>5:30 PM – 6:30 PM</li>",
       location: `Jalan Pulau Melaka, Melaka`,
       price: "Free",
       duration: "1–2 hours",
@@ -1497,56 +1450,55 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
         `Visit during sunset for the most picturesque views`,
         "Combine your visit with nearby attractions like Jonker Street and A Famosa for a comprehensive Melaka experience",
       ],
+      image: "/images/country/malaysia/places_to_visit.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:32,
+    {
+      id: 31,
       title: "Bukit Bintang",
-      description:
-        `Bukit Bintang is Kuala Lumpur’s premier shopping and entertainment district, bustling day and night. From luxury malls and boutique shops to street markets and local cafes, it’s a haven for retail therapy. The area also features a thriving nightlife scene, with rooftop bars, shisha lounges, karaoke spots, and nightclubs. Street performers and neon-lit streets add energy to the vibe. Whether you're dining at a Michelin-rated restaurant or grabbing snacks at Jalan Alor nearby, Bukit Bintang delivers variety and excitement.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Bukit Bintang is Kuala Lumpur’s premier shopping and entertainment district, bustling day and night. From luxury malls and boutique shops to street markets and local cafes, it’s a haven for retail therapy. The area also features a thriving nightlife scene, with rooftop bars, shisha lounges, karaoke spots, and nightclubs. Street performers and neon-lit streets add energy to the vibe. Whether you're dining at a Michelin-rated restaurant or grabbing snacks at Jalan Alor nearby, Bukit Bintang delivers variety and excitement.`,
       tips: [
         `Book a stay around Bukit Bintang Area`,
         "Stroll around the area during night",
       ],
+      image:
+        "/images/country/malaysia/places/kuala_lumpur/blog/bukit_bintang.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:33,
+    {
+      id: 32,
       title: "Gunung Mulu National Park",
-      description:
-        `A UNESCO World Heritage Site, Gunung Mulu National Park in Sarawak, Malaysian Borneo, is renowned for its vast limestone cave systems, towering karst formations, and rich biodiversity. Spanning over 528 square kilometers, the park is home to record-breaking natural wonders, including the world's largest cave chamber, Sarawak Chamber, and the world's second-largest cave passage, Deer Cave. Visitors can explore illuminated show caves like Lang Cave and Clearwater Cave, embark on the challenging Pinnacles Hike to witness sharp limestone spires, or experience the mesmerizing bat exodus at dusk. `,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "Open daily </br>Guided tours operate between 8:00 AM – 5:00 PM",
+      description: `A UNESCO World Heritage Site, Gunung Mulu National Park in Sarawak, Malaysian Borneo, is renowned for its vast limestone cave systems, towering karst formations, and rich biodiversity. Spanning over 528 square kilometers, the park is home to record-breaking natural wonders, including the world's largest cave chamber, Sarawak Chamber, and the world's second-largest cave passage, Deer Cave. Visitors can explore illuminated show caves like Lang Cave and Clearwater Cave, embark on the challenging Pinnacles Hike to witness sharp limestone spires, or experience the mesmerizing bat exodus at dusk. `,
+      operationalHours:
+        "Open daily </br>Guided tours operate between 8:00 AM – 5:00 PM",
       location: `Miri Division, Sarawak, Malaysia </br>(accessible via Mulu Airport)`,
-      price: "5-day pass: <li>RM 30 (foreign adults) </li><li>RM 10 (children)</li><li> RM 15 (Malaysian adults)</li><li> RM 7 (seniors)",
+      price:
+        "5-day pass: <li>RM 30 (foreign adults) </li><li>RM 10 (children)</li><li> RM 15 (Malaysian adults)</li><li> RM 7 (seniors)",
       duration: "2–3 days",
       tips: [
         `Best visited during the drier months of June to September for optimal trekking and cave exploration`,
         "Book flights and accommodations in advance due to limited access",
       ],
+      image:
+        "/images/country/malaysia/places/sarawak/gunung_mulu_national_park.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Mulu_Pinnacles.jpg'><u>Nur Nafis Naim</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0'><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons",
     },
-     {
-      id:34,
+    {
+      id: 33,
       title: "Cameron Highlands",
-      description:
-        `Nestled in the Titiwangsa Mountains of central Malaysia, Cameron Highlands is a cool-climate hill station famed for its lush tea plantations, scenic trails, and colonial charm. At over 1,500 meters above sea level, it offers a refreshing escape from the tropical heat, with misty mornings and temperate weather year-round. Visitors can explore rolling green landscapes at the Boh Tea Plantation, pick fresh strawberries at local farms, or enjoy leisurely walks through mossy forests and flower gardens. The region also boasts colorful local markets, English-style cottages, and a mix of Malay, Chinese, and Indian culture. `,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
-      operationalHours: "Open year-round</br>most attractions 9:00 AM – 5:00 PM",
+      description: `Nestled in the Titiwangsa Mountains of central Malaysia, Cameron Highlands is a cool-climate hill station famed for its lush tea plantations, scenic trails, and colonial charm. At over 1,500 meters above sea level, it offers a refreshing escape from the tropical heat, with misty mornings and temperate weather year-round. Visitors can explore rolling green landscapes at the Boh Tea Plantation, pick fresh strawberries at local farms, or enjoy leisurely walks through mossy forests and flower gardens. The region also boasts colorful local markets, English-style cottages, and a mix of Malay, Chinese, and Indian culture. `,
+      operationalHours:
+        "Open year-round</br>most attractions 9:00 AM – 5:00 PM",
       duration: "1 Full day",
+      image: "/images/country/malaysia/places/terengganu/crystal_mosque.jpg",
+      imageCreditHTML:
+        "Photo by <a target='_blank' href='https://www.pexels.com/photo/view-of-a-mosque-7500930/'><u>Pok Rie</u></a>",
     },
-     {
-      id:35,
+    {
+      id: 34,
       title: "LEGOLAND Malaysia",
-      description:
-        `Located in Iskandar Puteri, Johor, LEGOLAND Malaysia Resort is Southeast Asia’s first international theme park, offering a comprehensive LEGO experience for families and enthusiasts alike. The resort encompasses a Theme Park with over 40 interactive rides and attractions across 8 themed zones, a Water Park featuring more than 20 slides and water-based activities, and SEA LIFE Malaysia, an aquarium with 11 habitat zones housing over 13,000 marine creatures. Guests can extend their adventure by staying at the LEGO-themed LEGOLAND Hotel, which offers rooms decorated in Pirate, Kingdom, Adventure, NINJAGO, or LEGO Friends themes.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Located in Iskandar Puteri, Johor, LEGOLAND Malaysia Resort is Southeast Asia’s first international theme park, offering a comprehensive LEGO experience for families and enthusiasts alike. The resort encompasses a Theme Park with over 40 interactive rides and attractions across 8 themed zones, a Water Park featuring more than 20 slides and water-based activities, and SEA LIFE Malaysia, an aquarium with 11 habitat zones housing over 13,000 marine creatures. Guests can extend their adventure by staying at the LEGO-themed LEGOLAND Hotel, which offers rooms decorated in Pirate, Kingdom, Adventure, NINJAGO, or LEGO Friends themes.`,
       operationalHours: `<li>Theme Park: 10:00 AM – 6:00 PM </br>(Closed on Wednesdays)</li>
 <li>Water Park: 10:00 AM – 6:00 PM </br>(Closed on Tuesdays)</li>
 <li>SEA LIFE Malaysia: 10:00 AM – 6:00 PM </br>(Open daily)</li>
@@ -1556,63 +1508,66 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
 1-Day Theme Park + SEA LIFE: <li> RM279 (Adult), RM219 (Child/Senior)</li>
 1-Day Triple-Park (All Three Park): <li> RM399 (Adult), RM329 (Child/Senior)</li>`,
       duration: "1-2 days",
+      image: "/images/country/malaysia/places/johor/legoland.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Legoland_Malaysia_Resort_Water_Park.jpg'><u>Mohd Fazlin Mohd Effendy Ooi from Kuala Lumpur, Malaysia</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
     },
-     {
-      id:36,
+    {
+      id: 35,
       title: "Kayaking",
-      description:
-        `Malaysia offers a diverse array of kayaking experiences, from tranquil mangrove explorations to exhilarating white-water adventures. In Langkawi, the Kilim Geoforest Park provides serene mangrove kayaking tours, where paddlers can navigate through limestone caves and observe wildlife like eagles and otters. For those seeking adrenaline, the Kampar River in Gopeng, Perak, offers thrilling white-water kayaking experiences amidst lush rainforest settings.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Malaysia offers a diverse array of kayaking experiences, from tranquil mangrove explorations to exhilarating white-water adventures. In Langkawi, the Kilim Geoforest Park provides serene mangrove kayaking tours, where paddlers can navigate through limestone caves and observe wildlife like eagles and otters. For those seeking adrenaline, the Kampar River in Gopeng, Perak, offers thrilling white-water kayaking experiences amidst lush rainforest settings.`,
       operationalHours: `9:00 AM – 5:00 PM`,
       location: `Langkawi, Perhentian`,
       price: `RM 50-RM 200 per person`,
       duration: "2–4 hours",
+      image: "/images/country/malaysia/places/perhentian/blog/kayaking.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:37,
+    {
+      id: 36,
       title: "Take a Trishaw Ride",
-      description:
-        `A trishaw ride through GeorgeTown is a charming way to explore the city’s sights at a relaxed pace. These colorful, pedal-powered rickshaws offer guided tours or customized routes, passing through heritage streets, markets, and street art spots. It’s perfect for those wanting a unique and nostalgic travel experience.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `A trishaw ride through GeorgeTown is a charming way to explore the city’s sights at a relaxed pace. These colorful, pedal-powered rickshaws offer guided tours or customized routes, passing through heritage streets, markets, and street art spots. It’s perfect for those wanting a unique and nostalgic travel experience.`,
       operationalHours: `9:00 AM – 10:00 PM`,
       location: `<li>George Town</li><li> Maleka`,
       price: `RM30–RM60 per hour (negotiate fare)`,
       duration: "30 minutes – 2 hours",
+      image: "/images/country/malaysia/places/penang/blog/trikshaw.jpeg",
+      imageCreditHTML: null,
     },
     {
-      id:38,
+      id: 37,
+      title: "Crystal Mosque, Kuala Terengganu",
+      description: `The Crystal Mosque, or Masjid Kristal, stands as a gleaming symbol of modern Islamic architecture in Kuala Terengganu, Malaysia. Situated on Wan Man Island within the Islamic Heritage Park, this stunning mosque is constructed from steel, glass, and crystal, giving it a shimmering appearance that reflects beautifully against the surrounding waters. Inaugurated in 2008, the mosque can accommodate over 1,500 worshippers and is renowned for its unique design and serene ambiance.`,
+      operationalHours: "9:00 AM – 6:00 PM (Daily)",
+      location: "Pulau Wan Man, Kuala Terengganu",
+      price: "Free",
+      duration: "1–2 hours",
+      image: "/images/country/malaysia/places/terengganu/crystal_mosque.jpg",
+      imageCreditHTML: null,
+    },
+    {
+      id: 39,
       title: "Gaya Street, Kota Kinabalu",
-      description:
-        `Once known as Bond Street during the British colonial era, Gaya Street is the historical and cultural heart of Kota Kinabalu, Sabah. Lined with charming shophouses, cafes, and heritage buildings, the street offers a glimpse into the city's rich past and vibrant present. Every Sunday morning, Gaya Street transforms into a bustling open-air market, known as the Gaya Street Sunday Market, where locals and tourists alike explore stalls selling everything from local handicrafts and souvenirs to fresh produce and street food. `,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Once known as Bond Street during the British colonial era, Gaya Street is the historical and cultural heart of Kota Kinabalu, Sabah. Lined with charming shophouses, cafes, and heritage buildings, the street offers a glimpse into the city's rich past and vibrant present. Every Sunday morning, Gaya Street transforms into a bustling open-air market, known as the Gaya Street Sunday Market, where locals and tourists alike explore stalls selling everything from local handicrafts and souvenirs to fresh produce and street food. `,
       operationalHours: `Open 24/7`,
       location: `Jalan Gaya, Kota Kinabalu`,
       price: `Free`,
       duration: "2 hours",
+      image: "/images/country/malaysia/places/sabah/gaya_street.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Gaya_Street_Sunday_Market,_2024_(16).jpg'><u>Bahnfrend</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0'><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons",
     },
     {
-      id:39,
+      id: 39,
       title: "Tioman Island, Pahang, Malaysia",
-      description:
-        `Nestled in the South China Sea off Peninsular Malaysia's east coast, Tioman Island is a tropical haven renowned for its crystal-clear waters, lush rainforests, and vibrant marine life. Whether you're an adventure seeker or in search of tranquility, Tioman offers a diverse range of activities to suit every traveler.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Nestled in the South China Sea off Peninsular Malaysia's east coast, Tioman Island is a tropical haven renowned for its crystal-clear waters, lush rainforests, and vibrant marine life. Whether you're an adventure seeker or in search of tranquility, Tioman offers a diverse range of activities to suit every traveler.`,
+      image: "/images/country/malaysia/tioman_island.jpg",
+      imageCreditHTML: null,
     },
-     {
-      id:40,
+    {
+      id: 40,
       title: "Bako National Park, Sarawak",
-      description:
-        `Established in 1957, Bako National Park is Sarawak’s oldest and one of its most biodiverse reserves, encompassing 27 square kilometers of pristine rainforest, secluded beaches, and dramatic coastline. Located about 37 kilometers from Kuching, the park is accessible via a 30-minute drive followed by a 20-minute boat ride from the Bako Jetty. Despite its compact size, Bako boasts seven distinct ecosystems, including mangrove swamps, dipterocarp forests, and heathlands, making it a haven for nature enthusiasts.`,
-      image: "/placeholder.svg?height=300&width=500",
-      category: "Adventure",
-      icon: Waves,
+      description: `Established in 1957, Bako National Park is Sarawak’s oldest and one of its most biodiverse reserves, encompassing 27 square kilometers of pristine rainforest, secluded beaches, and dramatic coastline. Located about 37 kilometers from Kuching, the park is accessible via a 30-minute drive followed by a 20-minute boat ride from the Bako Jetty. Despite its compact size, Bako boasts seven distinct ecosystems, including mangrove swamps, dipterocarp forests, and heathlands, making it a haven for nature enthusiasts.`,
       operationalHours: "8:00 AM – 5:00 PM",
       location: ` Muara Tebas Peninsula, Kuching Division, Sarawak`,
       price: "<li>RM20(adults) </li><li> RM7(children)</li>",
@@ -1621,6 +1576,8 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
         `Wear sturdy footwear and bring insect repellent`,
         "Book accommodations in advance if planning an overnight stay",
       ],
+      image: "/images/country/malaysia/places/sarawak/bako_national_park.jpg",
+      imageCreditHTML: null,
     },
   ],
   related_articles: [
