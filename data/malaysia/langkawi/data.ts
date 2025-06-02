@@ -2,15 +2,15 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Langkawi Cable Car (SkyCab)",
     description:
-      "The Langkawi Cable Car, also known as SkyCab, is one of the most thrilling experiences on the island. Taking you from the Oriental Village up to Gunung Mat Cincang, it offers panoramic views of Langkawi's rainforest, mountains, and turquoise seas. The 15-minute ride is also one of the world's steepest cable car gradients, at 42 degree just before the middle station. Checkout the Eagle's Nest Skywalk at a middle station. At the top station, visitors can access the famous Sky Bridge and several viewing platforms. It's perfect for families, couples, and adventure seekers looking to experience Langkawi from above.",
+      "The Langkawi Cable Car, also known as SkyCab, is one of the most thrilling experiences on the island. Taking you from the Oriental Village up to Gunung Mat Cincang, it offers panoramic views of Langkawi's rainforest, mountains, and turquoise seas. The 15-minute ride is also one of the world's steepest cable car gradients, at 42 degree just before the middle station. Checkout the Eagle's Nest Skywalk at a middle station. At the top station, visitors can access the famous Sky Bridge and several viewing platforms. It’s perfect for families, couples, and adventure seekers looking to experience Langkawi from above.",
     location: "Oriental Village, Burau Bay, Langkawi",
     operationalHours: "9:30 AM – 6:00 PM (Daily)",
     price: "Adult Malaysian: RM43 <br /> Adult Foreigner: RM85",
     duration: "15-20 minutes",
     tips: [
-      "Book the ticket offline at the counter only because of unpredictable weather.",
-      "Consider the express lane upgrade if visiting during peak season.",
-      "Stop at the middle station for breathtaking photo ops.",
+      "Book the ticket offline at the counter only because of unpredictable weather",
+      "Consider the express lane upgrade if visiting during peak season",
+      "Stop at the middle station for breathtaking photo ops",
     ],
     image:
       "/images/country/malaysia/places/langkawi/blog/langkawi_cablecar.jpg",
@@ -20,29 +20,29 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Langkawi Sky Bridge",
     description:
-      "The Langkawi Sky Bridge is a stunning curved suspension bridge located 660 meters above sea level, offering awe-inspiring views of the rainforest and surrounding islands. Accessible from the top station of the Langkawi Cable Car, this architectural marvel stretches 125 meters and offers visitors a thrilling walk above the clouds. The glass viewing panels built into the floor add an extra dose of excitement. It's ideal for those looking to combine adventure with scenic photography. From the top station there is an option to either take a nature walk (10-15 mins) or SkyGlide (sort of an elevator) to reach the Sky Bridge.",
-    location: "Top Station, Langkawi Cable Car, Gunung Mat Cincang",
-    operationalHours: "10:00 AM – 5:00 PM (Daily, weather permitting)",
+      "The Langkawi Sky Bridge is a stunning curved suspension bridge located 660 meters above sea level, offering awe-inspiring views of the rainforest and surrounding islands. Accessible from the top station of the Langkawi Cable Car, this architectural marvel stretches 125 meters and offers visitors a thrilling walk above the clouds. The glass viewing panels built into the floor add an extra dose of excitement. It's ideal for those looking to combine adventure with scenic photography. From the top station there is an option to either take a nature walk(10-15 mins) or SkyGlide(Sort of an Elevator) to reach the Sky Bridge. ",
+    location: "Top Station, Gunung Mat Cincang",
+    operationalHours: "10:00 AM – 5:00 PM </br>(Daily, weather permitting)",
     price:
       "SkyBridge Entry: Free <br /> Nature Walk: RM6 <br /> SkyGlide: RM10",
     duration: "30-60 minutes",
     tips: [
-      "Keep an eye on the weather forecast before visiting as it can be closed during rainfall.",
-      "Wear comfortable shoes as the bridge involves a bit of walking and stairs.",
-      "Nature walk is a short but steep hike, so brace yourself.",
+      "Keep an eye on the weather forecast before visiting as it can be closed during rainfall",
+      "Wear comfortable shoes as the bridge involves a bit of walking and stairs",
+      "Nature walk is a short but steep hike, so brace yourself",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/skybridge.jpg",
   },
   {
     name: "3D Art Museum Langkawi",
     description:
-      "The 3D Art Museum in Langkawi is one of the largest 3D interactive art galleries in Southeast Asia. Located in the scenic Oriental Village near the Langkawi Cable Car, this vibrant indoor space features over 200 imaginative and hyper-realistic artworks painted across walls, ceilings, and floors. The gallery is divided into themed zones such as fantasy, underwater, safari, illusion, and heritage, offering a unique and immersive experience for all ages. Visitors are encouraged to pose creatively with the artwork, making it a perfect stop for Instagram-worthy pictures and unforgettable memories. It's a fun, family-friendly escape that also provides a cool break from Langkawi's outdoor heat. Whether you're traveling with kids, friends, or solo, the museum guarantees a dose of fun, wonder, and creativity.",
+      "The 3D Art Museum in Langkawi, is one of the largest 3D interactive art galleries in Southeast Asia. Located in the scenic Oriental Village near the Langkawi Cable Car, this vibrant indoor space features over 200 imaginative and hyper-realistic artworks painted across walls, ceilings, and floors. The gallery is divided into themed zones such as fantasy, underwater, safari, illusion, and heritage, offering a unique and immersive experience for all ages. </br>Visitors are encouraged to pose creatively with the artwork, making it a perfect stop for Instagram-worthy pictures and unforgettable memories. It's a fun, family-friendly escape that also provides a cool break from Langkawi’s outdoor heat. Whether you're traveling with kids, friends, or solo, the museum guarantees a dose of fun, wonder, and creativity.",
     location: "Oriental Village, Langkawi",
     operationalHours: "9:00 AM – 6:00 PM (Daily)",
     price: "RM38 (Adult) <br /> Included in SkyCab Combo Ticket",
     duration: "1 Hour",
     tips: [
-      "Buy the SkyCab Combo Ticket and club it with SkyDom and SkyCab.",
+      "Buy the SkyCab Combo Ticket and club it with SkyDom and SkyCab",
       "Bring a fully charged phone or camera, you'll want lots of photos!",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/3d_art.jpg",
@@ -50,12 +50,11 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Dataran Lang (Eagle Square)",
     description:
-      "Dataran Lang, or Eagle Square, is one of Langkawi's most famous landmarks, featuring a majestic 12-meter-tall statue of a reddish-brown eagle poised to take flight. Located in Kuah Town, it symbolizes Langkawi's name, which means \"Land of the Eagles.\" The square is a picturesque spot ideal for leisurely walks and photos with the stunning Andaman Sea as the backdrop. Surrounding the eagle are beautiful fountains, landscaped gardens, and bridges. It's a popular spot for locals and tourists alike to gather, relax, and enjoy local street food vendors nearby.",
+      "Dataran Lang, or Eagle Square, is one of Langkawi’s most famous landmarks, featuring a majestic 12-meter-tall statue of a reddish-brown eagle poised to take flight. Located in Kuah Town, it symbolizes Langkawi’s name, which means “Land of the Eagles.” The square is a picturesque spot ideal for leisurely walks and photos with the stunning Andaman Sea as the backdrop. Surrounding the eagle are beautiful fountains, landscaped gardens, and bridges. It’s a popular spot for locals and tourists alike to gather, relax, and enjoy local street food vendors nearby.",
     location: "Kuah Town, Langkawi",
     operationalHours: "Open 24 hours (best visited during daylight)",
     price: "Free entry",
     duration: "30-60 minutes",
-    tips: [],
     image: "/images/country/malaysia/places/langkawi/blog/eaglesquare.jpg",
     imageCreditHTML:
       '<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Dataran_Lang_2018_(cropped).jpg"><u>SNN95</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons',
@@ -66,13 +65,13 @@ export const LANGKAWI_BLOG_POST = [
       "Langkawi's night markets offer an authentic taste of local life with bustling stalls selling delicious street food, fresh produce, clothing, and handicrafts. These markets rotate locations nightly in different towns like Kuah, Pantai Cenang, and Temoyong, providing a vibrant atmosphere to explore. Sample local favorites such as satay, laksa, grilled seafood, kuih (traditional sweets) and many more. It's an ideal way to immerse yourself in Malaysian culture, meet locals, and find souvenirs.",
     location: "Rotating locations (Kuah, Pantai Cenang, Temoyong)",
     operationalHours:
-      "Generally 5:00 PM – 11:00 PM (varies by location and day)",
+      "Generally 5:00 PM – 11:00 PM </br>(varies by location and day)",
     price: "Free",
     duration: "1-2 hours",
     tips: [
-      "Bring cash as many vendors don't accept cards.",
+      "Bring cash as many vendors don't accept cards",
       "Arrive hungry and ready to try multiple dishes!",
-      "Check which night market is operating on each specific day on our guide.",
+      `Check which night market is operating on each specific day on <a href="/malaysia/langkawi/travel-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">Complete Langakwi guide</a>`,
     ],
     image: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",
   },
@@ -83,9 +82,9 @@ export const LANGKAWI_BLOG_POST = [
     operationalHours: "Rental shops generally open <br /> 8:00 AM – 8:00 PM",
     price: "RM40-RM60 per day",
     tips: [
-      "Check prices at the market to save a few pennies.",
-      "Inspect the scooty for damage before renting.",
-      "Fill up fuel beforehand and avoid riding after dark if unfamiliar with the roads.",
+      "Check prices at the market to save a few pennies",
+      "Inspect the scooty for damage before renting",
+      "Fill up fuel beforehand and avoid riding after dark if unfamiliar with the roads",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/scooty_rental.jpg",
   },
@@ -95,11 +94,11 @@ export const LANGKAWI_BLOG_POST = [
       "A sunset cruise in Langkawi is an unforgettable way to witness the island's breathtaking coastline bathed in golden light. These boat tours often include stops for snorkeling, island hopping, or dinner on board. Many cruises offer panoramic views of Langkawi's limestone cliffs, mangroves, and the famous Pregnant Maiden Lake. Evening cruises combine relaxation, stunning scenery, and sometimes live music or cocktails, creating a romantic or peaceful end to your day. It's a popular choice for couples and groups alike.",
     location: "Pantai Cenang or Kuah Jetty, Langkawi",
     operationalHours: "Usually departs around 5:00 PM",
-    price: "RM100-RM300 per person (varies by operator and package)",
+    price: "RM100-RM300 per person </br>(varies by operator and package)",
     duration: "3-4 hours",
     tips: [
-      "Book in advance for sunset season.",
-      "Bring sunscreen and a light jacket for cooler evening breezes.",
+      "Book in advance for sunset season",
+      "Bring sunscreen and a light jacket for cooler evening breezes",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/sunset_cruise.jpg",
     imageCreditHTML:
@@ -109,10 +108,8 @@ export const LANGKAWI_BLOG_POST = [
     name: "Cenang Beach, Langkawi",
     description:
       "Pantai Cenang is Langkawi's most popular beach, famous for its soft white sands, crystal-clear waters, and lively atmosphere. It's lined with cafes, restaurants, bars, and shops, making it ideal for both relaxation and nightlife. The moment the sun sets, watch the beach light up with thrilling fire shows. The beach is family-friendly with calm waters and offers spectacular sunsets. Cenang Beach attracts both tourists and locals, giving visitors a vibrant and social experience.",
-    location: "Pantai Cenang, Langkawi",
     operationalHours: "Open 24 hours",
     price: "Free",
-    duration: "Varies",
     tips: [],
     image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
     imageCreditHTML:
@@ -121,10 +118,7 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Jungle Stay, Langkawi",
     description:
-      "Langkawi's jungle stays offer rustic lodges or eco-resorts nestled deep in the rainforest, providing a tranquil escape with opportunities for guided treks, bird watching, and night safaris. Many stays support sustainable tourism and community involvement.",
-    location: "Langkawi",
-    duration: "",
-    price: "",
+      "For travelers wanting to immerse themselves in nature, Langkawi’s jungle stays offer rustic lodges or eco-resorts nestled deep in the rainforest. These accommodations provide a tranquil escape from busy tourist areas, with opportunities for guided jungle treks, bird watching, and night safaris. Waking up to the sounds of wildlife and exploring lush trails connects visitors with Langkawi’s rich biodiversity. Many jungle stays also promote sustainable tourism and community involvement.",
     operationalHours: "",
     tips: [],
     image: "/images/country/malaysia/places/langkawi/blog/junglestay.avif",
@@ -132,26 +126,25 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Jalan Kuala Muda Road, Langkawi",
     description:
-      "A scenic coastal drive with ocean views on one side and planes descending on the other as they approach the airport. Best experienced during sunset with dramatic skies and silhouettes of aircraft. Great for travelers looking for a unique and offbeat experience.",
+      "Jalan Kuala Muda Road offers one of the most unique and scenic drives in Penang. As you cruise along this coastal stretch, you'll be treated to stunning views on both sides—on one side, the serene Andaman Sea stretches out endlessly, often shimmering under the golden sun. On the other side, you’ll witness airplanes dramatically descending as they approach Penang International Airport, sometimes flying low right above the road. It’s especially breathtaking during sunset when the sky blazes in hues of orange and pink, with aircraft silhouettes adding to the drama. It's an ideal for travelers looking for an offbeat coastal experience.",
     location: "Jalan Kuala Muda Road, Langkawi",
     duration: "20-30 minutes",
     price: "",
     operationalHours: "",
     tips: [
-      "Make a stop where the airport lies on one side and the sea on the other.",
-      "Use Google Maps to explore the road.",
+      "Make a stop where the airport lies on one side and the sea on the other side",
+      "Use Google Maps to explore the road",
     ],
     image: "/images/country/malaysia/places/langkawi/kualamuda.jpg",
   },
   {
     name: "Mangrove Tour (Kilim Geoforest Park), Langkawi",
     description:
-      "A boat tour through UNESCO-recognized Kilim Geoforest Park, showcasing limestone cliffs, bat caves, floating fish farms, and wildlife such as eagles and monkeys. This eco-tour combines education, nature, and scenic beauty.",
+      "Kilim Geoforest Park is a UNESCO-recognized mangrove forest with stunning limestone formations, caves, and diverse wildlife. Mangrove boat tours take visitors through narrow waterways where you can spot eagles, monkeys, and exotic birds. The park also features bat caves and floating fish farms. This ecotourism experience highlights the importance of mangroves in protecting the coastline and sustaining local fisheries. It’s both educational and breathtakingly beautiful.",
     location: "Hotel Pickup",
     duration: "Half Day",
     price: "RM80-RM150",
     operationalHours: "9:00 AM – 5:00 PM",
-    tips: [],
     image: "/images/country/malaysia/places/langkawi/blog/mangrove.jpg",
     imageCreditHTML:
       '<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Langkawi_Mangrove_Forest.jpg"><u>Leonardo0511</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons',
@@ -159,7 +152,7 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Island Hopping Boat Tour",
     description:
-      "Langkawi's Island Hopping Boat Tour is a must-do experience, covering spots like Dayang Bunting Lake, Beras Basah Island, and eagle-feeding zones. These tours let you explore pristine beaches, take a dip in freshwater lakes, and spot majestic eagles in flight. Great for families, couples, and photography lovers, this half-day tour shows Langkawi's island beauty at its best.",
+      "Langkawi’s Island Hopping Boat Tour is a must-do experience, covering spots like Dayang Bunting Lake, Beras Basah Island, and eagle-feeding zones. These tours let you explore pristine beaches, take a dip in freshwater lakes, and spot majestic eagles in flight. Great for families, couples, and photography lovers, this half-day tour shows Langkawi’s island beauty at its best.",
     operationalHours: "9:00 AM – 1:00 PM or <br /> 2:00 PM – 6:00 PM",
     price: "RM35-RM60 per person",
     location: "Departure from Pantai Cenang or Kuah Jetty",
@@ -171,14 +164,14 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Langkawi Waterfalls (Temurun & Durian Perangin)",
     description:
-      "Langkawi's waterfalls offer a cooling retreat in its tropical heat. Temurun Waterfall in the north is the tallest, cascading down 200 meters, while Durian Perangin near Gunung Raya is perfect for a relaxed picnic and swim. Surrounded by lush rainforest and easily accessible, both waterfalls are free to visit and offer nature at its best.",
+      "Langkawi’s waterfalls offer a cooling retreat in its tropical heat. Temurun Waterfall in the north is the tallest, cascading down 200 meters, while Durian Perangin near Gunung Raya is perfect for a relaxed picnic and swim. Surrounded by lush rainforest and easily accessible, both waterfalls are free to visit and offer nature at its best.",
     operationalHours: "8:00 AM – 7:00 PM",
     price: "Free entry",
-    location: "Temurun (Datai area), Durian Perangin (near Kilim)",
+    location: "<li>Temurun (Datai area)</li><li> Durian Perangin (near Kilim)",
     duration: "1-2 hours",
     tips: [
-      "Wear grip shoes as paths can be slippery.",
-      "Visit early to avoid crowds.",
+      "Wear grip shoes as paths can be slippery",
+      "Visit early to avoid crowds",
       "Prepare for a short hike",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/waterfalls.jpg",
@@ -224,10 +217,10 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Langkawi Wildlife Park & Bird Paradise",
     description:
-      "Langkawi Wildlife Park is a family-friendly zoo that features over 150 species including birds, reptiles, and mammals. Visitors can feed deer, raccoons, and even exotic birds. The park emphasizes interactive experiences, making it fun and educational for all ages. It's especially popular with kids and includes a mini waterfall and aviary.",
+      "Langkawi Wildlife Park is a family-friendly zoo that features over 150 species including birds, reptiles, and mammals. Visitors can feed deer, raccoons, and even exotic birds. The park emphasizes interactive experiences, making it fun and educational for all ages. It’s especially popular with kids and includes a mini waterfall and aviary.",
     operationalHours: "8:30 AM – 6:00 PM",
     price: "Adults: RM45 <br /> Children: RM30",
-    location: "Jalan Ayer Hangat, (10 minutes from Kuah)",
+    location: "Jalan Ayer Hangat</br> (10 minutes from Kuah)",
     duration: "1-2 Hour",
     image:
       "/images/country/malaysia/places/langkawi/blog/wildlife_park_and_bird_paradise.jpg",
@@ -241,10 +234,10 @@ export const LANGKAWI_BLOG_POST = [
     operationalHours: "10:00 AM – 6:00 PM (daily)",
     price: "Free",
     location: "Teluk Burau, next to Langkawi Cable Car",
-    duration: "30-1 hour",
+    duration: "1 hour",
     tips: [
-      "Don't miss the souvenir shops and local food stalls.",
-      "Combine your visit with the cable car and Sky Bridge for a full day of adventure and sightseeing.",
+      "Don't miss the souvenir shops and local food stalls",
+      "Combine your visit with the cable car and Sky Bridge for a full day of adventure and sightseeing",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/orientalvillage.jpg",
   },
@@ -256,7 +249,7 @@ export const LANGKAWI_BLOG_POST = [
     operationalHours: "24/7 (check-in typically at 2 PM)",
     location: "Varies – near Telaga Harbour, Kuah Jetty, or private marinas",
     tips: [
-      "Book early during high season and request a sunset-facing unit for the best experience.",
+      "Book early during high season and request a sunset-facing unit for the best experience",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/floatingstay.avif",
   },

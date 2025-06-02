@@ -1024,7 +1024,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
 
 export const MALAYSIA_TOP_THINGS_TO_DO = {
   title: "Malaysia Top Things to Do",
-  image: "/images/country/malaysia/malaysia_country.jpg",
+  image: "/images/country/malaysia/top_things_do_malaysia.jpg",
   data: [
     {
       id: 1,
@@ -1089,7 +1089,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       id: 4,
       title: "Scuba at Sipadan Island",
       description:
-        "Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.",
+        `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  <b>Check our complate guide <a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">best places for scuba</a>.</b>`,
       operationalHours: "7:00 AM – 4:00 PM",
       location: "Sipadan Island",
       price: "Depends on Diving Packages",
@@ -1278,7 +1278,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       description: `Langkawi’s night markets offer an authentic taste of local life with bustling stalls selling delicious street food, fresh produce, clothing, and handicrafts. These markets rotate locations nightly in different towns like Kuah, Pantai Cenang, and Temoyong, providing a vibrant atmosphere to explore. Checkout the Night markets schedules here on our Langkawi travel guide. Sample local favorites such as satay, laksa, grilled seafood, kuih (traditional sweets) and many more. It’s an ideal way to immerse yourself in Malaysian culture, meet locals, and find souvenirs.`,
       operationalHours:
         "Generally 5:00 PM – 11:00 PM </br>(varies by location and day)",
-      location: `Rotating locations, check daily schedule on our <a href="/malaysia/scuba-diving" target="_blank" class="text-teal-600 underline">Langkawi complete guide</a>`,
+      location: `Rotating locations, check daily schedule on our <a href="/malaysia/langkawi/travel-guide" target="_blank" class="text-teal-600 underline">Langkawi complete guide</a>`,
       price: "Dishes range from RM2–RM10",
       duration: "2 Hours",
       image: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",

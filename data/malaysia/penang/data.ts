@@ -23,11 +23,13 @@ export const PENANG_BLOG_POST = [
     location: "Air Itam, Penang",
     operationalHours: "6:30 AM – 11:00 PM",
     price:
-      "Funicular train Round Trip:  <br /> <span >RM 12–30 (Standard)</span>  <br /> <span >RM 40-80 (Fast Lane)</span> <br /> The Habitat and Skywalk - 60",
+      `Funicular train Round Trip:  <br />  
+      <li>RM12–RM30 (Standard) </li>
+      <li >RM40-RM80 (Fast Lane)</li>
+      The Habitat and Skywalk - RM60`,
     duration: "3–4 hours",
     tips: [
       "Visit early or late in the day to avoid crowds and enjoy cooler temperatures",
-      "Evening Walk Add-On for The Habitat and Skywalk (after 5:30 PM): RM18",
       "Check the weather forecast before planning your visit, as some attractions may be closed during heavy rain",
     ],
   },
@@ -39,7 +41,7 @@ export const PENANG_BLOG_POST = [
       "Nestled within the pristine rainforest atop Penang Hill, The Habitat is an eco-conscious attraction offering immersive experiences in biodiversity and conservation. It features scenic nature trails, themed gardens, and the famed Curtis Crest Tree Top Walk, the highest public viewing point on the island. The canopy walkways and skywalk provide unmatched 360° views on clear days, you can even see Langkawi! Educational exhibits, butterfly sightings, and the chance to spot dusky leaf monkeys or rare flora make it perfect for families and nature enthusiasts. Evening walks offer a magical experience under the stars.",
     location: "Within Penang Hill, near the top station",
     operationalHours: "9:00 AM – 7:00 PM (Last entry at 5:30 PM) Open daily",
-    price: "RM 40-60",
+    price: "RM40-RM60",
     duration: "1.5 – 2.5 hours",
     tips: [
       "Online tickets may come with combo deals",
@@ -69,7 +71,7 @@ export const PENANG_BLOG_POST = [
       "Kek Lok Si is Southeast Asia's largest Buddhist temple and a must-see cultural landmark in Penang. Located on a hillside in Air Itam, it features stunning architecture blending Chinese, Thai, and Burmese styles, with a massive statue of the Goddess of Mercy. The temple complex is beautifully illuminated during Chinese New Year, attracting thousands of visitors. Enjoy panoramic views of the city from the top and explore pagodas, prayer halls, and gardens.",
     location: "Air Itam, Penang (7-8 km from City Centre)",
     operationalHours: "8:00 AM – 6:00 PM Daily",
-    price: "Entry Free <br /> RM16-24 fee for elevator to top pagoda",
+    price: "Entry Free <br /> RM16-RM24 fee for elevator to top pagoda",
     duration: "2–3 hours",
     tips: [
       "Wear modest clothing to respect the temple's sanctity",
@@ -86,7 +88,7 @@ export const PENANG_BLOG_POST = [
       "Entopia is an award-winning nature discovery center in Penang that brings you face-to-face with over 15,000 free-flying butterflies from 200 species in a lush, tropical environment. It's more than just a butterfly farm, Entopia combines indoor learning exhibits with outdoor gardens, offering an immersive educational experience perfect for families and nature enthusiasts. The Natureland outdoor garden is a living ecosystem of butterflies, insects, and reptiles, while the Cocoon indoor discovery center features interactive displays and hands-on activities. Whether you're traveling with kids or simply love nature, Entopia is an unforgettable stop.",
     location: "Teluk Bahang, Penang",
     operationalHours: "9:00 AM – 5:00 PM Daily",
-    price: "RM65-100",
+    price: "RM65-RM100",
     duration: "1–2 hours",
     tips: [
       "Visit early to catch butterflies in their most active phase",
@@ -112,7 +114,7 @@ export const PENANG_BLOG_POST = [
     duration: "1–2 hours",
     tips: [
       "Book tours in advance as spots can fill up quickly",
-      "Book a stay from here https://www.cheongfatttzemansion.com/",
+      `Book a stay from here <a href="https://www.cheongfatttzemansion" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">official website</a>`,
       "Photography inside may be restricted, so check beforehand",
     ],
     imageCreditHTML: `
@@ -128,12 +130,12 @@ export const PENANG_BLOG_POST = [
       "Penang is a food paradise and arguably Malaysia's culinary capital. The island's street food scene is legendary—Char Kway Teow, Penang Laksa, Nasi Kandar, and Hokkien Mee are just a few must-tries. Whether you dine at hawker stalls, coffee shops, or Nyonya restaurants, the food is rich in heritage and flavor. The best way to eat in Penang is to sample small portions at multiple places.",
     location: "Throughout Penang",
     operationalHours: "Varies by establishment",
-    price: "Varies (Street food: RM 5-15 per dish)",
+    price: "Varies (Street food: RM5-RM15 per dish)",
     duration: "Ongoing throughout your stay",
     tips: [
       "Try small portions at multiple places",
       "Visit local coffee shops for authentic experiences",
-      "Don't miss the famous Char Kway Teow and Penang Laksa",
+      `Checkout Malaysia's <a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a> and the <a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a>`,
     ],
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://www.pexels.com/photo/food-stalls-on-the-street-in-a-town-6770743/'><u>Nikita Belokhonov</u></a>",
@@ -146,7 +148,7 @@ export const PENANG_BLOG_POST = [
       "Once Penang's tallest structure, KOMTAR is more than a skyscraper—it's now a full-fledged entertainment hub. Inside, you'll find The Top attractions like the Rainbow Skywalk, a glass bridge offering jaw-dropping city views, and various family-friendly attractions including an aquarium and 7D cinema. The complex also includes shopping, restaurants, and tech outlets.",
     location: "Jalan Penang, George Town",
     operationalHours: "10:00 AM – 10:00 PM",
-    price: "Entry varies by attraction (Skywalk: RM 28–88)",
+    price: "Entry varies by attraction </br>(Skywalk: RM28–RM88)",
     duration: "2–3 hours",
     tips: [
       "Book tickets online for discounts",
@@ -172,7 +174,7 @@ export const PENANG_BLOG_POST = [
       "Gurney Drive is Penang's most iconic seafront promenade, renowned for its vibrant evening hawker scene. As the sun sets, Gurney Drive Hawker Centre comes alive with the aroma of sizzling woks and spicy broths. This open-air food haven offers authentic Penang street food at budget-friendly prices. Try Char Kway Teow, Penang Laksa, grilled seafood, and local desserts. It's a must-visit for food lovers looking to experience the heart of Penang's culinary culture.",
     location: "Gurney Drive, George Town",
     operationalHours: "5:00 PM – 11:00 PM",
-    price: "Dishes range from RM 5–15",
+    price: "Dishes range from RM5–RM15",
     duration: "1–2 hours",
     tips: [
       "Arrive early to grab a table",
@@ -243,7 +245,7 @@ export const PENANG_BLOG_POST = [
       "The George Town Walk Tour is the best way to immerse yourself in the city's rich history and culture. Led by knowledgeable guides, the walking tours cover heritage buildings, street art, and local stories, providing deep insight into Penang's multicultural roots. Perfect for first-time visitors wanting to explore George Town's iconic landmarks and hidden gems at a leisurely pace.",
     location: "George Town",
     operationalHours: "Tours available daily (check schedules)",
-    price: "RM50–70 per person (varies by operator)",
+    price: "RM50–RM70 per person </br>(Varies by operator)",
     duration: "2–3 hours",
     tips: [
       "Wear comfortable shoes and carry water",
@@ -259,7 +261,7 @@ export const PENANG_BLOG_POST = [
       "Located in the lush hills of Teluk Bahang, the Tropical Fruit Farm is a refreshing and educational escape for nature and food lovers. Spanning over 25 acres, the farm showcases more than 250 species of tropical and sub-tropical fruits from around the world. Visitors can take guided tours to learn about exotic fruits, sustainable farming methods, and enjoy tasting freshly harvested produce. Highlights include fruit buffets, juices, and hands-on experiences like fruit-picking or feeding farm animals. The hilltop views are stunning, making it a great spot for both relaxation and discovery.",
     location: "Jalan Teluk Bahang, 11050 Penang",
     operationalHours: "9:00 AM – 5:00 PM (Daily)",
-    price: "RM 28 (Adult with fruit tasting)",
+    price: "RM28 (Adult with fruit tasting)",
     duration: "1.5 – 2.5 hours",
     tips: [
       "Wear comfortable walking shoes for farm terrain",

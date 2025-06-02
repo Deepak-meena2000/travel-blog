@@ -4,17 +4,17 @@ export const KAULA_LUMPUR_BLOG_POST = [
     name: "KL Tower",
     image: "/images/country/malaysia/places/kuala_lumpur/blog/kl_tower.jpg",
     description:
-      "The KL Tower is a 421-meter-high telecommunications tower in Kuala Lumpur, Malaysia. It is the third tallest freestanding structure in the world and the tallest in Southeast Asia. The tower offers panoramic views of the city and is home to the world's highest outdoor observation deck, the Skydeck, which is 276 meters above ground level. The tower is also known for its unique design, which includes a rotating restaurant and a sky bridge. It is a popular destination for tourists and locals alike.",
+      "The KL Tower is one of Malaysia’s most iconic landmarks, standing at 421 meters tall and offering breathtaking 360-degree views of Kuala Lumpur. Built primarily as a telecommunications tower, it also functions as a top tourist attraction with an observation deck, sky deck, revolving restaurant, and thrilling experiences like the glass sky box and skywalk . Nestled atop Bukit Nanas, it combines panoramic city views with a slice of rainforest below. ",
     location: "Bukit Nanas, Kuala Lumpur",
     operationalHours: `9am - 10pm (9:30 Last Entry) <br />`,
     price: `
-    Sky Terrace - 140RM
+    Sky Terrace - RM140
     <br />
-    Observation Deck - 100RM
+    Observation Deck - RM100
     <br />
-    Combo(Terrace+Observation Deck) - 180 RM
+    Combo(Terrace + Deck) - RM180
     <br />
-    SkyBox - 10RM
+    SkyBox - RM10
     `,
     duration: "2 Hours",
     tips: [
@@ -30,7 +30,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
     description: `Batu Caves is one of Malaysia's most iconic spiritual landmarks, located just north of Kuala Lumpur. This massive limestone hill houses a series of caves and cave temples, the most famous being the Temple Cave, accessed by climbing 272 vibrant steps. Dominated by a towering golden statue of Lord Murugan, it's a major site for Hindu worship and the focal point of the annual Thaipusam festival. In addition to religious significance, the site is also rich in natural wonder. You can explore the Dark Cave (for guided eco-tours) or the colorful Cave Villa, filled with murals and statues. Batu Caves is free to enter, though some attractions charge a fee`,
     operationalHours: "6:00 AM – 9:00 PM",
     price: "Free, Dark Caves and Cave villa has RM 15-20 per adult",
-    location: "Gombak, Selangor(30 mins ride from city centre)r",
+    location: "Gombak, Selangor</br>(30 mins ride from city centre)",
     duration: "2 Hours",
     tips: [
       "Dress modestly.",
@@ -46,8 +46,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
     image:
       "/images/country/malaysia/places/kuala_lumpur/blog/petronas_tower.jpg",
     location: "Kuala Lumpur City Centre",
-    operationalHours: "Tuesday–Sunday, 9:00 AM – 9:00 PM (Closed Mondays)",
-    price: "Adults: RM 80 | Children: RM 33",
+    operationalHours: "Tuesday–Sunday, 9:00 AM – 9:00 PM </br>(Closed Mondays)",
+    price: "Adults: RM80 </br> Children: RM33",
     duration: "2 Hours",
     tips: ["Book Tickets Online", "Combine with KLCC Park"],
   },
@@ -63,7 +63,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
     duration: "1–2 hours",
     tips: [
       "Try satay, Marshmallow IceCream and char kway teow",
-      "Checkout the things to eats in malaysia",
+      `Checkout our Malaysia's <a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a> and <a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a> artciles`,
     ],
   },
   {
@@ -108,7 +108,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
       "Perdana Botanical Gardens is Kuala Lumpur's oldest and most beautiful public park, offering a serene green escape from the city's hustle. Spanning over 90 hectares, the garden features lush landscapes, a lake, and themed areas like the Orchid Garden, Hibiscus Garden, and Sunken Garden. It's a peaceful retreat perfect for leisurely walks, picnics, jogging, or photography. The park also houses several attractions like the KL Butterfly Park, Bird Park, and Islamic Arts Museum nearby, making it ideal for a half-day outing. With shaded paths and scenic bridges, it's a favorite among families, nature lovers, and wellness seekers.",
     location: "Jalan Kebun Bunga, Tasik Perdana",
     operationalHours: "Daily, 7:00 AM – 8:00 PM",
-    price: "Free (entry to nearby attractions may cost extra)",
+    price: "Free (Nearby attractions may cost)",
     duration: "1.5 to 2 hours",
   },
   {
@@ -133,8 +133,8 @@ export const KAULA_LUMPUR_BLOG_POST = [
       "/images/country/malaysia/places/kuala_lumpur/blog/infinity_pool.jpg",
     description:
       "Kuala Lumpur is home to several high-rise hotels and residences that offer stunning infinity pools with sweeping views of the skyline – particularly the Petronas Towers and KL Tower. Popular options include the rooftop pools at The Face Suites, Banyan Tree KL, or Regalia Residences (some offer day passes). Whether you're swimming at sunrise or lounging at sunset, it's a relaxing and luxurious way to unwind in the city. Infinity pools here are also social media favorites, perfect for that iconic KL backdrop.",
-    operationalHours: "typically 7:00 AM – 7:00 PM",
-    price: "Free for guests; RM 30–100 for day passes (if offered)",
+    operationalHours: "Typically 7:00 AM – 7:00 PM",
+    price: "Free for guests</br> RM 30–100 for day passes (if offered)",
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://unsplash.com/@bozh_ntu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Bo Zhang</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-couple-of-people-that-are-standing-in-a-pool-QPHgtzYijp0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
@@ -170,7 +170,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
     description:
       "Little India, located in the Brickfields neighborhood, is a vibrant district rich in Indian culture, color, and cuisine. With music playing from shopfronts, streets adorned with floral garlands, and the scent of spices in the air, this area offers an immersive cultural experience. Visitors can shop for traditional clothing, jewelry, and souvenirs, or enjoy South Indian meals served on banana leaves. Must-try dishes include dosas, biryani, and sweet treats like laddu. The area also features temples, colonial buildings, and street art.",
     location: "Brickfields",
-    operationalHours: "Open daily, shops generally from 10:00 AM – 9:00 PM",
+    operationalHours: "Open daily</br> shops generally from 10:00 AM – 9:00 PM",
   },
   {
     id: 13,
@@ -239,11 +239,12 @@ export const KAULA_LUMPUR_BLOG_POST = [
     location: "KLCC",
     operationalHours: "Daily, 10:00 AM – 8:00 PM (last entry 7 PM)",
     price: `
-    RM 69 (Adults)
-    <br />
-    RM 59 (Kids)
-    <br />
-    RM 49 (MyKad)
+    <li>RM 69 (Adults)
+    </li>
+    <li>RM 59 (Kids)
+    </li>
+    <li>RM 49 (MyKad)
+    </li>
     `,
     duration: "1.5 to 2 hours",
   },
@@ -266,10 +267,10 @@ export const KAULA_LUMPUR_BLOG_POST = [
     location: "Jalan Cenderawasih, Lake Gardens",
     operationalHours: "Daily, 9:00 AM – 6:00 PM",
     price: `
-    RM 85 (Adults)
-    <br />
-    RM 60 (Children)
-    <br />
+    <li>RM 85 (Adults)
+    </li>
+    <li>RM 60 (Children)
+    </li>
     Discounts for MyKad
     `,
     duration: "2 to 2.5 hours",
@@ -288,11 +289,12 @@ export const KAULA_LUMPUR_BLOG_POST = [
     location: "Jalan Damansara, near KL Sentral",
     operationalHours: "Daily, 9:00 AM – 5:00 PM",
     price: `
-    RM 5 (Adults)
-    <br />
-    RM 2 (Children)
-    <br />
-    RM 2 (MyKad)
+    <li>RM 5 (Adults)
+    </li>
+    <li>RM 2 (Children)
+    </li>
+    <li>RM 2 (MyKad)
+    </li>
     `,
     duration: "1.5 to 2 hours",
   },
@@ -330,7 +332,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
       "Genting Highlands is a popular hill resort an hour from KL, known for its cool climate, theme parks, casinos, shopping, and entertainment. Located at 1,800 meters above sea level, it offers a refreshing escape from the city heat. Highlights include the Skytropolis Indoor Theme Park, SkyAvenue Mall, Genting Premium Outlets, and Resorts World Casino. The Awana Skyway Cable Car ride provides spectacular mountain views. It's perfect for families, couples, and anyone seeking fun or relaxation in a highland setting.",
     image:
       "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
-    location: "Genting Highlands, Pahang (about 1 hour from KL)",
+    location: "Genting Highlands, Pahang </br>(About 1 hour from KL)",
     operationalHours: "Most attractions open 10:00 AM – 10:00 PM",
     price: `
     Cable Car RM 10–18

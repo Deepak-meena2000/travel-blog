@@ -57,7 +57,7 @@ export function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h4 className="font-semibold">Subscribe</h4>
             <p className="text-gray-300 text-sm">Get the latest travel tips and destination guides in your inbox.</p>
             <div className="flex space-x-2">
@@ -68,7 +68,7 @@ export function Footer() {
               />
               <Button className="bg-teal-600 hover:bg-teal-700">Subscribe</Button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center text-gray-400 text-sm">

@@ -111,10 +111,10 @@ export default async function ThingsToDoPage({
                     </div>
 
                     <CardContent className="p-8">
-                      <p className="text-gray-600 font-normal mb-6">
-                        {blog.description}
-                      </p>
-
+                      <p  dangerouslySetInnerHTML={{
+                        __html: blog.description
+                      }} className={`${styles.list_style} text-gray-600 font-normal mb-6`}/>
+                       
                       <div className="grid md:grid-cols-2 gap-4">
                         {blog.operationalHours && (
                           <div className="flex items-start space-x-4 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
