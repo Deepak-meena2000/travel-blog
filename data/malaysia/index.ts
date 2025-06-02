@@ -1031,7 +1031,9 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <b >Experience Level</b>: Intermediate to Advanced
     `,
-      image: "/images/country/malaysia/scuba/sipadan_island_scuba.jpg",
+      image: "/images/country/malaysia/scuba/sipadan.jpeg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Beneath_Sipadan_Island.jpeg'><u>Johnny Chen</u></a>, <a target='_blank' href='https://creativecommons.org/publicdomain/zero/1.0/deed.en'><u>CC0</u></a>, via Wikimedia Commons",
       tips: [
         `Need to book Diving packages which often include accommodation, meals, equipment rental, and boat transfers`,
         `Strong currents, deep walls, and pelagic sightings make it ideal for certified and confident divers`,
@@ -1050,7 +1052,8 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <b>Experience Level</b>: Beginner to Intermediate
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image:
+        "/images/country/malaysia/places/lankayan_island_top_places_to_visit.jpg",
       tips: [
         `For the chance to spot whale sharks, visit between March and May`,
       ],
@@ -1067,7 +1070,9 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <b>Experience Level</b>: Advanced
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/scuba/layang-layang.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Layang-Layang_diving17.jpg'><u>matthew lee</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
       tips: [
         `Deep drop-offs and the potential for strong currents require solid diving skills and experience`,
         `This period coincides with the hammerhead shark migration, offering the most thrilling dive encounters`,
@@ -1085,7 +1090,7 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <b>Experience Level</b>: Beginner to Intermediate
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/places/perhentian/blog/kecil_besar.jpg",
       tips: [
         `Read our detailed Perhentian guide`,
         `Great for learning to dive, with calm waters and many dive schools offering certification`,
@@ -1102,9 +1107,10 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <br />
     <b>Experience Level</b>: Beginner to Intermediate
-
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/scuba/kapalai.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Senja_di_Kapalai_Resort_Sabah_bj.jpg'><u>Alexlux</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
     },
     {
       id: 6,
@@ -1119,7 +1125,9 @@ export const MALAYSIA_SCUBA_BLOG = {
     <b>Experience Level</b>: Beginner to Intermediate
 
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/scuba/mataking_island.jpg",
+      imageCreditHTML:
+        "<a href='https://commons.wikimedia.org/wiki/File:Mataking_Island.jpg'><u>arare</u></a>, <a href='https://creativecommons.org/licenses/by-sa/2.5'><u>CC BY-SA 2.5</u></a>, via Wikimedia Commons",
       tips: [
         `Excellent for honeymooners and underwater photography enthusiasts`,
       ],
@@ -1137,7 +1145,7 @@ export const MALAYSIA_SCUBA_BLOG = {
     <b>Experience Level</b>: Beginner to Intermediate
 
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/places/perhentian/blog/redang_trip.jpg",
     },
     {
       id: 8,
@@ -1165,9 +1173,8 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <br />
     <b>Experience Level</b>: Beginner to Intermediate
-
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/tioman_island.jpg",
       tips: [
         `Accessible dive sites and plenty of training centers make it ideal for learning and fun dives`,
       ],
@@ -1183,9 +1190,9 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <br />
     <b>Experience Level</b>: Beginner
-
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image:
+        "/images/country/malaysia/scuba/tunku_abdul_rahman_marine_park.jpg",
     },
     {
       id: 11,
@@ -1198,9 +1205,8 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <br />
     <b>Experience Level</b>: Beginner
-
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/scuba/lang_tengah.jpg",
     },
   ],
 };
