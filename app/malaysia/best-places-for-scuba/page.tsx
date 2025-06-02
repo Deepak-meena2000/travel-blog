@@ -1,49 +1,17 @@
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import {
-  MapPin,
-  Clock,
-  DollarSign,
-  Star,
-  Waves,
-  Building,
-  Binoculars,
-  Car,
-  Hourglass,
-  Check,
-} from "lucide-react";
 import { destinations } from "@/data/destinations";
-import { ThankYouSection } from "@/components/thank-you-section";
-import Link from "next/link";
-import HeroSection from "./components/hero-section";
-import OverViewSection from "../things-to-know-before-going/components/overview";
-import CityBlogListing from "../[city]/top-things-to-do/component/blog-listing";
+import Image from "next/image";
+import OverViewSection from "@/app/[country]/things-to-know-before-going/components/overview";
+import { Binoculars, Check, Star } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import styles from "@/app/index.module.css";
-import MoreAboutSection from "@/components/more-about";
 
-export default async function ThingsToDoPage({
-  params,
-}: {
-  params: Promise<{ country: string }>;
-}) {
-  const countryName = (await params).country;
-  const country = destinations.find((d) => d.slug === countryName);
+const BestPlacesForScubaPage = () => {
+  const country = destinations.find((d) => {
+    return d.slug === "malaysia";
+  });
 
-  const topThingsToDo = country?.topThingsToDo;
-
-  if (!country) {
-    notFound();
-  }
-
-  const {
-    data,
-    title,
-    image,
-    related_articles = [],
-    more_about_data = [],
-  } = topThingsToDo || {};
+  const scubaBlog = country?.scuba_blog;
+  const { heading, image, description, overview, data } = scubaBlog;
 
   return (
     <>
@@ -51,7 +19,7 @@ export default async function ThingsToDoPage({
         <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
           <Image
             src={image || "/placeholder.svg"}
-            alt={`${title || country.name} Top Things to Do`}
+            alt={heading}
             width={1200}
             height={100}
             className="w-full h-full object-cover"
@@ -61,23 +29,28 @@ export default async function ThingsToDoPage({
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute  inset-0 flex items-end pb-4 px-4 z-20">
           <div className="text-white flex justify-center items-center w-full">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">{heading}</h1>
           </div>
         </div>
       </section>
-      <section className="py-8">
-        <div className="flex flex-col gap-12 max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
-          <OverViewSection IconName={Building} overview={country.overview} />
+      {overview ? (
+        <div className="max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          <OverViewSection IconName={Binoculars} overview={overview} />
+        </div>
+      ) : null}
+
+      <section className="py-16">
+        <div className="max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">
-              <div className="space-y-12">
-                {data?.map((blog: any, index: any) => (
+              {/* Travel Essentials Section */}
+              {data?.map((blog: any, index: number) => {
+                return (
                   <Card
                     key={blog.id}
                     className="overflow-hidden animate-slide-up"
                     style={{ animationDelay: `${index * 0.1}s` }}
-                    id={`attraction-${blog.id}`}
                   >
                     <div className="w-full p-8 border-l-8 border-teal-600 ">
                       <h2 className="text-2xl font-semibold text-black">
@@ -97,7 +70,7 @@ export default async function ThingsToDoPage({
                           className="w-full h-full object-cover"
                         />
                         {blog.imageCreditHTML && (
-                          <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
+                          <figcaption className="text-right text-[8px] opacity-20 pr-4 ">
                             <span
                               dangerouslySetInnerHTML={{
                                 __html: blog.imageCreditHTML,
@@ -106,16 +79,48 @@ export default async function ThingsToDoPage({
                           </figcaption>
                         )}
                       </figure>
-
-
                     </div>
 
                     <CardContent className="p-8">
-                      <p className="text-gray-600 font-normal mb-6">
-                        {blog.description}
-                      </p>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: blog.description,
+                        }}
+                        className="text-gray-600 font-normal mb-6"
+                      />
 
-                      <div className="grid md:grid-cols-2 gap-4">
+                      {blog?.tips && blog.tips.length > 0 && (
+                        <div className="mt-6">
+                          <div className="flex items-center mb-3">
+                            <div className="bg-teal-100 p-2 rounded-full mr-3">
+                              <Star className="h-4 w-4 text-teal-600" />
+                            </div>
+                            <h4 className="font-semibold text-slate-800">
+                              Quick Tips
+                            </h4>
+                          </div>
+                          <div className="space-y-2">
+                            {blog?.tips?.map((tip: any, i: any) => {
+                              return (
+                                <div
+                                  key={i}
+                                  className="flex items-start space-x-3"
+                                >
+                                  <Check className="h-3 w-3 text-teal-500 mt-1.5 flex-shrink-0" />
+                                  <ul
+                                    dangerouslySetInnerHTML={{
+                                      __html: tip,
+                                    }}
+                                    className={`${styles.list_style} text-sm lg:text-base leading-relaxed text-slate-600`}
+                                  />
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* <div className="grid md:grid-cols-2 gap-4">
                         {blog.operationalHours && (
                           <div className="flex items-start space-x-4 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
                             <div className="bg-blue-100 p-3 rounded-full">
@@ -209,16 +214,15 @@ export default async function ThingsToDoPage({
                             })}
                           </div>
                         </div>
-                      )}
+                      )} */}
                     </CardContent>
                   </Card>
-                ))}
-                {/* Card Listing */}
-              </div>
+                );
+              })}
             </div>
 
-            {related_articles?.length > 0 ? (
-              <div className="space-y-8">
+            {/* {related_articles?.length > 0 ? (
+              <div className="lg:col-span-1">
                 <Card className="sticky top-20">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -236,7 +240,7 @@ export default async function ThingsToDoPage({
                             alt={article.title}
                             width={80}
                             height={60}
-                            className="w-32 h-15 object-cover rounded-lg flex-shrink-0"
+                            className="w-32 h-20 object-cover rounded-lg flex-shrink-0"
                           />
                           <div className="flex-1">
                             <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
@@ -249,25 +253,15 @@ export default async function ThingsToDoPage({
                         </Link>
                       ))}
                     </div>
-
-                    {/* <div className="mt-6 p-4 bg-gray-50 rounded-lg text-center">
-              <p className="text-sm text-gray-500 mb-2">ADVERTISEMENT</p>
-              <div className="h-32 bg-gray-200 rounded flex items-center justify-center">
-                <span className="text-gray-400">Sidebar Ad</span>
-              </div>
-            </div> */}
                   </CardContent>
                 </Card>
               </div>
-            ) : null}
+            ) : null} */}
           </div>
         </div>
-        <MoreAboutSection
-          more_about_data={more_about_data}
-          heading={country.name}
-        />
-        <ThankYouSection destination={country.name} />
       </section>
     </>
   );
-}
+};
+
+export default BestPlacesForScubaPage;
