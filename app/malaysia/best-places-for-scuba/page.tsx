@@ -4,6 +4,7 @@ import OverViewSection from "@/app/[country]/things-to-know-before-going/compone
 import { Binoculars, Check, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import styles from "@/app/index.module.css";
+import { ThankYouSection } from "@/components/thank-you-section";
 
 const BestPlacesForScubaPage = () => {
   const country = destinations.find((d) => {
@@ -260,6 +261,7 @@ const BestPlacesForScubaPage = () => {
           </div>
         </div>
       </section>
+      <ThankYouSection destination={"Malaysia"} />
     </>
   );
 };

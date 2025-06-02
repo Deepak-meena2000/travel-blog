@@ -1024,7 +1024,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
 
 export const MALAYSIA_TOP_THINGS_TO_DO = {
   title: "Malaysia Top Things to Do",
-  image: "/images/country/malaysia/malaysia_country.jpg",
+  image: "/images/country/malaysia/top_things_do_malaysia.jpg",
   data: [
     {
       id: 1,

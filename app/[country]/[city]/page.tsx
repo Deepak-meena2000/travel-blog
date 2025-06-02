@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ThankYouSection } from "@/components/thank-you-section";
 
 // New itinerary structure: each day has a heading and an array of sections
 
@@ -234,6 +235,7 @@ const ItineraryPage = async ({
           </aside>
         )}
       </section>
+      <ThankYouSection destination={title || ""} />
     </div>
   );
 };
