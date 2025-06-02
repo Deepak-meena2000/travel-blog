@@ -54,7 +54,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 4,
     name: "Explore Food at Jalan Alor Street",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/jalan_alor.jpg",
+    image: "/images/country/malaysia/places/kuala_lumpur/blog/jalon_street.jpg",
     description:
       "Jalan Alor is Kuala Lumpur's legendary food street, renowned for its buzzing nightlife and mouth watering street food. Located in the heart of Bukit Bintang, this street transforms into a culinary haven as the sun sets. The aroma of grilled satay, spicy noodles, fresh seafood, and exotic fruits fills the air while locals and tourists gather at open-air tables. It's the best place to sample authentic Malaysian flavors, as well as Chinese, Thai, and even fusion dishes. From budget-friendly snacks to full meals, Jalan Alor offers a true taste of KL's food culture.",
     location: "Bukit Bintang",
@@ -199,7 +199,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 15,
     name: "Heli Lounge Bar",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/heli_lounge.jpg",
+    image: "/images/country/malaysia/places/kuala_lumpur/blog/heli_lounge_bar.jpg",
     description:
       "Heli Lounge Bar is one of the most unique nightlife spots in Kuala Lumpur. By day it serves as a functioning helicopter pad; by night, it transforms into a rooftop bar offering 360° views of the KL skyline. Located on the 34th floor of Menara KH, this open-air lounge gives unobstructed sights of both the Petronas Towers and KL Tower. The ambiance is casual yet stylish, with DJs spinning tracks as the city lights come alive. It's a perfect sunset or nightcap location with minimal entrance fuss.",
     location: "Menara KH, Jalan Sultan Ismail",

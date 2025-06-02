@@ -7,7 +7,7 @@ interface ThankYouSectionProps {
 
 export function ThankYouSection({ destination }: ThankYouSectionProps) {
   return (
-    <section className="py-16 bg-gradient-to-br from-teal-50 to-blue-50">
+    <section className="mt-12 py-16 bg-gradient-to-br from-teal-50 to-blue-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-8">
