@@ -9,8 +9,15 @@ import {
   KAULA_LUMPUR_BLOG_POST,
 } from "./kuala-lumpur/data";
 import { LANGKAWI_BLOG_POST, LANGKAWI_TRAVEL_GUIDE } from "./langkawi/data";
-import { PENANG_BLOG_POST, PENANG_RELATED_ARTICLES, PENANG_TRAVEL_GUIDE } from "./penang/data";
-import { PERHENTIAN_ISLANDS_BLOG_POST, PERHENTIAN_ISLANDS_TRAVEL_GUIDE } from "./perhentian/data";
+import {
+  PENANG_BLOG_POST,
+  PENANG_RELATED_ARTICLES,
+  PENANG_TRAVEL_GUIDE,
+} from "./penang/data";
+import {
+  PERHENTIAN_ISLANDS_BLOG_POST,
+  PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
+} from "./perhentian/data";
 
 export const MALAYSISA_FOOD_DATA = [
   {
@@ -976,7 +983,8 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     name: "Genting Highlands",
     description:
       "Genting Highlands is a cool-climate mountain resort just an hour’s drive from Kuala Lumpur, offering a refreshing escape from the city heat. Set atop lush forested hills, it combines natural beauty with high-altitude thrills featuring indoor and outdoor theme parks, a world-class casino, luxury hotels, shopping malls, and lively entertainment. The scenic Genting Skyway cable car ride is an experience in itself, providing sweeping views of the rainforest below.",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
+    image:
+      "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
     otherInfo: {
       must_do:
         "Ride the Genting Skyway, Visit SkyWorlds Theme Park, Explore Chin Swee Caves Temple",
@@ -1003,9 +1011,202 @@ export const MALAYSIA_PLACES_TO_VISIT = [
   },
 ];
 
+export const MALAYSIA_SCUBA_BLOG = {
+  heading: "Best Places for Scuba Diving in Malaysia",
+  image: "/images/country/malaysia/malaysia_scuba_banner.jpg",
+  description: "Best Places for Scuba Diving in Malaysia",
+  overview:
+    "Malaysia is a top-tier scuba diving destination, known for its clear tropical waters, diverse marine life, and well-preserved coral reefs. The country offers a wide range of dive experiences suitable for all levels, from colorful shallow reefs perfect for beginners to deeper sites teeming with pelagic species for advanced divers. Malaysia’s marine environments are rich in biodiversity, featuring everything from sea turtles and reef sharks to rare macro species like nudibranchs and frogfish. Professional dive centers, eco-resorts, and conservation efforts further enhance the experience. Whether you're looking for vibrant coral gardens, underwater photography opportunities, or thrilling wall dives, Malaysia has it all.",
+  data: [
+    {
+      id: 1,
+      title: "Sipadan Island",
+      description: `
+    Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment.
+    <br />
+    <br />
+    <b >Best Time to Dive</b>: April to December, Peak diving conditions occur between July and August when visibility is at its highest.
+    <br />
+    <br />
+    <b >Experience Level</b>: Intermediate to Advanced
+    `,
+      image: "/images/country/malaysia/scuba/sipadan_island_scuba.jpg",
+      tips: [
+        `Need to book Diving packages which often include accommodation, meals, equipment rental, and boat transfers`,
+        `Strong currents, deep walls, and pelagic sightings make it ideal for certified and confident divers`,
+        `Book in advance as diving is regulated with limited daily permits, making it both exclusive and relatively expensive`,
+      ],
+    },
+    {
+      id: 2,
+      title: "Lankayan Island",
+      description: `
+    Lankayan is a tranquil dive destination known for its soft corals, macro life, and occasional whale shark sightings. Located within a protected marine reserve, the underwater environment remains unspoiled. Its calm, shallow waters also make it beginner-friendly.
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner to Intermediate
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      tips: [
+        `For the chance to spot whale sharks, visit between March and May`,
+      ],
+    },
+    {
+      id: 3,
+      title: "Layang Layang",
+      description: `
+    Layang Layang is a remote atoll famous for its deep-sea diving and pelagic sightings, especially hammerhead sharks during the migration season. Its steep underwater walls plunge to incredible depths, offering thrilling dives and excellent visibility. With minimal human impact, the coral reefs remain vibrant and full of life
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to May
+    <br />
+    <br />
+    <b>Experience Level</b>: Advanced
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      tips: [
+        `Deep drop-offs and the potential for strong currents require solid diving skills and experience`,
+        `This period coincides with the hammerhead shark migration, offering the most thrilling dive encounters`,
+      ],
+    },
+    {
+      id: 4,
+      title: "Perhentian Islands",
+      description: `
+   The Perhentian Islands are perfect for beginner divers, with shallow reefs, calm waters, and affordable dive packages. Popular dive sites feature coral gardens, artificial reefs, and wrecks teeming with marine life. Dive schools here are known for quality instruction and budget-friendly options.
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner to Intermediate
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      tips: [
+        `Read our detailed Perhentian guide`,
+        `Great for learning to dive, with calm waters and many dive schools offering certification`,
+      ],
+    },
+    {
+      id: 5,
+      title: "Islands of Mabul & Kapalai",
+      description: `
+   Mabul and Kapalai are world-famous for muck diving and macro photography. These islands boast sandy-bottom dive sites filled with rare critters such as frogfish, pipefish, and nudibranchs. Overwater bungalows and easy access to Sipadan make them a popular base for dive trips.
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October, can enjoy diving year-round
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner to Intermediate
+
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+    },
+    {
+      id: 6,
+      title: "Mataking Island",
+      description: `
+    Mataking is a paradise for luxury dive getaways. Known for its coral diversity and macro life, it offers vibrant reef dives and the chance to explore Malaysia’s first underwater post office. The island connects to a smaller islet via a sandbar, adding to its charm both above and below water
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner to Intermediate
+
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      tips: [
+        `Excellent for honeymooners and underwater photography enthusiasts`,
+      ],
+    },
+    {
+      id: 7,
+      title: "Redang Island",
+      description: `
+      Redang is a marine park island featuring crystal-clear water, vibrant coral reefs, and abundant marine life. Dive sites include reef slopes and coral gardens perfect for all skill levels. The island is also ideal for snorkeling and offers great visibility during the dry season
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner to Intermediate
+
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+    },
+    {
+      id: 8,
+      title: "Tenggol Island",
+      description: `
+      Tenggol Island is a favorite among experienced divers for its challenging conditions and rich marine ecosystems. Its deeper sites, occasional strong currents, and sightings of large pelagic species like whale sharks make it a thrilling spot. The island's compact size means uncrowded dive experiences.
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: April to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Intermediate to Advanced
+
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+    },
+    {
+      id: 9,
+      title: "Tioman Island",
+      description: `
+      Tioman Island features a mix of reef and wreck dives suitable for all levels. Its dive sites include coral gardens, rock formations, and artificial reefs that attract a wide range of marine species. With numerous dive centers, it’s an ideal spot for certifications and relaxed diving holidays
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner to Intermediate
+
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      tips: [
+        `Accessible dive sites and plenty of training centers make it ideal for learning and fun dives`,
+      ],
+    },
+    {
+      id: 10,
+      title: "Tunku Abdul Rahman Marine Park",
+      description: `
+      Just off the coast of a major city, this marine park offers easy access to dive sites ideal for beginners and casual divers. Expect shallow reefs, vibrant corals, and plenty of marine life close to shore. It’s perfect for short day trips and quick diving certifications
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner
+
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+    },
+    {
+      id: 11,
+      title: "Lang Tengah",
+      description: `
+      Lang Tengah offers a peaceful diving experience with fewer crowds and healthy coral reefs. Expect sightings of reef fish, turtles, and occasional blacktip sharks. Several dive sites are just minutes from the shore, making access easy
+    <br />
+    <br />
+    <b>Best Time to Dive</b>: March to October
+    <br />
+    <br />
+    <b>Experience Level</b>: Beginner
+
+    `,
+      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+    },
+  ],
+};
+
 export const MALAYSIA_DATA = {
   blogPost: [
-      {
+    {
       slug: "top-things-to-do",
       title: "Top Things to do in Malaysia",
       image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
@@ -1041,7 +1242,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       description: `Perhentian Islands, located off the east coast of Malaysia, is known for its crystal-clear waters, white sandy beaches, and laid-back vibes. The island is primarily made up of two main parts: Pulau Besar (the larger island) and Pulau Kecil (the smaller island). Ideal for budget travelers and beginners in snorkeling or scuba diving, it's a top destination for marine life lovers looking to explore coral reefs and chill in beachfront chalets.`,
       category: "Activities",
-    }, 
+    },
   ],
 
   cities: [
@@ -1055,7 +1256,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
 `,
       featured: false,
-      blogs : KAULA_LUMPUR_BLOG_POST,
+      blogs: KAULA_LUMPUR_BLOG_POST,
       related_articles: KUALA_LUMPUR_RELATED_ARTICLES,
       travel_guide: KAULA_LUMPUR_TRAVEL_GUIDE,
     },
@@ -1194,6 +1395,13 @@ The Perhentian Islands are a tropical haven known for their crystal-clear waters
       title: "Top Things to do in Malaysia",
       image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
       description: `Top Things to do in Malaysia`,
+      category: "Activities",
+    },
+    {
+      slug: "/malaysia/best-places-for-scuba",
+      title: "Best Places for Scuba Diving in Malaysia",
+      image: "/images/country/malaysia/malaysia_scuba_banner.jpg",
+      description: "Best Places for Scuba Diving in Malaysia",
       category: "Activities",
     },
     {
@@ -1402,6 +1610,14 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       description: "16 Days Itinerary in Malaysia",
       category: "Itinerary",
     },
+    {
+      slug: "/malaysia/best-places-for-scuba",
+      title: "Best Places for Scuba Diving in Malaysia",
+      image: "/images/country/malaysia/malaysia_scuba_banner.jpg",
+      description: "Best Places for Scuba Diving in Malaysia",
+      category: "Activities",
+    },
   ],
-  top_things_to_do : MALAYSIA_TOP_THINGS_TO_DO,
+  top_things_to_do: MALAYSIA_TOP_THINGS_TO_DO,
+  scuba_blog: MALAYSIA_SCUBA_BLOG,
 };

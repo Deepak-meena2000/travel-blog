@@ -23,6 +23,7 @@ export const destinations = [
     places_to_visit: MALAYSIA_DATA.places_to_visit,
     nine_days_itinerary: MALAYSIA_DATA.nine_days_itinerary,
     sixteen_days_itinerary: MALAYSIA_DATA.sixteen_days_itinerary,
+    scuba_blog: MALAYSIA_DATA.scuba_blog,
     other_blogs: MALAYSIA_DATA.other_blogs,
   },
 ];
