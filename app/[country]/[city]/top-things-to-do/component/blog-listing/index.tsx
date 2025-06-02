@@ -16,6 +16,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
+import styles from "@/app/index.module.css"
 const CityBlogListing = ({
   countryName,
   cityData,
@@ -78,9 +79,11 @@ const CityBlogListing = ({
               </div>
 
               <CardContent className="p-8">
-                <p className="text-gray-600 font-normal mb-6">
-                  {blog.description}
-                </p>
+                <p dangerouslySetInnerHTML={{
+                  __html:  blog.description
+                }} className={`${styles.list_style} text-gray-600 font-normal mb-6`} />
+                  
+
 
                 <div className="grid md:grid-cols-2 gap-4">
                   {blog.operationalHours && (
@@ -110,7 +113,9 @@ const CityBlogListing = ({
                         <h4 className="font-semibold text-slate-800 mb-1">
                           Location
                         </h4>
-                        <p className="text-slate-600">{blog.location}</p>
+                         <p dangerouslySetInnerHTML={{
+                                __html : blog.location
+                              }} className="text-slate-600"/>
                       </div>
                     </div>
                   )}
@@ -125,7 +130,7 @@ const CityBlogListing = ({
                         </h4>
                         {/* {price} */}
                         <p
-                          className="text-slate-600"
+                          className={`${styles.list_style} text-slate-600 text-sm lg:text-base leading-relaxed`}
                           dangerouslySetInnerHTML={{
                             __html: blog.price,
                           }}
@@ -163,7 +168,9 @@ const CityBlogListing = ({
                         return (
                           <div key={i} className="flex items-start space-x-3">
                             <Check className="h-3 w-3 text-teal-500 mt-1.5 flex-shrink-0" />
-                            <p className="text-sm text-slate-600">{tip}</p>
+                             <p dangerouslySetInnerHTML={{
+                                    __html : tip
+                                  }} className="text-sm text-slate-600"/>
                           </div>
                         );
                       })}

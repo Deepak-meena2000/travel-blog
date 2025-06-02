@@ -800,8 +800,7 @@ export const MALAYSIA_PLACES_TO_VISIT = [
         "hot and humid year-round, November-February for slightly cooler weather",
       how_to_reach: "Flights from Kuala Lumpur are frequently available",
       guide_text:
-        "Visit our detailed Penang travel guide and things to keep in mind for quick tips",
-      guide_link: "/malaysia/penang/travel-guide",
+      `Visit our detailed <a href="/malaysia/penang/travel-guide" target="_blank" class="text-teal-600 underline">Penang travel guide</a> and things to keep in mind for quick tips`,
     },
   },
   {
@@ -1050,7 +1049,7 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
       placeName: "Kuala Lumpur",
       slug: "kuala-lumpur",
       name: "Things to Do in Kuala Lumpur",
-      overview: `overview kuala lumpur`,
+      overview: `Kuala Lumpur offers a dynamic mix of experiences perfect for travelers seeking culture, shopping, and urban adventure. Visitors can admire stunning city views from towering observation decks, explore vibrant neighborhoods rich in heritage, and discover impressive architecture blending tradition and modernity. The city’s bustling streets are filled with flavorful street food, colorful markets, and trendy cafes. Cultural attractions like historic temples, mosques, and museums provide a deeper understanding of Malaysia’s diverse roots. For shopping enthusiasts, world-class malls and local bazaars offer everything from luxury brands to handcrafted souvenirs. Whether you're into nightlife, history, or food, this energetic capital has something for everyone and is a must-visit destination in Southeast Asia.`,
       image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
       description: `Kuala Lumpur, Malaysia's dynamic capital city, offers an unforgettable blend of cultures, cuisines, and contrasts. As a global hub in Southeast Asia, it effortlessly fuses cutting-edge modernity with deep-rooted tradition. Towering over the skyline are the world-famous Petronas Twin Towers, a symbol of Malaysia's rapid development, while just a short distance away, colonial-era buildings like the Sultan Abdul Samad Building reflect the city's British heritage.
 Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is vividly expressed through its architecture, festivals, and especially its cuisine. Food is a major attraction—visitors can enjoy everything from spicy street fare in Jalan Alor and traditional dishes at Kampung Baru, to high-end dining in the city's many rooftop restaurants.
@@ -1074,7 +1073,8 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       placeName: "Langkawi",
       slug: "langkawi",
-      overview: `overview langkawi`,
+      overview: `Langkawi offers a variety of exciting activities that cater to all types of travelers. Adventure seekers can enjoy breathtaking panoramic views from thrilling cable car rides and sky bridges that provide unmatched photo opportunities. Nature enthusiasts will love exploring unique geological formations, mangrove forests, and diverse wildlife through guided boat tours. For those looking to unwind, pristine beaches with soft white sand and crystal-clear waters offer perfect spots for sunbathing, swimming, and water sports. Visitors can also immerse themselves in vibrant local markets, sample delicious street food, and experience cultural performances that showcase the island’s rich heritage. With a blend of adventure, relaxation, and cultural experiences, this tropical paradise delivers unforgettable memories and is a top travel destination in Malaysia.
+`,
       name: "Things to Do in Langkawi",
       image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
       related_articles: [],
@@ -1084,7 +1084,8 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     {
       placeName: "Perhentian Islands",
       slug: "perhentian-islands",
-      overview: `overview perhentian islands`,
+      overview: `
+The Perhentian Islands are a tropical haven known for their crystal-clear waters, soft sandy beaches, and laid-back atmosphere. Perfect for snorkeling and diving, the vibrant coral reefs surrounding the islands are home to colorful marine life, including turtles and reef sharks. Nature lovers can enjoy jungle trekking through lush forests or kayaking along the coast for serene views and hidden coves. The islands also offer the ideal setting for beachside relaxation, with stunning sunsets and peaceful vibes. Whether you’re seeking an underwater adventure or simply want to unwind by the sea, this island escape is one of Malaysia’s top travel experiences.`,
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       name: "Things to Do in Perhentian Islands",
       travel_guide: PERHENTIAN_ISLANDS_TRAVEL_GUIDE,
