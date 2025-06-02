@@ -1393,7 +1393,7 @@ The Perhentian Islands are a tropical haven known for their crystal-clear waters
     {
       slug: "/malaysia/top-things-to-do",
       title: "Top Things to do in Malaysia",
-      image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
+      image: "/images/country/malaysia/top_things_do_malaysia.jpg",
       description: `Top Things to do in Malaysia`,
       category: "Activities",
     },
