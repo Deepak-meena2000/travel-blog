@@ -18,7 +18,7 @@ export function PopularDestinations() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {destinations.slice(0, 4).map((destination, index) => (
-           <Link href={`/${destination.slug}`}>
+           <Link href={`/${destination.slug}`} key={destination.slug}>
              <Card
               key={destination.slug}
               className="group hover:shadow-lg transition-all duration-300 animate-scale-in"

@@ -91,7 +91,7 @@ export default async function ThingsToDoPage({
                             blog.image ||
                             "/placeholder.svg?height=300&width=500"
                           }
-                          alt={blog.name}
+                          alt={blog.title || "top things to do"}
                           width={800}
                           height={400}
                           className="w-full h-full object-cover"
@@ -114,7 +114,7 @@ export default async function ThingsToDoPage({
                       <p  dangerouslySetInnerHTML={{
                         __html: blog.description
                       }} className={`${styles.list_style} text-gray-600 font-normal mb-6`}/>
-                       
+
                       <div className="grid md:grid-cols-2 gap-4">
                         {blog.operationalHours && (
                           <div className="flex items-start space-x-4 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
