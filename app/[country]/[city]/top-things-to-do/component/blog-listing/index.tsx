@@ -59,7 +59,7 @@ const CityBlogListing = ({
                 <figure className="relative w-full">
                   <Image
                     src={blog.image || "/placeholder.svg?height=300&width=500"}
-                    alt={blog.name}
+                    alt={blog.name }
                     width={800}
                     height={400}
                     className="w-full h-full object-cover"
@@ -82,7 +82,7 @@ const CityBlogListing = ({
                 <p dangerouslySetInnerHTML={{
                   __html:  blog.description
                 }} className={`${styles.list_style} text-gray-600 font-normal mb-6`} />
-                  
+
 
 
                 <div className="grid md:grid-cols-2 gap-4">

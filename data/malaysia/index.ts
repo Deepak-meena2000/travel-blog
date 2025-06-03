@@ -856,8 +856,7 @@ export const MALAYSIA_PLACES_TO_VISIT = [
       time_to_visit:
         "hot and humid year-round, November-February for slightly cooler weather",
       how_to_reach: "Flights from Kuala Lumpur are frequently available",
-      guide_text:
-      `Visit our detailed <a href="/malaysia/penang/travel-guide" target="_blank" class="text-teal-600 underline">Penang travel guide</a> and things to keep in mind for quick tips`,
+      guide_text: `Visit our detailed <a href="/malaysia/penang/travel-guide" target="_blank" class="text-teal-600 underline">Penang travel guide</a> and things to keep in mind for quick tips`,
     },
   },
   {
@@ -1144,6 +1143,8 @@ export const MALAYSIA_SCUBA_BLOG = {
         `Read our detailed Perhentian guide`,
         `Great for learning to dive, with calm waters and many dive schools offering certification`,
       ],
+      imageCreditHTML:
+        '<a target ="_blank" href="https://commons.wikimedia.org/wiki/File:Pulau_Perhentian,_Islas_Perhentian.jpg"><u>Casarhe</u>r</a>, <a target ="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons',
     },
     {
       id: 5,
@@ -1192,7 +1193,6 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <br />
     <b>Experience Level</b>: Beginner to Intermediate
-
     `,
       image: "/images/country/malaysia/places/perhentian/blog/redang_trip.jpg",
     },
@@ -1207,9 +1207,10 @@ export const MALAYSIA_SCUBA_BLOG = {
     <br />
     <br />
     <b>Experience Level</b>: Intermediate to Advanced
-
     `,
-      image: "/images/country/malaysia/places/lankayan_island_scuba.jpg",
+      image: "/images/country/malaysia/scuba/tenggol_island.jpg",
+      imageCreditHTML:
+        "Photo by <a target='_blank' href='https://unsplash.com/@bobbiwu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Bobbi Wu</u></a> on <a target='_blank' href='https://unsplash.com/photos/person-swimming-under-water-photography-3_h9trxhQmY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
     },
     {
       id: 9,
@@ -1242,6 +1243,8 @@ export const MALAYSIA_SCUBA_BLOG = {
     `,
       image:
         "/images/country/malaysia/scuba/tunku_abdul_rahman_marine_park.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:KKseaisland.jpg'><u>Flanegan</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/3.0'><u>CC BY 3.0</u></a>, via Wikimedia Commons",
     },
     {
       id: 11,
@@ -1256,6 +1259,8 @@ export const MALAYSIA_SCUBA_BLOG = {
     <b>Experience Level</b>: Beginner
     `,
       image: "/images/country/malaysia/scuba/lang_tengah.jpg",
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Lang_Tengah_Island_-_Beach.jpg'><u>Phalinn Ooi</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
     },
   ],
 };

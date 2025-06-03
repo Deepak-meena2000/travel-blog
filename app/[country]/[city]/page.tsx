@@ -142,35 +142,36 @@ const ItineraryPage = async ({
                     return (
                       <div key={sidx} className="mb-6 sm:mb-8">
                         <div className="grid gap-3 sm:gap-4">
-                          {chunkArray(section.images, 2).map(
-                            (row: any[], rowIdx: number) => (
-                              <div
-                                className="grid grid-cols-2 gap-3 sm:gap-4"
-                                key={rowIdx}
-                              >
-                                {row.map((img: any, i: number) => (
-                                  <div
-                                    key={i}
-                                    className={`w-full ${ASPECT_RATIO} relative rounded-lg overflow-hidden ${
-                                      row.length === 1 ? "col-span-2" : ""
-                                    }`}
-                                  >
-                                    <Image
-                                      src={img.src}
-                                      alt={img.alt}
-                                      fill
-                                      className="object-cover w-full h-full"
-                                      sizes="(max-width: 768px) 100vw, 400px"
-                                    />
+                          <div className={`grid ${section.images.length === 1 ? 'grid-cols-1' : 'grid-cols-2'} gap-3 sm:gap-4`}>
+                            {section.images.map((img: any, i: number) => (
+                              <div key={i}>
+                                <div className={`w-full ${ASPECT_RATIO} relative rounded-lg overflow-hidden`}>
+                                  <Image
+                                    src={img.src}
+                                    alt={img.alt}
+                                    fill
+                                    className="object-cover w-full h-full"
+                                    sizes="(max-width: 768px) 100vw, 400px"
+                                  />
+                                </div>
+                                {img.imageCreditHTML && (
+                                  <div className="text-right mt-1">
+                                    <span
+                                      className="text-xs text-gray-500"
+                                      dangerouslySetInnerHTML={{
+                                        __html: img.imageCreditHTML,
+                                      }}
+                                    ></span>
                                   </div>
-                                ))}
+                                )}
                               </div>
-                            )
-                          )}
+                            ))}
+                          </div>
                         </div>
                       </div>
                     );
                   }
+
                   return null;
                 })}
                 {/* Separator between days */}

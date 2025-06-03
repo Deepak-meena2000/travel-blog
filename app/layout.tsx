@@ -1,16 +1,16 @@
-import type React from "react"
-import type { Metadata } from "next"
-import {   Lexend_Deca } from "next/font/google"
-import "./globals.css"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-
-
+import type React from "react";
+import type { Metadata } from "next";
+import { Lexend_Deca } from "next/font/google";
+import "./globals.css";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import Head from "next/head";
+import GoogleAdSense from "@/integration/google-ad-sense";
 
 const lexendDeca = Lexend_Deca({
   subsets: ["latin"],
   display: "swap",
-})
+});
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +19,13 @@ export const metadata: Metadata = {
   },
   description:
     "Explore comprehensive travel guides, insider tips, and customized itineraries for your dream destinations.",
-  keywords: ["travel", "destinations", "travel guides", "itinerary", "adventure"],
+  keywords: [
+    "travel",
+    "destinations",
+    "travel guides",
+    "itinerary",
+    "adventure",
+  ],
   authors: [{ name: "Nomadic Memo Team" }],
   creator: "Nomadic Memo",
   openGraph: {
@@ -49,21 +55,24 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={lexendDeca.className}>
+      <head>
+        <GoogleAdSense />
+      </head>
       <body className="">
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
