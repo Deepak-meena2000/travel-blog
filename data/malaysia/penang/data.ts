@@ -367,7 +367,7 @@ export const PENANG_TRAVEL_GUIDE = {
   data: [
     {
       id: 1,
-      icon: "INFO",
+      icon: "PYRAMID",
       heading: "A Glimpse into Penang’s History & Culture",
       description: `
 Penang’s rich history and diverse culture are what make it truly unique among Malaysia’s destinations. Once a strategic trading post under British colonial rule, Penang, especially George Town, has preserved its colonial architecture, heritage shophouses, and multicultural roots. The city is a living museum, where <b>Chinese clan houses, Indian temples, Muslim mosques, and British-built churches coexist harmoniously.</b> This cultural blend is reflected in local customs, festivals, languages, and, most notably, food. The population is a vibrant mix of Malays, Chinese, Indians, and Eurasians, each contributing to Penang’s identity. Events like Chinese New Year, Thaipusam, and George Town Festival highlight this diversity. Heritage conservation efforts have helped <b>George Town earn its UNESCO World Heritage status.</b> `,
@@ -508,7 +508,7 @@ Street food is a must so head to Gurney Drive or Chulia Street for the best bite
 </br>
 </br>
 <li>
-Penang is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in penang</a> articles to view all.
+Penang is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in penang</a> to explore more.
 </li>
 
 `,

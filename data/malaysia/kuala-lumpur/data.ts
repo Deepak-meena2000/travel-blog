@@ -368,7 +368,21 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
   slug: "/kuala-lumpur/travel-guide",
   data: [
     {
-      id: 1,
+       id: 1,
+        heading: "A Glimpse into Kuala Lumpur History & Culture",
+        icon: "PYRAMID",
+        description: `
+                Kuala Lumpur, Malaysia’s dynamic capital, began as a tin mining settlement in the 1850s, founded at the confluence of the Klang and Gombak rivers. From its humble beginnings, it rapidly evolved into a thriving commercial hub under British colonial rule. Gaining independence in 1957, KL has since grown into a modern metropolis while preserving elements of its colonial and multicultural past.
+</br>
+</br>
+<b>The city’s culture is a vibrant mix of Malay, Chinese, and Indian influences</b>, reflected in its architecture, cuisine, festivals, and daily life. Colorful temples sit near Islamic mosques and colonial buildings, showcasing KL’s unique cultural blend. Traditional markets coexist with glittering malls, and street food vendors serve up dishes from every corner of the city's diverse communities.
+</br>
+</br>
+Kuala Lumpur is more than just skyscrapers and city lights—it’s a place where old meets new, and diverse traditions shape a warm, inclusive urban identity that captivates every traveler.
+                `,
+    },
+    {
+      id: 2,
       icon: "PLANE",
       heading: "How to Get to Kuala Lumpur",
       description: `
@@ -379,7 +393,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 2,
+      id: 3,
       heading: "Getting Around Kuala Lumpur",
       icon: "CAR",
       description: `
@@ -416,7 +430,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
         `,
     },
     {
-      id: 3,
+      id: 4,
       heading: "Where to Stay in Kuala Lumpur",
       icon: "HOTEL",
       description: `
@@ -437,7 +451,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
     },
 
     {
-      id: 4,
+      id: 5,
       heading: "What and where to Eat and Drink in Kuala Lumpur",
       icon: "FOOD",
       description: `
@@ -457,7 +471,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
         `,
     },
     {
-      id: 5,
+      id: 6,
       heading: "Where to Shop in Kuala Lumpur",
       icon: "SHOPPING",
       description: `
@@ -473,7 +487,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
         `,
     },
     {
-      id: 6,
+      id: 7,
       icon: "SUN",
       heading: "When Is the Best Time to Visit Kuala Lumpur?",
       description: `
@@ -490,7 +504,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
         `,
     },
     {
-      id: 7,
+      id: 8,
       icon: "CLOCK",
       heading: "How Long Should You Spend in Kuala Lumpur?",
       description: `
@@ -510,7 +524,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
         `,
     },
     {
-      id: 8,
+      id: 9,
       icon: "PIN",
       heading: "Must-Do Things in Kuala Lumpur",
       description: `
@@ -525,7 +539,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
         `,
     },
     {
-      id: 9,
+      id: 10,
       icon: "LEAF",
       heading: "Best Day Trips from Kuala Lumpur",
       description: `
@@ -544,7 +558,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
         `,
     },
     {
-      id: 13,
+      id: 11,
       icon: "BOOK_OPEN_CHECK",
       heading: "Quick Tips",
       description: `

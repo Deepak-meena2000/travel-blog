@@ -250,7 +250,7 @@ export const PERHENTIAN_ISLANDS_TRAVEL_GUIDE = {
   data: [
      {
       id: 1,
-      icon: "INFO",
+      icon: "PYRAMID",
       heading: "About Perhentian Islands",
       description: `
             The Perhentian Islands are located approximately 19 kilometers (12 miles) off the northeast coast of Peninsular Malaysia, in the state of Terengganu. 

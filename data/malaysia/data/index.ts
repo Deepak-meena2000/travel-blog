@@ -101,7 +101,7 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
 
       {
         id: 5,
-        icon: "PYRAMID",
+        icon: "SUN",
         heading: "Best Time to Visit",
         description: `
 
@@ -221,7 +221,7 @@ Langkawi and duty-free zones offer better prices. Always drink responsibly and r
 Tap water isn't always safe to drink — use bottled or filtered water. Naturewise, be cautious during hikes or ocean activities, but serious risks are rare. Malaysia is politically stable and welcoming to tourists. Keep emergency numbers handy:
 <br />
 <br />
-<b>999 for ambulance or police</b>, and 991 for fire.
+<b>999 for ambulance or police, and 991 for fire.</b>
         `,
       },
       {
@@ -229,7 +229,7 @@ Tap water isn't always safe to drink — use bottled or filtered water. Naturewi
         icon: "FERRIS_WHEEL",
         heading: "What Are the Must-Visit Places in Malaysia?",
         description: `
-          Malaysia has something for every kind of traveler. Discover the top things to do in Malaysia with our detailed article of <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Malaysia</a>.
+          Malaysia has something for every kind of traveler. Discover the <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Malaysia</a> to explore more.
           <br />
           <br />
 One can explore the vibrant capital <b>Kuala Lumpur</b>, with its Petronas Towers, Batu Caves and street food. Wander historic <b>George Town (Penang)</b>, a UNESCO heritage site filled with culture and art. Relax on tropical islands like <b>Langkawi</b>, <b>Perhentian, or Redang</b>. Dive into unforgettable underwater adventures with scuba diving or snorkeling at not only Malaysia’s but world's top marine spots like <b>Sipadan</b> and Lankayan Island. Discover nature in Cameron Highlands or climb Mount Kinabalu in <b>Sabah</b>. Visit <b>Melaka</b> for colonial charm or Borneo for orangutans and rainforests.
@@ -243,9 +243,20 @@ Each destination has its own unique flavor whether you're chasing beaches, tea p
         icon: "BOOK_OPEN_CHECK",
         heading: "Quick Tips",
         description: `
-         <li>Be prepared for sudden rain showers, carry a light poncho or umbrella.</li>
-<li>The sun can be intense, so don’t forget sunscreen.</li>
-<li>For essentials like groceries or bottled water, shop at local minimarts or supermarkets.</li>
+          <li><b>Stay Connected:</b> Buy a local prepaid SIM (Digi or Maxis) at the airport for cheap data and reliable coverage across the island.</li>
+      <br />
+      <li><b>Rent Wisely:</b> Scooter rentals (RM40–RM60/day) are the cheapest way to get around, inspect brakes and lights before you ride.</li>
+      <br />
+      <li><b>Hydrate & Protect:</b> The tropical sun is intense—carry a refillable water bottle, apply reef-safe sunscreen (SPF 30+), and wear a wide-brim hat.</li>
+      <br />
+      <li><b>Beat the Heat:</b> Plan outdoor activities early (8–11 AM) or late afternoon (4–6 PM) to avoid peak midday temperatures and sudden rain.</li>
+      <br />
+      <li><b>Carry Cash:</b> Many street stalls and boat operators don’t accept cards—keep small denominations (RM1, RM5, RM10) for night markets and tips.</li>
+      <br />
+      <li><b>Pack Smart:</b> Bring lightweight, quick-dry clothing, insect repellent for jungle treks, and a waterproof pouch for your electronics on boat tours.</li>
+      <br />
+      <li><b>Book Tours Ahead:</b> Popular activities like island hopping, mangrove tours, and the cable car sell out in peak season—reserve at least two weeks in advance.</li>
+      <br />
         `,
       },
     ],

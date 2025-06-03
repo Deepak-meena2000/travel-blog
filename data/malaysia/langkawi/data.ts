@@ -267,7 +267,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
   data: [
     {
       id: 1,
-      icon: "INFO",
+      icon: "PYRAMID",
       heading: "A Glimpse into Langkawi's History & Culture",
       description:"Langkawi’s history is a blend of myth, legend, and maritime significance. The island is famously linked to the legend of Mahsuri, a woman wrongly accused of adultery and sentenced to death. With her dying breath, she cursed Langkawi for seven generations—a tale still deeply rooted in local identity. Historically, Langkawi was a quiet fishing and farming region, occasionally plagued by pirates due to its strategic location along ancient trade routes in the Andaman Sea.</br></br>In 1987, Langkawi gained duty-free status, transforming it into a thriving tourist destination. Despite modernization, the island has preserved its cultural essence. Traditional Malay customs, Islamic practices, and influences from neighboring Thailand are reflected in local architecture, food, language, and festivals. Villages (kampungs) still maintain a slower pace of life, offering visitors a glimpse into authentic island living. Langkawi’s warm hospitality and rich heritage make it not just a scenic getaway but a culturally immersive experience."
     },
