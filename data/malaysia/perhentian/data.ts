@@ -109,11 +109,12 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
   {
     id: 9,
     name: "Book a Beachside Resort",
-    image: "/images/country/malaysia/places/perhentian/beach_resort.jpg",
+    image: "/images/country/malaysia/places/perhentian/blog/beachside_resort.jpg",
     description:
       "Perhentian offers accommodation options ranging from budget chalets to luxurious beachside resorts. Staying in a beachfront resort lets you wake up to ocean views, enjoy private access to the beach, and relax in peaceful surroundings.",
     tips: ["Book in advance, especially during peak season"],
-    imageCreditHTML: "",
+    imageCreditHTML:
+      "Photo by <a target='_blank' href='https://unsplash.com/@uxsj_ph?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>SJ 📸</u></a> on <a target='_blank' href='https://unsplash.com/photos/nipa-huts-on-seashore-688Nj6fVPXU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
   {
     id: 10,
