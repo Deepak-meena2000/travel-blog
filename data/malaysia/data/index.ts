@@ -286,15 +286,22 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         text: `
 
         Once done, head straight to the island's lively heart, <b>Pantai Cenang.</b> Drive through the Jalan Kuala Muda Road to catch a flight landing on one side and the ocean on the other. This bustling beachside strip offers soft sandy shores, beachfront cafes, and boutique shops perfect for some light souvenir hunting. As the day mellows, make your way toward <b>Pantai Tengah</b>, Langkawi's quieter and more serene beach just south of Cenang. This is the perfect spot to unwind and watch the sun dip below the horizon in a blaze of tropical colors.
-
         `,
       },
       {
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
+            src: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
             alt: "Langkawi",
+            imageCreditHTML:
+              'Photo by <a target="_blank" href="https://www.pexels.com/@bertellifotografia/"><u>Matheus Bertelli</u></a> on <a target="_blank" href="https://www.pexels.com/photo/a-sailboat-in-the-ocean-at-sunset-15141424/"><u>Pexels</u></a>',
+          },
+          {
+            src: "/images/country/malaysia/places/langkawi/blog/pantai_cenang.jpeg",
+            alt: "Langkawi",
+            imageCreditHTML:
+              "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Langkawi_Pantai_Cenang_3.JPG'><u>RoB</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/3.0'><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons",
           },
         ],
       },
@@ -311,15 +318,18 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "content",
         text: `
           Begin your second day in Langkawi with one of the island’s most iconic experiences: the <b>Langkawi SkyCab</b>. Ride the panoramic cable car up to the top of Gunung Mat Cincang, where sweeping views of Langkawi’s lush rainforest and turquoise waters await. Once at the top, take a walk along the <b>Langkawi Sky Bridge</b>, a curved suspension bridge offering jaw-dropping views and photo-perfect moments. You have an option for skywalk at <b>Sky Eagle</b> at the middle station.
-
         `,
       },
       {
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/langkawi/travel_guide_banner.jpg",
+            src: "/images/country/malaysia/places/langkawi/blog/skybridge.jpg",
             alt: "Langkawi skycab",
+          },
+          {
+            src: "/images/country/malaysia/places/langkawi/blog/3d_art.jpg",
+            alt: "3D Art Museum",
           },
         ],
       },
@@ -328,15 +338,6 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         text: `
         After soaking in the views, head down to the <b>Oriental Village</b>. This charming complex is home to quirky shops, local eateries, and family-friendly attractions like the <b>3D Art Museum</b>, SkyDome, and SkyRex. <b>3D Art Museum</b> is highly recommended and the entrance is included in the SkyCable combo ticket. Grab a leisurely lunch here before winding down for the afternoon.
         `,
-      },
-      {
-        type: "images",
-        images: [
-          {
-            src: "/images/country/malaysia/places/langkawi/blog/3d_art.jpg",
-            alt: "3D Art Museum",
-          },
-        ],
       },
       {
         type: "content",
@@ -358,8 +359,14 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/national_museum.jpg",
-            alt: "National Museum",
+            src: "/images/country/malaysia/places/langkawi/blog/mangrove.jpg",
+            alt: "Mangrove",
+            imageCreditHTML:
+              '<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Langkawi_Mangrove_Forest.jpg"><u>Leonardo0511</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons',
+          },
+          {
+            src: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",
+            alt: "Night Market",
           },
         ],
       },
@@ -367,7 +374,6 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "content",
         text: `
         After the boat trip, head back toward the central part of the island and cool off at one of Langkawi’s scenic waterfalls. <b>Temurun Waterfall</b> in the north or <b>Seven Wells Waterfall (Telaga Tujuh)</b> near the cable car area are both excellent options for a refreshing dip or a peaceful picnic surrounded by lush greenery. Don’t forget your swimwear and camera—these waterfalls are truly postcard-worthy.
-
         `,
       },
       {
@@ -403,8 +409,12 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/pavilion_kl.jpg",
-            alt: "Pavilion KL",
+            src: "/images/country/malaysia/places/penang/blog/street_art.jpg",
+            alt: "Street Art",
+          },
+          {
+            src: "/images/country/malaysia/places/penang/blog/clan_jetty.jpg",
+            alt: "Clan Jetty",
           },
         ],
       },
@@ -413,15 +423,6 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         text: `
         Head to <b>Clan Jetties</b> at the sunset and capture some insta worth pics, where traditional Chinese waterfront homes stand on stilts over the sea.
         `,
-      },
-      {
-        type: "images",
-        images: [
-          {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/heli_lounge.jpg",
-            alt: "Heli Lounge Bar",
-          },
-        ],
       },
       {
         type: "content",
@@ -445,8 +446,8 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/chinatown.jpg",
-            alt: "Chinatown",
+            src: "/images/country/malaysia/places/penang/blog/habitat.jpg",
+            alt: "The Habitat",
           },
         ],
       },
@@ -497,8 +498,8 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/bukit_bintang.jpg",
-            alt: "Bukit Bintang",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/petronas_tower.jpg",
+            alt: "Petronas Twin Towers",
           },
         ],
       },
@@ -523,28 +524,6 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "content",
         text: `
         Begin your full day in Kuala Lumpur with a morning trip to the iconic <b>Batu Caves</b>, a striking Hindu temple complex nestled within towering limestone cliffs. Just a short Grab or taxi ride from the city (about 20–30 minutes), this spiritual site features a massive golden statue of Lord Murugan and a colorful flight of 272 steps leading up to the main temple cave. The climb is part of the experience, offering scenic views and a close encounter with the resident monkeys. Checkout the dark cave and ramayana cave for more adventure.
-
-
-        `,
-      },
-      {
-        type: "images",
-        images: [
-          {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/thean_hou_temple.jpg",
-            alt: "<b><b>Thean Hou Temple</b></b>",
-          },
-        ],
-      },
-      {
-        type: "content",
-        text: `After returning to the city, spend your midday at <b>Central Market</b>, a cultural hub where you can shop for traditional crafts, batik prints, and souvenirs. Just a short walk away is <b>Petaling Street</b> in <b>Chinatown</b>, where you can enjoy bustling street scenes, bargain shopping, and local eats. It’s a great spot to sample Malaysian Chinese delicacies in an energetic atmosphere.
-`,
-      },
-      {
-        type: "content",
-        text: `
-        In the late afternoon, escape into nature at the <b>KL Forest Eco Park</b>, a green lung in the heart of the city. Explore its canopy walkways and shaded trails, then head up to <b>Menara Kuala Lumpur (KL Tower)</b> for sweeping views of the city. Time your visit to catch the sunset—it’s truly mesmerizing from the observation deck.
         `,
       },
       {
@@ -555,6 +534,29 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
             alt: "Batu Caves",
           },
         ],
+      },
+      {
+        type: "content",
+        text: `After returning to the city, spend your midday at <b>Central Market</b>, a cultural hub where you can shop for traditional crafts, batik prints, and souvenirs. Just a short walk away is <b>Petaling Street</b> in <b>Chinatown</b>, where you can enjoy bustling street scenes, bargain shopping, and local eats. It’s a great spot to sample Malaysian Chinese delicacies in an energetic atmosphere.`,
+      },
+      {
+        type: "images",
+        images: [
+          {
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/chinatown.jpg",
+            alt: "China Town",
+          },
+          {
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/kl_tower.jpg",
+            alt: "KL Tower",
+          },
+        ],
+      },
+      {
+        type: "content",
+        text: `
+        In the late afternoon, escape into nature at the <b>KL Forest Eco Park</b>, a green lung in the heart of the city. Explore its canopy walkways and shaded trails, then head up to <b>Menara Kuala Lumpur (KL Tower)</b> for sweeping views of the city. Time your visit to catch the sunset—it’s truly mesmerizing from the observation deck.
+        `,
       },
       {
         type: "content",
@@ -582,8 +584,10 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
-            alt: "Genting Highlands",
+            src: "/images/country/malaysia/places/melaka/blog/melaka_river.jpg",
+            alt: "Malacca River",
+            imageCreditHTML:
+              "Photo by <a target='_blank' href='https://unsplash.com/@fajrihfzh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Fajri Hafizh</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-boat-traveling-down-a-river-next-to-tall-buildings-2AWi2LKFvuo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
           },
         ],
       },
@@ -591,7 +595,6 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "content",
         text: `
         Stroll along <b>Jonker Street</b>, a lively lane brimming with antique shops, local crafts, and street food. If time permits, take a relaxing <b>Malacca River Cruise</b> to see murals, bridges, and charming cafes lining the waterway. In the evening, return to Kuala Lumpur for a well-earned rest.
-
         `,
       },
       {
@@ -608,8 +611,8 @@ Later, explore the colorful <b><b>Thean Hou Temple</b></b>, one of Southeast Asi
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/interact_locals.jpg",
-            alt: " Islamic Arts Museum Malaysia",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/little_india.jpg",
+            alt: "Little India",
           },
         ],
       },
@@ -628,15 +631,14 @@ One great option is a return visit to the <b> Islamic Arts Museum Malaysia</b>, 
 Another excellent spot to consider is the <b>Thean Hou Temple</b>, known for its intricate carvings, vibrant décor, and sweeping city views. You could pair this with a stop in <b>Little India (Brickfields)</b>, where you can enjoy a flavorful lunch and experience the area’s colorful culture.
 <br >
 For those looking to squeeze in a bit more shopping,<b>Central Market, Suria KLCC</b>, or <b>Pavilion Mall</b> are all ideal for picking up souvenirs, snacks, or traditional crafts. Don’t forget to leave some space in your bag for gifts and keepsakes!
-
         `,
       },
       {
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/metro_ride.jpg",
-            alt: "Metro Ride",
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/pavilion_kl.jpg",
+            alt: "Pavilion KL",
           },
         ],
       },
@@ -670,8 +672,16 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/petrnos_tower.jpg",
-            alt: "Petronas Twin Towers",
+            src: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
+            alt: "Langkawi",
+            imageCreditHTML:
+              'Photo by <a target="_blank" href="https://www.pexels.com/@bertellifotografia/"><u>Matheus Bertelli</u></a> on <a target="_blank" href="https://www.pexels.com/photo/a-sailboat-in-the-ocean-at-sunset-15141424/"><u>Pexels</u></a>',
+          },
+          {
+            src: "/images/country/malaysia/places/langkawi/blog/pantai_cenang.jpeg",
+            alt: "Langkawi",
+            imageCreditHTML:
+              "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Langkawi_Pantai_Cenang_3.JPG'><u>RoB</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/3.0'><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons",
           },
         ],
       },
@@ -692,23 +702,18 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
-            alt: "Batu Caves",
+            src: "/images/country/malaysia/places/langkawi/blog/skybridge.jpg",
+            alt: "Langkawi skycab",
+          },
+          {
+            src: "/images/country/malaysia/places/langkawi/blog/3d_art.jpg",
+            alt: "3D Art Museum",
           },
         ],
       },
       {
         type: "content",
         text: `After soaking in the views, head down to the <b>Oriental Village</b>. This charming complex is home to quirky shops, local eateries, and family-friendly attractions like the 3D Art Museum, SkyDome, and SkyRex. <b>3D Art Museum</b> is highly recommended and the entrance is included in the SkyCable combo ticket. Grab a leisurely lunch here before winding down for the afternoon.`,
-      },
-      {
-        type: "images",
-        images: [
-          {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/sultan_abdul_samad.jpg",
-            alt: "<b>Sultan Abdul Samad Building</b>",
-          },
-        ],
       },
       {
         type: "content",
@@ -730,8 +735,14 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/national_museum.jpg",
-            alt: "National Museum",
+            src: "/images/country/malaysia/places/langkawi/blog/mangrove.jpg",
+            alt: "Mangrove",
+            imageCreditHTML:
+              '<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Langkawi_Mangrove_Forest.jpg"><u>Leonardo0511</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons',
+          },
+          {
+            src: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",
+            alt: "Night Market",
           },
         ],
       },
@@ -743,15 +754,6 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         <br>
         As evening approaches, dive into Langkawi’s local culture by visiting a <b>Langkawi Night Market</b>. These markets rotate locations throughout the week, so check our article about the <b>langkawi travel guide</b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe.
         `,
-      },
-      {
-        type: "images",
-        images: [
-          {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/botanical_garden.jpg",
-            alt: "Perdana Botanical Garden",
-          },
-        ],
       },
     ],
   },
@@ -1088,8 +1090,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
     {
       id: 4,
       title: "Scuba at Sipadan Island",
-      description:
-        `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  <b>Check our complate guide <a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">best places for scuba</a>.</b>`,
+      description: `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  <b>Check our complate guide <a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">best places for scuba</a>.</b>`,
       operationalHours: "7:00 AM – 4:00 PM",
       location: "Sipadan Island",
       price: "Depends on Diving Packages",
@@ -1270,7 +1271,8 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       price: "RM80–RM150",
       duration: "Half Day",
       image: "/images/country/malaysia/places/langkawi/blog/mangrove.jpg",
-      imageCreditHTML: null,
+      imageCreditHTML:
+        "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Langkawi_Mangrove_Forest.jpg'><u>Leonardo0511</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0'><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons",
     },
     {
       id: 17,
