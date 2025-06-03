@@ -31,6 +31,9 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
       "Malaysia is a captivating blend of diverse cultures, stunning landscapes, and mouthwatering cuisine. But Before you jet off, it’s important to get familiar with a few essentials that will make your trip smoother. In this article, we cover everything you need to know before visiting Malaysia from visa requirements and currency tips to weather, local customs, dress codes, safety advice, and health precautions. Learn what to pack, how to get around, and how to respect local traditions. Whether it’s your first time in Southeast Asia or you're a seasoned traveler, this guide ensures you arrive in Malaysia informed and ready to explore with confidence.",
     data: [
       {
+
+      },
+      {
         id: 1,
         heading: "Culture & History",
         icon: "PYRAMID",
@@ -1045,13 +1048,12 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       operationalHours: "9:30 AM – 6:00 PM (Daily)",
       location: "Oriental Village, Burau Bay, Langkawi",
       price:
-        "SkyCab: </br><li>RM43 (Adult, Malaysian)</li> <li>RM85 (Adult, Foreigner)</li>SkyBridge entry is free </br>Nature Walk - RM6 </br>SkyGlide - RM 10 ",
+        "SkyCab: </br><li>RM43 (Adult, Malaysian)</li> <li>RM85 (Adult, Foreigner)</li>SkyBridge entry is free </br>Nature Walk - RM6 </br>SkyGlide - RM10",
       duration: "3 hours",
       tips: [
         "Combo Tickets include the entry to 3D Art Museum and SkyDom",
         "Books the ticket offline at the counter only cause of unpredictable weather",
-        "Checkout the Eagle's Nest Skywalk at a middle station",
-        "Nature walk is a short hike but a steep one so brace yourself",
+        `Checkout our complete <b><a href="/malaysia/langkawi/travel-guide" target="_blank" class="text-teal-600 underline">SkyCab, SkyBridge & Oriental Village Guide</a></b>`
       ],
       image:
         "/images/country/malaysia/places/langkawi/blog/langkawi_cablecar.jpg",
@@ -1100,7 +1102,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       id: 4,
       title: "Scuba at Sipadan Island",
       description:
-        `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  <b>Check our complate guide <a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">best places for scuba</a>.</b>`,
+        `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  Checkout our detalied guide to discover <b><a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">top places for scuba in Malaysia</a>.</b>`,
       operationalHours: "7:00 AM – 4:00 PM",
       location: "Sipadan Island",
       price: "Depends on Diving Packages",
@@ -1209,7 +1211,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       price: "RM40–RM70 ",
       duration: "Half day",
       tips: [
-        `Visit our detailed <a href="/malaysia/perhentian-islands/top-things-to-do" target="_blank" class="text-teal-600 underline">Perhentian Island travel guide</a> and things to do`,
+        `Visit our detailed <b><a href="/malaysia/perhentian-islands/travel-guide" target="_blank" class="text-teal-600 underline">Perhentian Island travel guide</a></b> and <b><a href="/malaysia/perhentian-islands/top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do</a></b>`,
       ],
       image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
       imageCreditHTML: null,
@@ -1267,7 +1269,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       duration: "2-4 hours per session",
       tips: [
         `Book early during peak seasons`,
-        `Checkout our complete <a href="/malaysia/scuba-diving" target="_blank" class="text-teal-600 underline">Malaysia diving guide</a>`,
+        `Checkout our complete <b><a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">Malaysia diving guide</a></b>`,
       ],
       image: "/images/country/malaysia/places/perhentian/blog/snorkeling.jpg",
       imageCreditHTML: null,
@@ -1294,6 +1296,9 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       duration: "2 Hours",
       image: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",
       imageCreditHTML: null,
+      tips: [
+        `Check which night market is operating on each specific day on <b><a href="/malaysia/langkawi/travel-guide" target="_blank" class="text-teal-600 underline">Langakwi Night Market Guide</a></b>`,
+      ],
     },
     {
       id: 18,

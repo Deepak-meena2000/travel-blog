@@ -90,7 +90,7 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
     price: "RM200–RM350 per dive <br /> PADI courses from RM 1,200",
     duration: "1–1.5 hours",
     tips: [
-      `Checkout our Malaysia's <a href="/malaysia/best-places-to-scuba" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">best places to scuba dive</a> artcile`,
+      `Checkout our Malaysia's <b><a href="/malaysia/best-places-to-scuba" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">best places to scuba dive</a></b> artcile`,
       "Don’t worry if you are a noob, there is a fun dive session planned just for beginners",
       "Book early in peak season",,
     ],

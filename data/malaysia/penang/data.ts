@@ -135,7 +135,7 @@ export const PENANG_BLOG_POST = [
     tips: [
       "Try small portions at multiple places",
       "Visit local coffee shops for authentic experiences",
-      `Checkout Malaysia's <a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a> and the <a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a>`,
+      `Checkout Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> and the <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a></b>`,
     ],
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://www.pexels.com/photo/food-stalls-on-the-street-in-a-town-6770743/'><u>Nikita Belokhonov</u></a>",

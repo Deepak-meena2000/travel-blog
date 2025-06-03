@@ -64,7 +64,10 @@ export const LANGKAWI_BLOG_POST = [
   {
     name: "Langkawi Night Markets",
     description:
-      "Langkawi's night markets offer an authentic taste of local life with bustling stalls selling delicious street food, fresh produce, clothing, and handicrafts. These markets rotate locations nightly in different towns like Kuah, Pantai Cenang, and Temoyong, providing a vibrant atmosphere to explore. Sample local favorites such as satay, laksa, grilled seafood, kuih (traditional sweets) and many more. It's an ideal way to immerse yourself in Malaysian culture, meet locals, and find souvenirs.",
+      `Langkawi's night markets offer an authentic taste of local life with bustling stalls selling delicious street food, fresh produce, clothing, and handicrafts. These markets rotate locations nightly in different towns like Kuah, Pantai Cenang, and Temoyong, providing a vibrant atmosphere to explore. Sample local favorites such as satay, laksa, grilled seafood, kuih (traditional sweets) and many more. It's an ideal way to immerse yourself in Malaysian culture, meet locals, and find souvenirs. 
+      </br>
+      </br>
+      <li>Checkout Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> and the <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a></b>`,
     location: "Rotating locations (Kuah, Pantai Cenang, Temoyong)",
     operationalHours:
       "Generally 5:00 PM – 11:00 PM </br>(varies by location and day)",
@@ -73,7 +76,7 @@ export const LANGKAWI_BLOG_POST = [
     tips: [
       "Bring cash as many vendors don't accept cards",
       "Arrive hungry and ready to try multiple dishes!",
-      `Check which night market is operating on each specific day on <a href="/malaysia/langkawi/travel-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">Complete Langakwi guide</a>`,
+      `Check which night market is operating on each specific day on <b><a href="/malaysia/langkawi/travel-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">Complete Langakwi guide</a></b>`,
     ],
     image: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",
   },

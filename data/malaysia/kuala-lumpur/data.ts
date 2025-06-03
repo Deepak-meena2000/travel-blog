@@ -29,7 +29,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
     image: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
     description: `Batu Caves is one of Malaysia's most iconic spiritual landmarks, located just north of Kuala Lumpur. This massive limestone hill houses a series of caves and cave temples, the most famous being the Temple Cave, accessed by climbing 272 vibrant steps. Dominated by a towering golden statue of Lord Murugan, it's a major site for Hindu worship and the focal point of the annual Thaipusam festival. In addition to religious significance, the site is also rich in natural wonder. You can explore the Dark Cave (for guided eco-tours) or the colorful Cave Villa, filled with murals and statues. Batu Caves is free to enter, though some attractions charge a fee`,
     operationalHours: "6:00 AM – 9:00 PM",
-    price: "Free, Dark Caves and Cave villa has RM 15-20 per adult",
+    price: "Free </br>Dark Caves/Cave villa costs RM15-RM20",
     location: "Gombak, Selangor</br>(30 mins ride from city centre)",
     duration: "2 Hours",
     tips: [
@@ -59,11 +59,11 @@ export const KAULA_LUMPUR_BLOG_POST = [
       "Jalan Alor is Kuala Lumpur's legendary food street, renowned for its buzzing nightlife and mouth watering street food. Located in the heart of Bukit Bintang, this street transforms into a culinary haven as the sun sets. The aroma of grilled satay, spicy noodles, fresh seafood, and exotic fruits fills the air while locals and tourists gather at open-air tables. It's the best place to sample authentic Malaysian flavors, as well as Chinese, Thai, and even fusion dishes. From budget-friendly snacks to full meals, Jalan Alor offers a true taste of KL's food culture.",
     location: "Bukit Bintang",
     operationalHours: "Daily, best visited 5:00 PM – midnight",
-    price: "Free entry; food from RM 10–40",
+    price: "Free entry; food from RM10–RM40",
     duration: "1–2 hours",
     tips: [
       "Try satay, Marshmallow IceCream and char kway teow",
-      `Checkout our Malaysia's <a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a> and <a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a> artciles`,
+      `Checkout our Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> and <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a></b> artciles`,
     ],
   },
   {
@@ -134,7 +134,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
     description:
       "Kuala Lumpur is home to several high-rise hotels and residences that offer stunning infinity pools with sweeping views of the skyline – particularly the Petronas Towers and KL Tower. Popular options include the rooftop pools at The Face Suites, Banyan Tree KL, or Regalia Residences (some offer day passes). Whether you're swimming at sunrise or lounging at sunset, it's a relaxing and luxurious way to unwind in the city. Infinity pools here are also social media favorites, perfect for that iconic KL backdrop.",
     operationalHours: "Typically 7:00 AM – 7:00 PM",
-    price: "Free for guests</br> RM 30–100 for day passes (if offered)",
+    price: "Free for guests</br> RM30–RM100 for day passes (if offered)",
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://unsplash.com/@bozh_ntu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Bo Zhang</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-couple-of-people-that-are-standing-in-a-pool-QPHgtzYijp0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
@@ -204,7 +204,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
       "Heli Lounge Bar is one of the most unique nightlife spots in Kuala Lumpur. By day it serves as a functioning helicopter pad; by night, it transforms into a rooftop bar offering 360° views of the KL skyline. Located on the 34th floor of Menara KH, this open-air lounge gives unobstructed sights of both the Petronas Towers and KL Tower. The ambiance is casual yet stylish, with DJs spinning tracks as the city lights come alive. It's a perfect sunset or nightcap location with minimal entrance fuss.",
     location: "Menara KH, Jalan Sultan Ismail",
     operationalHours: "Daily, 5:00 PM – 12:00 AM",
-    price: "Free entry with a drink purchase <br /> (RM 30+)",
+    price: "Free entry with a drink purchase <br /> (RM30+)",
     tips: [
       "Arrive before 6:30 PM to catch the sunset",
       "No flip-flops or shorts allowed",
