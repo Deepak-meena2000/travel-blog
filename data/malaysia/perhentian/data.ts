@@ -242,23 +242,33 @@ export const PERHENTIAN_ISLANDS_BLOG_POST = [
 export const PERHENTIAN_ISLANDS_TRAVEL_GUIDE = {
   title: "Perhentian Islands Travel Guide",
   category: "Travel Guide",
+  overview: "Looking to explore the Perhentian Islands? This travel guide is your go-to resource for planning a seamless and unforgettable island escape. Designed to help you navigate every aspect of your trip, the guide offers clear, practical insights for first-time and returning visitors alike. From travel logistics to local tips, you’ll find everything you need to make informed decisions. Whether you're after crystal-clear waters, peaceful stays, or island adventures, this guide covers it all. With helpful advice on getting there, where to stay, what to eat, and more, your Perhentian experience begins with confident planning right here.",
   tableOfContentHeading: "Perhentian Islands Travel Guide",
   image:
     "/images/country/malaysia/places/perhentian/things_to_know_perhentian.jpg",
   slug: "/perhentian-islands/travel-guide",
   data: [
-    {
+     {
       id: 1,
+      icon: "INFO",
+      heading: "About Perhentian Islands",
+      description: `
+            The Perhentian Islands are located approximately 19 kilometers (12 miles) off the northeast coast of Peninsular Malaysia, in the state of Terengganu. 
+      </br>
+      </br>
+    Perhentian Besar (Big Island) is more relaxed and family-friendly, known for its resorts, peaceful beaches, and calm waters. Perhentian Kecil (Small Island) is more popular with backpackers, offering vibrant nightlife, budget stays, and social beach scenes. Both islands boast turquoise waters, rich coral reefs, and abundant marine life, making them top destinations for snorkeling and scuba diving. There are no roads or ATMs, giving the islands a laid-back, off-grid vibe
+
+                `,
+    },
+    {
+      id: 2,
       icon: "PLANE",
       heading: "How to Reach Perhentian Islands",
       description: `
-    To reach the Perhentian Islands, the most common route is via Kuala Besut Jetty in Terengganu. First, fly to Kota Bharu Airport (KBR), the nearest airport. From there, it’s about a 1-hour taxi or Grab ride to Kuala Besut Jetty.
-    <br />
-    <n
-    Speedboats operate regularly between 9:00 AM and 5:00 PM, costing RM35–RM70 one-way depending on your boat type. The boat ride takes approximately 30–45 minutes to either Perhentian Besar (Big Island) or Perhentian Kecil (Small Island).
+    To reach the Perhentian Islands, the most common route is via Kuala Besut Jetty in Terengganu. First, <b>fly to Kota Bharu Airport (KBR),</b> the nearest airport. From there, it’s about a <b>1-hour taxi or Grab ride to Kuala Besut Jetty.</b>Speedboats operate regularly between <b>7:00 AM and 5:00 PM</b>, costing RM35–RM70 one-way depending on your boat type. The boat ride takes approximately <b>30–45 minutes</b> to either Perhentian Besar (Big Island) or Perhentian Kecil (Small Island).
     <br />
     <br />
-    It’s highly recommended to book your boat transfer in advance, you can book the jetty from redbus or easybook. If you're arriving from Kuala Terengganu or other parts of Malaysia, buses and taxis are also available to reach Kuala Besut.
+    It’s highly recommended to book your boat transfer in advance, you can book the jetty from redbus or easybook. If you're arriving from Kuala Terengganu or other parts of Malaysia, <b>buses and taxis are also available to reach Kuala Besut directly</b>.
     <br />
     <br />
     The jetty is the only departure point for travelers heading to Perhentian, and boats may be canceled in case of bad weather, so always check the forecast.
@@ -266,32 +276,20 @@ export const PERHENTIAN_ISLANDS_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 2,
-      icon: "CAR",
+      id: 3,
+      icon: "BOAT",
       heading: "Getting Around Perhentian Islands",
       description: `
    Getting around the Perhentian Islands is simple and part of the charm. There are no cars or roads—transport is mainly by boat or foot. Water taxis are the most common mode of travel between beaches and from Perhentian Besar to Perhentian Kecil.
    <br />
    <br />
-   Fares range from RM10 to RM50 depending on distance.
+   Fares range from RM10-RM50 depending on distance.
    <br />
    <br />
    Walking is ideal for exploring local beaches, jungle trails, and accommodation zones. On Perhentian Kecil, it’s possible to hike through the island’s interior trails to reach less crowded beaches like Adam & Eve or D’Lagoon. Boat transfers run in the dark as well put the prices doubles up, so plan accordingly. It’s best to carry cash, as boat taxis are often paid directly to the operator. Always confirm the price beforehand.
    <br />
    <br />
    For snorkeling or island hopping, many tours include transportation, making it a convenient way to see multiple spots in a single trip.
-                `,
-    },
-    {
-      id: 3,
-      icon: "INFO",
-      heading: "About Perhentian Islands",
-      description: `
-      The Perhentian Islands are a pair of stunning tropical islands located off the northeastern coast of Peninsular Malaysia.
-      <br />
-    <br />
-    Perhentian Besar (Big Island) is more relaxed and family-friendly, known for its resorts, peaceful beaches, and calm waters. Perhentian Kecil (Small Island) is more popular with backpackers, offering vibrant nightlife, budget stays, and social beach scenes. Both islands boast turquoise waters, rich coral reefs, and abundant marine life, making them top destinations for snorkeling and scuba diving. There are no roads or ATMs, giving the islands a laid-back, off-grid vibe
-
                 `,
     },
     {
@@ -312,7 +310,6 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
         <li>Long Beach</li>
 
         <br />
-        <br />
         Perhentian Besar, on the other hand, offers more mid-range and luxury options, with beachfront chalets, boutique resorts, and family villas ranging from RM200 to RM700+ per night. Most resorts include breakfast and offer direct beach access. Some even have diving centers or arrange snorkeling tours.
 
         <br />
@@ -323,7 +320,6 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
         <li>Tuna Bay</li>
         <li>Petani Beach</li>
 
-        <br />
         <br />
         Since there are no ATMs, always carry enough cash. Book well in advance during peak seasons (May–August), as accommodation fills up fast. Whether you’re after social hostels, romantic retreats, or family-friendly stays, both islands cater to a variety of travel styles.
 
@@ -342,11 +338,10 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
      <b>May to August</b> is peak season, so expect higher accommodation prices and crowds—booking in advance is essential.
       <br />
       <br />
-      Avoid the monsoon season from <b>November to February</b>, as the islands shut down for safety, with most resorts and boat services closed. Water activities are suspended during this period due to rough seas.
+      <b>Avoid the monsoon season from November to February</b>, as the islands shut down for safety, with most resorts and boat services closed. Water activities are suspended during this period due to rough seas.
       <br />
       <br />
       If you prefer fewer crowds and slightly lower rates, aim for <b>March–April or September–October</b>. These shoulder months still offer good weather and full access to tours and facilities, making them ideal for a more relaxed trip.
-
                 `,
     },
     {
@@ -366,10 +361,15 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
       icon: "CHECK",
       heading: "Must-Do Things",
       description: `
-    The Perhentian Islands are a paradise for outdoor lovers and ocean enthusiasts. Start with <b>snorkeling</b> some of the best coral reefs are found near Turtle Bay, Shark Point, and Romantic Beach. Full-day snorkeling tours cost around <b>RM50–RM80</b> per person and cover 4–6 popular spots. <b>Scuba diving</b> is a must if you want to explore deeper reefs, shipwrecks, and marine life—dives range from <b>RM200–RM350</b>, while certification courses start from <b>RM1000</b>.
+      The Perhentian Islands are a paradise for outdoor lovers and ocean enthusiasts. Start with <b>snorkeling</b> some of the best coral reefs are found near Turtle Bay, Shark Point, and Romantic Beach. Full-day snorkeling tours cost around <b>RM50–RM80</b> per person and cover 4–6 popular spots. <b>Scuba diving</b> is a must if you want to explore deeper reefs, shipwrecks, and marine life—dives range from <b>RM200–RM350</b>, while certification courses start from <b>RM1000</b>.
     <br />
     <br />
-    Hike jungle trails on Kecil to hidden beaches like Adam & Eve Beach, and enjoy scenic views of the island. Don’t miss <b>kayaking</b> (<b>RM30/hour</b>), <b>sunset watching</b> at Coral Bay, or a <b>beach picnic</b>. In the evenings, Long Beach comes alive with fire shows and beach bars. Whether it’s relaxing or exploring, the islands offer the perfect blend of nature, adventure, and chill vibes.
+    Hike jungle trails on Kecil to hidden beaches like Adam & Eve Beach, and enjoy scenic views of the island. Don’t miss <b>kayaking</b>, <b>sunset watching</b> at Coral Bay, or a <b>beach picnic</b>. In the evenings, Long Beach comes alive with fire shows and beach bars. Whether it’s relaxing or exploring, the islands offer the perfect blend of nature, adventure, and chill vibes.
+    </br>
+    </br>
+
+     <li>
+      Perhentian Island is packed with exciting activities for every traveler. Discover our <a href="/malaysia/perhentian-islands/top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in perhentian</a> to explore more.</li>
 
                 `,
     },

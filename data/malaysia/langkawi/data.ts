@@ -1,3 +1,5 @@
+import { Description } from "@radix-ui/react-toast";
+
 export const LANGKAWI_BLOG_POST = [
   {
     name: "Langkawi Cable Car (SkyCab)",
@@ -258,12 +260,19 @@ export const LANGKAWI_BLOG_POST = [
 export const LANGKAWI_TRAVEL_GUIDE = {
   title: "Langkawi Travel Guide",
   category: "Travel Guide",
+  overview: "Planning a trip to Langkawi? This comprehensive travel guide is designed to help you make the most of your visit to Malaysia’s island gem. From practical travel tips to local insights, this blog covers everything you need to know for a smooth and memorable journey. Whether you're visiting for a relaxing beach escape or an immersive cultural experience, this guide offers clear, organized advice to help you plan confidently. With detailed sections on transport, stay options, food, and more, this Langkawi guide ensures you arrive informed, prepared, and ready to enjoy every moment of your island adventure.",
   tableOfContentHeading: "Langkawi Travel Guide",
   image: "/images/country/malaysia/places/langkawi/travel_guide_banner.jpg",
   slug: "/langkawi/travel-guide",
   data: [
     {
       id: 1,
+      icon: "INFO",
+      heading: "A Glimpse into Langkawi's History & Culture",
+      description:"Langkawi’s history is a blend of myth, legend, and maritime significance. The island is famously linked to the legend of Mahsuri, a woman wrongly accused of adultery and sentenced to death. With her dying breath, she cursed Langkawi for seven generations—a tale still deeply rooted in local identity. Historically, Langkawi was a quiet fishing and farming region, occasionally plagued by pirates due to its strategic location along ancient trade routes in the Andaman Sea.</br></br>In 1987, Langkawi gained duty-free status, transforming it into a thriving tourist destination. Despite modernization, the island has preserved its cultural essence. Traditional Malay customs, Islamic practices, and influences from neighboring Thailand are reflected in local architecture, food, language, and festivals. Villages (kampungs) still maintain a slower pace of life, offering visitors a glimpse into authentic island living. Langkawi’s warm hospitality and rich heritage make it not just a scenic getaway but a culturally immersive experience."
+    },
+    {
+      id: 2,
       icon: "PLANE",
       heading: "How to Reach",
       description: `
@@ -286,7 +295,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 2,
+      id: 3,
       icon: "CAR",
       heading: "Getting Around Langkawi",
       description: `
@@ -307,7 +316,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 3,
+      id: 4,
       icon: "HOTEL",
       heading: "Where to Stay in Langkawi",
       description: `
@@ -324,7 +333,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 4,
+      id: 5,
       icon: "FOOD",
       heading: "What and Where to Eat and Drink in Langkawi",
       description: `
@@ -345,7 +354,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 5,
+      id: 6,
       icon: "CLOCK",
       heading: "What’s the street market schedule ?",
       description: `
@@ -368,7 +377,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 6,
+      id: 7,
       icon: "SHOPPING",
       heading: "Where to Shop in Langkawi",
       description: `
@@ -379,7 +388,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 7,
+      id: 8,
       icon: "SUN",
       heading: "When Is the Best Time to Visit Langkawi?",
       description: `
@@ -396,7 +405,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 7,
+      id: 9,
       icon: "CLOCK",
       heading: "How Long to Spend in Langkawi",
       description: `
@@ -413,7 +422,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
                 `,
     },
     {
-      id: 8,
+      id: 10,
       icon: "BUILDING",
       heading: "SkyCab, SkyBridge & Oriental Village Guide",
       description: `
@@ -432,14 +441,17 @@ export const LANGKAWI_TRAVEL_GUIDE = {
       <li>Eagle SkyWalk - RM50 </li>
       <li>SkyBridge - Free(Need to take either Nature walk or SkyGlide)</li>
       <br />
-      <br />
       Allocate half day to fully enjoy the SkyCab ride, bridge walk, and all the village’s side-activities without rushing. If you’re short on time, prioritize the cable car + SkyBridge (2–3 hours) and pick one or two village attractions.
-
+</br>
+</br>
+<li>
+Langkawi is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in Langkawi</a> to explore more.
+</li>
 
                 `,
     },
     {
-      id: 9,
+      id: 11,
       icon: "PIN",
       heading: "Quick Tips for Traveling in Langkawi",
       description: `
@@ -457,11 +469,8 @@ export const LANGKAWI_TRAVEL_GUIDE = {
       <br />
       <li><b>Book Tours Ahead:</b> Popular activities like island hopping, mangrove tours, and the cable car sell out in peak season—reserve at least two weeks in advance.</li>
       <br />
-      <li><b>🛍️ Duty-Free Deals:</b> Take advantage of duty-free prices on chocolates, liquor, and cosmetics—but check your home country’s import limits before you stock up.</li>
-      <br />
-
-
-                `,
+      <li><b>Duty-Free Deals:</b> Take advantage of duty-free prices on chocolates, liquor, and cosmetics—but check your home country’s import limits before you stock up.</li>
+      <br />          `,
     },
   ],
   related_articles: [],

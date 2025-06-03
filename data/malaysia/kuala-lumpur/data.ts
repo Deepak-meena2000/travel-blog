@@ -372,7 +372,10 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
       icon: "PLANE",
       heading: "How to Get to Kuala Lumpur",
       description: `
-                Getting to Kuala Lumpur is easy and well-supported by international and regional connections.  The main entry point is <b>Kuala Lumpur International Airport (KLIA)</b>, located about 45 km south of the city. The airport is served by major airlines and budget carriers like AirAsia. From KLIA, the KLIA Ekspres train gets you to the city center in under 30 minutes. Buses and taxis are also available, but travel time may vary due to traffic. Overland travel from Singapore and Thailand is possible via trains or long-distance buses.
+                Getting to Kuala Lumpur is easy and well-supported by international and regional connections.  The main entry point is <b>Kuala Lumpur International Airport (KLIA)</b>, located about 45 km south of the city. The airport is served by major airlines and budget carriers like AirAsia. 
+                </br>
+                </br>
+                From KLIA, the KLIA Ekspres train gets you to the city center in under 30 minutes. Buses and taxis are also available, but travel time may vary due to traffic. Overland travel from Singapore and Thailand is possible via trains or long-distance buses.
                 `,
     },
     {
@@ -386,8 +389,10 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
       Buy a <b>Touch 'n Go</b> card to access multiple transport modes without the hassle of tickets.
       <br />
       <br />
-      Ride-hailing apps like <b>Grab</b> are widely used and often cheaper than taxis. Walking is possible in areas like Bukit Bintang and Chinatown. Avoid driving unless necessary—KL’s traffic and limited parking make public transport a better choice.
-      <br />
+      Ride-hailing apps like <b>Grab</b> are widely used and often cheaper than taxis. Walking is possible in areas like Bukit Bintang and Chinatown. Avoid driving unless necessary as KL’s traffic and limited parking make public transport a better choice.
+      </br>
+      </br>
+      <li><b>Short Grab ride (2–5 km) :</b> RM5–RM10 ($1–$2 USD)</li>
       <br />
       For airport transfers or longer trips, consider KLIA Ekspres or private transfers. Plan routes with Google Maps or Moovit to avoid getting stuck during peak hours.
       <br />
@@ -399,7 +404,6 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
       <br />
       <b>Daily pass (MyCity Pass):</b>
       <br />
-      <br />
        <li>
        1-day unlimited rides: RM5 ($1.10 USD)
        </li>
@@ -407,9 +411,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
        3-day unlimited rides: RM15 ($3.20 USD)
        </li>
        <br>
-       <b>Touch 'n Go card:</b> RM10 card + top-up credit
-       <br>
-       <b>Short Grab ride (2–5 km) :</b> RM5–RM10 ($1–$2 USD)
+       <li><b>Touch 'n Go card:</b> RM10 card + top-up credit</li>
 
         `,
     },
@@ -420,6 +422,7 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
       description: `
         Kuala Lumpur offers a wide range of accommodations to suit every traveler and budget. <b>Bukit Bintang</b> is the most popular area, filled with hotels, restaurants, and shopping malls. Consider booking a stay with <b>rooftop pools</b> and modern amenities in Bukit Bintang, given its proximity to major <b>tourist attractions</b> and excellent public transport connectivity. The area provides numerous options across all price ranges, making it ideal for both budget and mid-range travelers.
         <br />
+
         <br />
         <b>KLCC (Kuala Lumpur City Centre)</b> is perfect for luxury stays with stunning city views.
         <br />
@@ -446,6 +449,8 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
       <br />
       You can find tasty meals at street stalls for as little as RM5–RM10 ($1–$2 USD), mid-range meals at cafes or restaurants cost RM15–RM30 ($3–$6 USD). KL also has trendy cafes, rooftop bars, and fine dining options for those seeking variety.
       <br />
+      </br><li>
+      Checkout our Malaysia's <a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a> and <a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a> artciles.</li>
       <br />
       Alcohol is available but expensive due to taxes—expect to pay RM15–RM30 for a beer at bars
 
@@ -496,6 +501,11 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
          <br />
          <br />
          Those traveling at a slower pace or combining KL with remote work may enjoy staying a week or more.
+         </br>
+         </br>
+         <li>
+         Discover our relaxed <a href="/malaysia/16-days-itinerary" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">16-day Malaysia itinerary</a>, perfect for exploring the KL and other cities at an easy, enjoyable pace.
+         </li>
 
         `,
     },
@@ -504,10 +514,10 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
       icon: "PIN",
       heading: "Must-Do Things in Kuala Lumpur",
       description: `
-        Kuala Lumpur is packed with exciting activities for every traveler. Discover the top things to do in Kuala lumpur.
+        Kuala Lumpur is packed with exciting activities for every traveler. Check out the <a href="/malaysia/kuala-lumpur/top-things-to-do" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Kuala lumpur</a> to explore more.
         <br />
         <br />
-        Stroll through colorful neighborhoods like Chinatown and Little India to discover the city’s cultural roots. Explore local food markets and don’t miss trying iconic Malaysian dishes. Visit temples and mosques to appreciate KL’s rich spiritual diversity. Take in panoramic city views from one of the many rooftop lounges. Enjoy a shopping spree or a relaxing spa day—all at surprisingly affordable prices.
+        Visitors can admire stunning city views from towering observation decks like <b>KL Tower and the iconic Petronas Twin Tower</b>, Stroll through colorful neighborhoods like <b>Chinatown and Little India to discover the city’s cultural roots</b>. Explore local food markets and don’t miss trying iconic Malaysian dishes. Visit temples and mosques to appreciate KL’s rich spiritual diversity. Take in panoramic city views from one of the many rooftop lounges. Enjoy a shopping spree or a relaxing spa day—all at surprisingly affordable prices.
         <br />
         <br />
         If you have extra time, join a local cooking class or cultural tour to dig deeper. The mix of tradition, innovation, and hospitality makes KL an unforgettable stop in Southeast Asia. Whether you're a foodie, explorer, or laid-back traveler, there’s something here for you.
@@ -542,7 +552,6 @@ export const KAULA_LUMPUR_TRAVEL_GUIDE = {
       <li><b>Tap water isn't safe</b>, drink bottled or filtered water.</li>
       <li>Dress modestly when visiting religious sites.</li>
       <li>Carry small change for street food and local markets.</li>
-      <li>Watch for pickpockets in crowded areas.</li>
       <li>Tipping is not mandatory but appreciated.</li>
       <li><b>Carry an umbrella</b>, weather can change fast.</li>
       <li>Use a travel SIM or eSIM for mobile data.</li>

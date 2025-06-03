@@ -498,9 +498,6 @@ With Penang’s diverse offerings, from heritage and nature to food and shopping
       icon: "CHECK",
       heading: "Must-Do Things",
       description: `
-      Penang is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in penang</a> articles to view all.
-      </br>
-      </br>
 Start your trip with a walking tour of <b>George Town’s historic center, explore iconic street art, visit The Blue Mansion</b>, and sample snacks at local cafés. Discover Chinese heritage at Khoo Kongsi and take a trishaw ride for a nostalgic city view. 
 </br>
 </br>
@@ -508,6 +505,11 @@ Visit <b>Kek Lok Si Temple</b> in Air Itam, one of Southeast Asia’s largest Bu
 </br>
 </br>
 Street food is a must so head to Gurney Drive or Chulia Street for the best bites. Dive into the island’s multicultural mix in Little India or visit <b>Tan Jetty</b> for peaceful waterfront views. Don’t forget to snap photos at Umbrella Alley or the famous street murals scattered across the city.
+</br>
+</br>
+<li>
+Penang is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in penang</a> articles to view all.
+</li>
 
 `,
     },
