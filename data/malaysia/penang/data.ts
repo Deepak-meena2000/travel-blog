@@ -22,8 +22,7 @@ export const PENANG_BLOG_POST = [
       "Penang Hill, or Bukit Bendera, offers a cool, scenic retreat from George Town's tropical heat. Located 833 meters above sea level, it's famous for its panoramic views, lush greenery, colonial-era bungalows, and a refreshing climate. Visitors typically ascend via the iconic funicular railway, one of the oldest in the world. At the summit, you'll find walking trails, a mosque, temples, and various viewpoints. Penang Hill is ideal for families, nature lovers, and couples seeking a peaceful escape with photo-worthy views of the island and mainland. The hill is especially magical during sunrise and sunset.",
     location: "Air Itam, Penang",
     operationalHours: "6:30 AM – 11:00 PM",
-    price:
-      `Funicular train Round Trip:  <br />  
+    price: `Funicular train Round Trip:  <br />  
       <li>RM12–RM30 (Standard) </li>
       <li >RM40-RM80 (Fast Lane)</li>
       The Habitat and Skywalk - RM60`,
@@ -36,7 +35,7 @@ export const PENANG_BLOG_POST = [
   {
     id: 3,
     name: "The Habitat & Curtis Crest Skywalk",
-    image: "/images/country/malaysia/places/penang/blog/the_habitat.jpg",
+    image: "/images/country/malaysia/places/penang/blog/habitat.jpg",
     description:
       "Nestled within the pristine rainforest atop Penang Hill, The Habitat is an eco-conscious attraction offering immersive experiences in biodiversity and conservation. It features scenic nature trails, themed gardens, and the famed Curtis Crest Tree Top Walk, the highest public viewing point on the island. The canopy walkways and skywalk provide unmatched 360° views on clear days, you can even see Langkawi! Educational exhibits, butterfly sightings, and the chance to spot dusky leaf monkeys or rare flora make it perfect for families and nature enthusiasts. Evening walks offer a magical experience under the stars.",
     location: "Within Penang Hill, near the top station",
@@ -154,6 +153,8 @@ export const PENANG_BLOG_POST = [
       "Book tickets online for discounts",
       "Visit in the evening for sunset and night views",
     ],
+    imageCreditHTML:
+      "Photo by <a target='_blank' href='https://www.pexels.com/photo/time-lapse-photography-of-cars-on-road-near-high-rise-buildings-during-night-time-10882866/'><u>Teh  Yu Song</u></a>",
   },
   {
     id: 10,
@@ -169,7 +170,7 @@ export const PENANG_BLOG_POST = [
   {
     id: 11,
     name: "Hawker Stalls at Gurney Drive",
-    image: "/images/country/malaysia/places/penang/blog/gurney_drive.jpg.jpg",
+    image: "/images/country/malaysia/places/penang/blog/hawker_stalls.jpg",
     description:
       "Gurney Drive is Penang's most iconic seafront promenade, renowned for its vibrant evening hawker scene. As the sun sets, Gurney Drive Hawker Centre comes alive with the aroma of sizzling woks and spicy broths. This open-air food haven offers authentic Penang street food at budget-friendly prices. Try Char Kway Teow, Penang Laksa, grilled seafood, and local desserts. It's a must-visit for food lovers looking to experience the heart of Penang's culinary culture.",
     location: "Gurney Drive, George Town",
@@ -181,6 +182,8 @@ export const PENANG_BLOG_POST = [
       "Carry cash",
       "Share plates to taste more dishes",
     ],
+    imageCreditHTML:
+      "Photo by <a target='_blank' href='https://unsplash.com/@zyteng?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Kelvin Zyteng</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-man-standing-in-front-of-a-table-filled-with-food-XQCZLL3gEhw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
   },
   {
     id: 12,
@@ -240,7 +243,8 @@ export const PENANG_BLOG_POST = [
   {
     id: 15,
     name: "George Town Walk Tour",
-    image: "/images/country/malaysia/places/penang/blog/george_town_walk.jpg",
+    image:
+      "/images/country/malaysia/places/penang/blog/george_town_walk_tour.jpg",
     description:
       "The George Town Walk Tour is the best way to immerse yourself in the city's rich history and culture. Led by knowledgeable guides, the walking tours cover heritage buildings, street art, and local stories, providing deep insight into Penang's multicultural roots. Perfect for first-time visitors wanting to explore George Town's iconic landmarks and hidden gems at a leisurely pace.",
     location: "George Town",
@@ -251,6 +255,8 @@ export const PENANG_BLOG_POST = [
       "Wear comfortable shoes and carry water",
       "Book in advance, especially during peak tourist season",
     ],
+    imageCreditHTML:
+      "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Nasi_Kandar_with_Fried_Chicken_and_Eggplant_-_Old_Town_Kopitiam_Mamak_AUD8_(4274115544).jpg'><u>Alpha from Melbourne, Australia</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/2.0'><u>CC BY-SA 2.0</u></a>, via Wikimedia Commons",
   },
   {
     id: 16,
@@ -361,7 +367,7 @@ export const PENANG_BLOG_POST = [
 export const PENANG_TRAVEL_GUIDE = {
   title: "Penang Travel Guide",
   category: "Travel Guide",
-  overview : `Planning a trip to Penang? This guide covers all the essential things you need to know before you go. From the best time to visit and how to get around, to local customs, travel costs, safety tips, and what to pack we’ve included everything to help you travel smart. Whether you’re a first-time visitor or returning to explore more, this article will help you prepare with confidence. Learn about Penang’s cultural etiquette, useful apps, currency matters, and important dos and don’ts so you can make the most of your trip. With practical advice and insider tips, this guide is your go-to resource for a smooth, enjoyable, and informed travel experience in one of Malaysia’s most exciting destinations.`,
+  overview: `Planning a trip to Penang? This guide covers all the essential things you need to know before you go. From the best time to visit and how to get around, to local customs, travel costs, safety tips, and what to pack we’ve included everything to help you travel smart. Whether you’re a first-time visitor or returning to explore more, this article will help you prepare with confidence. Learn about Penang’s cultural etiquette, useful apps, currency matters, and important dos and don’ts so you can make the most of your trip. With practical advice and insider tips, this guide is your go-to resource for a smooth, enjoyable, and informed travel experience in one of Malaysia’s most exciting destinations.`,
   image: "/images/country/malaysia/places/penang/things_to_know_penang.jpg",
   slug: "/penang/travel-guide",
   data: [
@@ -372,7 +378,7 @@ export const PENANG_TRAVEL_GUIDE = {
       description: `
 Penang’s rich history and diverse culture are what make it truly unique among Malaysia’s destinations. Once a strategic trading post under British colonial rule, Penang, especially George Town, has preserved its colonial architecture, heritage shophouses, and multicultural roots. The city is a living museum, where <b>Chinese clan houses, Indian temples, Muslim mosques, and British-built churches coexist harmoniously.</b> This cultural blend is reflected in local customs, festivals, languages, and, most notably, food. The population is a vibrant mix of Malays, Chinese, Indians, and Eurasians, each contributing to Penang’s identity. Events like Chinese New Year, Thaipusam, and George Town Festival highlight this diversity. Heritage conservation efforts have helped <b>George Town earn its UNESCO World Heritage status.</b> `,
     },
-     {
+    {
       id: 2,
       icon: "PLANE",
       heading: "How to Reach",
@@ -412,7 +418,7 @@ Scenic ferries connect Penang Island to Butterworth (mainland) and nearby island
 A great option for both travelers and vehicles.
  `,
     },
-  {
+    {
       id: 3,
       icon: "CAR",
       heading: "Getting Around",
@@ -464,7 +470,7 @@ For Vegetarian options or Indian cuisine, head to Little India in George Town, o
 If you’re after fine dining, Kebaya at Seven Terraces and Indigo at The Blue Mansion offer elevated Peranakan flavors in stunning heritage settings. Love Lane and Chulia Street have vibrant nightlife scenes, perfect for cocktails, craft beer, or chilled evenings at rooftop cafés.
 `,
     },
-     {
+    {
       id: 6,
       icon: "SUN",
       heading: "Best Time to Visit",

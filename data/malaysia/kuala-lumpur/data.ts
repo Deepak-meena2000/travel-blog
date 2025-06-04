@@ -199,7 +199,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 15,
     name: "Heli Lounge Bar",
-    image: "/images/country/malaysia/places/kuala_lumpur/blog/heli_lounge_bar.jpg",
+    image: "placeholder?height=0&width=0",
     description:
       "Heli Lounge Bar is one of the most unique nightlife spots in Kuala Lumpur. By day it serves as a functioning helicopter pad; by night, it transforms into a rooftop bar offering 360° views of the KL skyline. Located on the 34th floor of Menara KH, this open-air lounge gives unobstructed sights of both the Petronas Towers and KL Tower. The ambiance is casual yet stylish, with DJs spinning tracks as the city lights come alive. It's a perfect sunset or nightcap location with minimal entrance fuss.",
     location: "Menara KH, Jalan Sultan Ismail",
@@ -267,9 +267,9 @@ export const KAULA_LUMPUR_BLOG_POST = [
     location: "Jalan Cenderawasih, Lake Gardens",
     operationalHours: "Daily, 9:00 AM – 6:00 PM",
     price: `
-    <li>RM 85 (Adults)
+    <li>RM85 (Adults)
     </li>
-    <li>RM 60 (Children)
+    <li>RM60 (Children)
     </li>
     Discounts for MyKad
     `,
@@ -289,11 +289,11 @@ export const KAULA_LUMPUR_BLOG_POST = [
     location: "Jalan Damansara, near KL Sentral",
     operationalHours: "Daily, 9:00 AM – 5:00 PM",
     price: `
-    <li>RM 5 (Adults)
+    <li>RM5 (Adults)
     </li>
-    <li>RM 2 (Children)
+    <li>RM2 (Children)
     </li>
-    <li>RM 2 (MyKad)
+    <li>RM2 (MyKad)
     </li>
     `,
     duration: "1.5 to 2 hours",
