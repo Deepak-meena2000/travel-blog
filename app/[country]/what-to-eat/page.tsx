@@ -11,6 +11,8 @@ import {
   DollarSign,
   Star,
   Info,
+  Leaf,
+  BookOpenCheck,
 } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { ThankYouSection } from "@/components/thank-you-section";
@@ -114,7 +116,7 @@ export default async function FoodGuidePage({
                             <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
                               <MapPin className="w-4 h-4 text-teal-600" />
                             </div>
-                            <div className="flex items-center gap-2 mb-2 flex-wrap">
+                            <div className="flex flex-col justify-start just- gap-2 mb-2 flex-wrap">
                               <h3 className="font-semibold text-sm md:text-base text-gray-900">
                                 Where to Try It:
                               </h3>
@@ -124,44 +126,41 @@ export default async function FoodGuidePage({
                             </div>
                           </div>
 
-                            <div className="flex items-center gap-2 mb-2">
-                              <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
-                                <DollarSign className="w-4 h-4 text-teal-600" />
-                              </div>
-                              <div className="flex items-center gap-2 flex-wrap">
-                                <h3 className="font-semibold text-sm md:text-base text-gray-900">
-                                  Price Range:
-                                </h3>
-                                <p className="text-sm md:text-base text-gray-600">
-                                  {food.otherInfo.range}
-                                </p>
-                              </div>
+                          <div className="flex items-start gap-2 mb-2">
+                            <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
+                              <DollarSign className="w-4 h-4 text-teal-600" />
+                            </div>
+                            <div className="flex flex-col justify-start gap-2 mb-2 flex-wrap">
+                              <h3 className="font-semibold text-sm md:text-base text-gray-900">
+                                Price Range:
+                              </h3>
+                              <p className="text-sm md:text-base text-gray-600">
+                                {food.otherInfo.range}
+                              </p>
+                            </div>
                           </div>
 
-                            <div className="flex items-center gap-2 mb-2">
-                              <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
-                                <Utensils className="w-4 h-4 text-teal-600" />
-                              </div>
-                              <div className="flex items-center gap-2 flex-wrap">
-                                <h3 className="font-semibold text-sm md:text-base text-gray-900">
-                                  Vegetarian Available:
-                                </h3>
-                              </div>
+                          <div className="flex items-start gap-2 mb-2">
+                            <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
+                              <Leaf className="w-4 h-4 text-teal-600" />
+                            </div>
+                            <div className="flex flex-col justify-start gap-2 flex-wrap">
+                              <h3 className="font-semibold text-sm md:text-base text-gray-900">
+                                Vegetarian Version:
+                              </h3>
                               <p className="text-sm md:text-base text-gray-600">
-                                {food.otherInfo.vegetarian_available
-                                  ? "Yes"
-                                  : "No"}
+                                {food.otherInfo.vegetarian_available}
                               </p>
-
+                            </div>
                           </div>
                         </div>
 
                         {food.otherInfo.tips &&
                           food.otherInfo.tips.length > 0 && (
                             <div className="mt-4">
-                              <div className="flex items-center gap-2 mb-2">
+                              <div className="flex items-start gap-2 mb-2">
                                 <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center">
-                                  <Info className="w-4 h-4 text-teal-600" />
+                                  <BookOpenCheck className="w-4 h-4 text-teal-600" />
                                 </div>
                                 <h3 className="font-semibold text-sm md:text-base text-gray-900">
                                   Tips:

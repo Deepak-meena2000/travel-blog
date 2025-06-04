@@ -16,7 +16,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
-import styles from "@/app/index.module.css"
+import styles from "@/app/index.module.css";
 const CityBlogListing = ({
   countryName,
   cityData,
@@ -55,35 +55,40 @@ const CityBlogListing = ({
                   {index + 1}. {blog.name}
                 </h2>
               </div>
-              <div className="relative">
-                <figure className="relative w-full">
-                  <Image
-                    src={blog.image || "/placeholder.svg?height=300&width=500"}
-                    alt={blog.name }
-                    width={800}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
-                  {blog.imageCreditHTML && (
-                    <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: blog.imageCreditHTML,
-                        }}
-                      ></span>
-                    </figcaption>
-                  )}
-                </figure>
+              {blog?.image && blog?.image !== "/placeholder.svg" ? (
+                <div className="relative">
+                  <figure className="relative w-full">
+                    <Image
+                      src={
+                        blog.image || "/placeholder.svg?height=300&width=500"
+                      }
+                      alt={blog.name}
+                      width={800}
+                      height={400}
+                      className="w-full h-full object-cover"
+                    />
+                    {blog.imageCreditHTML && (
+                      <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: blog.imageCreditHTML,
+                          }}
+                        ></span>
+                      </figcaption>
+                    )}
+                  </figure>
 
-                <div className="absolute" />
-              </div>
+                  <div className="absolute" />
+                </div>
+              ) : null}
 
               <CardContent className="p-8">
-                <p dangerouslySetInnerHTML={{
-                  __html:  blog.description
-                }} className={`${styles.list_style} text-gray-600 font-normal mb-6`} />
-
-
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: blog.description,
+                  }}
+                  className={`${styles.list_style} text-gray-600 font-normal mb-6`}
+                />
 
                 <div className="grid md:grid-cols-2 gap-4">
                   {blog.operationalHours && (
@@ -113,9 +118,12 @@ const CityBlogListing = ({
                         <h4 className="font-semibold text-slate-800 mb-1">
                           Location
                         </h4>
-                         <p dangerouslySetInnerHTML={{
-                                __html : blog.location
-                              }} className="text-slate-600"/>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: blog.location,
+                          }}
+                          className="text-slate-600"
+                        />
                       </div>
                     </div>
                   )}
@@ -168,9 +176,12 @@ const CityBlogListing = ({
                         return (
                           <div key={i} className="flex items-start space-x-3">
                             <Check className="h-3 w-3 text-teal-500 mt-1.5 flex-shrink-0" />
-                             <p dangerouslySetInnerHTML={{
-                                    __html : tip
-                                  }} className="text-sm text-slate-600"/>
+                            <p
+                              dangerouslySetInnerHTML={{
+                                __html: tip,
+                              }}
+                              className="text-sm text-slate-600"
+                            />
                           </div>
                         );
                       })}

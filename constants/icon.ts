@@ -26,7 +26,14 @@ import {
   Backpack,
   CableCar,
   Store,
-  Sailboat
+  Sailboat,
+  Coffee,
+  Sandwich,
+  Salad,
+  IceCream,
+  Star,
+  Wine,
+  Info,
 } from "lucide-react";
 
 export const ICONS = {
@@ -57,5 +64,16 @@ export const ICONS = {
   BACKPACK: Backpack,
   CABLE_CAR: CableCar,
   STORE: Store,
-  SAILBOAT: Sailboat
+  SAILBOAT: Sailboat,
+  COFFEE: Coffee,
+  LUNCH: Utensils,
+  STREET_FOOD: Sandwich,
+  VEGETARIAN: Salad,
+  DRINKS: Soup,
+  DESSERTS: IceCream,
+  SIDES: Star,
+  SANDWICH: Sandwich,
+  PLACES: Building,
+  ALCOHOL: Wine,
+  QUICK_TIPS: Info,
 };

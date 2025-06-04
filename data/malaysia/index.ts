@@ -30,7 +30,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Street stalls, mamak shops, roadside warungs, and even high-end cafés.",
       range: "RM7–RM15 (basic to premium toppings)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
     },
   },
   {
@@ -43,7 +43,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat: "Mamak stalls and Indian Muslim restaurants.",
       range:
         "RM1.50–RM5 (basic to filled varieties like egg, cheese, or sardine)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [
         "Pair it with teh tarik for the ultimate local breakfast or supper combo.",
       ],
@@ -62,7 +62,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Hawker stalls in Penang (e.g., Lorong Selamat), Chinese kopitiams, and local night markets.",
       range: "RM6–RM12",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: ["Request without seafood and sausage for vegetarian version"],
     },
     imageCreditHTML: `
@@ -78,7 +78,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Local hawker stalls and food courts—try Penang's Air Itam Market for Asam Laksa or KL's Madras Lane for Curry Laksa.",
       range: "RM6–RM10",
-      vegetarian_available: false,
+      vegetarian_available: "Non Available",
       tips: [],
     },
     image: "/images/country/malaysia/food/laksa.jpg",
@@ -95,7 +95,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Nasi Kandar Line Clear (Penang), Kayu Nasi Kandar, Pelita, and other 24-hour mamak eateries.",
       range: "RM8–RM20 (depends on number/type of sides)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [
         "Request rice with vegetable sides, dhal, and eggs; avoid meat gravies.",
       ],
@@ -114,7 +114,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Mamak stalls, Indian Muslim restaurants, and night markets.",
       range: "RM5–RM9",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [
         "Request no meat or seafood; tofu and egg versions are widely available.",
         "Always ask for 'kurang pedas' (less spicy) if you're sensitive to chili heat.",
@@ -134,7 +134,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Malay restaurants, Nasi Campur stalls, and during festivals like Hari Raya.",
       range: "RM8–RM15 per portion",
-      vegetarian_available: false,
+      vegetarian_available: "Non Available",
       tips: [],
     },
     image: "/images/country/malaysia/food/rendang.jpg",
@@ -151,7 +151,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Chinese kopitiams, hawker stalls, and chicken rice shops (e.g., Nam Heong, The Chicken Rice Shop).",
       range: "RM6–RM12",
-      vegetarian_available: false,
+      vegetarian_available: "Non Available",
       tips: [],
     },
     image: "/images/country/malaysia/food/hainese_checken_rice.jpg",
@@ -168,7 +168,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Coastal hawker stalls, night markets, and food courts—try Kampung Baru in KL or Medan Ikan Bakar in Melaka.",
       range: "RM10–RM25 (based on fish type and size)",
-      vegetarian_available: false,
+      vegetarian_available: "Non Available",
       tips: [],
     },
     image: "/images/country/malaysia/food/ikan_bakar.jpg",
@@ -185,7 +185,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Warungs, Malay food courts, and roadside stalls. Famous places include Warung Kak Long and Gerai Rahmah.",
       range: "RM6–RM15 (based on selection)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: ["Plenty of veggie, egg, and tofu options; avoid meat gravies."],
     },
     image: "/images/country/malaysia/food/nasi_campur.jpg",
@@ -203,7 +203,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Satay Kajang Haji Samuri (Selangor), street food markets, and night markets.",
       range: "RM1–RM1.50 per stick; sets cost RM8–RM15",
-      vegetarian_available: false,
+      vegetarian_available: "Non Available",
       tips: [],
     },
   },
@@ -217,7 +217,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Food courts, street stalls, and night markets—try Gurney Drive (Penang) or Brickfields (KL).",
       range: "RM5–RM10",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: ["Especially Penang Rojak, just confirm sauce ingredients."],
     },
   },
@@ -231,7 +231,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Pasar malam (night markets), bazaar Ramadan stalls, and street vendors.",
       range: "RM5–RM9",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: ["Egg-and-onion-only versions are available at some stalls."],
     },
   },
@@ -245,7 +245,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Mamak restaurants, night markets, and bazaar Ramadan stalls.",
       range: "RM6–RM12 (depending on size and filling)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [
         "Egg-and-onion versions or potato fillings available at some stalls.",
       ],
@@ -260,7 +260,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Indian restaurants like Sri Nirwana Maju (Bangsar), Devi's Corner, or Raju's Banana Leaf.",
       range: "RM7–RM15 (vegetarian), RM15–RM25 (with meat)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: ["Free rice and curry refills are common—just ask!"],
     },
     image: "/images/country/malaysia/food/banana_leaf_rice.jpg",
@@ -276,7 +276,7 @@ export const MALAYSISA_FOOD_DATA = [
     otherInfo: {
       where_to_eat: "Mamak stalls, kopitiams, Indian Muslim restaurants.",
       range: "RM1.50–RM3",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [],
     },
     image: "/images/country/malaysia/food/teh_tarik.jpg",
@@ -293,7 +293,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Pasar malam (night markets), roadside vendors, and morning markets.",
       range: "RM2–RM5 (depends on filling and size)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [],
     },
     image: "/images/country/malaysia/food/apam_balik.jpg",
@@ -310,7 +310,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Specialty shops in Sarawak, local cake shops, and major airports.",
       range: "RM10–RM40 (depending on size and pattern)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: ["Most versions are vegetarian, but check for eggs"],
     },
   },
@@ -322,7 +322,7 @@ export const MALAYSISA_FOOD_DATA = [
     otherInfo: {
       where_to_eat: "Hawker centers, food courts, and dessert shops",
       range: "RM4–RM7",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [],
     },
     image: "/images/country/malaysia/food/ais_kacang.jpg",
@@ -338,7 +338,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Penang Road Famous Teochew Cendol (George Town), Jonker 88 (Melaka), or roadside stalls.",
       range: "RM3–RM6",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [
         "Go for the original version before trying durian cendol—it's intensely flavorful and not for everyone.",
       ],
@@ -357,7 +357,7 @@ export const MALAYSISA_FOOD_DATA = [
     otherInfo: {
       where_to_eat: "Durian stalls, markets, and dedicated durian farms.",
       range: "RM10–RM80 (based on variety and weight)",
-      vegetarian_available: true,
+      vegetarian_available: "Available",
       tips: [
         "First time? Start with durian ice cream or crepes before diving into the raw fruit.",
       ],
@@ -372,7 +372,7 @@ export const MALAYSISA_FOOD_DATA = [
       where_to_eat:
         "Malay restaurants, Nyonya eateries, or places like Village Park or Madam Kwan's.",
       range: "RM15–RM30",
-      vegetarian_available: false,
+      vegetarian_available: "Non Available",
       tips: [
         "Ask for less spicy if you're not used to Malaysian heat levels—it can get intense!",
       ],
@@ -386,7 +386,7 @@ export const MALAYSISA_FOOD_DATA = [
 
 export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
-    id: "breakfast",
+    id: "COFFEE",
     title: "Start Your Day Right: Best Malaysian Breakfasts",
     description: "",
     items: [
@@ -443,7 +443,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "lunch-dinner",
+    id: "LUNCH",
     title: "Hearty Plates: Must-Try Lunch & Dinner Dishes",
     description: "",
     items: [
@@ -538,7 +538,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "street-food",
+    id: "SANDWICH",
     title: "Iconic Malaysian Street Food",
     description: "",
     items: [
@@ -579,7 +579,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "vegetarian",
+    id: "VEGETARIAN",
     title: "Top Vegetarian Picks",
     description: "",
     items: [
@@ -629,7 +629,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "drinks",
+    id: "DRINKS",
     title: "Sip & Refresh: Popular Malaysian Drinks",
     description: "",
     items: [
@@ -679,7 +679,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "desserts",
+    id: "DESSERTS",
     title: "Sweet Endings: Delicious Local Desserts",
     description: "",
     items: [
@@ -730,7 +730,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "sides",
+    id: "SIDES",
     title: "Tasty Extras: Snacks, Sides & Small Bites",
     description: "",
     items: [
@@ -772,15 +772,14 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "place",
+    id: "PLACES",
     title: "Foodie’s Map: Must-Visit Eateries in Malaysia",
     description: "",
     items: [
       {
         id: 40,
         name: "Penang",
-        description:
-          "Penang is often called Malaysia’s food capital, and for good reason. George Town’s street food is legendary—try <b>Char Kway Teow at Siam Road or Penang Assam Laksa at Air Itam Market</b>. Visit <b>Gurney Drive Hawker Centre</b> for an all-in-one foodie experience. For sweet treats, grab cendol from <b>Penang Road Famous Teochew Cendol.</b> Upscale options include <b>Kebaya Dining Room and Indigo at Blue Mansion </b>for Peranakan cuisine in heritage settings. Penang's mix of Chinese, Malay, Indian, and Nyonya influences makes it a must-visit for serious foodies.",
+        description: `Penang is often called Malaysia’s food capital, and for good reason. George Town’s street food is legendary—try <b>Char Kway Teow at Siam Road or Penang Assam Laksa at Air Itam Market</b>. Visit <b>Gurney Drive Hawker Centre</b> for an all-in-one foodie experience. For sweet treats, grab cendol from <b>Penang Road Famous Teochew Cendol.</b> Upscale options include <b>Kebaya Dining Room and Indigo at Blue Mansion </b>for Peranakan cuisine in heritage settings. Penang's mix of Chinese, Malay, Indian, and Nyonya influences makes it a must-visit for serious foodies.`,
         image: "/images/country/malaysia/places/penang/penang.jpg",
       },
       {
@@ -800,7 +799,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "alcohol",
+    id: "ALCOHOL",
     title: "Bar Hop Malaysia: Where to Find Your Favorite Pour",
     description: "",
     items: [
@@ -1263,7 +1262,7 @@ export const MALAYSIA_DATA = {
       slug: "top-things-to-do",
       title: "Top Things to do in Malaysia",
       image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
-      description: `Top Things to do in Malaysia`,
+      description: `Malaysia is a vibrant blend of cultures, landscapes, and experiences that cater to every type of traveler. From the modern pulse of Kuala Lumpur to the heritage charm of Penang and the wild beauty of Borneo, this Southeast Asian gem offers a colorful palette of activities waiting to be explored. Whether you're a foodie, adventure seeker, culture lover, or beach enthusiast, Malaysia has something special for you. In this article, we dive into the top things to do across the country from scenic highlands and tropical islands to bustling night markets and cultural hotspots. Discover where to enjoy authentic street food, chase waterfalls in lush rainforests, or unwind on white-sand beaches. Whether you're wandering the vibrant streets of George Town, exploring nature in the Cameron Highlands, or soaking in the serenity of coastal islands, you’ll find unforgettable moments at every turn`,
       category: "Activities",
     },
     {
@@ -1447,7 +1446,7 @@ The Perhentian Islands are a tropical haven known for their crystal-clear waters
       slug: "/malaysia/top-things-to-do",
       title: "Top Things to do in Malaysia",
       image: "/images/country/malaysia/top_things_do_malaysia.jpg",
-      description: `Top Things to do in Malaysia`,
+      description: `Malaysia is a vibrant blend of cultures, landscapes, and experiences that cater to every type of traveler. From the modern pulse of Kuala Lumpur to the heritage charm of Penang and the wild beauty of Borneo, this Southeast Asian gem offers a colorful palette of activities waiting to be explored. Whether you're a foodie, adventure seeker, culture lover, or beach enthusiast, Malaysia has something special for you. In this article, we dive into the top things to do across the country from scenic highlands and tropical islands to bustling night markets and cultural hotspots. Discover where to enjoy authentic street food, chase waterfalls in lush rainforests, or unwind on white-sand beaches. Whether you're wandering the vibrant streets of George Town, exploring nature in the Cameron Highlands, or soaking in the serenity of coastal islands, you’ll find unforgettable moments at every turn.`,
       category: "Activities",
     },
     {
@@ -1569,48 +1568,48 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     overview:
       "Craving a true taste of Malaysia? Our comprehensive food guide has you covered. Here, you’ll find everything you need to explore the country’s vibrant culinary scene — from iconic breakfast dishes and hearty dinners to irresistible street food and delightful desserts. We’ve curated the must-try local specialties and, more importantly, where to find them — whether it’s a famous hawker stall, a hidden alleyway eatery, or a beloved neighborhood restaurant. This guide is your go-to resource for discovering what to eat and where to eat it, making your Malaysian food journey as authentic and flavorful as possible.",
     data: MALAYSIA_COMPLETE_FOOD_GUIDE,
-    best_places: {
-      penang: {
-        title: "Penang",
-        description:
-          "Penang is often called Malaysia’s food capital, and for good reason. George Town’s street food is legendary—try <b>Char Kway Teow at Siam Road or Penang Assam Laksa at Air Itam Market</b>. Visit <b>Gurney Drive Hawker Centre</b> for an all-in-one foodie experience. For sweet treats, grab cendol from <b>Penang Road Famous Teochew Cendol.</b> Upscale options include <b>Kebaya Dining Room and Indigo at Blue Mansion </b>for Peranakan cuisine in heritage settings. Penang's mix of Chinese, Malay, Indian, and Nyonya influences makes it a must-visit for serious foodies.",
-        image: "/placeholder.svg",
-        highlights: [
-          "Char Kway Teow at Siam Road",
-          "Penang Assam Laksa at Air Itam Market",
-          "Gurney Drive Hawker Centre",
-          "Penang Road Famous Teochew Cendol",
-          "Kebaya Dining Room",
-          "Indigo at Blue Mansion",
-        ],
-      },
-      kuala_lumpur: {
-        title: "Kuala Lumpur",
-        description:
-          "Kuala Lumpur is a food lover's paradise, offering everything from upscale dining to street food gems. Visit Jalan Alor for buzzing night market vibes and local favorites like satay and grilled seafood.",
-        image: "/placeholder.svg",
-        highlights: [
-          "Jalan Alor Night Market",
-          "Bijan Bar & Restaurant",
-          "Lot 10 Hutong",
-          "Brickfields",
-          "Village Park",
-        ],
-      },
-      langkawi: {
-        title: "Langkawi – Best Places to Eat",
-        description:
-          "Langkawi's food scene blends beachside charm with local flavors. Cenang Beach is packed with seafood restaurants like Orkid Ria and The Cliff, offering fresh catches with ocean views.",
-        image: "/placeholder.svg",
-        highlights: [
-          "Cenang Beach seafood restaurants",
-          "Nasi Dagang Pak Malau",
-          "Night Markets",
-          "Yellow Café",
-          "Smiling Buffalo",
-        ],
-      },
-    },
+    // best_places: {
+    //   penang: {
+    //     title: "Penang",
+    //     description:
+    //       "Penang is often called Malaysia’s food capital, and for good reason. George Town’s street food is legendary—try <b>Char Kway Teow at Siam Road or Penang Assam Laksa at Air Itam Market</b>. Visit <b>Gurney Drive Hawker Centre</b> for an all-in-one foodie experience. For sweet treats, grab cendol from <b>Penang Road Famous Teochew Cendol.</b> Upscale options include <b>Kebaya Dining Room and Indigo at Blue Mansion </b>for Peranakan cuisine in heritage settings. Penang's mix of Chinese, Malay, Indian, and Nyonya influences makes it a must-visit for serious foodies.",
+    //     image: "/placeholder.svg",
+    //     highlights: [
+    //       "Char Kway Teow at Siam Road",
+    //       "Penang Assam Laksa at Air Itam Market",
+    //       "Gurney Drive Hawker Centre",
+    //       "Penang Road Famous Teochew Cendol",
+    //       "Kebaya Dining Room",
+    //       "Indigo at Blue Mansion",
+    //     ],
+    //   },
+    //   kuala_lumpur: {
+    //     title: "Kuala Lumpur",
+    //     description:
+    //       "Kuala Lumpur is a food lover's paradise, offering everything from upscale dining to street food gems. Visit Jalan Alor for buzzing night market vibes and local favorites like satay and grilled seafood.",
+    //     image: "/placeholder.svg",
+    //     highlights: [
+    //       "Jalan Alor Night Market",
+    //       "Bijan Bar & Restaurant",
+    //       "Lot 10 Hutong",
+    //       "Brickfields",
+    //       "Village Park",
+    //     ],
+    //   },
+    //   langkawi: {
+    //     title: "Langkawi – Best Places to Eat",
+    //     description:
+    //       "Langkawi's food scene blends beachside charm with local flavors. Cenang Beach is packed with seafood restaurants like Orkid Ria and The Cliff, offering fresh catches with ocean views.",
+    //     image: "/placeholder.svg",
+    //     highlights: [
+    //       "Cenang Beach seafood restaurants",
+    //       "Nasi Dagang Pak Malau",
+    //       "Night Markets",
+    //       "Yellow Café",
+    //       "Smiling Buffalo",
+    //     ],
+    //   },
+    // },
     quick_tips: [
       "Carry cash – many smaller eateries and roadside stalls don't accept cards",
       "Try everything once – from street stalls to high-end dining",
