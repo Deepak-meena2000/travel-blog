@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -19,12 +19,14 @@ import { ThankYouSection } from "@/components/thank-you-section";
 import styles from "@/app/index.module.css";
 import OverViewSection from "../things-to-know-before-going/components/overview";
 import { notFound } from "next/navigation";
+import TableOfContent from "../things-to-know-before-going/components/table-of-content";
+import { ICONS } from "@/constants/icon";
 
 interface FoodItem {
   id: number;
   name: string;
   description: string;
-  image: string;
+  image?: string;
   imageCreditHTML?: string;
 }
 
@@ -48,10 +50,11 @@ interface CompleteFoodGuide {
   description: string;
   overview: string;
   data: FoodCategory[];
-  best_places: {
+  best_places?: {
     [key: string]: BestPlaces;
   };
   quick_tips: string[];
+  alcohol_info?: string;
 }
 
 interface Destination {
@@ -77,9 +80,34 @@ export default function CompleteFoodGuidePage({
   const country = destinations.find((d) => d.slug === countryName);
 
   if (!country) {
-    // Optionally, render a fallback UI or redirect
-    return notFound();
+    notFound();
   }
+
+  const { complete_food_guide } = country;
+  const { heading, image, description, overview, data, quick_tips } =
+    complete_food_guide;
+
+  // Transform data for table of contents using useMemo
+  const tableOfContentItems = useMemo(() => {
+    const items =
+      data?.map((category) => ({
+        heading: category.title,
+        description: category.description,
+        icon: category.id as keyof typeof ICONS,
+        id: category.id,
+      })) || [];
+
+    // Add Quick Tips to table of contents
+    return [
+      ...items,
+      {
+        heading: "Quick Tips",
+        description: "Essential tips for the best food experience",
+        icon: "QUICK_TIPS",
+        id: "quick-tips",
+      },
+    ];
+  }, [data]);
 
   useEffect(() => {
     // Handle smooth scrolling
@@ -93,40 +121,14 @@ export default function CompleteFoodGuidePage({
     };
   }, []);
 
-  const foodGuide = country?.complete_food_guide;
-  const relatedArticles = country?.whatToEat?.related_articles || [];
-
-  const getCategoryIcon = (categoryId: string) => {
-    switch (categoryId) {
-      case "breakfast":
-        return <Coffee className="w-5 h-5" />;
-      case "lunch-dinner":
-        return <Utensils className="w-5 h-5" />;
-      case "street-food":
-        return <Sandwich className="w-5 h-5" />;
-      case "vegetarian":
-        return <Salad className="w-5 h-5" />;
-      case "drinks":
-        return <Soup className="w-5 h-5" />;
-      case "desserts":
-        return <IceCream className="w-5 h-5" />;
-      case "sides":
-        return <Star className="w-5 h-5" />;
-      default:
-        return <Utensils className="w-5 h-5" />;
-    }
-  };
-
-  // Smooth scroll for anchor links
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full">
         <div className="aspect-[6/5] lg:aspect-[14/5] w-full">
           <Image
-            src={foodGuide?.image || "/placeholder.svg"}
-            alt={foodGuide?.heading || "Food Guide"}
+            src={image || "/placeholder.svg"}
+            alt={`${heading || country.name} Food Guide`}
             width={1200}
             height={100}
             className="w-full h-full object-cover"
@@ -135,13 +137,8 @@ export default function CompleteFoodGuidePage({
         </div>
         <div className={styles.imageGradientOverlay}></div>
         <div className="absolute inset-0 flex items-end pb-4 px-4 z-20">
-          <div className="text-white flex flex-col justify-center items-center w-full">
-            <h1 className="text-2xl md:text-5xl font-bold mb-4">
-              {foodGuide?.heading}
-            </h1>
-            <p className="text-xl text-gray-200 max-w-2xl text-center">
-              {foodGuide?.description}
-            </p>
+          <div className="text-white flex justify-center items-center w-full">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">{heading}</h1>
           </div>
         </div>
       </section>
@@ -149,7 +146,7 @@ export default function CompleteFoodGuidePage({
       {/* Overview Section */}
       <section className="py-8 bg-white">
         <div className="max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8">
-          <OverViewSection IconName={Coffee} overview={foodGuide?.overview} />
+          <OverViewSection IconName={Utensils} overview={overview} />
         </div>
       </section>
 
@@ -159,170 +156,205 @@ export default function CompleteFoodGuidePage({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2">
-              {/* Table of Contents */}
-              <Card className="w-full max-w-2xl mb-8 bg-white border border-gray-200 shadow-sm rounded-xl">
-                <CardContent className="p-8">
-                  <h3 className="text-lg font-bold text-gray-900 mb-6 tracking-wider uppercase">
-                    Table of Contents
-                  </h3>
-                  <div className="space-y-3">
-                    {foodGuide?.data.map(
-                      (category: FoodCategory, idx: number) => (
-                        <a
-                          key={category.id}
-                          href={`#${category.id}`}
-                          className="block text-base text-gray-800 font-medium px-2 py-1 rounded transition-colors duration-150 hover:underline hover:text-teal-700 focus:underline focus:text-teal-800 outline-none"
-                        >
-                          <span className="mr-2 text-gray-500">{idx + 1}.</span>
-                          {category.title}
-                        </a>
-                      )
-                    )}
-                  </div>
+              {/* Table of Contents Section */}
+              <Card
+                className="mb-8 animate-fade-in"
+                style={{
+                  background: "linear-gradient(90deg, #ffe5d0 0%, #fff 100%)",
+                  border: "1px solid #e0e7ff",
+                  boxShadow: "0 2px 16px rgba(0,0,0,0.04)",
+                }}
+              >
+                <CardContent className="p-6">
+                  <TableOfContent
+                    heading={`${country.name} Food Guide`}
+                    items={tableOfContentItems}
+                  />
                 </CardContent>
               </Card>
 
               {/* Food Categories */}
-              <div className="space-y-16">
-                {foodGuide?.data.map((category: FoodCategory) => (
-                  <div key={category.id} id={category.id} className="relative">
-                    {/* Category Header with Background */}
-                    <div className="relative mb-8">
-                      <div className="absolute inset-0 bg-teal-50 rounded-lg transform -skew-y-1"></div>
-                      <div className="relative flex items-center gap-4 p-6">
-                        <div className="p-3 w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white">
-                          {getCategoryIcon(category.id)}
-                        </div>
-                        <div>
-                          <h2 className="text-2xl font-bold text-gray-900">
-                            {category.title}
-                          </h2>
-                          <p className="text-gray-600 mt-1">
-                            {category.description}
-                          </p>
+              <div className="space-y-12">
+                {data.map((category) => {
+                  const IconComponent =
+                    ICONS[category.id as keyof typeof ICONS] || Info;
+                  return (
+                    <div
+                      key={category.id}
+                      id={category.title.toLowerCase().replace(/\s+/g, "-")}
+                      className="scroll-mt-24"
+                    >
+                      {/* Category Header with Background */}
+                      <div className="relative mb-8">
+                        <div className="absolute inset-0 bg-teal-50 rounded-lg transform -skew-y-1"></div>
+                        <div className="relative flex items-center gap-4 p-6">
+                          <div className="p-3 w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white">
+                            <IconComponent className="w-5 h-5" />
+                          </div>
+                          <div>
+                            <h2 className="text-2xl font-bold text-gray-900">
+                              {category.title}
+                            </h2>
+                            <p
+                              dangerouslySetInnerHTML={{
+                                __html: category.description,
+                              }}
+                              className={`${styles.list_style} text-gray-600 mt-1`}
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    {/* Food Items Grid */}
-                    <div className="grid grid-cols-1 gap-6">
-                      {category.items.map((food: FoodItem) => (
+                      {/* Food Items Grid */}
+                      <div className="grid grid-cols-1 gap-6">
+                        {category.items.map((food, index) => (
+                          <Card
+                            key={food.id}
+                            className="overflow-hidden animate-slide-up hover:shadow-lg transition-shadow duration-300 food-card"
+                            id={`item-${food.id}`}
+                          >
+                            <div className="w-full p-8 border-l-8 border-teal-600 ">
+                              <h2 className="text-2xl font-semibold text-black">
+                                {index + 1}. {food.name}
+                              </h2>
+                            </div>
+                            <div className="relative">
+                              <figure className="relative w-full">
+                                <Image
+                                  src={
+                                    food.image ||
+                                    "/placeholder.svg?height=300&width=500"
+                                  }
+                                  alt={food.name}
+                                  width={800}
+                                  height={400}
+                                  className="w-full h-full object-cover"
+                                />
+                                {food.imageCreditHTML && (
+                                  <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
+                                    <span
+                                      dangerouslySetInnerHTML={{
+                                        __html: food.imageCreditHTML,
+                                      }}
+                                    ></span>
+                                  </figcaption>
+                                )}
+                              </figure>
+
+                              <div className="absolute" />
+                            </div>
+                            <CardContent className="p-6">
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: food.description,
+                                }}
+                                className={`${styles.list_style} text-gray-600`}
+                              />
+                            </CardContent>
+                          </Card>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+
+                {/* Best Places to Eat */}
+                {/* <div id="best-places" className="relative">
+                  <div className="relative mb-8">
+                    <div className="absolute inset-0 bg-teal-50 rounded-lg transform -skew-y-1"></div>
+                    <div className="relative flex items-center gap-4 p-6">
+                      <div className="p-3 w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white">
+                        <Star className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h2 className="text-2xl font-bold text-gray-900">
+                          Best Places to Eat
+                        </h2>
+                        <p className="text-gray-600 mt-1">
+                          Discover the finest dining spots across different
+                          cities
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+ <div className="grid grid-cols-1 gap-6">
+                    {Object.entries(foodGuide?.best_places || {}).map(
+                      ([city, info]) => (
                         <Card
-                          key={food.id}
-                          className="overflow-hidden animate-slide-up hover:shadow-lg transition-shadow duration-300 food-card"
-                          id={`${category.id}-item-${food.id}`}
+                          key={city}
+                          className="overflow-hidden animate-slide-up hover:shadow-lg transition-shadow duration-300"
                         >
                           <div className="relative">
                             <figure className="relative w-full">
                               <Image
-                                src={
-                                  food.image ||
-                                  "/placeholder.svg?height=300&width=500"
-                                }
-                                alt={food.name}
+                                src={info.image || "/placeholder.svg"}
+                                alt={info.title}
                                 width={800}
                                 height={400}
                                 className="w-full h-full object-cover"
                               />
-                              {food.imageCreditHTML && (
-                                <figcaption className="text-right  text-[8px] opacity-20 pr-4 ">
-                                  <span
-                                    dangerouslySetInnerHTML={{
-                                      __html: food.imageCreditHTML,
-                                    }}
-                                  ></span>
-                                </figcaption>
-                              )}
                             </figure>
-
-                            <div className="absolute" />
                           </div>
                           <CardContent className="p-6">
                             <h3 className="text-xl font-bold text-gray-900 mb-4">
-                              {food.name}
+                              {info.title}
                             </h3>
-                            <p className="text-gray-600">{food.description}</p>
+                            <p
+                              dangerouslySetInnerHTML={{
+                                __html: info.description,
+                              }}
+                              className={`${styles.list_style} text-gray-600 mb-4`}
+                            />
+
+                            <ul className="list-disc list-inside text-gray-600">
+                              {info.highlights.map(
+                                (highlight: string, i: number) => (
+                                  <li key={i}>{highlight}</li>
+                                )
+                              )}
+                            </ul>
                           </CardContent>
                         </Card>
-                      ))}
+                      )
+                    )}
+                  </div>
+                </div> */}
+
+                {/* Quick Tips */}
+                <div id="quick-tips" className="relative">
+                  <div className="relative mb-8">
+                    <div className="absolute inset-0 bg-teal-50 rounded-lg transform -skew-y-1"></div>
+                    <div className="relative flex items-center gap-4 p-6">
+                      <div className="p-3 w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white">
+                        <Info className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h2 className="text-2xl font-bold text-gray-900">
+                          Quick Tips
+                        </h2>
+                        <p className="text-gray-600 mt-1">
+                          Essential tips for the best food experience
+                        </p>
+                      </div>
                     </div>
-
-                    {/* Category Separator */}
-                    {/* ... existing code ... */}
                   </div>
-                ))}
-              </div>
 
-              {/* Best Places to Eat */}
-              <div className="mt-24">
-                <div className="relative mb-8">
-                  <div className="absolute inset-0 bg-slate-50 rounded-lg transform -skew-y-1"></div>
-                  <div className="relative p-6">
-                    <h2 className="text-2xl font-bold text-gray-900">
-                      Best Places to Eat
-                    </h2>
-                  </div>
+                  <Card className="hover:shadow-lg transition-shadow duration-300">
+                    <CardContent className="p-6">
+                      <ul className="grid grid-cols-1 gap-4">
+                        {quick_tips.map((tip: string, i: number) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                              <Info className="w-4 h-4 text-teal-600" />
+                            </div>
+                            <span className="text-gray-600">{tip}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
                 </div>
-                <div className="grid grid-cols-1 gap-6">
-                  {Object.entries(foodGuide?.best_places || {}).map(
-                    ([city, info]) => (
-                      <Card
-                        key={city}
-                        className="hover:shadow-lg transition-shadow duration-300"
-                      >
-                        <div className="relative w-full h-48 rounded-t-lg overflow-hidden">
-                          <Image
-                            src={info.image || "/placeholder.svg"}
-                            alt={info.title}
-                            fill
-                            className="object-cover w-full h-full"
-                          />
-                        </div>
-                        <CardContent className="p-6">
-                          <h4 className="font-semibold text-gray-900 mb-2">
-                            {info.title}
-                          </h4>
-                          <p className="text-sm text-gray-600 mb-4">
-                            {info.description}
-                          </p>
-                          <ul className="list-disc list-inside text-sm text-gray-600">
-                            {info.highlights.map(
-                              (highlight: string, i: number) => (
-                                <li key={i}>{highlight}</li>
-                              )
-                            )}
-                          </ul>
-                        </CardContent>
-                      </Card>
-                    )
-                  )}
-                </div>
-              </div>
-
-              {/* Quick Tips */}
-              <div className="mt-16">
-                <div className="relative mb-8">
-                  <div className="absolute inset-0 bg-slate-50 rounded-lg transform -skew-y-1"></div>
-                  <div className="relative p-6">
-                    <h2 className="text-2xl font-bold text-gray-900">
-                      Quick Tips
-                    </h2>
-                  </div>
-                </div>
-                <Card className="hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <ul className="grid grid-cols-1 gap-4">
-                      {foodGuide?.quick_tips.map((tip: string, i: number) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                            <Info className="w-4 h-4 text-teal-600" />
-                          </div>
-                          <span className="text-gray-600">{tip}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
               </div>
             </div>
 
@@ -334,29 +366,31 @@ export default function CompleteFoodGuidePage({
                     Related Articles
                   </h3>
                   <div className="space-y-4">
-                    {relatedArticles?.map((article, index) => (
-                      <Link
-                        key={index}
-                        href={`/${countryName}/${article.slug}`}
-                        className="flex gap-3 group cursor-pointer"
-                      >
-                        <Image
-                          src={article.image || "/placeholder.svg"}
-                          alt={article.title}
-                          width={80}
-                          height={60}
-                          className="w-32 h-20 object-cover rounded-lg flex-shrink-0"
-                        />
-                        <div className="flex-1">
-                          <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
-                            {article.title}
-                          </h4>
-                          <Badge variant="secondary" className="text-xs mt-1">
-                            {article.category}
-                          </Badge>
-                        </div>
-                      </Link>
-                    ))}
+                    {country?.whatToEat?.related_articles?.map(
+                      (article, index) => (
+                        <Link
+                          key={index}
+                          href={`/${countryName}/${article.slug}`}
+                          className="flex gap-3 group cursor-pointer"
+                        >
+                          <Image
+                            src={article.image || "/placeholder.svg"}
+                            alt={article.title}
+                            width={80}
+                            height={60}
+                            className="w-32 h-20 object-cover rounded-lg flex-shrink-0"
+                          />
+                          <div className="flex-1">
+                            <h4 className="font-medium text-gray-900 text-sm group-hover:text-teal-600 transition-colors line-clamp-2">
+                              {article.title}
+                            </h4>
+                            <Badge variant="secondary" className="text-xs mt-1">
+                              {article.category}
+                            </Badge>
+                          </div>
+                        </Link>
+                      )
+                    )}
                   </div>
                 </CardContent>
               </Card>

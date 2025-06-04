@@ -5,6 +5,7 @@ import HeroSectionCity from "./component/hero-section-city";
 import CityBlogListing from "./component/blog-listing";
 import OverViewSection from "../../things-to-know-before-going/components/overview";
 import { Activity, Binoculars, Car } from "lucide-react";
+import AddBanner from "@/integration/google-ad-sense/AdBanner";
 
 export default async function CityThingsToDoPage({
   params,
@@ -35,6 +36,7 @@ export default async function CityThingsToDoPage({
             overview={cityData?.overview || ""}
           />
           <CityBlogListing countryName={countryName} cityData={cityData} />
+
         </div>
 
         <ThankYouSection destination={cityData?.name || ""} />

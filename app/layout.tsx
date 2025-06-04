@@ -6,6 +6,7 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import Head from "next/head";
 import GoogleAdSense from "@/integration/google-ad-sense";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 const lexendDeca = Lexend_Deca({
   subsets: ["latin"],
@@ -72,6 +73,7 @@ export default function RootLayout({
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

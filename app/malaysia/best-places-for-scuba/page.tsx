@@ -50,7 +50,7 @@ const BestPlacesForScubaPage = () => {
                 return (
                   <Card
                     key={blog.id}
-                    className="overflow-hidden animate-slide-up"
+                    className="overflow-hidden animate-slide-up mb-8"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="w-full p-8 border-l-8 border-teal-600 ">
