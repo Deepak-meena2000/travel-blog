@@ -438,7 +438,6 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Nasi Tumpang",
         description:
           "Nasi Tumpang is a unique Kelantanese breakfast wrapped in a conical banana leaf package. Traditionally prepared for travelers, this layered rice dish includes white rice alternated with ingredients like chicken or fish curry, sambal, beef floss, and omelet. It’s a portable, all-in-one meal with both historical and culinary significance. While not as widespread as Nasi Lemak, it's a special find at East Coast markets and traditional eateries.",
-        image: "/placeholder.svg?height=300&width=500",
       },
     ],
   },
@@ -579,7 +578,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "VEGETARIAN",
+    id: "LEAF",
     title: "Top Vegetarian Picks",
     description: "",
     items: [
@@ -730,7 +729,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
     ],
   },
   {
-    id: "SIDES",
+    id: "COOKIE",
     title: "Tasty Extras: Snacks, Sides & Small Bites",
     description: "",
     items: [
@@ -1121,7 +1120,7 @@ export const MALAYSIA_SCUBA_BLOG = {
       id: 4,
       title: "Perhentian Islands",
       description: `
-   The Perhentian Islands are perfect for beginner divers, with shallow reefs, calm waters, and affordable dive packages. Popular dive sites feature coral gardens, artificial reefs, and wrecks teeming with marine life. Dive schools here are known for quality instruction and budget-friendly options.
+   The Perhentian Islands are perfect for beginner divers, with shallow reefs, calm waters, and affordable dive packages. Popular dive sites feature coral gardens, artificial reefs, and wrecks teeming with marine life. The Perhentian Islands are among the <b>most accessible diving sites in Malaysia</b>, located off Peninsular Malaysia, and they’re also considered one of the most affordable options for divers.
     <br />
     <br />
     <b>Best Time to Dive</b>: March to October
@@ -1131,7 +1130,7 @@ export const MALAYSIA_SCUBA_BLOG = {
     `,
       image: "/images/country/malaysia/places/perhentian/blog/kecil_besar.jpg",
       tips: [
-        `Read our detailed Perhentian guide`,
+        `Read our complete <b><a href="/malaysia/perhentian-islands/travel-guide" target="_blank" class="text-teal-600 underline">Perhentian Island Guide</a></b> which will help you in planning the trip to the island`,
         `Great for learning to dive, with calm waters and many dive schools offering certification`,
       ],
       imageCreditHTML:
@@ -1157,7 +1156,7 @@ export const MALAYSIA_SCUBA_BLOG = {
       id: 6,
       title: "Mataking Island",
       description: `
-    Mataking is a paradise for luxury dive getaways. Known for its coral diversity and macro life, it offers vibrant reef dives and the chance to explore Malaysia’s first underwater post office. The island connects to a smaller islet via a sandbar, adding to its charm both above and below water
+    Mataking is a paradise for luxury dive getaways. Known for its coral diversity and macro life, it offers vibrant reef dives and the chance to explore Malaysia’s first underwater post office. The island connects to a smaller islet via a sandbar, adding to its charm both above and below water.
     <br />
     <br />
     <b>Best Time to Dive</b>: March to October
@@ -1177,7 +1176,7 @@ export const MALAYSIA_SCUBA_BLOG = {
       id: 7,
       title: "Redang Island",
       description: `
-      Redang is a marine park island featuring crystal-clear water, vibrant coral reefs, and abundant marine life. Dive sites include reef slopes and coral gardens perfect for all skill levels. The island is also ideal for snorkeling and offers great visibility during the dry season
+      Redang is a marine park island featuring crystal-clear water, vibrant coral reefs, and abundant marine life. Dive sites include reef slopes and coral gardens perfect for all skill levels. The island is also ideal for snorkeling and offers great visibility during the dry season.
     <br />
     <br />
     <b>Best Time to Dive</b>: March to October
@@ -1207,7 +1206,7 @@ export const MALAYSIA_SCUBA_BLOG = {
       id: 9,
       title: "Tioman Island",
       description: `
-      Tioman Island features a mix of reef and wreck dives suitable for all levels. Its dive sites include coral gardens, rock formations, and artificial reefs that attract a wide range of marine species. With numerous dive centers, it’s an ideal spot for certifications and relaxed diving holidays
+      Tioman Island features a mix of reef and wreck dives suitable for all levels. Its dive sites include coral gardens, rock formations, and artificial reefs that attract a wide range of marine species. With numerous dive centers, it’s an ideal spot for certifications and relaxed diving holidays.
     <br />
     <br />
     <b>Best Time to Dive</b>: March to October
@@ -1224,7 +1223,7 @@ export const MALAYSIA_SCUBA_BLOG = {
       id: 10,
       title: "Tunku Abdul Rahman Marine Park",
       description: `
-      Just off the coast of a major city, this marine park offers easy access to dive sites ideal for beginners and casual divers. Expect shallow reefs, vibrant corals, and plenty of marine life close to shore. It’s perfect for short day trips and quick diving certifications
+      Just off the coast of a major city, this marine park offers easy access to dive sites ideal for beginners and casual divers. Expect shallow reefs, vibrant corals, and plenty of marine life close to shore. It’s perfect for short day trips and quick diving certifications.
     <br />
     <br />
     <b>Best Time to Dive</b>: March to October
@@ -1241,7 +1240,7 @@ export const MALAYSIA_SCUBA_BLOG = {
       id: 11,
       title: "Lang Tengah",
       description: `
-      Lang Tengah offers a peaceful diving experience with fewer crowds and healthy coral reefs. Expect sightings of reef fish, turtles, and occasional blacktip sharks. Several dive sites are just minutes from the shore, making access easy
+      Lang Tengah offers a peaceful diving experience with fewer crowds and healthy coral reefs. Expect sightings of reef fish, turtles, and occasional blacktip sharks. Several dive sites are just minutes from the shore, making access easy.
     <br />
     <br />
     <b>Best Time to Dive</b>: March to October

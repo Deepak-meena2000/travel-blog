@@ -34,6 +34,7 @@ import {
   Star,
   Wine,
   Info,
+  Cookie,
 } from "lucide-react";
 
 export const ICONS = {
@@ -75,5 +76,6 @@ export const ICONS = {
   SANDWICH: Sandwich,
   PLACES: Building,
   ALCOHOL: Wine,
-  QUICK_TIPS: Info,
+  QUICK_TIPS: BookOpenCheck,
+  COOKIE: Cookie,
 };

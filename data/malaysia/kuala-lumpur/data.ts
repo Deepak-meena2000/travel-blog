@@ -63,7 +63,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
     duration: "1–2 hours",
     tips: [
       "Try satay, Marshmallow IceCream and char kway teow",
-      `Checkout our Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> and <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a></b> artciles`,
+      `Checkout our <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">Malaysia's complete food guide</a></b> and <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a></b> that can be found in the area`,
     ],
   },
   {
@@ -199,7 +199,6 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 15,
     name: "Heli Lounge Bar",
-    image: "placeholder?height=0&width=0",
     description:
       "Heli Lounge Bar is one of the most unique nightlife spots in Kuala Lumpur. By day it serves as a functioning helicopter pad; by night, it transforms into a rooftop bar offering 360° views of the KL skyline. Located on the 34th floor of Menara KH, this open-air lounge gives unobstructed sights of both the Petronas Towers and KL Tower. The ambiance is casual yet stylish, with DJs spinning tracks as the city lights come alive. It's a perfect sunset or nightcap location with minimal entrance fuss.",
     location: "Menara KH, Jalan Sultan Ismail",

@@ -134,7 +134,7 @@ export const PENANG_BLOG_POST = [
     tips: [
       "Try small portions at multiple places",
       "Visit local coffee shops for authentic experiences",
-      `Checkout Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> and the <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a></b>`,
+      `Checkout Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> to understand what, when and where to eat.`,,
     ],
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://www.pexels.com/photo/food-stalls-on-the-street-in-a-town-6770743/'><u>Nikita Belokhonov</u></a>",
@@ -178,9 +178,9 @@ export const PENANG_BLOG_POST = [
     price: "Dishes range from RM5–RM15",
     duration: "1–2 hours",
     tips: [
-      "Arrive early to grab a table",
       "Carry cash",
       "Share plates to taste more dishes",
+      `Explore the <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must try dishes</a></b> in Malaysia`
     ],
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://unsplash.com/@zyteng?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Kelvin Zyteng</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-man-standing-in-front-of-a-table-filled-with-food-XQCZLL3gEhw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
@@ -338,7 +338,6 @@ export const PENANG_BLOG_POST = [
   {
     id: 20,
     name: "Upside Down Museum",
-    image: "/images/country/malaysia/places/penang/blog/upside_down_museum.jpg",
     description:
       "The Upside Down Museum in Penang is a quirky interactive attraction featuring rooms and exhibits flipped upside down, creating fun photo opportunities. It's a hit with families and social media enthusiasts looking for a playful and creative experience.",
     location: "George Town",

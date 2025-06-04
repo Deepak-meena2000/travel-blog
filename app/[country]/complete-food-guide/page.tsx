@@ -103,7 +103,7 @@ export default function CompleteFoodGuidePage({
       {
         heading: "Quick Tips",
         description: "Essential tips for the best food experience",
-        icon: "QUICK_TIPS",
+        icon: "BOOK_OPEN_CHECK",
         id: "quick-tips",
       },
     ];

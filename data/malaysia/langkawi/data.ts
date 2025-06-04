@@ -29,8 +29,7 @@ export const LANGKAWI_BLOG_POST = [
       "SkyBridge Entry: Free <br /> Nature Walk: RM6 <br /> SkyGlide: RM10",
     duration: "30-60 minutes",
     tips: [
-      "Keep an eye on the weather forecast before visiting as it can be closed during rainfall",
-      "Wear comfortable shoes as the bridge involves a bit of walking and stairs",
+      `Checkout our complete <b><a href="/malaysia/langkawi/travel-guide#skycab,-skybridge-&-oriental-village-guide" target="_blank" class="text-teal-600 underline">SkyCab, SkyBridge & Oriental Village Guide</a></b>`,
       "Nature walk is a short but steep hike, so brace yourself",
     ],
     image: "/images/country/malaysia/places/langkawi/blog/skybridge.jpg",
@@ -76,7 +75,7 @@ export const LANGKAWI_BLOG_POST = [
     tips: [
       "Bring cash as many vendors don't accept cards",
       "Arrive hungry and ready to try multiple dishes!",
-      `Check which night market is operating on each specific day on <b><a href="/malaysia/langkawi/travel-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">Complete Langakwi guide</a></b>`,
+      `Check which night market is operating on each specific day on <b><a href="/malaysia/langkawi/travel-guide#what’s-the-street-market-schedule" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline"> Langakwi Night Market Guide</a></b>`,
     ],
     image: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",
   },

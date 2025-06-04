@@ -35,7 +35,10 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
         heading: "Culture & History",
         icon: "PYRAMID",
         description: `
-                Malaysia’s rich tapestry of culture and history is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia.
+                Malaysia's cultural roots trace back thousands of years, with ancient Malay kingdoms and trading ports influencing the region long before colonial times. <b>The country gained independence from British rule in 1957</b>, a proud moment that continues to shape its national identity. 
+                </br>
+                </br>
+                Malaysia’s rich tapestry of culture is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia.
                 You’ll see this diversity reflected in its <b>festivals, food, languages, and religions</b>. Islam is the official religion, but Malaysia also celebrates Diwali, Chinese New Year, and Christmas.
                 <br />
                 <br />
@@ -289,14 +292,19 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
     sections: [
       {
         type: "content",
-        text: `Start your Malaysia adventure by catching a flight to the beautiful island of Langkawi. Whether flying directly or via Kuala Lumpur International Airport (KLIA/KLIA2), you'll reach Langkawi in about an hour. Upon arrival, take a taxi from the airport to your hotel and complete check-in formalities. Once settled, <b>renting a scooter</b> is a great idea for getting around easily and discovering hidden gems at your own pace.
+        text: `Start your Malaysia adventure by catching a flight to the beautiful island of Langkawi. Whether flying directly or via Kuala Lumpur International Airport (KLIA/KLIA2), you'll reach Langkawi in about an hour. As your plane descends into Langkawi, you’ll be treated to jaw-dropping views of emerald seas, lush islands, and pristine beaches, an aerial welcome to paradise. Don’t forget to grab a window seat!.
+        `,
+      },
+      {
+        type: "content",
+        text: ` Upon arrival, take a taxi from the airport to your hotel and complete check-in formalities. Once settled, <b>renting a scooter</b> is a great idea for getting around easily and discovering hidden gems at your own pace.
         `,
       },
       {
         type: "content",
         text: `
 
-        Once done, head straight to the island's lively heart, <b>Pantai Cenang.</b> Drive through the Jalan Kuala Muda Road to catch a flight landing on one side and the ocean on the other. This bustling beachside strip offers soft sandy shores, beachfront cafes, and boutique shops perfect for some light souvenir hunting. As the day mellows, make your way toward <b>Pantai Tengah</b>, Langkawi's quieter and more serene beach just south of Cenang. This is the perfect spot to unwind and watch the sun dip below the horizon in a blaze of tropical colors.
+        Once you arrive, head straight to the vibrant heart of Langkawi—<b>Pantai Cenang</b>. Take the scenic route via Jalan Kuala Muda, an underrated stretch where you’ll witness planes landing on one side and sweeping ocean views on the other. This beachside road is rarely crowded with tourists, offering a peaceful and authentic glimpse of Langkawi’s natural beauty.
         `,
       },
       {
@@ -316,9 +324,13 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
           },
         ],
       },
+       {
+        type: "content",
+        text: "Pantai Cenang itself is the island’s most popular beach, alive with energy and charm. With its soft golden sands, lively beachfront cafés, bars, and boutique shops, it’s perfect for beach lovers and souvenir hunters alike.",
+      },
       {
         type: "content",
-        text: "For dinner, choose one of the cozy seaside restaurants offering fresh seafood and local Malaysian flavors, ideal for setting the mood for your beach vacation.",
+        text: "As the day mellows, escape the buzz and head south to <b>Pantai Tengah</b>. Quieter and more serene, this peaceful beach offers calm waters and fewer crowds—ideal for a relaxing walk or watching a breathtaking tropical sunset over the Andaman Sea. For dinner, choose one of the cozy seaside restaurants offering fresh seafood and local Malaysian flavors, ideal for setting the mood for your beach vacation.",
       },
     ],
   },
@@ -328,7 +340,19 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-          Begin your second day in Langkawi with one of the island’s most iconic experiences: the <b>Langkawi SkyCab</b>. Ride the panoramic cable car up to the top of Gunung Mat Cincang, where sweeping views of Langkawi’s lush rainforest and turquoise waters await. Once at the top, take a walk along the <b>Langkawi Sky Bridge</b>, a curved suspension bridge offering jaw-dropping views and photo-perfect moments. You have an option for skywalk at <b>Sky Eagle</b> at the middle station.
+          Begin your second day in Langkawi with one of the island’s most unforgettable highlights—the thrilling ride on the <b>Langkawi SkyCab</b>(One of the Steepest in the world). This panoramic cable car journey takes you high above the island’s ancient rainforest, offering breathtaking views of cascading waterfalls, rugged mountain peaks, and the shimmering Andaman Sea. 
+        `,
+      },
+       {
+        type: "content",
+        text: `
+       At the summit of <b>Gunung Mat Cincang</b>, step out onto the spectacular <b>Langkawi Sky Bridge</b>, a curved suspension bridge that stretches across lush jungle canopies. Suspended high above the valley, the bridge offers jaw-dropping vistas and countless photo opportunities—perfect for capturing the beauty of Langkawi from above.
+        `,
+      },
+      {
+        type: "content",
+        text: `
+        For an extra thrill, stop at the middle station and experience the glass-bottom <b>SkyGlide</b> or the <b>SkyRex</b> attractions, or test your nerves with a walk on the glass <b>Sky Walk at Sky Eagle</b>—an exhilarating platform that lets you look straight down at the forest floor. It's an adventure that combines natural beauty with adrenaline-pumping excitement.
         `,
       },
       {
@@ -353,7 +377,10 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        As the sun begins to dip, make your way to the pier for a magical <b>sunset cruise</b>. Sailing across the Andaman Sea while the sky changes color is a truly relaxing and romantic way to end the day. Many cruises offer light refreshments, snorkelling options and music onboard, perfect for soaking in the island’s tropical charm.
+                Checkout our complete <b><a href="/malaysia/langkawi/travel-guide#skycab,-skybridge-&-oriental-village-guide" target="_blank" class="text-teal-600 underline">SkyCab, SkyBridge & Oriental Village Guide</a></b> with prices.
+                        </br>
+        </br>
+        As the sun begins to dip, make your way to the pier for a magical <b>sunset cruise</b>. Sailing across the Andaman Sea while the sky changes color is a truly relaxing and romantic way to end the day. These cruises aren’t just about the views; they’re designed for pure relaxation and indulgence. Most packages include light refreshments, tropical cocktails, and even a saltwater jacuzzi net to lounge in as the boat gently drifts. Some cruises also offer snorkeling stops and lively music onboard, adding a fun and festive vibe to the romantic ambiance. Whether you're celebrating a special occasion or simply soaking in the moment, a Langkawi sunset cruise is the perfect way to wind down your day in paradise.
 
         `,
       },
@@ -365,6 +392,12 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `Start your third day in Langkawi with a nature-filled adventure to <b>Kilim Karst Geoforest Park</b>, a UNESCO-recognized geopark rich in biodiversity and dramatic limestone formations. Embark on a guided boat tour that glides through scenic mangrove forests, caves, and emerald waterways. Along the way, you may spot wildlife such as eagles, monitor lizards, and playful monkeys. Some tours also include stops at floating fish farms or bat caves, making the experience even more immersive and educational.`,
+      },
+      {
+        type: "content",
+        text: `
+        After the boat trip, head back toward the central part of the island and cool off at one of Langkawi’s scenic waterfalls. <b>Temurun Waterfall</b> in the north or <b>Seven Wells Waterfall (Telaga Tujuh)</b> near the cable car area are both excellent options for a refreshing dip or a peaceful picnic surrounded by lush greenery. Don’t forget your swimwear and camera—these waterfalls are truly postcard-worthy.
+        `,
       },
       {
         type: "images",
@@ -384,14 +417,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        After the boat trip, head back toward the central part of the island and cool off at one of Langkawi’s scenic waterfalls. <b>Temurun Waterfall</b> in the north or <b>Seven Wells Waterfall (Telaga Tujuh)</b> near the cable car area are both excellent options for a refreshing dip or a peaceful picnic surrounded by lush greenery. Don’t forget your swimwear and camera—these waterfalls are truly postcard-worthy.
-        `,
-      },
-      {
-        type: "content",
-        text: `
-
-        As evening approaches, dive into Langkawi’s local culture by visiting a <b>Langkawi Night Market</b>. These markets rotate locations throughout the week, so check our article about the <b>langkawi travel guide</b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe.
+        As evening approaches, dive into Langkawi’s local culture by visiting a Langkawi Night Market. These markets rotate locations throughout the week, so check our article about the <b><a href="/malaysia/langkawi/travel-guide#what’s-the-street-market-schedule" target="_blank" class="text-teal-600 underline">Langkawi Night Market Guide</a></b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe. 
         `,
       },
     ],
@@ -438,7 +464,11 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        As night falls, indulge in a mouthwatering dinner at <b>Gurney Drive Hawker Centre</b>, one of the best places to sample Penang’s legendary street food.
+        As night falls, treat your taste buds to an unforgettable culinary experience at <b>Gurney Drive Hawker Centre</b>, one of Penang’s most iconic food destinations. Buzzing with local energy and aromatic delights, this open-air food haven is the perfect place to sample the island’s legendary street food. From savory char kway teow and crispy lor bak to rich Penang laksa and sweet apom balik, the variety is endless and irresistibly delicious. 
+                </br>
+        </br>
+        <li>
+        Checkout the <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">must-try malaysian dishes</a></b>.
         `,
       },
     ],
@@ -450,7 +480,13 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        Day 5 is all about discovering the natural beauty, spiritual landmarks, and coastal charm of Penang. Begin your morning with a visit to <b>Penang Hill</b>, one of the island’s most popular attractions. Take the funicular train ride up to the summit, where panoramic views of George Town and the surrounding landscape unfold before you. The cool hilltop breeze and lush surroundings make it a refreshing escape from the city heat. While at the top, take time to visit <b>The Habitat,</b> a serene eco-park featuring canopy walks, rainforest trails, and native flora and fauna.
+        Day 5 is all about immersing yourself in the natural beauty, spiritual landmarks, and coastal charm that define Penang. Start your morning with a journey to the iconic <b>Penang Hill</b>, a beloved retreat that offers a cool, breezy escape from the tropical heat. Hop aboard the funicular train—the steepest track in Asia—and enjoy a scenic ride up to the summit. As you ascend, lush greenery envelops the track, building anticipation for the stunning views at the top.
+        `,
+      },
+       {
+        type: "content",
+        text: `
+Once at the summit, you'll be treated to sweeping, bird’s-eye views of <b>George Town</b>, the coastline, and even Langkawi on a clear day(just in case you already started missing Island). While you're there, don’t miss a visit to <b>The Habitat</b>, an eco-conscious nature park nestled atop the hill which is perfect for panoramic photos and peaceful contemplation. This serene sanctuary features rainforest walking trails, treetop canopy walks, and educational exhibits on Penang’s native flora and fauna. It’s a gentle yet immersive way to reconnect with nature and experience the island’s ecological richness firsthand.
         `,
       },
       {
@@ -490,13 +526,14 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        On Day 6, fly into <b>Kuala Lumpur</b>, Malaysia’s buzzing capital city. Upon arrival at <b>KLIA or KLIA2</b>, you have two main transfer options: the KLIA Ekspres train, which takes you directly to KL Sentral in under 30 minutes, or a taxi ride that offers convenience, especially if you're traveling with luggage.
+        On Day 6, fly into <b>Kuala Lumpur</b>, Malaysia’s buzzing capital city. Upon arrival at <b>KLIA or KLIA2</b>, you have two main transfer options: the KLIA Ekspres train, which takes you directly to KL Sentral in under 30 minutes, or a taxi ride that offers convenience, especially if you're traveling with luggage. Checkout our detailed <b><a href="/malaysia/kuala-lumpur/travel-guide" target="_blank" class="text-teal-600 underline">Kuala Lumpur travel guide</a></b> for more insights.
         `,
       },
+
       {
         type: "content",
         text: `
-        Once at your city-center hotel, check in and take some time to unwind—many hotels offer rooftop infinity pools with sweeping city views, perfect for a relaxing break after your journey.
+       Once you arrive at your city-center hotel in Kuala Lumpur, check in and take some time to relax and recharge. Many hotels in the heart of the city boast stunning rooftop infinity pools that offer sweeping views of the skyline, including iconic landmarks like the Petronas Twin Towers, Merdeka 118(2nd Tallest in the world) and KL Tower.
         `,
       },
       {
@@ -517,13 +554,13 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        For dinner, head to the <b>Suria KLCC food court</b>, located inside the towers. It’s an easy and delicious introduction to Malaysian flavors, with a wide range of local and international cuisines. If you’re up for more exploration, stroll through the adjacent shopping mall or catch a water fountain light show at the park’s esplanade.
+        For dinner, head to the <b>Suria KLCC food court</b>, located inside the towers. It’s an easy and delicious introduction to Malaysian flavors, with a wide range of local and international cuisines. If you’re up for more exploration, head to the park’s esplanade to catch the captivating water fountain light show—a dazzling display where jets of water dance in sync with colorful lights and music. This mesmerizing spectacle creates a magical atmosphere, perfect for winding down your evening while enjoying the vibrant energy of the city.
         `,
       },
       {
         type: "content",
         text: `
-        <b>Quick Tip</b>: Book your Petronas Tower visit online in advance to skip queues, and time your visit just before sunset for stunning views.
+        <b>Quick Tip</b>: If you're visiting KL Tower, skip the observation deck and opt for the KL Tower's SkyTerrace instead for a better experience. Otherwise, book your Petronas Towers visit online in advance and aim for a sunset slot for stunning city views.
         `,
       },
     ],
@@ -566,13 +603,18 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        In the late afternoon, escape into nature at the <b>KL Forest Eco Park</b>, a green lung in the heart of the city. Explore its canopy walkways and shaded trails, then head up to <b>Menara Kuala Lumpur (KL Tower)</b> for sweeping views of the city. Time your visit to catch the sunset—it’s truly mesmerizing from the observation deck.
+        In the late afternoon, take a refreshing break from the urban hustle by escaping into nature at the <b>KL Forest Eco Park</b>, one of the oldest permanent forest reserves in Malaysia and a lush green oasis right in the heart of the city. Wander along its elevated canopy walkways that wind through towering trees and thick foliage, offering a peaceful retreat and a unique perspective of Kuala Lumpur’s skyline framed by nature.
+        `,
+      },
+      {
+        type: "content",
+        text: `After exploring the lush greenery, head to the nearby <b>Menara Kuala Lumpur (KL Tower)</b>. Arrive at the SkyTerrace well before sunset to enjoy breathtaking panoramic views of the city glowing in warm, golden hues. Don’t miss the chance to snap some Instagram-worthy photos at the SkyBox, a glass balcony that extends over the edge for a thrilling perspective. Watching the sun set from this vantage point is truly captivating, as the city gradually lights up and transforms into a sparkling urban landscape—making it the perfect way to end your afternoon with unforgettable memories.
         `,
       },
       {
         type: "content",
         text: `
-        For dinner and nightlife, walk over to <b>Jalan Alor</b>, KL’s legendary night food street, where sizzling woks and smoky grills serve everything from satay to seafood. Wrap up your night at <b>Changkat Bukit Bintang</b>, a vibrant nightlife strip packed with bars, clubs, and live music.
+        For dinner and nightlife, walk over to <b>Jalan Alor</b>, KL’s legendary night food street, where sizzling woks and smoky grills serve everything from satay to seafood. Checkout our <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> to understand what, when and where to eat. Wrap up your night at <b>Changkat Bukit Bintang</b>, a vibrant nightlife strip packed with bars, clubs, and live music.
         `,
       },
     ],
@@ -588,6 +630,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "content",
         text: `
         <b>Option 1: Day Trip to Malacca</b>
+        <br>
  Begin your journey with a comfortable bus ride from <b>TBS Bus Terminal to Melaka Sentral</b>, which takes around two hours. Upon arrival, head straight to <b>Dutch Square</b>, where the iconic red-painted buildings like <b>Christ Church</b> and <b>The Stadthuys</b> offer a glimpse into Malaysia’s colonial past. Climb up to <b>St. Paul’s Hill </b> for panoramic views and explore the ruins of <b>A Famosa Fort</b>, a Portuguese fortress dating back to the 16th century.
         `,
       },
@@ -612,10 +655,21 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "content",
         text: `
        <b>Option 2: More of Kuala Lumpur</b>
-        <br>
-If you prefer a slower pace, start your day with a visit to the <b>Islamic Arts Museum Malaysia</b>, home to beautifully curated exhibitions and Islamic architecture. Continue to <b>Masjid Negara (National Mosque)</b>, an architectural marvel with peaceful grounds.
-<br>
-Later, explore the colorful <b><b>Thean Hou Temple</b></b>, one of Southeast Asia’s oldest and grandest Chinese temples. Enjoy lunch in <b>Little India</b>, where the aroma of spices and colorful textiles fills the air. Spend the afternoon at <b>Merdeka Square</b>, admire the <b>Sultan Abdul Samad Building</b>, and stroll along the scenic<b> River of Life</b>.
+       <br>
+Kuala Lumpur offers a wide range of activities, explore our <b><a href="/malaysia/kuala-lumpur/top-things-to-do" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Kuala Lumpur</a></b> to discover what fits your style best.
+        `,
+      },
+        {
+        type: "content",
+        text: `
+If you prefer a more relaxed and culturally enriching start to your day, begin with a visit to the <b>Islamic Arts Museum Malaysia</b>. Later, explore the vibrant <b>Thean Hou Temple</b>, one of Southeast Asia’s oldest and most majestic Chinese temples. This six-tiered structure is rich with ornate decorations, colorful murals, and intricately carved statues, making it a feast for the eyes and a fascinating place to learn about Chinese-Malaysian culture.
+        `,
+      },
+       {
+        type: "content",
+        text: `
+For lunch, immerse yourself in the sights and smells of <b>Little India</b>, where aromatic spices fill the air and vibrant textiles line the streets. Enjoy authentic South Indian cuisine at one of the many local eateries, experiencing the true flavors of this lively neighborhood.
+
         `,
       },
       {
@@ -625,7 +679,25 @@ Later, explore the colorful <b><b>Thean Hou Temple</b></b>, one of Southeast Asi
             src: "/images/country/malaysia/places/kuala_lumpur/blog/little_india.jpg",
             alt: "Little India",
           },
+          {
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/sultan_abdul_samad.jpg",
+            alt: "Merdeka Square"
+          }
         ],
+      },
+        {
+        type: "content",
+        text: `
+Spend your afternoon at <b>Merdeka Square</b>, the historic heart of Kuala Lumpur. Here, admire the stunning colonial-era <b>Sultan Abdul Samad Building</b> with its iconic clock tower and Moorish architecture. Afterward, take a leisurely stroll along the scenic <b>River of Life</b>, where beautifully lit walkways and fountains create a charming atmosphere—especially as the day turns to evening. This relaxed itinerary offers a perfect blend of history, culture, and tranquility for those who prefer to explore at a slower pace.
+
+        `,
+      },
+        {
+        type: "content",
+        text: `
+You can also consider day trips to <b>Genting Highlands or Cameron Highlands</b> for a refreshing escape to cooler climates. Both destinations offer a perfect getaway from the city heat with scenic views and pleasant weather.
+
+        `,
       },
     ],
   },
@@ -636,22 +708,37 @@ Later, explore the colorful <b><b>Thean Hou Temple</b></b>, one of Southeast Asi
         type: "content",
         text: `
         Your final day in Malaysia offers a perfect balance of relaxation, last-minute sightseeing, and a smooth departure. Begin your morning with a leisurely breakfast at your hotel. If you have time before your flight, take this opportunity to explore any sights you might have missed earlier in Kuala Lumpur.
-        <br>
-One great option is a return visit to the <b> Islamic Arts Museum Malaysia</b>, especially if you didn’t get a chance on Day 8. Its serene atmosphere and world-class exhibits make it a peaceful and enriching way to end your trip. Alternatively, visit the <b>National Mosque (Masjid Negara)</b>, located nearby, to admire its striking modern architecture and tranquil gardens.
-<br >
-Another excellent spot to consider is the <b>Thean Hou Temple</b>, known for its intricate carvings, vibrant décor, and sweeping city views. You could pair this with a stop in <b>Little India (Brickfields)</b>, where you can enjoy a flavorful lunch and experience the area’s colorful culture.
-<br >
-For those looking to squeeze in a bit more shopping,<b>Central Market, Suria KLCC</b>, or <b>Pavilion Mall</b> are all ideal for picking up souvenirs, snacks, or traditional crafts. Don’t forget to leave some space in your bag for gifts and keepsakes!
+       
+        For those eager to add some shopping to their itinerary, Kuala Lumpur offers several fantastic options perfect for picking up unique souvenirs, tasty local snacks, and traditional crafts. Start at the bustling <b>Central Market</b>, a cultural landmark known for its vibrant stalls selling handmade batik, intricate handicrafts, and authentic Malaysian artworks—ideal for finding one-of-a-kind gifts.
         `,
       },
       {
+        type: "content",
+        text: `       
+        For those eager to add some shopping to their itinerary, Kuala Lumpur offers several fantastic options perfect for picking up unique souvenirs, tasty local snacks, and traditional crafts. Start at the bustling <b>Central Market</b>, a cultural landmark known for its vibrant stalls selling handmade batik, intricate handicrafts, and authentic Malaysian artworks—ideal for finding one-of-a-kind gifts.
+        `,
+      },
+       {
         type: "images",
         images: [
           {
             src: "/images/country/malaysia/places/kuala_lumpur/blog/pavilion_kl.jpg",
             alt: "Pavilion KL",
           },
+          {
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/central_market.jpg",
+            alt: "Central Market",
+          }
         ],
+      },
+       {
+        type: "content",
+        text: `       
+If you prefer modern shopping experiences, head to <b>Suria KLCC</b>, located right beneath the iconic Petronas Towers. Here, you’ll find a wide range of international brands, specialty stores, and gourmet food outlets—perfect for both high-end shopping and casual browsing. Another great choice is <b>Pavilion Mall</b>, a stylish shopping destination offering everything from trendy fashion to local designer boutiques. Its lively atmosphere and diverse shops make it an enjoyable place to hunt for souvenirs and keepsakes.
+<br>
+<br>
+No matter which spot you choose, be sure to leave some extra room in your bag—you’ll want to bring home plenty of memorable gifts and delicious treats from your Malaysian adventure!
+        `,
       },
       {
         type: "content",
@@ -1052,7 +1139,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       tips: [
         "Combo Tickets include the entry to 3D Art Museum and SkyDom",
         "Books the ticket offline at the counter only cause of unpredictable weather",
-        `Checkout our complete <b><a href="/malaysia/langkawi/travel-guide" target="_blank" class="text-teal-600 underline">SkyCab, SkyBridge & Oriental Village Guide</a></b>`
+        `Checkout our complete <b><a href="/malaysia/langkawi/travel-guide#skycab,-skybridge-&-oriental-village-guide" target="_blank" class="text-teal-600 underline">SkyCab, SkyBridge & Oriental Village Guide</a></b>`
       ],
       image:
         "/images/country/malaysia/places/langkawi/blog/langkawi_cablecar.jpg",
@@ -1071,7 +1158,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       duration: "2 Hours",
       tips: [
         "Visit an hour early to sunset to watch the evening and night view of city",
-        "Sky Box tickets will be bought at Sky terrace only, the queue can be long for SKy Box so prepare accordingly",
+        "Sky Box tickets will be bought at Sky terrace only, the queue can be long so prepare accordingly",
         "Don’t book in advance as permission to sky terrace depends on weather",
         `Checkout the Discounted price for MyKLD holders & kids on the
         <a href="https://ticket.kltower.com/" target="_blank" class="text-teal-600 underline">official website</a>`,
@@ -1090,10 +1177,10 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
         "Batu Caves - Free</br>Dark Caves & Cave villa <li>RM15-RM20 per adult</li>",
       duration: "2-3 hours",
       tips: [
-        "Book lessons with certified instructors",
-        "Early morning has the best waves",
-        "Apply reef-safe sunscreen",
-      ],
+      "Dress modestly.",
+      "Visit early in the morning to avoid crowd and heat",
+      "Keep an eye out for cheeky monkeys and pesky mosquitoes!   ",
+    ],
       image: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
       imageCreditHTML: null,
     },
@@ -1101,7 +1188,11 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       id: 4,
       title: "Scuba at Sipadan Island",
       description:
-        `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  Checkout our detalied guide to discover <b><a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">top places for scuba in Malaysia</a>.</b>`,
+        `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  
+        </br >
+        </br>
+        Malaysia offers a wide range of scuba diving options, explore our detailed guide to discover the <b><a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">top places for scuba in Malaysia</a></b> tailored to your convenience and experience level.
+        </br>`,
       operationalHours: "7:00 AM – 4:00 PM",
       location: "Sipadan Island",
       price: "Depends on Diving Packages",
@@ -1226,6 +1317,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       tips: [
         `Arrive early to grab a table`,
         "Carry cash, Share plates to taste more dishes",
+        `Checkout Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> to understand what, when and where to eat.`,
       ],
       image: "/images/country/malaysia/places/penang/blog/hawker_stalls.jpg",
       imageCreditHTML:
@@ -1258,7 +1350,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       image: "/images/country/malaysia/places/kuala_lumpur/blog/jalan_alor.jpg",
       tips: [
         `Try satay, Marshmallow IceCream and char kway teow`,
-        `Checkout our detailed article on <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">what to eat</a></b> in malaysia`,
+        `Explore <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Must-try dishes</a></b> you shouldn't miss in Malaysia`
       ],
     },
     {
@@ -1325,6 +1417,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       tips: [
         `Bring a light jacket as it can be chilly`,
         `Buy tickets in advance for cable car/theme parks`,
+        `Checkout the other day trips from kuala Lumpur`
       ],
       image:
         "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
