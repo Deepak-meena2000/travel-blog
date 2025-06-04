@@ -1140,7 +1140,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       operationalHours: "9:00 AM – 9:00 PM (Closed Mondays)",
       location: "City Centre, Kuala Lumpur",
       price:
-        "SkyBridge & Obersvational Deck - <li>Adults: RM 80</li>  <li>Children: RM 33</li>",
+        "SkyBridge & Obersvational Deck - <li>Adults: RM80</li>  <li>Children: RM33</li>",
       duration: "1-2 hours",
       tips: [
         "Book Tickets Online",

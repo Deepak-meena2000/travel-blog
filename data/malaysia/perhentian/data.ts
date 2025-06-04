@@ -264,7 +264,7 @@ export const PERHENTIAN_ISLANDS_TRAVEL_GUIDE = {
     {
       id: 2,
       icon: "PLANE",
-      heading: "How to Reach Perhentian Islands",
+      heading: "How to Reach",
       description: `
     To reach the Perhentian Islands, the most common route is via Kuala Besut Jetty in Terengganu. First, <b>fly to Kota Bharu Airport (KBR),</b> the nearest airport. From there, it’s about a <b>1-hour taxi or Grab ride to Kuala Besut Jetty.</b>Speedboats operate regularly between <b>7:00 AM and 5:00 PM</b>, costing RM35–RM70 one-way depending on your boat type. The boat ride takes approximately <b>30–45 minutes</b> to either Perhentian Besar (Big Island) or Perhentian Kecil (Small Island).
     <br />
@@ -278,8 +278,8 @@ export const PERHENTIAN_ISLANDS_TRAVEL_GUIDE = {
     },
     {
       id: 3,
-      icon: "BOAT",
-      heading: "Getting Around Perhentian Islands",
+      icon: "SAILBOAT",
+      heading: "Getting Around",
       description: `
    Getting around the Perhentian Islands is simple and part of the charm. There are no cars or roads—transport is mainly by boat or foot. Water taxis are the most common mode of travel between beaches and from Perhentian Besar to Perhentian Kecil.
    <br />
@@ -359,7 +359,7 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
     },
     {
       id: 7,
-      icon: "CHECK",
+      icon: "FERRIS_WHEEL",
       heading: "Must-Do Things",
       description: `
       The Perhentian Islands are a paradise for outdoor lovers and ocean enthusiasts. Start with <b>snorkeling</b> some of the best coral reefs are found near Turtle Bay, Shark Point, and Romantic Beach. Full-day snorkeling tours cost around <b>RM50–RM80</b> per person and cover 4–6 popular spots. <b>Scuba diving</b> is a must if you want to explore deeper reefs, shipwrecks, and marine life—dives range from <b>RM200–RM350</b>, while certification courses start from <b>RM1000</b>.
@@ -376,7 +376,7 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
     },
     {
       id: 7,
-      icon: "CHECK",
+      icon: "BACKPACK",
       heading: "Best Day Trips",
       description: `
    Perhentian offers excellent opportunities for scenic day trips.
@@ -394,24 +394,24 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
     },
     {
       id: 7,
-      icon: "PlANE",
+      icon: "BOOK_OPEN_CHECK",
       heading: "Quick Travel Tips",
       description: `
-     <li> 💸 <b>Cash is king:</b> There are no ATMs on the islands, so carry enough Malaysian Ringgit.</li>
+     <li><b>Cash is king:</b> There are no ATMs on the islands, so carry enough Malaysian Ringgit.</li>
      <br/>
-    <li>🌊 <b>Pack reef-safe sunscreen:</b> Protect the marine ecosystem and your skin.</li>
+    <li><b>Pack reef-safe sunscreen:</b> Protect the marine ecosystem and your skin.</li>
     <br/>
-    <li>📱 <b>Limited Wi-Fi:</b> Outside of the resorts, places have slow or no internet, download offline maps and entertainment.</li>
+    <li><b>Limited Wi-Fi:</b> Outside of the resorts, places have slow or no internet, download offline maps and entertainment.</li>
   <br/>
-    <li>🛥️ <b>Arrive early:</b> Last boats to the island from Kuala Besut Jetty usually leave by 4–5 PM.</li>
+    <li><b>Arrive early:</b> Last boats to the island from Kuala Besut Jetty usually leave by 4–5 PM.</li>
 <br/>
-    <li>🌧️ <b>Avoid monsoon season:</b> November–February brings rough seas and closed resorts.</li>
+    <li><b>Avoid monsoon season:</b> November–February brings rough seas and closed resorts.</li>
 <br/>
-    <li>🐢 <b>Be eco-conscious:</b> Say no to plastic, and never touch marine life while snorkeling.</li>
+    <li><b>Be eco-conscious:</b> Say no to plastic, and never touch marine life while snorkeling.</li>
 <br/>
-    <li>🧴 <b>Carry essentials:</b> Bring mosquito repellent, a waterproof dry bag, and light clothing.</li>
+    <li><b>Carry essentials:</b> Bring mosquito repellent, a waterproof dry bag, and light clothing.</li>
 <br/>
-    <li>🕒 <b>Plan ahead:</b> Book stays and activities in advance during peak season (May–August).</li>
+    <li><b>Plan ahead:</b> Book stays and activities in advance during peak season (May–August).</li>
 
 
                 `,

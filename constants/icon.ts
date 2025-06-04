@@ -22,6 +22,11 @@ import {
   Leaf,
   Building,
   Check,
+  CalendarCheck,
+  Backpack,
+  CableCar,
+  Store,
+  Sailboat
 } from "lucide-react";
 
 export const ICONS = {
@@ -48,4 +53,9 @@ export const ICONS = {
   LEAF: Leaf,
   BUILDING: Building,
   CHECK: Check,
+  CALENDAR_CHECK: CalendarCheck,
+  BACKPACK: Backpack,
+  CABLE_CAR: CableCar,
+  STORE: Store,
+  SAILBOAT: Sailboat
 };

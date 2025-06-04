@@ -495,7 +495,7 @@ With Penang’s diverse offerings, from heritage and nature to food and shopping
     },
     {
       id: 8,
-      icon: "CHECK",
+      icon: "FERRIS_WHEEL",
       heading: "Must-Do Things",
       description: `
 Start your trip with a walking tour of <b>George Town’s historic center, explore iconic street art, visit The Blue Mansion</b>, and sample snacks at local cafés. Discover Chinese heritage at Khoo Kongsi and take a trishaw ride for a nostalgic city view. 
@@ -515,24 +515,24 @@ Penang is packed with exciting activities for every traveler. Discover our <a hr
     },
     {
       id: 7,
-      icon: "PlANE",
+      icon: "BOOK_OPEN_CHECK",
       heading: "Quick Travel Tips",
       description: `
-     <li>Carry cash, especially for hawker stalls and night markets</li>
+     <li><b>Carry cash:</b> especially for hawker stalls and night markets</li>
      <br/>
-    <li>Early morning is best for attractions like Penang Hill</li>
+    <li><b>Time Your Visit: </b> Early morning is best for attractions like Penang Hill</li>
     <br/>
-    <li>Respect local customs at religious sites—dress modestly</li>
+    <li><b>Dress modestly:</b> When visiting religious sites, dress modestly</li>
   <br/>
-    <li>Stay hydrated—it’s hot and humid</li>
+    <li><b>Hydrate & Protect:</b> The tropical sun is intense—carry a refillable water bottle, apply reef-safe sunscreen (SPF 30+), and wear a wide-brim hat.</li>
 <br/>
-    <li>Use Grab for cheap, reliable transport</li>
+    <li><b>Use Grab:</b> For convenient, affordable, and reliable rides, especially when navigating the city's traffic, during late hours or airport transfers</li>
 <br/>
-    <li>Don’t miss the local street food—it’s a highlight of Penang!</li>
+    <li><b>Street Food:</b> Don’t miss the local street food—it’s a highlight of Penang!</li>
 <br/>
-    <li>Keep an umbrella handy—rain can be sudden.</li>
+    <li><b>Carry Umbrella:</b> Weather can change very frequently, it good to be prepared</li>
 <br/>
-    <li>Book accommodations near George Town for convenience</li>
+    <li><b>Plan your Stay</b>: Book accommodations near George Town for convenience</li>
                 `,
     },
   ],

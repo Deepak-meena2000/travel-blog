@@ -358,7 +358,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     },
     {
       id: 6,
-      icon: "CLOCK",
+      icon: "STORE",
       heading: "What’s the street market schedule ?",
       description: `
        Langkawi’s night markets (locally known as pasar malam) are a must-visit for food lovers and bargain hunters. Rotating across different towns each night, these lively markets offer a mix of local street food, snacks, clothes, souvenirs, and more. Try dishes like nasi lemak, satay, grilled seafood, and fresh tropical juices at budget-friendly prices. Check out the markets below -
@@ -382,7 +382,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     {
       id: 7,
       icon: "SHOPPING",
-      heading: "Where to Shop in Langkawi",
+      heading: "Where to Shop",
       description: `
      Langkawi is a <b>duty-free shopping haven</b>, making it the perfect place to stock up on chocolates, liquor, cosmetics, and electronics at significantly reduced prices. Major shopping centers and duty-free outlets offer well-known international brands alongside local specialties. Expect to find premium spirits and wines for <b>30–50% less</b> than mainland prices, with bottles of whisky or champagne starting around <b>RM70</b>. Chocolates and confectioneries can be as low as <b>RM5–RM10 per box</b>, ideal for gifts.
      <br />
@@ -426,7 +426,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     },
     {
       id: 10,
-      icon: "BUILDING",
+      icon: "CABLE_CAR",
       heading: "SkyCab, SkyBridge & Oriental Village Guide",
       description: `
       When you visit Langkawi’s <b>Oriental Village</b>, you’re stepping into the gateway for some of the island’s most iconic experiences: the <b>SkyCab (Langkawi Cable Car)</b>, the <b>SkyBridge</b> and lots of other activities like 3D Art Museum, Eagle SkyWalk, Cultural & Craft Workshops, SkyDom, Animal Zone & Mini Zoo and ATV & Archery Adventures. Designed with a charming Asian architectural style, Oriental Village features over 50 retail outlets, souvenir shops, art galleries, and restaurants offering Malaysian and international cuisine.
@@ -455,7 +455,7 @@ Langkawi is packed with exciting activities for every traveler. Discover our <a 
     },
     {
       id: 11,
-      icon: "PIN",
+      icon: "BOOK_OPEN_CHECK",
       heading: "Quick Tips for Traveling in Langkawi",
       description: `
       <li><b>Stay Connected:</b> Buy a local prepaid SIM (Digi or Maxis) at the airport for cheap data and reliable coverage across the island.</li>

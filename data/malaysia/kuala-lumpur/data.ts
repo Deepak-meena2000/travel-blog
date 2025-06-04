@@ -384,7 +384,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     {
       id: 2,
       icon: "PLANE",
-      heading: "How to Get to Kuala Lumpur",
+      heading: "How to Reach",
       description: `
                 Getting to Kuala Lumpur is easy and well-supported by international and regional connections.  The main entry point is <b>Kuala Lumpur International Airport (KLIA)</b>, located about 45 km south of the city. The airport is served by major airlines and budget carriers like AirAsia. 
                 </br>
@@ -394,7 +394,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     },
     {
       id: 3,
-      heading: "Getting Around Kuala Lumpur",
+      heading: "Getting Around",
       icon: "CAR",
       description: `
       Kuala Lumpur offers an efficient and budget-friendly transport system, making it easy to explore the city. The <b>LRT (Light Rail Transit), MRT (Mass Rapid Transit), Monorail</b>, and public buses cover most tourist areas, business districts, and shopping zones.
@@ -431,7 +431,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     },
     {
       id: 4,
-      heading: "Where to Stay in Kuala Lumpur",
+      heading: "Where to Book a Stay",
       icon: "HOTEL",
       description: `
         Kuala Lumpur offers a wide range of accommodations to suit every traveler and budget. <b>Bukit Bintang</b> is the most popular area, filled with hotels, restaurants, and shopping malls. Consider booking a stay with <b>rooftop pools</b> and modern amenities in Bukit Bintang, given its proximity to major <b>tourist attractions</b> and excellent public transport connectivity. The area provides numerous options across all price ranges, making it ideal for both budget and mid-range travelers.
@@ -452,7 +452,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
 
     {
       id: 5,
-      heading: "What and where to Eat and Drink in Kuala Lumpur",
+      heading: "What and where to Eat and Drink",
       icon: "FOOD",
       description: `
       Kuala Lumpur is a food lover’s paradise, offering everything from spicy street eats to international cuisine. Local must-tries include <b>nasi lemak, roti canai, laksa, marshmallow ice cream and satay</b>.
@@ -472,7 +472,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     },
     {
       id: 6,
-      heading: "Where to Shop in Kuala Lumpur",
+      heading: "Where to Shop Souvenir",
       icon: "SHOPPING",
       description: `
         Kuala Lumpur offers everything from high-end malls to vibrant local markets. For luxury brands and designer labels, visit <b>Pavilion KL, Suria KLCC, or The Gardens Mall</b>. Looking for great deals and local treasures? <b>Berjaya Times Square</b> is ideal for affordable fashion, while <b>Central Market</b> is perfect for <b>handmade crafts and unique souvenirs</b> to take back home. Don’t miss <b>Petaling Street in Chinatown</b> for an exciting mix of <b>street shopping and local street food</b>.
@@ -489,7 +489,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     {
       id: 7,
       icon: "SUN",
-      heading: "When Is the Best Time to Visit Kuala Lumpur?",
+      heading: "When Is the Best Time",
       description: `
           The best time to visit Kuala Lumpur is during the <b>dry months from May to July and December to February</b>. These periods offer more sunshine and fewer rain showers, making it ideal for sightseeing, outdoor dining, and day trips.
           <br />
@@ -506,7 +506,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     {
       id: 8,
       icon: "CLOCK",
-      heading: "How Long Should You Spend in Kuala Lumpur?",
+      heading: "How Long Should You Stay",
       description: `
          To fully enjoy what Kuala Lumpur has to offer, plan to spend <b>3 to 4 days</b> in the city. This gives you enough time to explore cultural landmarks, try iconic street food, shop at famous malls, and take at least one day trip.
          <br />
@@ -525,10 +525,10 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     },
     {
       id: 9,
-      icon: "PIN",
-      heading: "Must-Do Things in Kuala Lumpur",
+      icon: "FERRIS_WHEEL",
+      heading: "Must-Do Things",
       description: `
-        Kuala Lumpur is packed with exciting activities for every traveler. Check out the <a href="/malaysia/kuala-lumpur/top-things-to-do" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Kuala lumpur</a> to explore more.
+        Kuala Lumpur is packed with exciting activities for every traveler. Check out the <b><a href="/malaysia/kuala-lumpur/top-things-to-do" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Kuala lumpur</a></b> to explore more.
         <br />
         <br />
         Visitors can admire stunning city views from towering observation decks like <b>KL Tower and the iconic Petronas Twin Tower</b>, Stroll through colorful neighborhoods like <b>Chinatown and Little India to discover the city’s cultural roots</b>. Explore local food markets and don’t miss trying iconic Malaysian dishes. Visit temples and mosques to appreciate KL’s rich spiritual diversity. Take in panoramic city views from one of the many rooftop lounges. Enjoy a shopping spree or a relaxing spa day—all at surprisingly affordable prices.
@@ -540,7 +540,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
     },
     {
       id: 10,
-      icon: "LEAF",
+      icon: "BACKPACK",
       heading: "Best Day Trips from Kuala Lumpur",
       description: `
         KL is a great base for day trips that let you explore Malaysia’s diverse offerings.
@@ -562,14 +562,21 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
       icon: "BOOK_OPEN_CHECK",
       heading: "Quick Tips",
       description: `
-      <li>Use the <b>Grab app</b> for affordable, safe transport.</li>
-      <li><b>Tap water isn't safe</b>, drink bottled or filtered water.</li>
-      <li>Dress modestly when visiting religious sites.</li>
-      <li>Carry small change for street food and local markets.</li>
-      <li>Tipping is not mandatory but appreciated.</li>
-      <li><b>Carry an umbrella</b>, weather can change fast.</li>
-      <li>Use a travel SIM or eSIM for mobile data.</li>
-
+      <li><b>Hydrate & Protect:</b> The tropical sun is intense—carry a refillable water bottle, apply reef-safe sunscreen (SPF 30+), and wear a wide-brim hat.</li>
+      <br />
+      <li><b>Beat the Heat:</b> Plan outdoor activities early (8–11 AM) or late afternoon (4–6 PM) to avoid peak midday temperatures and sudden rain.</li>
+      <br />
+      <li><b>Carry Cash:</b> Many street stalls and local markets don’t accept cards—keep small denominations (RM1, RM5, RM10) for night markets and tips.</li>
+      <br />
+      <li><b>Carry Umbrella:</b> Weather can change very frequently, it good to be prepared</li>
+      <br />
+      <li><b>Use Grab:</b> For convenient, affordable, and reliable rides, especially when navigating the city's traffic, during late hours or airport transfers</li>
+      <br />
+      <li><b>Tipping:</b> Tipping is not mandatory but appreciated.</li>
+      <br />
+      <li><b>Drink Bottled Water:</b> Tap water isn't safe, drink bottled or filtered water</li>
+      <br />
+      <li><b>Dress modestly:</b> When visiting religious sites, dress modestly</li>
       `,
     },
   ],
