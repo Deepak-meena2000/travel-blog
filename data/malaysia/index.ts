@@ -588,7 +588,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Banana Leaf Rice",
         description:
           "Banana Leaf Rice is a traditional South Indian vegetarian meal widely available in Malaysian Indian restaurants. Served on a banana leaf, it typically includes white or parboiled rice, various vegetable curries, pickles, papadum, and dhal. The variety of textures and flavors are spicy, tangy, crunchy, and creamy, makes this a wholesome and satisfying vegetarian option. Most restaurants offer refills, and it’s eaten with your hands for a truly authentic experience. Affordable and fulfilling. ",
-        image: "/images/country/malaysia/food/banana_leaf_rice.jpg",
+        image: "/images/country/malaysia/food/banana_leaf_Rice.jpg",
         imageCreditHTML: `
             <a target="_blank" href="https://commons.wikimedia.org/wiki/File:%E0%B2%AC%E0%B2%BE%E0%B2%B3%E0%B3%86%E0%B2%B2%E0%B3%86_%E0%B2%8A%E0%B2%9F_(Banana_leaf_meal).jpg"><u>Codegeass123</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons
           `,
