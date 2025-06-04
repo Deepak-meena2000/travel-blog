@@ -370,7 +370,7 @@ Perhentian Kecil is ideal for budget travelers, with dorms and guesthouses on Lo
     </br>
 
      <li>
-      Perhentian Island is packed with exciting activities for every traveler. Discover our <a href="/malaysia/perhentian-islands/top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in perhentian</a> to explore more.</li>
+      Perhentian Island is packed with exciting activities for every traveler. Discover our <b><a href="/malaysia/perhentian-islands/top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in perhentian</a></b> to explore more.</li>
 
                 `,
     },

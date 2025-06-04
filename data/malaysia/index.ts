@@ -825,7 +825,7 @@ export const MALAYSIA_PLACES_TO_VISIT = [
       "Kuala Lumpur, the capital city of Malaysia, is a dynamic blend of modern architecture, cultural landmarks, and street food delights. Gaze up at the Petronas Towers, roam the Batu Caves, and shop till you drop in Bukit Bintang. Savor street food in Jalan Alor and experience the soul of Malaysia in Chinatown and Little India. Locals proudly embrace their multicultural identity, creating a vibrant tapestry of flavors, festivals, and warmth that makes every moment here special.",
     image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
     otherInfo: {
-      must_do: `Visit KL Tower At sunset, Nightlife at Changkat Avenue, check out all the <a target="_blank" href="/malaysia/kuala-lumpur/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Kuala Lumpur</a> `,
+      must_do: `Visit KL Tower At sunset, Nightlife at Changkat Avenue, check out all the <b><a target="_blank" href="/malaysia/kuala-lumpur/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Kuala Lumpur</a></b> `,
       time_to_visit:
         "hot and humid year-round, May-July and November-February experience less rainfall",
       how_to_reach:
@@ -842,7 +842,7 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     image: "/images/country/malaysia/places/penang/penang.jpg",
     otherInfo: {
       must_do: `
-       Explore the street art while taking stoppage to try local food, Explore Jetties, Hike up to Penang Hills, check out all the <a target="_blank" href="/malaysia/penang/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Penang</a>
+       Explore the street art while taking stoppage to try local food, Explore Jetties, Hike up to Penang Hills, check out all the <b><a target="_blank" href="/malaysia/penang/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Penang</a></b>
 
       `,
       time_to_visit:
@@ -859,7 +859,7 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     image: "/images/country/malaysia/places/langkawi/langkawi_banner.jpg",
     otherInfo: {
       must_do: `
-      Take one of the steepest Cable Car in the world to reach Langkawi Sky Bridge, eat & shop at the Night markets,  check out all the <a target="_blank" href="/malaysia/langkawi/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in langkawi</a>
+      Take one of the steepest Cable Car in the world to reach Langkawi Sky Bridge, eat & shop at the Night markets,  check out all the <b><a target="_blank" href="/malaysia/langkawi/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in langkawi</a></b>
       `,
       time_to_visit: "November to March",
       how_to_reach: "Flights from Kuala Lumpur, Ferries from Kuala Perlis",
@@ -903,7 +903,7 @@ export const MALAYSIA_PLACES_TO_VISIT = [
     image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
     otherInfo: {
       must_do: `
-      Island Hopping, Explore Underwater world and enjoy the laid-back vibes, check out all the <a target="_blank" href="/malaysia/perhentian-islands/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Perhentian Islands</a>
+      Island Hopping, Explore Underwater world and enjoy the laid-back vibes, check out all the <b><a target="_blank" href="/malaysia/perhentian-islands/top-things-to-do" class="text-teal-600 underline font-medium">top things to do in Perhentian Islands</a></b>
       `,
       time_to_visit: "March-November",
       how_to_reach: "Ferries from Kuala Besut or Kuala Terengganu",

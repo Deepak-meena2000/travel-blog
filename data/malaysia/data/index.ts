@@ -105,7 +105,7 @@ Malaysia is a <b>budget-friendly</b> destination, especially for street food, lo
         heading: "Best Time to Visit",
         description: `
 
-        Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.Explore our in-depth city-specific <a href="/malaysia" target="_blank" class="text-teal-600 underline">travel guides</a> travel guides for everything you need to know about the destinations you're visiting in Malaysia.
+        Malaysia has a tropical climate, so it's <b>hot and humid year-round</b>. However, the best time to visit depends on the region.Explore our in-depth city-specific <b><a href="/malaysia" target="_blank" class="text-teal-600 underline">travel guides</a></b> travel guides for everything you need to know about the destinations you're visiting in Malaysia.
         <br/>
         <br/>
         For most of Peninsular Malaysia, the dry season runs from <b>November to August</b>, making it ideal for outdoor travel and beach destinations.
@@ -201,8 +201,8 @@ Renting a scooter is a convenient and budget-friendly way to hop between attract
 Malaysia’s cuisine is a flavorful mix of Malay, Chinese, and Indian influences—don’t miss dishes like nasi lemak, laksa, and roti canai costs around RM5–RM10, while mid-range meals at local restaurants are typically RM15–RM30. Street food is both delicious and budget-friendly, especially in cities like Penang and Kuala Lumpur. For more insights, explore our in-depth article on Malaysian cuisine -
 <br />
 <br />
-<li>A  <a href="/malaysia/complete-food-guide" target="_blank" class="text-teal-600 underline">complete food guide</a> provide info of what to, when to and the vegetarian options.</li>
-<li> <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Must-try dishes</a> you shouldn't miss in Malaysia.</li>
+<li>A  <b><a href="/malaysia/complete-food-guide" target="_blank" class="text-teal-600 underline">complete food guide</a></b> provide info of what to, when to and the vegetarian options.</li>
+<li> <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Must-try dishes</a></b> you shouldn't miss in Malaysia.</li>
 <br />
 Alcohol is taxed heavily—expect to pay RM15–RM30 ($3–$7 USD) for a beer at bars, and more in upscale places. Supermarkets sell beer from RM8 ($1.70 USD) per can, but alcohol is limited in Muslim-majority areas.
 <br />
@@ -229,7 +229,7 @@ Tap water isn't always safe to drink — use bottled or filtered water. Naturewi
         icon: "FERRIS_WHEEL",
         heading: "What Are the Must-Visit Places in Malaysia?",
         description: `
-          Malaysia has something for every kind of traveler. Discover the <a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Malaysia</a> to explore more.
+          Malaysia has something for every kind of traveler. Discover the <b><a href="/malaysia" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">top things to do in Malaysia</a></b> to explore more.
           <br />
           <br />
 One can explore the vibrant capital <b>Kuala Lumpur</b>, with its Petronas Towers, Batu Caves and street food. Wander historic <b>George Town (Penang)</b>, a UNESCO heritage site filled with culture and art. Relax on tropical islands like <b>Langkawi</b>, <b>Perhentian, or Redang</b>. Dive into unforgettable underwater adventures with scuba diving or snorkeling at not only Malaysia’s but world's top marine spots like <b>Sipadan</b> and Lankayan Island. Discover nature in Cameron Highlands or climb Mount Kinabalu in <b>Sabah</b>. Visit <b>Melaka</b> for colonial charm or Borneo for orangutans and rainforests.
@@ -1258,7 +1258,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       image: "/images/country/malaysia/places/kuala_lumpur/blog/jalan_alor.jpg",
       tips: [
         `Try satay, Marshmallow IceCream and char kway teow`,
-        `Checkout our detailed article on <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">what to eat</a> in malaysia`,
+        `Checkout our detailed article on <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">what to eat</a></b> in malaysia`,
       ],
     },
     {
@@ -1295,7 +1295,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       description: `Langkawi’s night markets offer an authentic taste of local life with bustling stalls selling delicious street food, fresh produce, clothing, and handicrafts. These markets rotate locations nightly in different towns like Kuah, Pantai Cenang, and Temoyong, providing a vibrant atmosphere to explore. Checkout the Night markets schedules here on our Langkawi travel guide. Sample local favorites such as satay, laksa, grilled seafood, kuih (traditional sweets) and many more. It’s an ideal way to immerse yourself in Malaysian culture, meet locals, and find souvenirs.`,
       operationalHours:
         "Generally 5:00 PM – 11:00 PM </br>(varies by location and day)",
-      location: `Rotating locations, check daily schedule on our <a href="/malaysia/langkawi/travel-guide" target="_blank" class="text-teal-600 underline">Langkawi complete guide</a>`,
+      location: `Rotating locations, check daily schedule on our <b><a href="/malaysia/langkawi/travel-guide" target="_blank" class="text-teal-600 underline">Langkawi complete guide</a></b>`,
       price: "Dishes range from RM2–RM10",
       duration: "2 Hours",
       image: "/images/country/malaysia/places/langkawi/blog/nightmarket.jpg",

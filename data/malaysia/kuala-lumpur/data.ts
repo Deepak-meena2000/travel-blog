@@ -464,7 +464,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
       You can find tasty meals at street stalls for as little as RM5–RM10 ($1–$2 USD), mid-range meals at cafes or restaurants cost RM15–RM30 ($3–$6 USD). KL also has trendy cafes, rooftop bars, and fine dining options for those seeking variety.
       <br />
       </br><li>
-      Checkout our Malaysia's <a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a> and <a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a> artciles.</li>
+      Checkout our Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> and <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must eat dishes</a></b> artciles.</li>
       <br />
       Alcohol is available but expensive due to taxes—expect to pay RM15–RM30 for a beer at bars
 
@@ -518,7 +518,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
          </br>
          </br>
          <li>
-         Discover our relaxed <a href="/malaysia/16-days-itinerary" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">16-day Malaysia itinerary</a>, perfect for exploring the KL and other cities at an easy, enjoyable pace.
+         Discover our relaxed <b><a href="/malaysia/16-days-itinerary" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">16-day Malaysia itinerary</a></b>, perfect for exploring the KL and other cities at an easy, enjoyable pace.
          </li>
 
         `,

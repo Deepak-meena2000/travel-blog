@@ -458,7 +458,7 @@ Luxury seekers can explore Gurney Drive with its upscale hotels and sea views. B
       icon: "FOOD",
       heading: "What and Where to Eat & Drink",
       description: `
-Penang is widely regarded as the <b>food capital of Malaysia</b>, celebrated for its diverse and flavorful street food. Start your culinary journey with must-try dishes like char kway teow (stir-fried rice noodles), Penang laksa (tangy fish-based noodle soup), nasi kandar (rice with mixed curries), Hokkien mee (prawn noodle soup), and the sweet, icy cendol dessert. checkout all the must eat dishes in <a href="malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">our what to eat</a> article.  
+Penang is widely regarded as the <b>food capital of Malaysia</b>, celebrated for its diverse and flavorful street food. Start your culinary journey with must-try dishes like char kway teow (stir-fried rice noodles), Penang laksa (tangy fish-based noodle soup), nasi kandar (rice with mixed curries), Hokkien mee (prawn noodle soup), and the sweet, icy cendol dessert. checkout all the must eat dishes in <b><a href="malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">our what to eat</a></b> article.  
 </br>
 </br>
 <b>Gurney Drive Hawker Centre</b> and New Lane Night Market are food havens where you can enjoy authentic local dishes at pocket-friendly prices. 
@@ -514,7 +514,7 @@ Street food is a must so head to Gurney Drive or Chulia Street for the best bite
 </br>
 </br>
 <li>
-Penang is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in penang</a> to explore more.
+Penang is packed with exciting activities for every traveler. Discover our <b><a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in penang</a></b> to explore more.
 </li>
 
 `,

@@ -303,7 +303,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     {
       id: 3,
       icon: "CAR",
-      heading: "Getting Around Langkawi",
+      heading: "Getting Around",
       description: `
      Getting around Langkawi is easy, flexible, and part of the adventure
       <br />
@@ -324,7 +324,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     {
       id: 4,
       icon: "HOTEL",
-      heading: "Where to Stay in Langkawi",
+      heading: "Where to Stay",
       description: `
     Langkawi offers a wide range of accommodations to suit every budget and travel style. <b>Luxury seekers</b> will love beachfront resorts such as The Datai Langkawi and The Ritz-Carlton, where nightly rates start from <b>RM1,200</b> and include spa access, private beaches, and fine dining. These opulent retreats nestled in the rainforest promise world-class service and spectacular sunrise views.
     <br />
@@ -341,7 +341,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     {
       id: 5,
       icon: "FOOD",
-      heading: "What and Where to Eat and Drink in Langkawi",
+      heading: "What and Where to Eat and Drink",
       description: `
     Langkawi’s culinary scene is as vibrant as its landscapes, offering everything from hearty street fare to relaxed beachside dining. Start your day with <b>Nasi Lemak</b> (coconut rice with sambal, egg, and anchovies) for around <b>RM6–RM8</b> at local morning stalls in <b>Kuah Town</b>.
     <br />
@@ -362,7 +362,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     {
       id: 6,
       icon: "STORE",
-      heading: "What’s the street market schedule ?",
+      heading: "What’s the street market schedule",
       description: `
        Langkawi’s night markets (locally known as pasar malam) are a must-visit for food lovers and bargain hunters. Rotating across different towns each night, these lively markets offer a mix of local street food, snacks, clothes, souvenirs, and more. Try dishes like nasi lemak, satay, grilled seafood, and fresh tropical juices at budget-friendly prices. Check out the markets below -
         <br>
@@ -396,7 +396,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     {
       id: 8,
       icon: "SUN",
-      heading: "When Is the Best Time to Visit Langkawi?",
+      heading: "Best Time to Visit",
       description: `
     The <b>best time to visit Langkawi</b> is during the dry season from <b>November to April</b>, when sunny skies and calm seas make for perfect beach days, island hopping, and outdoor adventures. During these months, daytime temperatures average <b>28°C–32°C</b>, with low rainfall, ideal for cable car rides, jungle treks, and mangrove tours.
     <br />
@@ -413,7 +413,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
     {
       id: 9,
       icon: "CLOCK",
-      heading: "How Long to Spend in Langkawi",
+      heading: "How Long to Spend",
       description: `
        Choosing the right length of stay in Langkawi depends on your travel style and interests.
        <br>
@@ -451,7 +451,7 @@ export const LANGKAWI_TRAVEL_GUIDE = {
 </br>
 </br>
 <li>
-Langkawi is packed with exciting activities for every traveler. Discover our <a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in Langkawi</a> to explore more.
+Langkawi is packed with exciting activities for every traveler. Discover our <b><a href="top-things-to-do" target="_blank" class="text-teal-600 underline">top things to do in Langkawi</a></b> to explore more.
 </li>
 
                 `,
@@ -459,7 +459,7 @@ Langkawi is packed with exciting activities for every traveler. Discover our <a 
     {
       id: 11,
       icon: "BOOK_OPEN_CHECK",
-      heading: "Quick Tips for Traveling in Langkawi",
+      heading: "Quick Tips",
       description: `
       <li><b>Stay Connected:</b> Buy a local prepaid SIM (Digi or Maxis) at the airport for cheap data and reliable coverage across the island.</li>
       <br />
