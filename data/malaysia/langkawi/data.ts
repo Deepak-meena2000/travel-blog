@@ -140,7 +140,8 @@ export const LANGKAWI_BLOG_POST = [
       "Make a stop where the airport lies on one side and the sea on the other side",
       "Use Google Maps to explore the road",
     ],
-    image: "/images/country/malaysia/places/langkawi/kualamuda.jpg",
+    image:
+      "/images/country/malaysia/places/langkawi/blog/jalan_kuala_muda_road.jpg",
   },
   {
     name: "Mangrove Tour (Kilim Geoforest Park), Langkawi",
@@ -162,9 +163,9 @@ export const LANGKAWI_BLOG_POST = [
     price: "RM35-RM60 per person",
     location: "Departure from Pantai Cenang or Kuah Jetty",
     duration: "2-3 Hours",
-    image: "/images/country/malaysia/places/langkawi/blog/islandhopping.jpg",
+    image: "/images/country/malaysia/places/langkawi/blog/island_hopping.jpg",
     imageCreditHTML:
-      '<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Beach_at_dawn,_Perhentian_Islands.jpg"><u>Chamberlain of Nilai</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons',
+      '<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Dayang-bunting-lake.jpg"><u>Gregorio02</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons',
   },
   {
     name: "Langkawi Waterfalls (Temurun & Durian Perangin)",
@@ -244,7 +245,9 @@ export const LANGKAWI_BLOG_POST = [
       "Don't miss the souvenir shops and local food stalls",
       "Combine your visit with the cable car and Sky Bridge for a full day of adventure and sightseeing",
     ],
-    image: "/images/country/malaysia/places/langkawi/blog/orientalvillage.jpg",
+    image: "/images/country/malaysia/places/langkawi/blog/oriental_village.jpg",
+    imageCreditHTML:
+      "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:MY-Langkawi-oriental-village-01.jpg'><u>Balou46</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0'><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons",
   },
   {
     name: "Floating Stay in Langkawi",

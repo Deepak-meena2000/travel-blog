@@ -1227,6 +1227,9 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
         `Arrive early to grab a table`,
         "Carry cash, Share plates to taste more dishes",
       ],
+      image: "/images/country/malaysia/places/penang/blog/hawker_stalls.jpg",
+      imageCreditHTML:
+        "Photo by <a target='_blank' href='https://unsplash.com/@zyteng?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Kelvin Zyteng</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-man-standing-in-front-of-a-table-filled-with-food-XQCZLL3gEhw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
     },
     {
       id: 13,
@@ -1252,6 +1255,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       location: "Bandar Hilir, Melaka City",
       price: "Dishes range from RM10–RM30",
       duration: "2 hours",
+      image: "/images/country/malaysia/places/kuala_lumpur/blog/jalan_alor.jpg",
       tips: [
         `Try satay, Marshmallow IceCream and char kway teow`,
         `Checkout our detailed article on <a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">what to eat</a> in malaysia`,
@@ -1305,7 +1309,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       title: "Relax at an Infinity Pool",
       description: `Kuala Lumpur is home to several high-rise hotels and residences that offer stunning infinity pools with sweeping views of the skyline – particularly the Petronas Towers and KL Tower. Popular options include the rooftop pools at The Face Suites, Banyan Tree KL, or Regalia Residences (some offer day passes). Whether you're swimming at sunrise or lounging at sunset, it’s a relaxing and luxurious way to unwind in the city. Infinity pools here are also social media favorites, perfect for that iconic KL backdrop.`,
       operationalHours: "7:00 AM – 7:00 PM",
-      location: `Free for guests</br> RM 30–100 for day passes (if offered)`,
+      location: `Free for guests</br> RM30–RM100 for day passes (if offered)`,
       image:
         "/images/country/malaysia/places/kuala_lumpur/blog/infinity_pool.jpg",
       imageCreditHTML: null,
@@ -1388,8 +1392,10 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       id: 24,
       title: "Book a beachside Resort and Relax",
       description: `Book a beachside resort in Malaysia and spend your days soaking in sun, sea, and serenity. From the powdery shores of Langkawi and the crystal-clear waters of the Perhentian Islands to the quiet luxury of Pangkor Laut, Malaysia offers beachfront stays to suit every traveler's dream. Wake up to ocean views, take lazy swims, sip coconut water under palm trees, and unwind with a sunset massage or a seaside dinner. Whether you're seeking a romantic escape, a family break, or a solo recharge, chilling at a beachfront resort offers the perfect blend of comfort and nature. It’s not just a stay, it's a slow-paced experience made for true relaxation.`,
-      image: "/images/country/malaysia/places/langkawi/blog/beach_resort.jpg",
-      imageCreditHTML: null,
+      image:
+        "/images/country/malaysia/places/perhentian/blog/beachside_resort.jpg",
+      imageCreditHTML:
+        "Photo by <a target='_blank' href='https://unsplash.com/@uxsj_ph?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>SJ 📸</u></a> on <a target='_blank' href='https://unsplash.com/photos/nipa-huts-on-seashore-688Nj6fVPXU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
     },
     {
       id: 25,
@@ -1507,9 +1513,9 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
       operationalHours:
         "Open year-round</br>most attractions 9:00 AM – 5:00 PM",
       duration: "1 Full day",
-      image: "/images/country/malaysia/places/terengganu/crystal_mosque.jpg",
-      imageCreditHTML:
-        "Photo by <a target='_blank' href='https://www.pexels.com/photo/view-of-a-mosque-7500930/'><u>Pok Rie</u></a>",
+      image:
+        "/images/country/malaysia/places/cameron_islands_places_to_visit.jpg",
+      imageCreditHTML: null,
     },
     {
       id: 34,

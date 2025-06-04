@@ -226,7 +226,7 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Roti John",
     description:
       "Roti John is Malaysia's take on a stuffed omelet sandwich. A split baguette is filled with minced meat (usually chicken or beef), onions, eggs, and sometimes sardines, then pan-fried until crispy and golden. It's topped with chili sauce, mayonnaise, and occasionally cheese for extra indulgence. Often sold at night markets, it's perfect as a filling street snack or light meal.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/country/malaysia/food/roti_john.png",
     otherInfo: {
       where_to_eat:
         "Pasar malam (night markets), bazaar Ramadan stalls, and street vendors.",
@@ -289,7 +289,6 @@ export const MALAYSISA_FOOD_DATA = [
     name: "Apam Balik",
     description:
       "Apam Balik is a popular Malaysian street snack, essentially a thick, crispy pancake folded in half and filled with crushed peanuts, sugar, and sweet corn. The outer crust is golden and crisp, while the inside remains fluffy and sweet. Variations now include fillings like Nutella, cheese, or even bananas. It's often enjoyed as a dessert or tea-time snack and is especially popular at night markets.",
-    image: "/placeholder.svg?height=300&width=500",
     otherInfo: {
       where_to_eat:
         "Pasar malam (night markets), roadside vendors, and morning markets.",
@@ -297,13 +296,16 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: true,
       tips: [],
     },
+    image: "/images/country/malaysia/food/apam_balik.jpg",
+    imageCreditHTML:
+      "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Giant_Apam_Balik.jpg'><u>Yun Huang Yong</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
   },
   {
     id: 18,
     name: "Kek Lapis Sarawak",
     description:
       "Kek Lapis Sarawak is a colorful, layered cake originating from Sarawak, Borneo. It's made with butter, condensed milk, and various flavorings like pandan, chocolate, or fruit essences. The cake is labor-intensive, with each layer baked individually to create stunning patterns. It's usually served during festivals or gifted as a souvenir.",
-    image: "/images/country/malaysia/food/kek_lapis_sarawak.jpg",
+    image: "/images/country/malaysia/food/kek_lapis_sarawak.png",
     otherInfo: {
       where_to_eat:
         "Specialty shops in Sarawak, local cake shops, and major airports.",
@@ -311,22 +313,21 @@ export const MALAYSISA_FOOD_DATA = [
       vegetarian_available: true,
       tips: ["Most versions are vegetarian, but check for eggs"],
     },
-    imageCreditHTML: `
-      <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Kek_Lapis_Sarawak.jpg"><u>bob P-&amp;-S</u></a>, <a href="https://creativecommons.org/licenses/by/2.0"><u>CC BY 2.0</u></a>, via Wikimedia Commons
-    `,
   },
   {
     id: 19,
     name: "Ais Kacang",
     description:
       "Ais Kacang (also called ABC – Air Batu Campur) is Malaysia's ultimate shaved ice dessert. It's a colorful mountain of finely shaved ice drenched in rose syrup, condensed milk, and gula Melaka (palm sugar syrup), served with toppings like sweet corn, red beans, grass jelly, peanuts, and sometimes ice cream. Refreshing and satisfyingly sweet, it's a popular treat in Malaysia's hot climate and a must-try during food market visits.",
-    image: "/placeholder.svg?height=300&width=500",
     otherInfo: {
       where_to_eat: "Hawker centers, food courts, and dessert shops",
       range: "RM4–RM7",
       vegetarian_available: true,
       tips: [],
     },
+    image: "/images/country/malaysia/food/ais_kacang.jpg",
+    imageCreditHTML:
+      "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Ais_kacang.jpg'><u>Andrew Bogott</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/3.0'><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons",
   },
   {
     id: 20,
@@ -387,8 +388,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "breakfast",
     title: "Start Your Day Right: Best Malaysian Breakfasts",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 1,
@@ -445,8 +445,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "lunch-dinner",
     title: "Hearty Plates: Must-Try Lunch & Dinner Dishes",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 7,
@@ -521,8 +520,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
       {
         id: 14,
         name: "Nasi Campur",
-        description:
-          `Nasi Campur, or "mixed rice," is a highly customizable Malaysian meal where you pick a portion of rice and choose from a variety of sides like curries, stir-fried vegetables, fried chicken, sambal, eggs, tofu, and more. It's a common lunch or dinner option found at Malay warungs, Indian nasi kandar outlets, and Chinese economy rice stalls. With endless combinations and flavors, it caters to every palate and budget. Nasi Campur reflects the diversity of Malaysian cuisine, offering everything from mild to fiery dishes on one plate.`,
+        description: `Nasi Campur, or "mixed rice," is a highly customizable Malaysian meal where you pick a portion of rice and choose from a variety of sides like curries, stir-fried vegetables, fried chicken, sambal, eggs, tofu, and more. It's a common lunch or dinner option found at Malay warungs, Indian nasi kandar outlets, and Chinese economy rice stalls. With endless combinations and flavors, it caters to every palate and budget. Nasi Campur reflects the diversity of Malaysian cuisine, offering everything from mild to fiery dishes on one plate.`,
         image: "/images/country/malaysia/food/nasi_campur.jpg",
         imageCreditHTML: `
             <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Nasi_Campur.jpg"><u>Fei Tan</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0"><u>CC BY 2.0</u></a>, via Wikimedia Commons
@@ -542,8 +540,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "street-food",
     title: "Iconic Malaysian Street Food",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 16,
@@ -564,7 +561,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Roti John",
         description:
           "Roti John is a uniquely Malaysian street food sandwich, especially popular in night markets and pasar malam. It features a baguette-like bun filled with minced meat (chicken or beef), egg, onions, and sometimes sardines, all fried on a hot griddle. It’s then drizzled with chili sauce, mayonnaise, and ketchup before being served in slices. Crispy on the outside and juicy inside, Roti John is hearty, messy, and incredibly satisfying.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/roti_john.png",
       },
       {
         id: 19,
@@ -576,17 +573,15 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
       {
         id: 20,
         name: "Roti Tisu",
-        description:
-          `Roti Tisu, or "tissue bread," is a paper-thin, crispy version of roti canai, stretched into a tall cone or large triangle and caramelized with sugar, butter, or sweetened condensed milk. Sometimes served with ice cream or chocolate drizzle, it’s both a dessert and a street spectacle. Found at mamak stalls and night markets, Roti Tisu is loved for its sweet crunch and dramatic presentation. Perfect for sharing or ending a spicy meal on a sweet note, it’s a fun treat that’s as photogenic as it is tasty.`,
-        image: "/placeholder.svg?height=300&width=500",
+        description: `Roti Tisu, or "tissue bread," is a paper-thin, crispy version of roti canai, stretched into a tall cone or large triangle and caramelized with sugar, butter, or sweetened condensed milk. Sometimes served with ice cream or chocolate drizzle, it’s both a dessert and a street spectacle. Found at mamak stalls and night markets, Roti Tisu is loved for its sweet crunch and dramatic presentation. Perfect for sharing or ending a spicy meal on a sweet note, it’s a fun treat that’s as photogenic as it is tasty.`,
+        image: "/images/country/malaysia/food/roti_tisu.png",
       },
     ],
   },
   {
     id: "vegetarian",
     title: "Top Vegetarian Picks",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 21,
@@ -630,20 +625,18 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Vegetarian Nasi Lemak, Char Kway Teow & Laksa",
         description:
           "Vegetarian versions of Malaysia’s iconic dishes are increasingly available across the country. Nasi Lemak can be made with coconut rice, cucumber, peanuts, vegetarian sambal, and mock meats or tempeh. Char Kway Teow without shrimp or sausage still delights with wok-fried noodles, tofu, and bean sprouts. Vegetarian Laksa, particularly curry laksa, uses tofu puffs, eggplant, mushrooms, and non-meat broth alternatives. Many vegetarian and vegan eateries, especially in cities like Kuala Lumpur, Penang, and Melaka, offer these meatless twists, ensuring plant-based travelers enjoy authentic flavors without compromise.",
-      }
+      },
     ],
   },
   {
     id: "drinks",
     title: "Sip & Refresh: Popular Malaysian Drinks",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 25,
         name: "Teh Tarik",
-        description:
-          `Teh Tarik is Malaysia’s national drink, a frothy, creamy pulled milk tea made with strong black tea and condensed milk. The name means "pulled tea," referring to the dramatic pouring technique between two cups, which cools and aerates the drink, creating its signature foam. Found at every mamak stall and kopitiam, Teh Tarik is both comforting and refreshing, enjoyed hot or iced. Sweet and slightly bitter, it pairs perfectly with roti canai or banana leaf meals. `,
+        description: `Teh Tarik is Malaysia’s national drink, a frothy, creamy pulled milk tea made with strong black tea and condensed milk. The name means "pulled tea," referring to the dramatic pouring technique between two cups, which cools and aerates the drink, creating its signature foam. Found at every mamak stall and kopitiam, Teh Tarik is both comforting and refreshing, enjoyed hot or iced. Sweet and slightly bitter, it pairs perfectly with roti canai or banana leaf meals. `,
         image: "/images/country/malaysia/food/teh_tarik.jpg",
         innerCreditHTML: `
             <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Teh_tarik_2.jpg"><u>Alpha from Melbourne, Australia</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0"><u>CC BY-SA 2.0</u></a>, via Wikimedia Commons
@@ -663,7 +656,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Air Mata Kucing",
         description:
           "Air Mata Kucing is a traditional Malaysian herbal drink made from dried longan, monk fruit (luo han guo), and winter melon. This naturally sweet, cooling drink is popular in hot weather for its refreshing taste and health benefits. Served cold with ice, it has a distinct fruity aroma and mild herbal flavor. Widely found in night markets and hawker stalls, especially in Chinatown areas like Kuala Lumpur’s Petaling Street, Air Mata Kucing is perfect for cooling down after a spicy meal or during a sunny afternoon.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/air_mata_kucing.png",
       },
       {
         id: 28,
@@ -672,29 +665,57 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
           "Sirap Bandung is a bright pink, sweet drink made with rose syrup and evaporated or condensed milk, creating a creamy, floral-flavored treat. Popular during festive seasons like Hari Raya and found at roadside drink stalls, it's often served chilled over ice. The striking color and unique taste make it a favorite among locals and a must-try for curious travelers. Some versions also include basil seeds or jelly for added texture. ",
         image: "/images/country/malaysia/food/sirap_bandung.jpg",
         imageCreditHTML:
-          "<a target = “_blank” href='https://www.freepik.com/free-photo/large-glass-strawberry-milkshake-with-colorful-straws_10991607.htm#fromView=search&page=1&position=0&uuid=928f7d80-39bd-4ffa-82c2-d54604f338b2&query=Sirap+Bandung'><u>Image by Jcomp on Freepik</u></a>",
+          "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Bandung_Drinks.jpg'><u>Kyle Lam</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/2.0'><u>CC BY-SA 2.0</u></a>, via Wikimedia Commons",
       },
       {
         id: 29,
         name: "Milo Ais",
         description:
-          "Milo Ais is Malaysia’s beloved iced chocolate malt drink, made with Milo powder, condensed milk, and ice—perfectly sweet and energizing. Loved by kids and adults alike, it’s commonly available at school canteens, mamak stalls, and kopitiams. Some stalls even serve “Milo Dinosaur”, an indulgent version topped with a heap of extra Milo powder. It’s not just a drink, it’s a Malaysian childhood classic that offers comfort and nostalgia in every sip. ",
-        image: "/placeholder.svg?height=300&width=500",
+          "Milo Ais is Malaysia’s beloved iced chocolate malt drink, made with Milo powder, condensed milk, and ice—perfectly sweet and energizing. Loved by kids and adults alike, it’s commonly available at school canteens, mamak stalls, and kopitiams. Some stalls even serve “Milo Dinosaur”, an indulgent version topped with a heap of extra Milo powder. It’s not just a drink, it’s a Malaysian childhood classic that offers comfort and nostalgia in every sip.",
+        image: "/images/country/malaysia/food/milo_ais.jpg",
+        imageCreditHTML:
+          "<a target = “_blank” href='https://www.freepik.com/free-photo/iced-chocolate-cafe_1272916.htm#fromView=search&page=1&position=4&uuid=0fb47e7a-af9e-4e3c-951f-dc79002ad077&query=milo+drink'><u>Image by topntp26 on Freepik</u></a>",
       },
     ],
   },
   {
     id: "desserts",
     title: "Sweet Endings: Delicious Local Desserts",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 31,
         name: "Apam Balik",
         description:
           "Apam Balik is a beloved Malaysian street dessert—crispy on the outside and soft on the inside. This thick pancake is filled with a mix of crushed peanuts, sugar, and sweet corn, though modern versions include chocolate, banana, or Nutella. Cooked on a hot griddle and folded in half, Apam Balik is warm, crunchy, and satisfyingly sweet. Found at night markets and roadside stalls, it's a nostalgic treat for locals and a must-try for visitors seeking authentic.",
-        image: "/placeholder.svg?height=300&width=500",
+        image: "/images/country/malaysia/food/apam_balik.jpg",
+        imageCreditHTML:
+          "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Giant_Apam_Balik.jpg'><u>Yun Huang Yong</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by/2.0'><u>CC BY 2.0</u></a>, via Wikimedia Commons",
+      },
+      {
+        id: 32,
+        name: "Kek Lapis Sarawak",
+        description:
+          "Kek Lapis Sarawak is a vibrant layered cake native to Sarawak, East Malaysia. Known for its eye-catching colors and intricate patterns, this moist, rich cake is made with butter, eggs, and a blend of spices or fruit flavors.",
+        image: "/images/country/malaysia/food/kek_lapis_sarawak.png",
+      },
+      {
+        id: 33,
+        name: "Ais Kacang",
+        description:
+          "Ais Kacang (or ABC) is a colorful mountain of shaved ice topped with red beans, sweet corn, grass jelly, peanuts, and drizzled with syrup and condensed milk. Sometimes enriched with attap seeds or ice cream, it's one of Malaysia's most iconic desserts.",
+        image: "/images/country/malaysia/food/ais_kacang.jpg",
+        imageCreditHTML:
+          "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Ais_kacang.jpg'><u>Andrew Bogott</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/3.0'><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons",
+      },
+      {
+        id: 34,
+        name: "Kuih-Muih",
+        description:
+          "Kuih-Muih is a general term for the wide variety of bite-sized traditional Malaysian cakes and snacks, often made with rice flour, coconut milk, and palm sugar. Common types include Kuih Seri Muka, Kuih Lapis, and Ondeh-Ondeh.",
+        image: "/images/country/malaysia/food/kuih_muih.jpg",
+        imageCreditHTML:
+          "<a target = “_blank” href='https://commons.wikimedia.org/wiki/File:Nyonya_Kuih_.jpg'><u>Dd993f2</u></a>, <a target = “_blank” href='https://creativecommons.org/licenses/by-sa/4.0'><u>CC BY-SA 4.0</u></a>, via Wikimedia Commons",
       },
       {
         id: 35,
@@ -706,41 +727,12 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
             Image by <a target="_blank" href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Jason Goh</u></a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Pixabay</u></a>
           `,
       },
-      {
-        id: 32,
-        name: "Kek Lapis Sarawak",
-        description:
-          "Kek Lapis Sarawak is a vibrant layered cake native to Sarawak, East Malaysia. Known for its eye-catching colors and intricate patterns, this moist, rich cake is made with butter, eggs, and a blend of spices or fruit flavors. Each layer is individually baked, resulting in a firm texture and a slightly caramelized taste. Available at bakeries and airports, Kek Lapis Sarawak also makes for a perfect edible souvenir.",
-        image: "/placeholder.svg?height=300&width=500",
-      },
-      {
-        id: 33,
-        name: "Ais Kacang",
-        description:
-          "Ais Kacang (or ABC) is a colorful mountain of shaved ice topped with red beans, sweet corn, grass jelly, peanuts, and drizzled with syrup and condensed milk. Sometimes enriched with attap seeds or ice cream, it’s one of Malaysia’s most iconic desserts - cool, sweet, and delightfully textural. Combination of flavors and ingredients make it a unique, must-try dessert that captures the spirit of Malaysian street food culture.",
-        image: "/placeholder.svg?height=300&width=500",
-      },
-       {
-        id: 30,
-        name: "Marshmallow Ice Cream",
-        description:
-          "Marshmallow Ice Cream is a playful and indulgent treat that’s gaining popularity in trendy cafes and dessert stalls across Malaysia. This creamy dessert combines soft, fluffy marshmallows with rich, milky ice cream, often topped with rainbow sprinkles, chocolate sauce, or crushed cookies. Perfect for beating the tropical heat, this Instagrammable dessert is especially loved by kids and sweet-toothed travelers.",
-        image: "/placeholder.svg?height=300&width=500",
-      },
-      {
-        id: 34,
-        name: "Kuih-Muih",
-        description:
-          "Kuih-Muih is a general term for the wide variety of bite-sized traditional Malaysian cakes and snacks, often made with rice flour, coconut milk, and palm sugar. Common types include Kuih Seri Muka, Kuih Lapis, and Ondeh-Ondeh, offering chewy, soft, and sometimes crunchy textures. They’re usually colorful, mildly sweet, and served at breakfast, tea time, or festive events. Kuih-Muih reflects Malaysia’s rich cultural mix of Malay, Chinese, and Indian heritage. ",
-        image: "/placeholder.svg?height=300&width=500",
-      },
     ],
   },
   {
     id: "sides",
     title: "Tasty Extras: Snacks, Sides & Small Bites",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 36,
@@ -782,23 +774,22 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "place",
     title: "Foodie’s Map: Must-Visit Eateries in Malaysia",
-    description:
-      "",
-      items:[
-        {
+    description: "",
+    items: [
+      {
         id: 40,
         name: "Penang",
         description:
           "Penang is often called Malaysia’s food capital, and for good reason. George Town’s street food is legendary—try <b>Char Kway Teow at Siam Road or Penang Assam Laksa at Air Itam Market</b>. Visit <b>Gurney Drive Hawker Centre</b> for an all-in-one foodie experience. For sweet treats, grab cendol from <b>Penang Road Famous Teochew Cendol.</b> Upscale options include <b>Kebaya Dining Room and Indigo at Blue Mansion </b>for Peranakan cuisine in heritage settings. Penang's mix of Chinese, Malay, Indian, and Nyonya influences makes it a must-visit for serious foodies.",
         image: "/images/country/malaysia/places/penang/penang.jpg",
       },
-       {
+      {
         id: 41,
         name: "Kuala Lumpur",
         description:
           "Kuala Lumpur is a food lover’s paradise, offering everything from upscale dining to street food gems. Visit Jalan Alor for buzzing night market vibes and local favorites like satay and grilled seafood. For a more upscale experience, try Bijan Bar & Restaurant for refined Malay cuisine. Lot 10 Hutong offers curated hawker stalls under one roof, while Brickfields is ideal for authentic South Indian banana leaf meals. Don’t miss Village Park for the city’s most famous nasi lemak. KL’s culinary diversity makes it one of Southeast Asia’s top food cities.",
         image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
-      }, 
+      },
       {
         id: 42,
         name: " Langkawi",
@@ -806,22 +797,23 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
           "Langkawi’s food scene blends beachside charm with local flavors. Cenang Beach is packed with seafood restaurants like Orkid Ria and The Cliff, offering fresh catches with ocean views. For local tastes, visit Nasi Dagang Pak Malau, a countryside gem with paddy field views. Head to Night Markets (they rotate locations daily) for cheap and authentic Malay street food like laksa and roti canai. For international flair, Yellow Café and Smiling Buffalo offer cozy beach vibes with Western-Malay fusion dishes. Langkawi is perfect for relaxed, flavorful island dining.",
         image: "/images/country/malaysia/places/langkawi/blog/skybridge.jpg",
       },
-      ]
+    ],
   },
   {
     id: "alcohol",
     title: "Bar Hop Malaysia: Where to Find Your Favorite Pour",
-    description:
-      "",
-      items:[
-        {
+    description: "",
+    items: [
+      {
         id: 40,
         name: "Bar Hop Malaysia: Where to Find Your Favorite Pour",
         description:
           "Alcohol is available in Malaysia but its consumption is influenced by cultural and religious norms. As a predominantly Muslim country, alcohol is not widely consumed by the Malay Muslim population and is subject to restrictions in some states, especially in Kelantan and Terengganu. However, non-Muslims and tourists can freely purchase and consume alcohol in most urban areas. You’ll find a wide selection of beers, wines, and spirits in bars, pubs, restaurants, and hotels—particularly in cities like Kuala Lumpur, Penang, and Langkawi (a duty-free island where alcohol is cheaper). Always drink responsibly and be aware of local customs, especially during religious festivals like Ramadan. In Kuala Lumpur, head to Changkat Bukit Bintang for a lively mix of pubs, cocktail bars, and nightclubs, or visit SkyBar for signature drinks with sweeping city views. Over in Langkawi, a duty-free island, alcohol is much cheaper—perfect for beachside bars like Yellow Beach Café and Kalut. Penang offers a more laid-back vibe with spots like Micke’s Place and Out of Nowhere, known for their craft cocktails and cozy ambiance. Whether you’re after local beers, international spirits, or creative mixology, Malaysia has just the pour to suit your night out.",
-        image: "/images/country/malaysia/places/penang/penang.jpg",
-      }
-      ]
+        image: "/images/country/malaysia/food/bar_hop.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@echaparro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Edgar Chaparro</u></a> on <a target='_blank' href='https://unsplash.com/photos/brown-wooden-shelf-with-bottles-Lwx-q6OdGAc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
+      },
+    ],
   },
 ];
 
