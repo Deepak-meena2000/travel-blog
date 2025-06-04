@@ -388,8 +388,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "breakfast",
     title: "Start Your Day Right: Best Malaysian Breakfasts",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 1,
@@ -446,8 +445,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "lunch-dinner",
     title: "Hearty Plates: Must-Try Lunch & Dinner Dishes",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 7,
@@ -522,8 +520,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
       {
         id: 14,
         name: "Nasi Campur",
-        description:
-          `Nasi Campur, or "mixed rice," is a highly customizable Malaysian meal where you pick a portion of rice and choose from a variety of sides like curries, stir-fried vegetables, fried chicken, sambal, eggs, tofu, and more. It's a common lunch or dinner option found at Malay warungs, Indian nasi kandar outlets, and Chinese economy rice stalls. With endless combinations and flavors, it caters to every palate and budget. Nasi Campur reflects the diversity of Malaysian cuisine, offering everything from mild to fiery dishes on one plate.`,
+        description: `Nasi Campur, or "mixed rice," is a highly customizable Malaysian meal where you pick a portion of rice and choose from a variety of sides like curries, stir-fried vegetables, fried chicken, sambal, eggs, tofu, and more. It's a common lunch or dinner option found at Malay warungs, Indian nasi kandar outlets, and Chinese economy rice stalls. With endless combinations and flavors, it caters to every palate and budget. Nasi Campur reflects the diversity of Malaysian cuisine, offering everything from mild to fiery dishes on one plate.`,
         image: "/images/country/malaysia/food/nasi_campur.jpg",
         imageCreditHTML: `
             <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Nasi_Campur.jpg"><u>Fei Tan</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0"><u>CC BY 2.0</u></a>, via Wikimedia Commons
@@ -543,8 +540,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "street-food",
     title: "Iconic Malaysian Street Food",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 16,
@@ -577,8 +573,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
       {
         id: 20,
         name: "Roti Tisu",
-        description:
-          `Roti Tisu, or "tissue bread," is a paper-thin, crispy version of roti canai, stretched into a tall cone or large triangle and caramelized with sugar, butter, or sweetened condensed milk. Sometimes served with ice cream or chocolate drizzle, it’s both a dessert and a street spectacle. Found at mamak stalls and night markets, Roti Tisu is loved for its sweet crunch and dramatic presentation. Perfect for sharing or ending a spicy meal on a sweet note, it’s a fun treat that’s as photogenic as it is tasty.`,
+        description: `Roti Tisu, or "tissue bread," is a paper-thin, crispy version of roti canai, stretched into a tall cone or large triangle and caramelized with sugar, butter, or sweetened condensed milk. Sometimes served with ice cream or chocolate drizzle, it’s both a dessert and a street spectacle. Found at mamak stalls and night markets, Roti Tisu is loved for its sweet crunch and dramatic presentation. Perfect for sharing or ending a spicy meal on a sweet note, it’s a fun treat that’s as photogenic as it is tasty.`,
         image: "/images/country/malaysia/food/roti_tisu.png",
       },
     ],
@@ -586,8 +581,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "vegetarian",
     title: "Top Vegetarian Picks",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 21,
@@ -631,20 +625,18 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Vegetarian Nasi Lemak, Char Kway Teow & Laksa",
         description:
           "Vegetarian versions of Malaysia’s iconic dishes are increasingly available across the country. Nasi Lemak can be made with coconut rice, cucumber, peanuts, vegetarian sambal, and mock meats or tempeh. Char Kway Teow without shrimp or sausage still delights with wok-fried noodles, tofu, and bean sprouts. Vegetarian Laksa, particularly curry laksa, uses tofu puffs, eggplant, mushrooms, and non-meat broth alternatives. Many vegetarian and vegan eateries, especially in cities like Kuala Lumpur, Penang, and Melaka, offer these meatless twists, ensuring plant-based travelers enjoy authentic flavors without compromise.",
-      }
+      },
     ],
   },
   {
     id: "drinks",
     title: "Sip & Refresh: Popular Malaysian Drinks",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 25,
         name: "Teh Tarik",
-        description:
-          `Teh Tarik is Malaysia’s national drink, a frothy, creamy pulled milk tea made with strong black tea and condensed milk. The name means "pulled tea," referring to the dramatic pouring technique between two cups, which cools and aerates the drink, creating its signature foam. Found at every mamak stall and kopitiam, Teh Tarik is both comforting and refreshing, enjoyed hot or iced. Sweet and slightly bitter, it pairs perfectly with roti canai or banana leaf meals. `,
+        description: `Teh Tarik is Malaysia’s national drink, a frothy, creamy pulled milk tea made with strong black tea and condensed milk. The name means "pulled tea," referring to the dramatic pouring technique between two cups, which cools and aerates the drink, creating its signature foam. Found at every mamak stall and kopitiam, Teh Tarik is both comforting and refreshing, enjoyed hot or iced. Sweet and slightly bitter, it pairs perfectly with roti canai or banana leaf meals. `,
         image: "/images/country/malaysia/food/teh_tarik.jpg",
         innerCreditHTML: `
             <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Teh_tarik_2.jpg"><u>Alpha from Melbourne, Australia</u></a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0"><u>CC BY-SA 2.0</u></a>, via Wikimedia Commons
@@ -689,8 +681,7 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "desserts",
     title: "Sweet Endings: Delicious Local Desserts",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 31,
@@ -735,14 +726,13 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         imageCreditHTML: `
             Image by <a target="_blank" href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Jason Goh</u></a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=837368"><u>Pixabay</u></a>
           `,
-      }
+      },
     ],
   },
   {
     id: "sides",
     title: "Tasty Extras: Snacks, Sides & Small Bites",
-    description:
-      "",
+    description: "",
     items: [
       {
         id: 36,
@@ -784,23 +774,22 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
   {
     id: "place",
     title: "Foodie’s Map: Must-Visit Eateries in Malaysia",
-    description:
-      "",
-      items:[
-        {
+    description: "",
+    items: [
+      {
         id: 40,
         name: "Penang",
         description:
           "Penang is often called Malaysia’s food capital, and for good reason. George Town’s street food is legendary—try <b>Char Kway Teow at Siam Road or Penang Assam Laksa at Air Itam Market</b>. Visit <b>Gurney Drive Hawker Centre</b> for an all-in-one foodie experience. For sweet treats, grab cendol from <b>Penang Road Famous Teochew Cendol.</b> Upscale options include <b>Kebaya Dining Room and Indigo at Blue Mansion </b>for Peranakan cuisine in heritage settings. Penang's mix of Chinese, Malay, Indian, and Nyonya influences makes it a must-visit for serious foodies.",
         image: "/images/country/malaysia/places/penang/penang.jpg",
       },
-       {
+      {
         id: 41,
         name: "Kuala Lumpur",
         description:
           "Kuala Lumpur is a food lover’s paradise, offering everything from upscale dining to street food gems. Visit Jalan Alor for buzzing night market vibes and local favorites like satay and grilled seafood. For a more upscale experience, try Bijan Bar & Restaurant for refined Malay cuisine. Lot 10 Hutong offers curated hawker stalls under one roof, while Brickfields is ideal for authentic South Indian banana leaf meals. Don’t miss Village Park for the city’s most famous nasi lemak. KL’s culinary diversity makes it one of Southeast Asia’s top food cities.",
         image: "/images/country/malaysia/places/kuala_lumpur/kuala_lumpur.png",
-      }, 
+      },
       {
         id: 42,
         name: " Langkawi",
@@ -808,22 +797,23 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
           "Langkawi’s food scene blends beachside charm with local flavors. Cenang Beach is packed with seafood restaurants like Orkid Ria and The Cliff, offering fresh catches with ocean views. For local tastes, visit Nasi Dagang Pak Malau, a countryside gem with paddy field views. Head to Night Markets (they rotate locations daily) for cheap and authentic Malay street food like laksa and roti canai. For international flair, Yellow Café and Smiling Buffalo offer cozy beach vibes with Western-Malay fusion dishes. Langkawi is perfect for relaxed, flavorful island dining.",
         image: "/images/country/malaysia/places/langkawi/blog/skybridge.jpg",
       },
-      ]
+    ],
   },
   {
     id: "alcohol",
     title: "Bar Hop Malaysia: Where to Find Your Favorite Pour",
-    description:
-      "",
-      items:[
-        {
+    description: "",
+    items: [
+      {
         id: 40,
         name: "Bar Hop Malaysia: Where to Find Your Favorite Pour",
         description:
           "Alcohol is available in Malaysia but its consumption is influenced by cultural and religious norms. As a predominantly Muslim country, alcohol is not widely consumed by the Malay Muslim population and is subject to restrictions in some states, especially in Kelantan and Terengganu. However, non-Muslims and tourists can freely purchase and consume alcohol in most urban areas. You’ll find a wide selection of beers, wines, and spirits in bars, pubs, restaurants, and hotels—particularly in cities like Kuala Lumpur, Penang, and Langkawi (a duty-free island where alcohol is cheaper). Always drink responsibly and be aware of local customs, especially during religious festivals like Ramadan. In Kuala Lumpur, head to Changkat Bukit Bintang for a lively mix of pubs, cocktail bars, and nightclubs, or visit SkyBar for signature drinks with sweeping city views. Over in Langkawi, a duty-free island, alcohol is much cheaper—perfect for beachside bars like Yellow Beach Café and Kalut. Penang offers a more laid-back vibe with spots like Micke’s Place and Out of Nowhere, known for their craft cocktails and cozy ambiance. Whether you’re after local beers, international spirits, or creative mixology, Malaysia has just the pour to suit your night out.",
-        image: "/images/country/malaysia/places/penang/penang.jpg",
-      }
-      ]
+        image: "/images/country/malaysia/food/bar_hop.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@echaparro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Edgar Chaparro</u></a> on <a target='_blank' href='https://unsplash.com/photos/brown-wooden-shelf-with-bottles-Lwx-q6OdGAc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
+      },
+    ],
   },
 ];
 
