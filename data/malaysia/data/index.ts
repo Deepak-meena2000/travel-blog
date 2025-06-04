@@ -31,9 +31,6 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
       "Malaysia is a captivating blend of diverse cultures, stunning landscapes, and mouthwatering cuisine. But Before you jet off, it’s important to get familiar with a few essentials that will make your trip smoother. In this article, we cover everything you need to know before visiting Malaysia from visa requirements and currency tips to weather, local customs, dress codes, safety advice, and health precautions. Learn what to pack, how to get around, and how to respect local traditions. Whether it’s your first time in Southeast Asia or you're a seasoned traveler, this guide ensures you arrive in Malaysia informed and ready to explore with confidence.",
     data: [
       {
-
-      },
-      {
         id: 1,
         heading: "Culture & History",
         icon: "PYRAMID",

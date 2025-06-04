@@ -1,5 +1,6 @@
 import Script from "next/script";
 
+
 const GoogleAdSense = () => {
   return (
     <Script
