@@ -624,6 +624,9 @@ export const MALAYSIA_COMPLETE_FOOD_GUIDE = [
         name: "Vegetarian Nasi Lemak, Char Kway Teow & Laksa",
         description:
           "Vegetarian versions of Malaysia’s iconic dishes are increasingly available across the country. Nasi Lemak can be made with coconut rice, cucumber, peanuts, vegetarian sambal, and mock meats or tempeh. Char Kway Teow without shrimp or sausage still delights with wok-fried noodles, tofu, and bean sprouts. Vegetarian Laksa, particularly curry laksa, uses tofu puffs, eggplant, mushrooms, and non-meat broth alternatives. Many vegetarian and vegan eateries, especially in cities like Kuala Lumpur, Penang, and Melaka, offer these meatless twists, ensuring plant-based travelers enjoy authentic flavors without compromise.",
+        image: "/images/country/malaysia/food/vegetarian_nasi_lemak.jpg",
+        imageCreditHTML:
+          "Photo by <a target='_blank' href='https://unsplash.com/@aldrinrachmanpradana?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Aldrin Rachman Pradana</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-white-plate-topped-with-rice-and-meat-B_1GyWCsc1s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
       },
     ],
   },

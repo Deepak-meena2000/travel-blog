@@ -134,7 +134,8 @@ export const PENANG_BLOG_POST = [
     tips: [
       "Try small portions at multiple places",
       "Visit local coffee shops for authentic experiences",
-      `Checkout Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> to understand what, when and where to eat.`,,
+      `Checkout Malaysia's <b><a href="/malaysia/complete-food-guide" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">complete food guide</a></b> to understand what, when and where to eat.`,
+      ,
     ],
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://www.pexels.com/photo/food-stalls-on-the-street-in-a-town-6770743/'><u>Nikita Belokhonov</u></a>",
@@ -180,7 +181,7 @@ export const PENANG_BLOG_POST = [
     tips: [
       "Carry cash",
       "Share plates to taste more dishes",
-      `Explore the <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must try dishes</a></b> in Malaysia`
+      `Explore the <b><a href="/malaysia/what-to-eat" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">must try dishes</a></b> in Malaysia`,
     ],
     imageCreditHTML:
       "Photo by <a target='_blank' href='https://unsplash.com/@zyteng?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Kelvin Zyteng</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-man-standing-in-front-of-a-table-filled-with-food-XQCZLL3gEhw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
@@ -216,23 +217,12 @@ export const PENANG_BLOG_POST = [
       "Wear comfortable shoes for walking on uneven terrain",
       "Guided tours are recommended for deeper context",
     ],
-    imageCreditHTML: ` <a
-                      href="https://commons.wikimedia.org/wiki/File:Penang_War_Museum_Front_Entrance.jpg"
-                    >
-                    <u>LEE 003</u>
-                    </a>
-                    ,
-                    <a
-                      href="https://creativecommons.org/licenses/by/4.0"
-                    >
-                      <u>CC BY 4.0</u>
-                    </a>
-                    , via Wikimedia Commons`,
+    imageCreditHTML: ` <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Penang_War_Museum_Front_Entrance.jpg"><u>LEE 003</u></a>,<a target="_blank" href="https://creativecommons.org/licenses/by/4.0"><u>CC BY 4.0</u></a>, via Wikimedia Commons`,
   },
   {
     id: 14,
     name: "Tan Jetty",
-    image: "/images/country/malaysia/places/penang/blog/tan_jetty.jpg",
+    image: "/images/country/malaysia/places/penang/blog/tan_jetty.png",
     description:
       "Tan Jetty is one of the original Clan Jetties in George Town, offering a peaceful escape with authentic charm. Unlike the more touristy Chew Jetty, Tan Jetty is quieter, making it ideal for travelers seeking a serene atmosphere and stunning photo opportunities. Its rustic beauty and tranquil vibe make it a favorite spot for photographers and Instagram enthusiasts looking to capture Penang's heritage in a unique setting.",
     location: "City Centre George Town",
@@ -256,7 +246,7 @@ export const PENANG_BLOG_POST = [
       "Book in advance, especially during peak tourist season",
     ],
     imageCreditHTML:
-      "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Nasi_Kandar_with_Fried_Chicken_and_Eggplant_-_Old_Town_Kopitiam_Mamak_AUD8_(4274115544).jpg'><u>Alpha from Melbourne, Australia</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/2.0'><u>CC BY-SA 2.0</u></a>, via Wikimedia Commons",
+      "Photo by <a href='https://unsplash.com/@sabeerdarr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Sabeer Darr</a> on <a href='https://unsplash.com/photos/yellow-and-white-concrete-building-wDq1btavzcs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
   },
   {
     id: 16,
