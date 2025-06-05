@@ -447,9 +447,9 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
             src: "/images/country/malaysia/places/penang/blog/street_art.jpg",
             alt: "Street Art",
           },
-          {
-            src: "/images/country/malaysia/places/penang/blog/clan_jetty.jpg",
-            alt: "Clan Jetty",
+            {
+            src: "/images/country/malaysia/places/penang/blog/tan_jetty.png",
+            alt: "Tan Jetty",
           },
         ],
       },
@@ -709,9 +709,7 @@ You can also consider day trips to <b>Genting Highlands or Cameron Highlands</b>
       {
         type: "content",
         text: `
-        Your final day in Malaysia offers a perfect balance of relaxation, last-minute sightseeing, and a smooth departure. Begin your morning with a leisurely breakfast at your hotel. If you have time before your flight, take this opportunity to explore any sights you might have missed earlier in Kuala Lumpur.
-       
-        For those eager to add some shopping to their itinerary, Kuala Lumpur offers several fantastic options perfect for picking up unique souvenirs, tasty local snacks, and traditional crafts. Start at the bustling <b>Central Market</b>, a cultural landmark known for its vibrant stalls selling handmade batik, intricate handicrafts, and authentic Malaysian artworks—ideal for finding one-of-a-kind gifts.
+        Your final day of Malaysia's 1 week journey offers a perfect balance of relaxation, last-minute sightseeing, and a smooth departure. Begin your morning with a leisurely breakfast at your hotel. If you have time before your flight, take this opportunity to explore any sights you might have missed earlier in Kuala Lumpur.
         `,
       },
       {
@@ -747,6 +745,12 @@ No matter which spot you choose, be sure to leave some extra room in your bag—
         text: `
         As departure time nears, make your way to <b>KLIA or KLIA2</b>. If time allows, browse airport shops for last-minute mementos or enjoy a relaxed meal before your flight.
 
+        `,
+      },
+       {
+        type: "content",
+        text: `
+        Explore comprehensive travel guides, insider tips, and customized itineraries for <b><a href="/countries" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">your next destination</a></b>.
         `,
       },
     ],
@@ -892,9 +896,13 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
     sections: [
       {
         type: "content",
+        text: `Your fourth day begins with a scenic transfer from Langkawi to Penang, either by a short domestic flight or a leisurely ferry ride across the Andaman Sea. Once you arrive, take a taxi to your hotel in <b>George Town</b>, the vibrant capital of Penang and a UNESCO World Heritage Site known for its multicultural charm, colonial-era architecture, and delicious street food.`,
+      },
+      {
+        type: "content",
         text: `
-         Start your day with a short flight or scenic ferry ride from Langkawi to <b>Penang</b> ,  the cultural capital of Malaysia. Once you land, take a taxi to your hotel in <b> George Town</b>, a UNESCO World Heritage Site known for its historic architecture and vibrant multicultural vibe. After check-in, spend your afternoon exploring the <b>UNESCO Heritage Zone</b>, where colonial buildings, temples, and mosques blend seamlessly.
-        <br>`,
+        After check-in and a brief rest, begin exploring the heart of <b>George Town’s Heritage Zone</b>. This walkable area is filled with historic shophouses, temples, and mosques that reflect the island’s diverse cultural tapestry. Meander through narrow streets lined with colorful murals, aromatic food stalls, and local boutiques
+        `,
       },
       {
         type: "images",
@@ -911,14 +919,14 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       },
       {
         type: "content",
-        text: `<br>
-         Wander through <b>Armenian Street </b> and discover <b>Penang’s famous street art</b> —quirky murals and 3D installations that narrate local stories and folklore. Don’t miss iconic spots like the <b>“Kids on Bicycle”</b> mural or <b>“Boy on Chair.”</b>. Then, visit the <b>Cheong Fatt Tze Mansion</b>, also known as the Blue Mansion, for a glimpse into the lavish lifestyle of a 19th-century Chinese tycoon. Continue to <b>Chew and Tan Jetty</b>, traditional Chinese clan settlements built on stilts over the sea, offering a unique look at Penang’s living heritage.
-        <br>`,
+        text: `
+        As evening sets in, head to the iconic <b>Penang Street Art Trail</b>, where you can discover interactive murals by Lithuanian artist Ernest Zacharevic and other local talents. These creative artworks make for fun photo ops and reveal Penang’s unique fusion of art and history.Continue your journey to the enchanting <b>Cheong Fatt Tze Mansion</b>, also known as the Blue Mansion. This heritage house is a stunning example of 19th-century Chinese architecture and offers guided tours for those interested in its rich backstory.
+        `,
       },
       {
         type: "images",
         images: [
-          {
+            {
             src: "/images/country/malaysia/places/penang/blog/tan_jetty.png",
             alt: "Tan Jetty",
           },
@@ -927,8 +935,14 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        As night falls, dive into Penang’s legendary food scene. Head to the <b>local night markets</b>, where you can feast on hawker favorites such as Char Kway Teow, Penang Laksa, and Satay. The atmosphere buzzes with locals and travelers alike enjoying the warm night air and aromatic flavors.
+        Head to <b>Clan Jetties</b> at the sunset and capture some insta worth pics, where traditional Chinese waterfront homes stand on stilts over the sea.
         `,
+      },
+      {
+        type: "content",
+        text: `
+        As night falls, get ready to dive into one of the most iconic culinary experiences in Malaysia—<b>Penang’s legendary street food scene</b>. Make your way to one of the bustling local night markets, where the air is thick with the irresistible aroma of sizzling woks and grilled skewers. These lively open-air markets are a feast for the senses, drawing both locals and travelers eager to sample the best of Penang’s rich food heritage.
+Treat yourself to crowd favorites like the smoky and savory <b>Char Kway Teow</b>, the tangy, fish-based <b>Penang Laksa</b>, and juicy, grilled <b>Satay</b> served with creamy peanut sauce.<br><br> Explore <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Must-try dishes</a></b> you shouldn't miss in Malaysia.        `,
       },
     ],
   },
@@ -937,20 +951,30 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
     sections: [
       {
         type: "content",
-        text: `Kick off Day 5 in Penang with a visit to one of the island’s most revered landmarks—<b>Kek Lok Si Temple</b>, located in Air Itam. This sprawling hilltop Buddhist temple complex is the largest in southeast asia and is adorned with intricate carvings, colorful sculptures, and stunning pagodas. Don’t miss the massive statue of the Goddess of Mercy (Kuan Yin), which overlooks the temple grounds. Though it is a bit too commercialised.
-        <br>
-        <br>
-        By early afternoon, head to <b>Penang Hill</b>, accessible via a funicular train that climbs up through lush tropical forests. At the summit, enjoy a refreshing breeze and sweeping views over George Town and the coastline. Spend time exploring <b>The Habitat</b>, a well-preserved rainforest park featuring canopy walks, nature trails, and exotic flora and fauna. It’s a wonderful contrast to the urban energy below and offers a deeper appreciation for Penang’s natural beauty.
-        <br>`,
+        text: `
+        Day 5 is all about immersing yourself in the natural beauty, spiritual landmarks, and coastal charm that define Penang. Start your morning with a journey to the iconic <b>Penang Hill</b>, a beloved retreat that offers a cool, breezy escape from the tropical heat. Hop aboard the funicular train—the steepest track in Asia—and enjoy a scenic ride up to the summit. As you ascend, lush greenery envelops the track, building anticipation for the stunning views at the top.
+        `,
+      },
+      {
+        type: "content",
+        text: `
+Once at the summit, you'll be treated to sweeping, bird’s-eye views of <b>George Town</b>, the coastline, and even Langkawi on a clear day(just in case you already started missing Island). While you're there, don’t miss a visit to <b>The Habitat</b>, an eco-conscious nature park nestled atop the hill which is perfect for panoramic photos and peaceful contemplation. This serene sanctuary features rainforest walking trails, treetop canopy walks, and educational exhibits on Penang’s native flora and fauna. It’s a gentle yet immersive way to reconnect with nature and experience the island’s ecological richness firsthand.
+        `,
       },
       {
         type: "images",
         images: [
           {
             src: "/images/country/malaysia/places/penang/blog/habitat.jpg",
-            alt: "Habitat",
+            alt: "The Habitat",
           },
         ],
+      },
+      {
+        type: "content",
+        text: `
+        Then, descend the hill and make your way to <b>Kek Lok Si Temple</b> in Air Itam, one of Southeast Asia’s largest Buddhist temples. Wander through its beautifully designed halls, prayer pavilions, and towering pagoda. Don’t miss the massive statue of the Goddess of Mercy overlooking the complex—it’s one of Penang’s most iconic sights.
+        `,
       },
       {
         type: "content",
@@ -1009,7 +1033,8 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         text: `
         After an overnight journey, you’ll arrive early at <b>Kuala Besut Jetty</b>, the gateway to the pristine <b>Perhentian Islands</b>. Catch a morning ferry to either Perhentian Besar (Big Island) or Perhentian Kecil (Small Island), both offering turquoise waters, white sandy beaches, and a relaxed island vibe. As the boat approaches the islands, you’ll be greeted with scenes of lush greenery and crystal-clear sea—pure tropical bliss.
         <br>
-        <br> `,
+        <br> 
+               <b>Quick tip</b> - book a stay in well advance, check out our full <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Perhentian Island travel guide</a></b>`,
       },
       {
         type: "images",
@@ -1029,13 +1054,13 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-       <b>Quick tip</b> - book a stay in well advance, check out our full Perhentian travel guide
-        <br>
-        <br>
         Upon arrival, most resorts allow early baggage storage even before official check-in (usually around 2 PM), so take advantage of the time to grab breakfast at a beachside café and unwind by the sea. Whether you choose to nap in a hammock, explore the beach, or dip your toes in the warm water, this is the perfect opportunity to slow down and soak in your surroundings after several days of sightseeing.
-        <br>
-        <br>
-        In the evening, once you've checked in and freshened up, consider heading to <b> Long Beach on Perhentian Kecil</b>, known for its lively atmosphere, beach bars, and fire shows. If you’re staying on the quieter Perhentian Besar, enjoy a romantic dinner by the sea under swaying palms and starry skies. Whether you're a solo traveler, a couple, or with friends, the island’s relaxed pace and natural beauty offer the perfect escape. Let the sound of waves be your lullaby as you ease into island life.
+        `,
+      },
+       {
+        type: "content",
+        text: `
+        If you're staying on Perhentian Kecil, consider heading to Long Beach, where you'll find a lively atmosphere with beach bars, music, and fire shows lighting up the night. For those on the quieter Perhentian Besar,, enjoy a romantic dinner by the sea under swaying palms and a canopy of stars. Whether you're traveling solo, with a partner, or friends, the island’s relaxed pace and natural beauty offer the perfect escape. Let the sound of the ocean lull you into a peaceful night as you ease into island life.
         `,
       },
     ],
@@ -1083,7 +1108,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        As the sun dips, head down to a secluded stretch of beach for a peaceful swim or to simply enjoy the golden hour in tranquility. For dinner and evening fun,<b>return to Long Beach</b>, where the party scene comes alive with beachside bonfires, music, and fire-dancing shows. If you prefer a quieter night, opt for a relaxed dinner under the stars at your resort. Whether you’re seeking adventure or serenity, today perfectly captures the spirit of island life in the Perhentians.
+        As the sun dips, head down to a secluded stretch of beach for a peaceful swim or to simply enjoy the golden hour in tranquility. For dinner and evening fun, <b>return to Long Beach</b>, where the party scene comes alive with beachside bonfires, music, and fire-dancing shows. If you prefer a quieter night, opt for a relaxed dinner under the stars at your resort. Whether you’re seeking adventure or serenity, today perfectly captures the spirit of island life in the Perhentians.
         `,
       },
     ],
@@ -1129,7 +1154,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-          After enjoying the island serenity, it’s time to transition from tropical bliss to cultural exploration. Begin the morning early with a <b>ferry ride from the Perhentian Islands to Kuala Besut</b>, followed by a scenic bus or private transfer to <b>Kuala Terengganu</b, the vibrant capital of Terengganu state on Malaysia’s east coast. The journey offers glimpses of lush countryside and coastal towns before you arrive in the city. Upon check-in at your hotel, take some time to relax after your transfer and refresh for an afternoon of sightseeing.
+          After enjoying the island serenity, it’s time to transition from tropical bliss to cultural exploration. Begin the morning early with a <b>ferry ride from the Perhentian Islands to Kuala Besut</b>, followed by a scenic bus or private transfer to <b>Kuala Terengganu</b>, the vibrant capital of Terengganu state on Malaysia’s east coast. The journey offers glimpses of lush countryside and coastal towns before you arrive in the city. Upon check-in at your hotel, take some time to relax after your transfer and refresh for an afternoon of sightseeing.
           <br>
           <br>
           In the evening, dive into the cultural heart of Kuala Terengganu. Start your exploration with the <b>Crystal Mosque</b>, an architectural marvel located on the island of Wan Man. Built with glass and steel, it looks stunning during sunset when it reflects the soft evening light. From there, stroll along the <b>Kuala Terengganu Drawbridge</b>, one of Malaysia’s few modern bascule bridges offering views of the river and skyline. It’s a great spot for photos and a peaceful walk.
@@ -1173,9 +1198,14 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        After you arrive in bustling Kuala Lumpur, Malaysia’s vibrant capital full of cultural, culinary, and modern attractions, head to your hotel located in the city center, easily accessible by the efficient <b>metro (LRT/MRT)</b> or a comfortable taxi ride. Once checked in, take some time to unwind and recharge at your hotel — perhaps enjoy a refreshing dip in the <b>infinity pool</b> if available, perfect for relaxing after your travels.
+        After you arrive in bustling Kuala Lumpur, Malaysia’s vibrant capital full of cultural, culinary, and modern attractions, head to your hotel located in the city center, easily accessible by the efficient <b>metro (LRT/MRT)</b> or a comfortable taxi ride.`,
+      },
+      {
+        type: "content",
+        text: `Once you've checked in, take a moment to unwind and settle into your hotel. After a day of travel, there’s nothing better than giving yourself a chance to relax and recharge. If your hotel offers an <b>infinity pool</b>, head up for a refreshing dip—many rooftop pools in Kuala Lumpur come with panoramic views of the city skyline, including glimpses of the <b>Petronas Towers</b>, <b>Merdeka 118</b> or <b>KL Tower</b>. Whether you’re recovering from a flight or simply easing into vacation mode, this little escape offers the perfect balance of luxury and relaxation before you dive into the excitement of exploring Kuala Lumpur.
         <br>
-        <br>`,
+        <br>
+        Quick tip - book a stay around Bukit Bintang area, check out our complete <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Kuala Lumpur Travel Guide</a></b>`,
       },
       {
         type: "images",
@@ -1195,9 +1225,6 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        Quick tip - book a stay around Bukit Bintang area, check out our full kuala lumpur guide
-        <br>
-        <br>
         As the afternoon fades into evening, prepare to explore one of KL’s most iconic landmarks: the <b>Petronas Twin Towers</b>. These majestic skyscrapers dominate the city skyline and offer visitors a chance to visit the <b>Skybridge and observation deck</b> for panoramic views of Kuala Lumpur’s urban sprawl and surrounding hills. As night falls, witness the spectacular <b>KLCC Lake Symphony Night Fountain Show</b>— a mesmerizing water, light, and music performance that delights visitors nightly. Check out the Fountain show timings in our top things to do Kuala Lumpur article.
         <br>
         <br>
@@ -1219,15 +1246,6 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         <br>`,
       },
       {
-        type: "images",
-        images: [
-          {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
-            alt: "Batu Caves",
-          },
-        ],
-      },
-      {
         type: "content",
         text: `
         Return to Kuala Lumpur’s heart and dive into the bustling <b>Central Market</b> and <b>Petaling Street</b> in Chinatown. Central Market offers local handicrafts and souvenirs, while Petaling Street buzzes with food stalls serving authentic Malaysian street food, perfect for a delicious lunch.
@@ -1241,9 +1259,9 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
             src: "/images/country/malaysia/places/kuala_lumpur/blog/jalan_alor.jpg",
             alt: "Jalan Alor",
           },
-          {
-            src: "/images/country/malaysia/places/kuala_lumpur/blog/bukit_bintang.jpg",
-            alt: "Bukit Bintang",
+         {
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/batu_caves.jpg",
+            alt: "Batu Caves",
           },
         ],
       },
@@ -1264,23 +1282,15 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
   },
   {
     heading:
-      "Day 13: Day Trip to Cameron Highlands – Refreshing Highlands and Nature Escape",
+      "Day 13: Day Trip to Cameron Highlands or Genting Highlands",
     sections: [
       {
         type: "content",
         text: `
-        For a peaceful escape from Kuala Lumpur, take a day trip to <b>Cameron Highlands</b>, a cool hill station about 3 to 4 hours away. Known for its lush tea plantations and rolling hills, it’s ideal for nature lovers seeking relaxation. Start with a visit to the famous <b>Boh Tea Plantation</b>, where you can enjoy panoramic views and sample fresh tea and cakes.
+        <b>Option 1: Day Trip to Cameron Highlands</b> – Refreshing Highlands and Nature Escape
         <br>
-        <br>`,
-      },
-      {
-        type: "images",
-        images: [
-          {
-            src: "/images/country/malaysia/places/cameron_islands_places_to_visit.jpg",
-            alt: "Cameron Highlands",
-          },
-        ],
+        <br>
+        For a peaceful escape from Kuala Lumpur, take a day trip to <b>Cameron Highlands</b>, a cool hill station about 3 to 4 hours away. Known for its lush tea plantations and rolling hills, it’s ideal for nature lovers seeking relaxation. Start with a visit to the famous <b>Boh Tea Plantation</b>, where you can enjoy panoramic views and sample fresh tea and cakes.`,
       },
       {
         type: "content",
@@ -1288,26 +1298,28 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
         Explore the vibrant <b>Cameron Market</b> to find fresh local produce, then wander through the mystical <b>Mossy Forest</b> with its fog-covered trees and rare plants. If time permits, stop by a <b>Strawberry Farm</b> to pick fresh strawberries or sip on strawberry juice. After soaking in the cool climate and scenic beauty, return to Kuala Lumpur feeling refreshed and rejuvenated.
         `,
       },
-    ],
-  },
-  {
-    heading:
-      "Day 13(Alternate): Day Trip to Genting Highlands – Cool Mountain Escape and Entertainment Hub",
-    sections: [
-      {
-        type: "content",
-        text: `Escape Kuala Lumpur’s heat with a trip to Genting Highlands, a cool mountain resort just an hour away. Take the scenic Genting Skyway cable car for stunning rainforest views. At the peak, explore Resorts World Genting’s hotels, casinos, dining, and the exciting Genting SkyWorlds Theme Park. Visit the peaceful Chin Swee Caves Temple surrounded by lush hills. After a day of nature and entertainment, enjoy a meal before returning to Kuala Lumpur. Genting Highlands is perfect for a refreshing day trip filled with fun and relaxation.
-        <br>
-        <br>`,
-      },
-      {
+       {
         type: "images",
         images: [
+          {
+            src: "/images/country/malaysia/places/cameron_islands_places_to_visit.jpg",
+            alt: "Cameron Highlands",
+          },
           {
             src: "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
             alt: "Genting Highlands",
           },
         ],
+      },
+      {
+        type: "content",
+        text: `
+        <b>Option 2:  Day Trip to Genting Highlands</b> – Cool Mountain Escape and Entertainment Hub
+        <br>
+        <br>
+        Escape Kuala Lumpur’s heat with a trip to Genting Highlands, a cool mountain resort just an hour away. Take the scenic Genting Skyway cable car for stunning rainforest views. At the peak, explore Resorts World Genting’s hotels, casinos, dining, and the exciting Genting SkyWorlds Theme Park. Visit the peaceful Chin Swee Caves Temple surrounded by lush hills. After a day of nature and entertainment, enjoy a meal before returning to Kuala Lumpur. Genting Highlands is perfect for a refreshing day trip filled with fun and relaxation.
+        <br>
+        <br>`,
       },
     ],
   },
@@ -1395,15 +1407,20 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       },
     ],
   },
-  {
-    heading: `Day 16: Departure from Malaysia – Last Moments and Farewell`,
+    {
+    heading: "Day 16: Markets & Farewell",
     sections: [
       {
         type: "content",
         text: `
-        On your final day in Malaysia, take some time to enjoy a relaxed morning at your hotel, soaking in any last views or simply unwinding before your journey. If you haven’t already, this is a great moment to pick up any last-minute souvenirs and gifts at the airport shops, Malaysian crafts, local snacks, and unique keepsakes make perfect reminders of your trip.
-        <br>
-        <br>`,
+        Your final day of Malaysia's 2 week journey offers a perfect balance of relaxation, last-minute sightseeing, and a smooth departure. Begin your morning with a leisurely breakfast at your hotel. If you have time before your flight, take this opportunity to explore any sights you might have missed earlier in Kuala Lumpur.
+        `,
+      },
+      {
+        type: "content",
+        text: `       
+        For those eager to add some shopping to their itinerary, Kuala Lumpur offers several fantastic options perfect for picking up unique souvenirs, tasty local snacks, and traditional crafts. Start at the bustling <b>Central Market</b>, a cultural landmark known for its vibrant stalls selling handmade batik, intricate handicrafts, and authentic Malaysian artworks—ideal for finding one-of-a-kind gifts.
+        `,
       },
       {
         type: "images",
@@ -1420,14 +1437,24 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       },
       {
         type: "content",
+        text: `       
+If you prefer modern shopping experiences, head to <b>Suria KLCC</b>, located right beneath the iconic Petronas Towers. Here, you’ll find a wide range of international brands, specialty stores, and gourmet food outlets—perfect for both high-end shopping and casual browsing. Another great choice is <b>Pavilion Mall</b>, a stylish shopping destination offering everything from trendy fashion to local designer boutiques. Its lively atmosphere and diverse shops make it an enjoyable place to hunt for souvenirs and keepsakes.
+<br>
+<br>
+No matter which spot you choose, be sure to leave some extra room in your bag—you’ll want to bring home plenty of memorable gifts and delicious treats from your Malaysian adventure!
+        `,
+      },
+      {
+        type: "content",
         text: `
-        Ensure you have ample time to check out and head to Kuala Lumpur International Airport (KLIA/KLIA2) for your departure flight. Depending on your flight schedule, consider arriving early to enjoy the airport’s facilities, which often include comfortable lounges, dining options, and shops.
-        <br>
-        <br>
-        Reflect on the diverse experiences of your Malaysian adventure, from tropical islands and highland retreats to vibrant city life and cultural landmarks. Whether this is the end of your journey or the start of another destination, Malaysia’s warm hospitality and rich heritage will surely leave a lasting impression.
-        <br>
-        <br>
-        Safe travels and until next time—Malaysia awaits your return!
+        As departure time nears, make your way to <b>KLIA or KLIA2</b>. If time allows, browse airport shops for last-minute mementos or enjoy a relaxed meal before your flight.
+
+        `,
+      },
+             {
+        type: "content",
+        text: `
+        Explore comprehensive travel guides, insider tips, and customized itineraries for <b><a href="/countries" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline">your next destination</a></b>.
         `,
       },
     ],

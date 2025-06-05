@@ -849,7 +849,8 @@ export const MALAYSIA_PLACES_TO_VISIT = [
       time_to_visit:
         "hot and humid year-round, November-February for slightly cooler weather",
       how_to_reach: "Flights from Kuala Lumpur are frequently available",
-      guide_text: `Visit our detailed <a href="/malaysia/penang/travel-guide" target="_blank" class="text-teal-600 underline">Penang travel guide</a> and things to keep in mind for quick tips`,
+      guide_text: "Visit our detailed Penang travel guide with tips",
+      guide_link: "/malaysia/penang/travel-guide",
     },
   },
   {
@@ -880,6 +881,8 @@ export const MALAYSIA_PLACES_TO_VISIT = [
       time_to_visit: "April–October",
       how_to_reach:
         "Fly to Tawau Airport → Drive to Semporna → Boat to Sipadan, permit required",
+      guide_text: "Visit our detailed Best Places to Scuba guide with Quick tips",
+      guide_link: "/malaysia/best-places-for-scuba",
     },
   },
   {
