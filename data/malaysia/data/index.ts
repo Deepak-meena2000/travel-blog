@@ -311,17 +311,15 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
         type: "images",
         images: [
           {
+            src: "/images/country/malaysia/places/langkawi/blog/jalan_kuala_muda_road.jpg",
+            alt: "Langkawi",
+          },
+          {
             src: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
             alt: "Langkawi",
             imageCreditHTML:
               'Photo by <a target="_blank" href="https://www.pexels.com/@bertellifotografia/"><u>Matheus Bertelli</u></a> on <a target="_blank" href="https://www.pexels.com/photo/a-sailboat-in-the-ocean-at-sunset-15141424/"><u>Pexels</u></a>',
-          },
-          {
-            src: "/images/country/malaysia/places/langkawi/blog/pantai_cenang.jpeg",
-            alt: "Langkawi",
-            imageCreditHTML:
-              "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Langkawi_Pantai_Cenang_3.JPG'><u>RoB</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/3.0'><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons",
-          },
+          }
         ],
       },
        {
@@ -549,6 +547,10 @@ Once at the summit, you'll be treated to sweeping, bird’s-eye views of <b>Geor
             src: "/images/country/malaysia/places/kuala_lumpur/blog/petronas_tower.jpg",
             alt: "Petronas Twin Towers",
           },
+          {
+            src: "/images/country/malaysia/places/kuala_lumpur/blog/infinity_pool.jpg",
+            alt: "Infinity Pool"
+          }
         ],
       },
       {
@@ -638,10 +640,8 @@ Once at the summit, you'll be treated to sweeping, bird’s-eye views of <b>Geor
         type: "images",
         images: [
           {
-            src: "/images/country/malaysia/places/melaka/blog/melaka_river.jpg",
+            src: "/images/country/malaysia/top_things_do_malaysia.jpg",
             alt: "Malacca River",
-            imageCreditHTML:
-              "Photo by <a target='_blank' href='https://unsplash.com/@fajrihfzh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Fajri Hafizh</u></a> on <a target='_blank' href='https://unsplash.com/photos/a-boat-traveling-down-a-river-next-to-tall-buildings-2AWi2LKFvuo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'><u>Unsplash</u></a>",
           },
         ],
       },
@@ -757,35 +757,43 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
     sections: [
       {
         type: "content",
+        text: `Start your Malaysia adventure by catching a flight to the beautiful island of Langkawi. Whether flying directly or via Kuala Lumpur International Airport (KLIA/KLIA2), you'll reach Langkawi in about an hour. As your plane descends into Langkawi, you’ll be treated to jaw-dropping views of emerald seas, lush islands, and pristine beaches, an aerial welcome to paradise. Don’t forget to grab a window seat!.
+        `,
+      },
+      {
+        type: "content",
+        text: ` Upon arrival, take a taxi from the airport to your hotel and complete check-in formalities. Once settled, <b>renting a scooter</b> is a great idea for getting around easily and discovering hidden gems at your own pace.
+        `,
+      },
+      {
+        type: "content",
         text: `
-        Start your Malaysia adventure by catching a flight to the beautiful island of Langkawi. Whether flying directly or via Kuala Lumpur International Airport (KLIA/KLIA2), you’ll reach Langkawi in about an hour. Upon arrival, take a taxi from the airport to your hotel and complete check-in formalities. Once settled, <b>renting a scooter </b>is a great idea for getting around easily and discovering hidden gems at your own pace.
-        <br>
-        <br>
-        Once done, head straight to the island’s lively heart,<b>Pantai Cenang</b>. Drive through the Jalan Kuala Muda Road to catch a flight landing on one side and the ocean on the other. This bustling beachside strip offers soft sandy shores, beachfront cafes, and boutique shops perfect for some light souvenir hunting. As the day mellows, make your way toward <b>Pantai Tengah</b>, Langkawi’s quieter and more serene beach just south of Cenang. This is the perfect spot to unwind and watch the sun dip below the horizon in a blaze of tropical colors.
-        <br>
-        <br>
+
+        Once you arrive, head straight to the vibrant heart of Langkawi—<b>Pantai Cenang</b>. Take the scenic route via Jalan Kuala Muda, an underrated stretch where you’ll witness planes landing on one side and sweeping ocean views on the other. This beachside road is rarely crowded with tourists, offering a peaceful and authentic glimpse of Langkawi’s natural beauty.
         `,
       },
       {
         type: "images",
         images: [
           {
+            src: "/images/country/malaysia/places/langkawi/blog/jalan_kuala_muda_road.jpg",
+            alt: "Langkawi",
+          },
+          {
             src: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
             alt: "Langkawi",
             imageCreditHTML:
               'Photo by <a target="_blank" href="https://www.pexels.com/@bertellifotografia/"><u>Matheus Bertelli</u></a> on <a target="_blank" href="https://www.pexels.com/photo/a-sailboat-in-the-ocean-at-sunset-15141424/"><u>Pexels</u></a>',
-          },
-          {
-            src: "/images/country/malaysia/places/langkawi/blog/pantai_cenang.jpeg",
-            alt: "Langkawi",
-            imageCreditHTML:
-              "<a target='_blank' href='https://commons.wikimedia.org/wiki/File:Langkawi_Pantai_Cenang_3.JPG'><u>RoB</u></a>, <a target='_blank' href='https://creativecommons.org/licenses/by-sa/3.0'><u>CC BY-SA 3.0</u></a>, via Wikimedia Commons",
-          },
+          }
         ],
+      },
+       {
+        type: "content",
+        text: "Pantai Cenang itself is the island’s most popular beach, alive with energy and charm. With its soft golden sands, lively beachfront cafés, bars, and boutique shops, it’s perfect for beach lovers and souvenir hunters alike.",
       },
       {
         type: "content",
-        text: `For dinner, choose one of the cozy seaside restaurants offering fresh seafood and local Malaysian flavors, ideal for setting the mood for your beach vacation.`,
+        text: "As the day mellows, escape the buzz and head south to <b>Pantai Tengah</b>. Quieter and more serene, this peaceful beach offers calm waters and fewer crowds—ideal for a relaxing walk or watching a breathtaking tropical sunset over the Andaman Sea. For dinner, choose one of the cozy seaside restaurants offering fresh seafood and local Malaysian flavors, ideal for setting the mood for your beach vacation.",
       },
     ],
   },
@@ -794,7 +802,21 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
     sections: [
       {
         type: "content",
-        text: `Begin your second day in Langkawi with one of the island’s most iconic experiences: the <b>Langkawi SkyCab</b>. Ride the panoramic cable car up to the top of Gunung Mat Cincang, where sweeping views of Langkawi’s lush rainforest and turquoise waters await. Once at the top, take a walk along the <b>Langkawi Sky Bridge</b>, a curved suspension bridge offering jaw-dropping views and photo-perfect moments. You have an option for skywalk at Sky Eagle at the middle station.`,
+        text: `
+          Begin your second day in Langkawi with one of the island’s most unforgettable highlights—the thrilling ride on the <b>Langkawi SkyCab</b>(One of the Steepest in the world). This panoramic cable car journey takes you high above the island’s ancient rainforest, offering breathtaking views of cascading waterfalls, rugged mountain peaks, and the shimmering Andaman Sea. 
+        `,
+      },
+       {
+        type: "content",
+        text: `
+       At the summit of <b>Gunung Mat Cincang</b>, step out onto the spectacular <b>Langkawi Sky Bridge</b>, a curved suspension bridge that stretches across lush jungle canopies. Suspended high above the valley, the bridge offers jaw-dropping vistas and countless photo opportunities—perfect for capturing the beauty of Langkawi from above.
+        `,
+      },
+      {
+        type: "content",
+        text: `
+        For an extra thrill, stop at the middle station and experience the glass-bottom <b>SkyGlide</b> or the <b>SkyRex</b> attractions, or test your nerves with a walk on the glass <b>Sky Walk at Sky Eagle</b>—an exhilarating platform that lets you look straight down at the forest floor. It's an adventure that combines natural beauty with adrenaline-pumping excitement.
+        `,
       },
       {
         type: "images",
@@ -811,23 +833,34 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       },
       {
         type: "content",
-        text: `After soaking in the views, head down to the <b>Oriental Village</b>. This charming complex is home to quirky shops, local eateries, and family-friendly attractions like the 3D Art Museum, SkyDome, and SkyRex. <b>3D Art Museum</b> is highly recommended and the entrance is included in the SkyCable combo ticket. Grab a leisurely lunch here before winding down for the afternoon.`,
+        text: `
+        After soaking in the views, head down to the <b>Oriental Village</b>. This charming complex is home to quirky shops, local eateries, and family-friendly attractions like the <b>3D Art Museum</b>, SkyDome, and SkyRex. <b>3D Art Museum</b> is highly recommended and the entrance is included in the SkyCable combo ticket. Grab a leisurely lunch here before winding down for the afternoon.
+        `,
       },
       {
         type: "content",
         text: `
-        As the sun begins to dip, make your way to the pier for a magical <b>sunset cruise</b>. Sailing across the Andaman Sea while the sky changes color is a truly relaxing and romantic way to end the day. Many cruises offer light refreshments, snorkelling options and music onboard, perfect for soaking in the island’s tropical charm.
+                Checkout our complete <b><a href="/malaysia/langkawi/travel-guide#skycab,-skybridge-&-oriental-village-guide" target="_blank" class="text-teal-600 underline">SkyCab, SkyBridge & Oriental Village Guide</a></b> with prices.
+                        </br>
+        </br>
+        As the sun begins to dip, make your way to the pier for a magical <b>sunset cruise</b>. Sailing across the Andaman Sea while the sky changes color is a truly relaxing and romantic way to end the day. These cruises aren’t just about the views; they’re designed for pure relaxation and indulgence. Most packages include light refreshments, tropical cocktails, and even a saltwater jacuzzi net to lounge in as the boat gently drifts. Some cruises also offer snorkeling stops and lively music onboard, adding a fun and festive vibe to the romantic ambiance. Whether you're celebrating a special occasion or simply soaking in the moment, a Langkawi sunset cruise is the perfect way to wind down your day in paradise.
 
         `,
       },
     ],
   },
   {
-    heading: "Day 3: Kilim Geoforest Park, Waterfalls & Langkawi Night Market",
+    heading: "Day 3 : Kilim Geoforest Park, Waterfalls & Langkawi Night Market",
     sections: [
       {
         type: "content",
         text: `Start your third day in Langkawi with a nature-filled adventure to <b>Kilim Karst Geoforest Park</b>, a UNESCO-recognized geopark rich in biodiversity and dramatic limestone formations. Embark on a guided boat tour that glides through scenic mangrove forests, caves, and emerald waterways. Along the way, you may spot wildlife such as eagles, monitor lizards, and playful monkeys. Some tours also include stops at floating fish farms or bat caves, making the experience even more immersive and educational.`,
+      },
+      {
+        type: "content",
+        text: `
+        After the boat trip, head back toward the central part of the island and cool off at one of Langkawi’s scenic waterfalls. <b>Temurun Waterfall</b> in the north or <b>Seven Wells Waterfall (Telaga Tujuh)</b> near the cable car area are both excellent options for a refreshing dip or a peaceful picnic surrounded by lush greenery. Don’t forget your swimwear and camera—these waterfalls are truly postcard-worthy.
+        `,
       },
       {
         type: "images",
@@ -847,10 +880,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        After the boat trip, head back toward the central part of the island and cool off at one of Langkawi’s scenic waterfalls. <b>Temurun Waterfall</b> in the north or Seven Wells Waterfall (Telaga Tujuh) near the cable car area are both excellent options for a refreshing dip or a peaceful picnic surrounded by lush greenery. Don’t forget your swimwear and camera—these waterfalls are truly postcard-worthy.
-        <br>
-        <br>
-        As evening approaches, dive into Langkawi’s local culture by visiting a <b>Langkawi Night Market</b>. These markets rotate locations throughout the week, so check our article about the <b>langkawi travel guide</b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe.
+        As evening approaches, dive into Langkawi’s local culture by visiting a Langkawi Night Market. These markets rotate locations throughout the week, so check our article about the <b><a href="/malaysia/langkawi/travel-guide#what’s-the-street-market-schedule" target="_blank" class="text-teal-600 underline">Langkawi Night Market Guide</a></b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe. 
         `,
       },
     ],

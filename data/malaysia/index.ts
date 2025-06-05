@@ -1410,9 +1410,9 @@ The Perhentian Islands are a tropical haven known for their crystal-clear waters
     heading: "What to Eat in Malaysia",
     image: "/images/country/malaysia/what_to_eat.jpg",
     description:
-      "Malaysia's cuisine is a vibrant tapestry of flavors, influenced by its rich cultural heritage and abundant local ingredients. From street food stalls to high-end restaurants, the food scene offers something for every palate and budget. Here are some must-try dishes during your visit.",
+      "",
     overview:
-      "Malaysia's cuisine is a vibrant tapestry of flavors, influenced by its rich cultural heritage and abundant local ingredients. From street food stalls to high-end restaurants, the food scene offers something for every palate and budget. Here are some must-try dishes during your visit.",
+      "Malaysia's cuisine is a vibrant tapestry of flavors, shaped by its diverse cultural heritage and the abundance of fresh local ingredients. Influences from Malay, Chinese, Indian, and indigenous traditions blend harmoniously to create a unique and mouthwatering food scene. Whether you're exploring bustling night markets or dining at elegant restaurants, Malaysia offers an unforgettable culinary journey for every palate and budget. Expect bold spices, aromatic herbs, and a mix of textures in every bite. From savory rice and noodle dishes to rich curries and delightful desserts, there’s always something new to discover. Here are some must-try dishes during your visit.",
     data: MALAYSISA_FOOD_DATA,
     related_articles: [
       {
