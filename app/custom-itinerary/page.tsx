@@ -64,6 +64,8 @@ export default function CustomItineraryPage() {
     accommodation: "",
     notes: "",
   })
+  const [windowSize, setWindowSize] = useState({ width: 1200, height: 800 });
+  const [bgDots, setBgDots] = useState<{ x: number; y: number }[]>([]);
 
   const totalSteps = 4
 
@@ -188,6 +190,21 @@ export default function CustomItineraryPage() {
     checkStepCompletion()
   }, [formData, selectedInterests])
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    }
+  }, []);
+
+  useEffect(() => {
+    // Generate random positions for background dots on the client
+    const arr = Array.from({ length: 30 }, () => ({
+      x: Math.random() * windowSize.width,
+      y: Math.random() * windowSize.height,
+    }));
+    setBgDots(arr);
+  }, [windowSize]);
+
   if (isSubmitted) {
     return (
       <motion.div
@@ -244,13 +261,13 @@ export default function CustomItineraryPage() {
     <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black relative overflow-hidden font-sans">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(30)].map((_, i) => (
+        {bgDots.map((dot, i) => (
           <motion.div
             key={i}
             className="absolute w-1.5 h-1.5 bg-teal-400/40 rounded-full shadow-lg"
             initial={{
-              x: Math.random() * window?.innerWidth,
-              y: Math.random() * window?.innerHeight,
+              x: dot.x,
+              y: dot.y,
             }}
             animate={{
               y: [0, -200],
