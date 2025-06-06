@@ -98,14 +98,14 @@ export function LatestBlogs() {
             )
           })}
         </div>
-        <div className="text-center animate-slide-up">
+        {/* <div className="text-center animate-slide-up">
           <Button asChild variant="outline" size="lg" className="font-semibold group">
             <Link href="/blog">
               View all articles
               <ArrowRight className="w-4 h-4 ml-2 arrow-animate transition-transform duration-300" />
             </Link>
           </Button>
-        </div>
+        </div> */}
       </div>
       <style jsx global>{`
         @keyframes heading-fade-in-up {

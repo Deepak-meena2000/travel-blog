@@ -25,55 +25,5 @@ export const destinations = [
     sixteen_days_itinerary: MALAYSIA_DATA.sixteen_days_itinerary,
     scuba_blog: MALAYSIA_DATA.scuba_blog,
     other_blogs: MALAYSIA_DATA.other_blogs,
-  },
-  // MOCK DESTINATIONS FOR PREVIEW
-  {
-    slug: "penang",
-    name: "Penang",
-    country: "Malaysia",
-    description: "Street art, heritage, and food paradise.",
-    home_image: "/images/country/malaysia/places/penang/penang.jpg",
-  },
-  {
-    slug: "langkawi",
-    name: "Langkawi",
-    country: "Malaysia",
-    description: "Beaches, cable cars, and island adventures.",
-    home_image: "/images/country/malaysia/places/langkawi/blog/cenang_beach.jpg",
-  },
-  {
-    slug: "perhentian-islands",
-    name: "Perhentian Islands",
-    country: "Malaysia",
-    description: "Crystal-clear waters and laid-back vibes.",
-    home_image: "/images/country/malaysia/places/perhentian/perhentian_banner.jpg",
-  },
-  {
-    slug: "melaka",
-    name: "Melaka",
-    country: "Malaysia",
-    description: "UNESCO heritage, night markets, and history.",
-    home_image: "/images/country/malaysia/places/melaka/melaka_places_to_visit.jpg",
-  },
-  {
-    slug: "tioman-island",
-    name: "Tioman Island",
-    country: "Malaysia",
-    description: "Tropical paradise for divers and nature lovers.",
-    home_image: "/images/country/malaysia/tioman_island.jpg",
-  },
-  {
-    slug: "genting-highlands",
-    name: "Genting Highlands",
-    country: "Malaysia",
-    description: "Cool mountain resort with theme parks and casinos.",
-    home_image: "/images/country/malaysia/places/kuala_lumpur/blog/genting_highlands.jpg",
-  },
-  {
-    slug: "sipadan",
-    name: "Sipadan Island",
-    country: "Malaysia",
-    description: "World-class diving and marine life.",
-    home_image: "/images/country/malaysia/places/sipadan_islands_places_to_visit.jpg",
-  },
+  }
 ];
