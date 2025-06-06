@@ -199,6 +199,7 @@ export const KAULA_LUMPUR_BLOG_POST = [
   {
     id: 15,
     name: "Heli Lounge Bar",
+    image: "/images/country/malaysia/places/kuala_lumpur/blog/heli_lounge_bar.png",
     description:
       "Heli Lounge Bar is one of the most unique nightlife spots in Kuala Lumpur. By day it serves as a functioning helicopter pad; by night, it transforms into a rooftop bar offering 360° views of the KL skyline. Located on the 34th floor of Menara KH, this open-air lounge gives unobstructed sights of both the Petronas Towers and KL Tower. The ambiance is casual yet stylish, with DJs spinning tracks as the city lights come alive. It's a perfect sunset or nightcap location with minimal entrance fuss.",
     location: "Menara KH, Jalan Sultan Ismail",
@@ -385,7 +386,7 @@ Kuala Lumpur is more than just skyscrapers and city lights—it’s a place wher
       icon: "PLANE",
       heading: "How to Reach",
       description: `
-                Getting to Kuala Lumpur is easy and well-supported by international and regional connections.  The main entry point is <b>Kuala Lumpur International Airport (KLIA)</b>, located about 45 km south of the city. The airport is served by major airlines and budget carriers like AirAsia. 
+                Getting to Kuala Lumpur is easy and well-supported by international and regional connections.  The main entry point is <b>Kuala Lumpur International Airport (KLIA)</b>, located about 45 km south of the city. The airport is served by major airlines and budget carriers like AirAsia.
                 </br>
                 </br>
                 From KLIA, the KLIA Ekspres train gets you to the city center in under 30 minutes. Buses and taxis are also available, but travel time may vary due to traffic. Overland travel from Singapore and Thailand is possible via trains or long-distance buses.
