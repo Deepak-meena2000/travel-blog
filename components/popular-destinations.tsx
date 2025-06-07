@@ -72,7 +72,7 @@ export function PopularDestinations() {
                 }}
               >
                 {/* Image with gradient overlay */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-64 overflow-hidden ">
                   <Image
                     src={destination.home_image || "/placeholder.svg"}
                     alt={destination.name}
@@ -110,14 +110,14 @@ export function PopularDestinations() {
                     {destination.name}
                   </h3>
 
-                  <div className="flex items-center gap-5 mb-5 text-gray-400 text-sm font-medium">
+                  <div className="flex items-center gap-5 text-gray-400 text-sm font-medium">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />5 articles
                     </span>
-                    <span className="flex items-center gap-1">
+                    {/* <span className="flex items-center gap-1">
                       <Users className="w-4 h-4" />
                       Popular
-                    </span>
+                    </span> */}
                   </div>
                   {/* <Button className="w-max rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-base py-3 flex items-center justify-center gap-2 mt-2 shadow-md transition-all duration-200">
                     <MapPin className="w-5 h-5" />

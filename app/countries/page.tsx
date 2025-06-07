@@ -21,18 +21,28 @@ import { SearchInput } from "@/components/search-input";
 export default function CountriesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-teal-50 to-cyan-100">
-      {/* Hero Section */}
-      <section className="bg-slate-800 text-white py-16">
-        <div className="max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 flex items-center justify-center gap-3">
-              <Plane className="w-8 h-8 text-cyan-500 animate-float" />
-              Explore Amazing Destinations
-            </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Discover comprehensive travel guides for the world's most
-              incredible destinations
-            </p>
+      {/* Banner Section */}
+      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden">
+        <Image
+          src="/images/country_banner.jpg"
+          alt="World Map"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute top-[80%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="text-center text-white px-4">
+            <div className="animate-fade-in">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 flex items-center justify-center gap-3">
+                <Plane className="w-8 h-8 text-cyan-500 animate-float" />
+                Explore Amazing Destinations
+              </h1>
+              {/* <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                Discover comprehensive travel guides for the world's most
+                incredible destinations
+              </p> */}
+            </div>
           </div>
         </div>
       </section>

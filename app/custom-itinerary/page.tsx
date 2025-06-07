@@ -1,15 +1,21 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Badge } from "@/components/ui/badge"
+import type React from "react";
+import { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Badge } from "@/components/ui/badge";
 import {
   MapPin,
   Users,
@@ -34,7 +40,12 @@ import {
   Trophy,
   Crown,
   Diamond,
-} from "lucide-react"
+  Target,
+} from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useCountryCodes, CountryCode } from "../hooks/useCountryCodes";
+import { Combobox } from "@/components/ui/combobox";
+import { destinations } from "@/data/destinations";
 
 const interests = [
   { id: "adventure", label: "Adventure Sports", icon: Mountain },
@@ -45,150 +56,214 @@ const interests = [
   { id: "nightlife", label: "Nightlife", icon: Star },
   { id: "nature", label: "Nature & Wildlife", icon: Heart },
   { id: "shopping", label: "Shopping", icon: Building },
-]
+];
+
+// Add a list of other countries for the post-success section
+const otherCountries = [
+  { name: "Japan", image: "/images/japan.jpg" },
+  { name: "France", image: "/images/france.jpg" },
+  { name: "Brazil", image: "/images/brazil.jpg" },
+  { name: "Australia", image: "/images/australia.jpg" },
+  { name: "Canada", image: "/images/canada.jpg" },
+  { name: "South Africa", image: "/images/southafrica.jpg" },
+];
+
+const featureCards = [
+  {
+    title: "Daily Activities",
+    desc: "Plan your perfect day with our curated activities",
+    icon: <Target className="w-7 h-7 text-white" />,
+    gradient: "from-[#6a0572] to-[#1a1a40]",
+  },
+  {
+    title: "Accommodations",
+    desc: "Find the perfect stay for your comfort",
+    icon: <Building className="w-7 h-7 text-white" />,
+    gradient: "from-[#0f2027] to-[#2c5364]",
+  },
+  {
+    title: "Dining",
+    desc: "Discover local cuisine and restaurants",
+    icon: <Utensils className="w-7 h-7 text-white" />,
+    gradient: "from-[#42275a] to-[#734b6d]",
+  },
+  {
+    title: "Experiences",
+    desc: "Add unique experiences to your journey",
+    icon: <Star className="w-7 h-7 text-white" />,
+    gradient: "from-[#134e5e] to-[#71b280]",
+  },
+];
+
+const floatingIcons = ["🗺️", "🏖️", "🗼", "🏰", "🌅"];
 
 export default function CustomItineraryPage() {
-  const [selectedInterests, setSelectedInterests] = useState<string[]>([])
-  const [isSubmitted, setIsSubmitted] = useState(false)
-  const [completedSteps, setCompletedSteps] = useState<number[]>([])
-  const [errors, setErrors] = useState<Record<string, string>>({})
+  const [selectedInterests, setSelectedInterests] = useState<string[]>([]);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [completedSteps, setCompletedSteps] = useState<number[]>([]);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const {
+    countryCodes,
+    selectedCountry,
+    phoneNumber,
+    isValid: isPhoneValid,
+    handleCountryChange,
+    handlePhoneChange
+  } = useCountryCodes();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
+    phoneCountryCode: countryCodes[0].dialCode,
+    countryOfOrigin: "",
     groupType: "",
     destination: "",
-    departure: "",
-    return: "",
+    days: "",
     budget: "",
     accommodation: "",
     notes: "",
-  })
+  });
   const [windowSize, setWindowSize] = useState({ width: 1200, height: 800 });
   const [bgDots, setBgDots] = useState<{ x: number; y: number }[]>([]);
+  const [showPlaneAnim, setShowPlaneAnim] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const router = useRouter();
 
-  const totalSteps = 4
+  const totalSteps = 4;
 
   const validateEmail = (email: string) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-  }
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
 
   const validatePhone = (phone: string) => {
-    return /^\+?[\d\s-]{10,}$/.test(phone)
-  }
+    return isPhoneValid;
+  };
 
   const validateDates = (departure: string, returnDate: string) => {
-    if (!departure || !returnDate) return false
-    const departureDate = new Date(departure)
-    const returnDateObj = new Date(returnDate)
-    return departureDate < returnDateObj && departureDate >= new Date()
-  }
+    if (!departure || !returnDate) return false;
+    const departureDate = new Date(departure);
+    const returnDateObj = new Date(returnDate);
+    return departureDate < returnDateObj && departureDate >= new Date();
+  };
 
   const validateStep = (step: number) => {
-    const newErrors: Record<string, string> = {}
+    const newErrors: Record<string, string> = {};
 
     switch (step) {
       case 1:
         if (!formData.name.trim()) {
-          newErrors.name = "Please enter your name"
+          newErrors.name = "Please enter your name";
         }
         if (!formData.email.trim()) {
-          newErrors.email = "Please enter your email"
+          newErrors.email = "Please enter your email";
         } else if (!validateEmail(formData.email)) {
-          newErrors.email = "Please enter a valid email address"
+          newErrors.email = "Please enter a valid email address";
+        }
+        if (!formData.countryOfOrigin.trim()) {
+          newErrors.countryOfOrigin = "Please enter your country";
         }
         if (!formData.groupType) {
-          newErrors.groupType = "Please select your travel group type"
+          newErrors.groupType = "Please select your travel group type";
         }
         if (formData.phone && !validatePhone(formData.phone)) {
-          newErrors.phone = "Please enter a valid phone number"
+          newErrors.phone = "Please enter a valid phone number";
         }
-        break
+        break;
 
       case 2:
         if (!formData.destination) {
-          newErrors.destination = "Please select a destination"
+          newErrors.destination = "Please select a destination";
         }
-        if (!formData.departure) {
-          newErrors.departure = "Please select departure date"
-        }
-        if (!formData.return) {
-          newErrors.return = "Please select return date"
-        }
-        if (formData.departure && formData.return && !validateDates(formData.departure, formData.return)) {
-          newErrors.dates = "Return date must be after departure date and departure must be in the future"
+        if (!formData.days) {
+          newErrors.days = "Please enter number of days";
+        } else if (isNaN(Number(formData.days)) || Number(formData.days) <= 0) {
+          newErrors.days = "Please enter a valid number of days";
         }
         if (!formData.budget) {
-          newErrors.budget = "Please select your budget range"
+          newErrors.budget = "Please select your budget range";
         }
-        break
+        break;
 
       case 3:
         if (selectedInterests.length === 0) {
-          newErrors.interests = "Please select at least one interest"
+          newErrors.interests = "Please select at least one interest";
         }
-        break
+        break;
 
       default:
-        break
+        break;
     }
 
-    setErrors(newErrors)
-    return Object.keys(newErrors).length === 0
-  }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleInterestToggle = (interestId: string) => {
     setSelectedInterests((prev) =>
-      prev.includes(interestId) ? prev.filter((id) => id !== interestId) : [...prev, interestId],
-    )
-  }
+      prev.includes(interestId)
+        ? prev.filter((id) => id !== interestId)
+        : [...prev, interestId]
+    );
+  };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }))
+    setFormData((prev) => ({ ...prev, [field]: value }));
     // Clear error when user starts typing
     if (errors[field]) {
       setErrors((prev) => {
-        const newErrors = { ...prev }
-        delete newErrors[field]
-        return newErrors
-      })
+        const newErrors = { ...prev };
+        delete newErrors[field];
+        return newErrors;
+      });
     }
-  }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitted(true)
-  }
+    e.preventDefault();
+    const submissionData = {
+      ...formData,
+      phoneCountryCode: selectedCountry.dialCode,
+      phone: phoneNumber,
+      selectedInterests,
+    };
+    console.log('Submission Data:', submissionData);
+    setShowPlaneAnim(true);
+    setTimeout(() => {
+      setShowPlaneAnim(false);
+      setIsSubmitted(true);
+      setShowSuccess(true);
+    }, 2000); // match animation duration
+  };
 
   const isStepComplete = (step: number) => {
-    if (!validateStep(step)) return false
+    if (!validateStep(step)) return false;
 
     switch (step) {
       case 1:
-        return formData.name && formData.email && formData.groupType
+        return formData.name && formData.email && formData.countryOfOrigin && formData.groupType;
       case 2:
-        return formData.destination && formData.departure && formData.return && formData.budget
+        return formData.destination && formData.days && formData.budget;
       case 3:
-        return selectedInterests.length > 0
+        return selectedInterests.length > 0;
       case 4:
-        return true // Final step is optional
+        return true; // Final step is optional
       default:
-        return false
+        return false;
     }
-  }
+  };
 
   useEffect(() => {
     const checkStepCompletion = () => {
-      const newCompletedSteps = []
+      const newCompletedSteps = [];
       for (let i = 1; i <= totalSteps; i++) {
         if (isStepComplete(i)) {
-          newCompletedSteps.push(i)
+          newCompletedSteps.push(i);
         }
       }
-      setCompletedSteps(newCompletedSteps)
-    }
-    checkStepCompletion()
-  }, [formData, selectedInterests])
+      setCompletedSteps(newCompletedSteps);
+    };
+    checkStepCompletion();
+  }, [formData, selectedInterests]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -205,60 +280,90 @@ export default function CustomItineraryPage() {
     setBgDots(arr);
   }, [windowSize]);
 
-  if (isSubmitted) {
+  // After showing the success message, redirect after 3 seconds
+  useEffect(() => {
+    if (isSubmitted && showSuccess) {
+      const slug = formData.destination || "";
+      if (slug) {
+        const timeout = setTimeout(() => {
+          router.push(`/${slug}`);
+        }, 3000);
+        return () => clearTimeout(timeout);
+      }
+    }
+  }, [isSubmitted, showSuccess, formData.destination, router]);
+
+  if (showPlaneAnim) {
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 flex items-center justify-center"
-      >
-        <Card className="max-w-md mx-auto text-center shadow-2xl border-0">
-          <CardContent className="p-8">
+      <div className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
+        {/* Floating travel icons */}
+        <AnimatePresence>
+          {floatingIcons.map((icon, i) => (
             <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6"
+              key={i}
+              className="absolute text-3xl"
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{
+                opacity: [0, 1, 0],
+                scale: [0, 1, 0],
+                x: [0, Math.random() * 200 - 100],
+                y: [0, Math.random() * 200 - 100],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                delay: i * 0.2,
+              }}
+              style={{
+                left: `${40 + Math.random() * 20}%`,
+                top: `${40 + Math.random() * 20}%`,
+              }}
             >
-              <CheckCircle className="w-10 h-10 text-teal-600" />
+              {icon}
             </motion.div>
-            <motion.h2
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-3xl font-bold text-gray-900 mb-4"
-            >
-              Adventure Awaits! 🎉
-            </motion.h2>
-            <motion.p
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="text-gray-600 mb-8 text-lg"
-            >
-              Your dream vacation is being crafted! Our travel experts will create your personalized itinerary and get back
-              to you within 24 hours.
-            </motion.p>
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              <Button
-                onClick={() => setIsSubmitted(false)}
-                className="bg-teal-600 hover:bg-teal-700 text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Plan Another Adventure
-              </Button>
-            </motion.div>
-          </CardContent>
-        </Card>
-      </motion.div>
-    )
+          ))}
+        </AnimatePresence>
+        {/* Animated Plane Emoji */}
+        <motion.div
+          initial={{ scale: 1, y: 0, rotate: 0, opacity: 1 }}
+          animate={{
+            scale: [1, 1.15, 1],
+            y: [0, -20, 0, 20, 0],
+            rotate: [0, 8, -8, 0],
+            opacity: 1,
+          }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="flex flex-col items-center justify-center z-10"
+        >
+          <span className="text-[7rem] md:text-[10rem]">✈️</span>
+        </motion.div>
+      </div>
+    );
+  }
+
+  if (isSubmitted && showSuccess) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-black px-4">
+        <div className="max-w-md w-full bg-[#181c23] rounded-2xl shadow-xl p-10 flex flex-col items-center text-center">
+          <div className="text-4xl mb-6">✨</div>
+          <div className="text-2xl font-bold text-white mb-2">We've received your request!</div>
+          <div className="text-slate-300 text-base mb-8">
+            Our travel experts are working on your dream itinerary.<br />
+            You'll hear from us soon!
+          </div>
+          <Button
+            onClick={() => { setIsSubmitted(false); setShowSuccess(false); }}
+            className="bg-gradient-to-r from-blue-500 to-teal-400 text-white text-base font-semibold px-8 py-3 rounded-full hover:scale-105 transition-all"
+          >
+            Plan Another Adventure
+          </Button>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black relative overflow-hidden font-sans">
+    <div className="min-h-screen bg-black relative overflow-hidden font-sans">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {bgDots.map((dot, i) => (
@@ -315,66 +420,49 @@ export default function CustomItineraryPage() {
       </div>
 
       {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="relative py-20 text-white"
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-16 bg-transparent relative overflow-hidden">
+        {/* Animated Gradient Background */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="mb-8"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 0.5, scale: [0.9, 1.05, 0.95, 1] }}
+            transition={{ duration: 8, repeat: Infinity, repeatType: "reverse" }}
+            className="absolute left-1/2 top-0 -translate-x-1/2 w-[700px] h-[340px] bg-gradient-to-tr from-teal-500/30 via-blue-500/20 to-purple-500/30 blur-3xl rounded-full"
+          />
+        </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          {/* Animated Plane Emoji */}
+          <motion.div
+            initial={{ y: -10, scale: 0.95 }}
+            animate={{ y: [0, -18, 0, 12, 0], scale: [0.95, 1.1, 0.98, 1] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            className="mb-2"
           >
-            <div className="relative">
-              <motion.div
-                animate={{
-                  scale: [1, 1.2, 1],
-                  rotate: [0, 5, -5, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                }}
-              >
-                <Crown className="w-24 h-24 mx-auto text-teal-400 drop-shadow-[0_0_20px_rgba(45,212,191,0.5)]" />
-              </motion.div>
-              <motion.div
-                className="absolute -top-4 -right-4"
-                animate={{
-                  scale: [1, 1.2, 1],
-                  rotate: [0, -5, 5, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                }}
-              >
-                <Diamond className="w-12 h-12 text-teal-400 drop-shadow-[0_0_10px_rgba(45,212,191,0.4)]" />
-              </motion.div>
-            </div>
+            <span className="text-[4rem] md:text-[5rem] select-none">✈️</span>
           </motion.div>
-          <motion.h1
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="text-6xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 drop-shadow-[0_2px_16px_rgba(45,212,191,0.2)]"
-          >
-            Your Dream Journey Awaits
-          </motion.h1>
+          {/* Heading with animated sparkle */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-slate-100 drop-shadow-lg inline-block relative">
+            Your Journey, Crafted by Experts
+            <motion.span
+              initial={{ opacity: 0, scale: 0.7, x: -10 }}
+              animate={{ opacity: [0, 1, 0.7, 1], scale: [0.7, 1.2, 1], x: [0, 10, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, repeatType: "reverse", delay: 0.5 }}
+              className="inline-block align-middle ml-2"
+            >
+              <span className="text-2xl md:text-3xl">✨</span>
+            </motion.span>
+          </h1>
+          {/* Animated intro text */}
           <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="text-2xl text-slate-100/90 max-w-2xl mx-auto font-medium drop-shadow-[0_1px_8px_rgba(45,212,191,0.08)]"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.3 }}
+            className="text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl mx-auto font-normal"
           >
-            Let's craft your perfect adventure together. Every detail matters in creating your unforgettable experience.
+            We're passionate travelers and seasoned planners who believe every trip should be as unique as you are. Our team combines years of travel expertise, deep research, and a love for discovery to create truly personalized itineraries—free of cost. <span className="text-teal-300 font-semibold">Trust us to help you skip the overwhelm, avoid tourist traps, and unlock authentic experiences.</span> Let us do the work, so you can focus on making memories.
           </motion.p>
         </div>
-      </motion.section>
+      </section>
 
       {/* Form Section */}
       <section className="py-8">
@@ -388,7 +476,7 @@ export default function CustomItineraryPage() {
             >
               <Card className="bg-[#10141a]/95 backdrop-blur-2xl border border-teal-700/40 shadow-2xl hover:shadow-teal-400/20 transition-all duration-300 p-8 rounded-2xl">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-white/90 text-2xl md:text-3xl font-bold">
+                  <CardTitle className="flex items-center gap-2 text-white/90 text-lg lg:text-xl font-bold">
                     <motion.div
                       animate={{
                         scale: [1, 1.2, 1],
@@ -413,12 +501,21 @@ export default function CustomItineraryPage() {
                       transition={{ delay: 0.1 }}
                       className="space-y-3"
                     >
-                      <Label htmlFor="name" className="text-slate-400 text-sm font-medium">Full Name <span className="text-teal-400">*</span></Label>
+                      <Label
+                        htmlFor="name"
+                        className="text-slate-400 text-lg font-medium"
+                      >
+                        Full Name <span className="text-teal-400">*</span>
+                      </Label>
                       <Input
                         id="name"
                         value={formData.name}
-                        onChange={(e) => handleInputChange("name", e.target.value)}
-                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-slate-500 focus:border-teal-400 focus:ring-teal-400/20 text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${errors.name ? "border-red-400" : ""}`}
+                        onChange={(e) =>
+                          handleInputChange("name", e.target.value)
+                        }
+                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-[#36e3c0]  text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${
+                          errors.name ? "border-red-400" : ""
+                        }`}
                         placeholder="Enter your full name"
                         required
                       />
@@ -439,13 +536,22 @@ export default function CustomItineraryPage() {
                       transition={{ delay: 0.2 }}
                       className="space-y-3"
                     >
-                      <Label htmlFor="email" className="text-slate-400 text-sm font-medium">Email Address <span className="text-teal-400">*</span></Label>
+                      <Label
+                        htmlFor="email"
+                        className="text-slate-400 text-lg font-medium"
+                      >
+                        Email Address <span className="text-teal-400">*</span>
+                      </Label>
                       <Input
                         id="email"
                         type="email"
                         value={formData.email}
-                        onChange={(e) => handleInputChange("email", e.target.value)}
-                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-slate-500 focus:border-teal-400 focus:ring-teal-400/20 text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${errors.email ? "border-red-400" : ""}`}
+                        onChange={(e) =>
+                          handleInputChange("email", e.target.value)
+                        }
+                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-[#36e3c0]  text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${
+                          errors.email ? "border-red-400" : ""
+                        }`}
                         placeholder="Enter your email"
                         required
                       />
@@ -468,22 +574,56 @@ export default function CustomItineraryPage() {
                       transition={{ delay: 0.3 }}
                       className="space-y-3"
                     >
-                      <Label htmlFor="phone" className="text-slate-400 text-sm font-medium">Phone Number</Label>
-                      <Input
-                        id="phone"
-                        value={formData.phone}
-                        onChange={(e) => handleInputChange("phone", e.target.value)}
-                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-slate-500 focus:border-teal-400 focus:ring-teal-400/20 text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${errors.phone ? "border-red-400" : ""}`}
-                        placeholder="Enter your phone number"
-                      />
-                      {errors.phone && (
+                      <Label
+                        htmlFor="phone"
+                        className="text-slate-400 text-lg font-medium"
+                      >
+                        Phone Number
+                      </Label>
+                      <div className="flex gap-2">
+                        <Combobox
+                          options={countryCodes.map((country) => ({
+                            value: country.code,
+                            label: (
+                              <span className="flex items-center gap-2 whitespace-nowrap">
+                                <span>{country.flag}</span>
+                                <span>{country.name}</span>
+                                <span className="text-teal-400">{country.dialCode}</span>
+                              </span>
+                            ),
+                            flag: country.flag,
+                            dialCode: country.dialCode,
+                          }))}
+                          value={selectedCountry.code}
+                          onChange={handleCountryChange}
+                          placeholder="Select country code"
+                          className="w-[110px] min-w-[110px] max-w-[180px] bg-[#181c23] border-teal-700/40 text-teal-300"
+                          renderValue={({ flag, dialCode }: any) => (
+                            <span className="flex items-center gap-2">
+                              <span>{flag}</span>
+                              <span className="text-teal-400 font-semibold">{dialCode}</span>
+                            </span>
+                          )}
+                        />
+                        <Input
+                          id="phone"
+                          value={phoneNumber}
+                          onChange={(e) => handlePhoneChange(e.target.value)}
+                          className={`flex-1 bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-[#36e3c0] text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${
+                            phoneNumber && !isPhoneValid ? "border-red-400" : ""
+                          }`}
+                          placeholder={selectedCountry.placeholder}
+                          maxLength={selectedCountry.maxLength}
+                        />
+                      </div>
+                      {phoneNumber && !isPhoneValid && (
                         <motion.p
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           className="text-red-400 text-base flex items-center gap-1"
                         >
                           <AlertCircle className="w-5 h-5" />
-                          {errors.phone}
+                          Please enter a valid phone number for {selectedCountry.name}
                         </motion.p>
                       )}
                     </motion.div>
@@ -493,23 +633,74 @@ export default function CustomItineraryPage() {
                       transition={{ delay: 0.4 }}
                       className="space-y-3"
                     >
-                      <Label htmlFor="groupType" className="text-slate-400 text-sm font-medium">Who are you traveling with? <span className="text-teal-400">*</span></Label>
-                      <div className="flex gap-2">
-                        {["Solo", "Couple", "Friends", "Family"].map((type) => (
-                          <button
-                            key={type}
-                            type="button"
-                            onClick={() => handleInputChange("groupType", type.toLowerCase())}
-                            className={`px-4 py-2 rounded-full border transition-all duration-200 text-slate-100 ${
-                              formData.groupType === type.toLowerCase()
-                                ? "bg-teal-500 border-teal-500"
-                                : "bg-[#181c23] border-teal-700/40 hover:border-teal-400"
-                            }`}
-                          >
-                            {type}
-                          </button>
-                        ))}
-                      </div>
+                      <Label
+                        htmlFor="countryOfOrigin"
+                        className="text-slate-400 text-lg font-medium"
+                      >
+                        Where are you traveling from? <span className="text-teal-400">*</span>
+                      </Label>
+                      <Input
+                        id="countryOfOrigin"
+                        value={formData.countryOfOrigin}
+                        onChange={(e) => handleInputChange("countryOfOrigin", e.target.value)}
+                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-[#36e3c0] text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${errors.countryOfOrigin ? "border-red-400" : ""}`}
+                        placeholder="Enter your country"
+                        required
+                      />
+                      {errors.countryOfOrigin && (
+                        <motion.p
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          className="text-red-400 text-base flex items-center gap-1"
+                        >
+                          <AlertCircle className="w-5 h-5" />
+                          {errors.countryOfOrigin}
+                        </motion.p>
+                      )}
+                    </motion.div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <motion.div
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.5 }}
+                      className="space-y-3"
+                    >
+                      <Label
+                        htmlFor="groupType"
+                        className="text-slate-400 text-lg font-medium"
+                      >
+                        Travel Group Type <span className="text-teal-400">*</span>
+                      </Label>
+                      <Select
+                        value={formData.groupType}
+                        onValueChange={(value) =>
+                          handleInputChange("groupType", value)
+                        }
+                        required
+                      >
+                        <SelectTrigger
+                          className={`bg-[#181c23] border-teal-700/40 text-teal-300 ${
+                            errors.groupType ? "border-red-400" : ""
+                          }`}
+                        >
+                          <SelectValue placeholder="Select your group type" />
+                        </SelectTrigger>
+                        <SelectContent className="bg-[#181c23] text-white border border-teal-700/40">
+                          <SelectItem value="solo" className="text-white">
+                            Solo Traveler
+                          </SelectItem>
+                          <SelectItem value="couple" className="text-white">
+                            Couple
+                          </SelectItem>
+                          <SelectItem value="family" className="text-white">
+                            Family
+                          </SelectItem>
+                          <SelectItem value="friends" className="text-white">
+                            Friends
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                       {errors.groupType && (
                         <motion.p
                           initial={{ opacity: 0, y: -10 }}
@@ -544,7 +735,9 @@ export default function CustomItineraryPage() {
                     >
                       <Sparkles className="w-5 h-5" />
                     </motion.div>
-                    <span>Thanks for sharing! Let's plan your dream destination...</span>
+                    <span>
+                      Thanks for sharing! Let's plan your dream destination...
+                    </span>
                   </div>
                 </motion.div>
               )}
@@ -558,7 +751,7 @@ export default function CustomItineraryPage() {
             >
               <Card className="bg-[#10141a]/95 backdrop-blur-2xl border border-teal-700/40 shadow-2xl hover:shadow-teal-400/20 transition-all duration-300 p-8 rounded-2xl">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-white text-2xl md:text-3xl font-extrabold">
+                  <CardTitle className="flex items-center gap-2 text-white text-lg lg:text-xl font-bold">
                     <MapPin className="w-7 h-7 text-teal-400" />
                     Where Would You Like to Go?
                   </CardTitle>
@@ -570,10 +763,17 @@ export default function CustomItineraryPage() {
                     transition={{ delay: 0.1 }}
                     className="space-y-3"
                   >
-                    <Label htmlFor="destination" className="text-slate-400 text-sm font-medium">Dream Destination <span className="text-teal-400">*</span></Label>
+                    <Label
+                      htmlFor="destination"
+                      className="text-slate-400 text-lg font-medium"
+                    >
+                      Dream <span className="text-teal-400">*</span>
+                    </Label>
                     <Select
                       value={formData.destination}
-                      onValueChange={(value) => handleInputChange("destination", value)}
+                      onValueChange={(value) =>
+                        handleInputChange("destination", value)
+                      }
                       required
                     >
                       <SelectTrigger
@@ -581,16 +781,14 @@ export default function CustomItineraryPage() {
                           errors.destination ? "border-red-400" : ""
                         }`}
                       >
-                        <SelectValue placeholder="Select your dream destination" />
+                        <SelectValue placeholder="Select your destination" />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="bali">Bali, Indonesia</SelectItem>
-                        <SelectItem value="paris">Paris, France</SelectItem>
-                        <SelectItem value="kyoto">Kyoto, Japan</SelectItem>
-                        <SelectItem value="thailand">Thailand</SelectItem>
-                        <SelectItem value="italy">Italy</SelectItem>
-                        <SelectItem value="greece">Greece</SelectItem>
-                        <SelectItem value="other">Other (specify in notes)</SelectItem>
+                      <SelectContent className="bg-[#181c23] text-white border border-teal-700/40">
+                        {destinations.map(dest => (
+                          <SelectItem key={dest.slug} value={dest.country}>
+                            {dest.country}
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                     {errors.destination && (
@@ -605,64 +803,36 @@ export default function CustomItineraryPage() {
                     )}
                   </motion.div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <motion.div
-                      initial={{ y: 20, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.2 }}
-                      className="space-y-3"
-                    >
-                      <Label htmlFor="departure" className="text-slate-400 text-sm font-medium">Departure Date <span className="text-teal-400">*</span></Label>
-                      <Input
-                        id="departure"
-                        type="date"
-                        value={formData.departure}
-                        onChange={(e) => handleInputChange("departure", e.target.value)}
-                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 ${
-                          errors.departure || errors.dates ? "border-red-400" : ""
-                        }`}
-                        required
-                      />
-                      {(errors.departure || errors.dates) && (
-                        <motion.p
-                          initial={{ opacity: 0, y: -10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          className="text-red-400 text-base flex items-center gap-1"
-                        >
-                          <AlertCircle className="w-5 h-5" />
-                          {errors.departure || errors.dates}
-                        </motion.p>
-                      )}
-                    </motion.div>
-                    <motion.div
-                      initial={{ y: 20, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.3 }}
-                      className="space-y-3"
-                    >
-                      <Label htmlFor="return" className="text-slate-400 text-sm font-medium">Return Date <span className="text-teal-400">*</span></Label>
-                      <Input
-                        id="return"
-                        type="date"
-                        value={formData.return}
-                        onChange={(e) => handleInputChange("return", e.target.value)}
-                        className={`bg-[#181c23] border-teal-700/40 text-teal-300 ${
-                          errors.return || errors.dates ? "border-red-400" : ""
-                        }`}
-                        required
-                      />
-                      {(errors.return || errors.dates) && (
-                        <motion.p
-                          initial={{ opacity: 0, y: -10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          className="text-red-400 text-base flex items-center gap-1"
-                        >
-                          <AlertCircle className="w-5 h-5" />
-                          {errors.return || errors.dates}
-                        </motion.p>
-                      )}
-                    </motion.div>
-                  </div>
+                  <motion.div
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.2 }}
+                    className="space-y-3"
+                  >
+                    <Label htmlFor="days" className="text-slate-400 text-lg font-medium">
+                      Number of Days <span className="text-teal-400">*</span>
+                    </Label>
+                    <Input
+                      id="days"
+                      type="number"
+                      min="1"
+                      value={formData.days}
+                      onChange={(e) => handleInputChange("days", e.target.value)}
+                      className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-[#36e3c0]  text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${errors.days ? "border-red-400" : ""}`}
+                      placeholder="Enter number of days"
+                      required
+                    />
+                    {errors.days && (
+                      <motion.p
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-red-400 text-base flex items-center gap-1"
+                      >
+                        <AlertCircle className="w-5 h-5" />
+                        {errors.days}
+                      </motion.p>
+                    )}
+                  </motion.div>
 
                   <motion.div
                     initial={{ y: 20, opacity: 0 }}
@@ -670,10 +840,18 @@ export default function CustomItineraryPage() {
                     transition={{ delay: 0.4 }}
                     className="space-y-3"
                   >
-                    <Label htmlFor="budget" className="text-slate-400 text-sm font-medium">Budget Range (USD) <span className="text-teal-400">*</span></Label>
+                    <Label
+                      htmlFor="budget"
+                      className="text-slate-400 text-lg font-medium"
+                    >
+                      Budget Range (USD){" "}
+                      <span className="text-teal-400">*</span>
+                    </Label>
                     <Select
                       value={formData.budget}
-                      onValueChange={(value) => handleInputChange("budget", value)}
+                      onValueChange={(value) =>
+                        handleInputChange("budget", value)
+                      }
                       required
                     >
                       <SelectTrigger
@@ -683,11 +861,31 @@ export default function CustomItineraryPage() {
                       >
                         <SelectValue placeholder="Select your budget range" />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="budget">Budget ($500 - $1,500)</SelectItem>
-                        <SelectItem value="mid">Mid-range ($1,500 - $3,000)</SelectItem>
-                        <SelectItem value="luxury">Luxury ($3,000 - $5,000)</SelectItem>
-                        <SelectItem value="premium">Premium ($5,000+)</SelectItem>
+                      <SelectContent className="bg-[#181c23] text-white border border-teal-700/40">
+                        <SelectItem
+                          value="budget"
+                          className="  text-white"
+                        >
+                          Budget ($500 - $1,500)
+                        </SelectItem>
+                        <SelectItem
+                          value="mid"
+                          className="  text-white"
+                        >
+                          Mid-range ($1,500 - $3,000)
+                        </SelectItem>
+                        <SelectItem
+                          value="luxury"
+                          className="  text-white"
+                        >
+                          Luxury ($3,000 - $5,000)
+                        </SelectItem>
+                        <SelectItem
+                          value="premium"
+                          className="  text-white"
+                        >
+                          Premium ($5,000+)
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                     {errors.budget && (
@@ -723,7 +921,9 @@ export default function CustomItineraryPage() {
                     >
                       <Sparkles className="w-5 h-5" />
                     </motion.div>
-                    <span>Perfect! Now let's discover what interests you most...</span>
+                    <span>
+                      Perfect! Now let's discover what interests you most...
+                    </span>
                   </div>
                 </motion.div>
               )}
@@ -737,7 +937,7 @@ export default function CustomItineraryPage() {
             >
               <Card className="bg-[#10141a]/95 backdrop-blur-2xl border border-teal-700/40 shadow-2xl hover:shadow-teal-400/20 transition-all duration-300 p-8 rounded-2xl">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-white text-2xl md:text-3xl font-extrabold">
+                  <CardTitle className="flex items-center gap-2 text-white text-lg lg:text-xl font-bold">
                     <Heart className="w-7 h-7 text-teal-400" />
                     What Interests You?
                   </CardTitle>
@@ -749,11 +949,16 @@ export default function CustomItineraryPage() {
                     transition={{ delay: 0.1 }}
                     className="space-y-4"
                   >
-                    <Label className="text-slate-400 text-sm font-medium">Select Your Interests</Label>
+                    <Label className="text-slate-400 text-lg font-medium">
+                      Select Your Interests (You can select multiple)
+                    </Label>
+                    <div className="text-sm text-teal-400 mb-2">Tip: Click on all that apply!</div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {interests.map((interest, index) => {
                         const IconComponent = interest.icon;
-                        const isSelected = selectedInterests.includes(interest.id);
+                        const isSelected = selectedInterests.includes(
+                          interest.id
+                        );
                         return (
                           <motion.div
                             key={interest.id}
@@ -765,17 +970,26 @@ export default function CustomItineraryPage() {
                               isSelected
                                 ? "border-teal-400 bg-teal-400/20"
                                 : "border-[#181c23] hover:border-teal-400/50"
-                            }`}
+                            } relative`}
                           >
+                            {isSelected && (
+                              <span className="absolute top-2 right-2 text-teal-400">
+                                <CheckCircle className="w-5 h-5" />
+                              </span>
+                            )}
                             <div className="flex flex-col items-center text-center space-y-2">
                               <IconComponent
                                 className={`w-7 h-7 ${
-                                  isSelected ? "text-teal-400" : "text-slate-100/70"
+                                  isSelected
+                                    ? "text-teal-400"
+                                    : "text-slate-100/70"
                                 }`}
                               />
                               <span
-                                className={`text-sm font-medium ${
-                                  isSelected ? "text-teal-400" : "text-slate-100/70"
+                                className={`text-lg font-medium ${
+                                  isSelected
+                                    ? "text-teal-400"
+                                    : "text-slate-100/70"
                                 }`}
                               >
                                 {interest.label}
@@ -832,7 +1046,7 @@ export default function CustomItineraryPage() {
             >
               <Card className="bg-[#10141a]/95 backdrop-blur-2xl border border-teal-700/40 shadow-2xl hover:shadow-teal-400/20 transition-all duration-300 p-8 rounded-2xl">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-white text-2xl md:text-3xl font-extrabold">
+                  <CardTitle className="flex items-center gap-2 text-white text-lg lg:text-xl font-bold">
                     <motion.div
                       animate={{
                         scale: [1, 1.2, 1],
@@ -850,33 +1064,51 @@ export default function CustomItineraryPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-8">
-                  <motion.div
+                  {/* <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.1 }}
                     className="space-y-3"
                   >
-                    <Label htmlFor="accommodation" className="text-slate-400 text-sm font-medium">Accommodation Preferences</Label>
+                    <Label
+                      htmlFor="accommodation"
+                      className="text-slate-400 text-lg font-medium"
+                    >
+                      Accommodation Preferences
+                    </Label>
                     <Textarea
                       id="accommodation"
                       value={formData.accommodation}
-                      onChange={(e) => handleInputChange("accommodation", e.target.value)}
-                      className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-slate-500 focus:border-teal-400 focus:ring-teal-400/20 text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${errors.accommodation ? "border-red-400" : ""}`}
+                      onChange={(e) =>
+                        handleInputChange("accommodation", e.target.value)
+                      }
+                      className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-[#36e3c0]  text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${
+                        errors.accommodation ? "border-red-400" : ""
+                      }`}
                       placeholder="Enter your accommodation preferences"
                     />
-                  </motion.div>
+                  </motion.div> */}
                   <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}
                     className="space-y-3"
                   >
-                    <Label htmlFor="notes" className="text-slate-400 text-sm font-medium">Additional Notes</Label>
+                    <Label
+                      htmlFor="notes"
+                      className="text-slate-400 text-lg font-medium"
+                    >
+                      Additional Notes
+                    </Label>
                     <Textarea
                       id="notes"
                       value={formData.notes}
-                      onChange={(e) => handleInputChange("notes", e.target.value)}
-                      className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-slate-500 focus:border-teal-400 focus:ring-teal-400/20 text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${errors.notes ? "border-red-400" : ""}`}
+                      onChange={(e) =>
+                        handleInputChange("notes", e.target.value)
+                      }
+                      className={`bg-[#181c23] border-teal-700/40 text-teal-300 placeholder:text-[#36e3c0]  text-lg font-semibold px-5 py-4 rounded-xl shadow-inner ${
+                        errors.notes ? "border-red-400" : ""
+                      }`}
                       placeholder="Enter any additional notes"
                     />
                   </motion.div>
@@ -892,28 +1124,18 @@ export default function CustomItineraryPage() {
             >
               <Button
                 type="submit"
-                className="bg-gradient-to-r from-teal-400 to-blue-400 text-white px-12 py-8 rounded-full shadow-lg hover:shadow-teal-400/20 transition-all duration-300 text-lg font-semibold"
-                onClick={handleSubmit}
+                className="relative bg-gradient-to-r from-[#10141a] via-[#181c23] to-[#10141a] border-2 border-teal-400 text-white text-lg font-bold px-10 py-5 rounded-full shadow-lg transition-all duration-300 hover:shadow-[0_0_30px_5px_#36e3c0] hover:border-[#36e3c0] hover:text-[#36e3c0] group"
               >
-                <motion.div
-                  animate={{
-                    scale: [1, 1.05, 1],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                  }}
-                  className="flex items-center gap-3"
-                >
-                  <span>Submit Your Itinerary Request</span>
-                  <ArrowRight className="w-6 h-6" />
-                </motion.div>
+                <span className="relative z-10 flex items-center gap-2">
+                  Submit Your Itinerary Request
+                  <ArrowRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-2 group-hover:text-[#36e3c0]" />
+                </span>
+                <span className="absolute inset-0 rounded-full bg-[#36e3c0] opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none" />
               </Button>
             </motion.div>
           </form>
         </div>
       </section>
     </div>
-  )
+  );
 }

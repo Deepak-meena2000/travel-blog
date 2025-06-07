@@ -10,13 +10,13 @@ export function HeroSection() {
     >
       {/* Background Image */}
       <Image
-        src="/images/country/malaysia/malaysia_home.jpg"
+        src="/images/country/malaysia/home_banner.jpg"
         alt="Travel Banner"
         className="absolute inset-0 w-full h-full object-cover object-center z-0"
         fill
       />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-slate-900/70 z-10" />
+      <div className="absolute inset-0 bg-slate-900/30 z-10" />
       {/* Content */}
       <div className="absolute top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full max-w-[90rem] xl:max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
@@ -28,14 +28,14 @@ export function HeroSection() {
             <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700">
               <Link href="/countries">Explore Destinations</Link>
             </Button>
-            <Button
+            {/* <Button
               asChild
               size="lg"
               variant="outline"
               className="border-white text-black hover:text-slate-800"
             >
               <Link href="/custom-itinerary">Plan Your Trip</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
