@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ThankYouSection } from "@/components/thank-you-section";
+import OverViewSection from "../things-to-know-before-going/components/overview";
 
 // New itinerary structure: each day has a heading and an array of sections
 
@@ -107,9 +108,9 @@ const ItineraryPage = async ({
 
       {/* Overview */}
       <section className="max-w-6xl my-12 mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-gray-700 text-base sm:text-lg">
+        { <p className="text-center text-gray-700 text-base sm:text-lg">
           {overviewText}
-        </p>
+        </p> }
       </section>
 
       {/* Main Content + Sidebar */}

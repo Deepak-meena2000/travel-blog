@@ -1642,14 +1642,14 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     heading: "9 Days Itinerary in Malaysia",
     image: "/images/country/malaysia/malaysia_9_days_banner.jpg",
     description: "9 Days Itinerary in Malaysia",
-    overview: "9 Days Itinerary in Malaysia",
+    overview: "With just 9 days in Malaysia, this itinerary is crafted to help you make the most of every moment. While the pace is quicker, it covers several of the country’s top highlights — from the iconic landmarks of Kuala Lumpur to the cultural charm of Penang, and the natural beauty of Langkawi. It’s ideal for travelers who want a taste of Malaysia’s diversity in a shorter time frame without missing out on key experiences. Dive into the guide below for a day-by-day plan that balances adventure, culture, and a bit of relaxation.",
     data: MALAYSIA_NINE_DAYS_ITINERARY,
   },
   sixteen_days_itinerary: {
     heading: "16 Days Itinerary in Malaysia",
     image: "/images/country/malaysia/malaysia_16_days_banner.jpg",
     description: "16 Days Itinerary in Malaysia",
-    overview: "16 Days Itinerary in Malaysia",
+    overview: "With 16 days in Malaysia, you have the perfect amount of time to travel at an easy pace while truly soaking in the country’s rich diversity. This itinerary is designed to help you explore Malaysia’s vibrant cities, scenic islands, historic towns, and lush landscapes without feeling rushed. From street food hunts in Penang to lazy beach days in Langkawi and cultural strolls through Malacca, you’ll experience both the highlights and the hidden gems. The full guide below walks you through what to do each day, ensuring a well-balanced and memorable journey through Malaysia.",
     data: MALAYSIA_SIXTEEN_DAYS_ITINERARY,
   },
   other_blogs: [
