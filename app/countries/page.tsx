@@ -31,12 +31,12 @@ export default function CountriesPage() {
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute top-[80%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute w-full top-[80%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="text-center text-white px-4">
             <div className="animate-fade-in">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 flex items-center justify-center gap-3">
                 <Plane className="w-8 h-8 text-cyan-500 animate-float" />
-                Explore Amazing Destinations
+                Explore Destinations
               </h1>
               {/* <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                 Discover comprehensive travel guides for the world's most
