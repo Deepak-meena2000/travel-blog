@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://travel-blog-ruddy-one.vercel.app/
+Host: https://quickthrillguide.com/
 
 # Sitemaps
-Sitemap: https://travel-blog-ruddy-one.vercel.app/sitemap.xml
+Sitemap: https://quickthrillguide.com/sitemap.xml
