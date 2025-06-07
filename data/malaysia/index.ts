@@ -3,6 +3,7 @@ import {
   MALAYSIA_NINE_DAYS_ITINERARY,
   MALAYSIA_TOP_THINGS_TO_DO,
 } from "./data";
+import { malaysiaBlogs } from "./data/blogs";
 import {
   KUALA_LUMPUR_RELATED_ARTICLES,
   KAULA_LUMPUR_TRAVEL_GUIDE,
@@ -881,7 +882,8 @@ export const MALAYSIA_PLACES_TO_VISIT = [
       time_to_visit: "April–October",
       how_to_reach:
         "Fly to Tawau Airport → Drive to Semporna → Boat to Sipadan, permit required",
-      guide_text: "Visit our detailed Best Places to Scuba guide with Quick tips",
+      guide_text:
+        "Visit our detailed Best Places to Scuba guide with Quick tips",
       guide_link: "/malaysia/best-places-for-scuba",
     },
   },
@@ -1415,8 +1417,7 @@ The Perhentian Islands are a tropical haven known for their crystal-clear waters
   what_to_eat: {
     heading: "What to Eat in Malaysia",
     image: "/images/country/malaysia/what_to_eat.jpg",
-    description:
-      "",
+    description: "",
     overview:
       "Malaysia's cuisine is a vibrant tapestry of flavors, shaped by its diverse cultural heritage and the abundance of fresh local ingredients. Influences from Malay, Chinese, Indian, and indigenous traditions blend harmoniously to create a unique and mouthwatering food scene. Whether you're exploring bustling night markets or dining at elegant restaurants, Malaysia offers an unforgettable culinary journey for every palate and budget. Expect bold spices, aromatic herbs, and a mix of textures in every bite. From savory rice and noodle dishes to rich curries and delightful desserts, there’s always something new to discover. Here are some must-try dishes during your visit.",
     data: MALAYSISA_FOOD_DATA,
@@ -1447,27 +1448,9 @@ The Perhentian Islands are a tropical haven known for their crystal-clear waters
   ],
 
   latestBlogs: [
-    {
-      slug: "/malaysia/top-things-to-do",
-      title: "Top Things to do in Malaysia",
-      image: "/images/country/malaysia/top_things_do_malaysia.jpg",
-      description: `Malaysia is a vibrant blend of cultures, landscapes, and experiences that cater to every type of traveler. From the modern pulse of Kuala Lumpur to the heritage charm of Penang and the wild beauty of Borneo, this Southeast Asian gem offers a colorful palette of activities waiting to be explored. Whether you're a foodie, adventure seeker, culture lover, or beach enthusiast, Malaysia has something special for you. In this article, we dive into the top things to do across the country from scenic highlands and tropical islands to bustling night markets and cultural hotspots. Discover where to enjoy authentic street food, chase waterfalls in lush rainforests, or unwind on white-sand beaches. Whether you're wandering the vibrant streets of George Town, exploring nature in the Cameron Highlands, or soaking in the serenity of coastal islands, you’ll find unforgettable moments at every turn.`,
-      category: "Activities",
-    },
-    {
-      slug: "/malaysia/best-places-for-scuba",
-      title: "Best Places for Scuba Diving in Malaysia",
-      image: "/images/country/malaysia/malaysia_scuba_banner.jpg",
-      description: "Best Places for Scuba Diving in Malaysia",
-      category: "Activities",
-    },
-    {
-      slug: "/malaysia/places-to-visit",
-      title: "Top places to visit in Malaysia",
-      image: "/images/country/malaysia/places_to_visit.jpg",
-      description: `Best places to vist in Malaysia`,
-      category: "Activities",
-    },
+    malaysiaBlogs["/malaysia/top-things-to-do"],
+    malaysiaBlogs["/malaysia/best-places-for-scuba"],
+    malaysiaBlogs["/malaysia/places-to-visit"],
     {
       slug: "/malaysia/what-to-eat",
       title: "What to Eat in Malaysia",
@@ -1642,14 +1625,16 @@ Kuala Lumpur is a melting pot of Malay, Chinese, and Indian cultures, which is v
     heading: "9 Days Itinerary in Malaysia",
     image: "/images/country/malaysia/malaysia_9_days_banner.jpg",
     description: "9 Days Itinerary in Malaysia",
-    overview: "With just 9 days in Malaysia, this itinerary is crafted to help you make the most of every moment. While the pace is quicker, it covers several of the country’s top highlights — from the iconic landmarks of Kuala Lumpur to the cultural charm of Penang, and the natural beauty of Langkawi. It’s ideal for travelers who want a taste of Malaysia’s diversity in a shorter time frame without missing out on key experiences. Dive into the guide below for a day-by-day plan that balances adventure, culture, and a bit of relaxation.",
+    overview:
+      "With just 9 days in Malaysia, this itinerary is crafted to help you make the most of every moment. While the pace is quicker, it covers several of the country’s top highlights — from the iconic landmarks of Kuala Lumpur to the cultural charm of Penang, and the natural beauty of Langkawi. It’s ideal for travelers who want a taste of Malaysia’s diversity in a shorter time frame without missing out on key experiences. Dive into the guide below for a day-by-day plan that balances adventure, culture, and a bit of relaxation.",
     data: MALAYSIA_NINE_DAYS_ITINERARY,
   },
   sixteen_days_itinerary: {
     heading: "16 Days Itinerary in Malaysia",
     image: "/images/country/malaysia/malaysia_16_days_banner.jpg",
     description: "16 Days Itinerary in Malaysia",
-    overview: "With 16 days in Malaysia, you have the perfect amount of time to travel at an easy pace while truly soaking in the country’s rich diversity. This itinerary is designed to help you explore Malaysia’s vibrant cities, scenic islands, historic towns, and lush landscapes without feeling rushed. From street food hunts in Penang to lazy beach days in Langkawi and cultural strolls through Malacca, you’ll experience both the highlights and the hidden gems. The full guide below walks you through what to do each day, ensuring a well-balanced and memorable journey through Malaysia.",
+    overview:
+      "With 16 days in Malaysia, you have the perfect amount of time to travel at an easy pace while truly soaking in the country’s rich diversity. This itinerary is designed to help you explore Malaysia’s vibrant cities, scenic islands, historic towns, and lush landscapes without feeling rushed. From street food hunts in Penang to lazy beach days in Langkawi and cultural strolls through Malacca, you’ll experience both the highlights and the hidden gems. The full guide below walks you through what to do each day, ensuring a well-balanced and memorable journey through Malaysia.",
     data: MALAYSIA_SIXTEEN_DAYS_ITINERARY,
   },
   other_blogs: [

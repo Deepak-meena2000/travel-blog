@@ -1,24 +1,3 @@
-import { ICONS } from "@/constants/icon";
-import {
-  Bike,
-  Book,
-  BookOpenCheck,
-  Building,
-  Calendar,
-  DollarSign,
-  FerrisWheel,
-  Languages,
-  MapPin,
-  Plane,
-  Pyramid,
-  Shield,
-  Soup,
-  Star,
-  TrainFront,
-  Waves,
-  Wifi,
-} from "lucide-react";
-
 export const THINGS_TO_KNOW_BEFORE_GOING = {
   malaysia: {
     heading: "Malaysia Travel Guide",
@@ -35,7 +14,7 @@ export const THINGS_TO_KNOW_BEFORE_GOING = {
         heading: "Culture & History",
         icon: "PYRAMID",
         description: `
-                Malaysia's cultural roots trace back thousands of years, with ancient Malay kingdoms and trading ports influencing the region long before colonial times. <b>The country gained independence from British rule in 1957</b>, a proud moment that continues to shape its national identity. 
+                Malaysia's cultural roots trace back thousands of years, with ancient Malay kingdoms and trading ports influencing the region long before colonial times. <b>The country gained independence from British rule in 1957</b>, a proud moment that continues to shape its national identity.
                 </br>
                 </br>
                 Malaysia’s rich tapestry of culture is one of its most fascinating aspects and a key reason travelers are drawn to the country. A melting pot of <b>Malay, Chinese, Indian</b> and <b>indigenous</b> influences, Malaysia offers a vibrant cultural experience unlike any other in Southeast Asia.
@@ -338,7 +317,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-          Begin your second day in Langkawi with one of the island’s most unforgettable highlights—the thrilling ride on the <b>Langkawi SkyCab</b>(One of the Steepest in the world). This panoramic cable car journey takes you high above the island’s ancient rainforest, offering breathtaking views of cascading waterfalls, rugged mountain peaks, and the shimmering Andaman Sea. 
+          Begin your second day in Langkawi with one of the island’s most unforgettable highlights—the thrilling ride on the <b>Langkawi SkyCab</b>(One of the Steepest in the world). This panoramic cable car journey takes you high above the island’s ancient rainforest, offering breathtaking views of cascading waterfalls, rugged mountain peaks, and the shimmering Andaman Sea.
         `,
       },
       {
@@ -415,7 +394,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        As evening approaches, dive into Langkawi’s local culture by visiting a Langkawi Night Market. These markets rotate locations throughout the week, so check our article about the <b><a href="/malaysia/langkawi/travel-guide#what’s-the-street-market-schedule" target="_blank" class="text-teal-600 underline">Langkawi Night Market Guide</a></b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe. 
+        As evening approaches, dive into Langkawi’s local culture by visiting a Langkawi Night Market. These markets rotate locations throughout the week, so check our article about the <b><a href="/malaysia/langkawi/travel-guide#what’s-the-street-market-schedule" target="_blank" class="text-teal-600 underline">Langkawi Night Market Guide</a></b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe.
         `,
       },
     ],
@@ -462,7 +441,7 @@ export const MALAYSIA_NINE_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        As night falls, treat your taste buds to an unforgettable culinary experience at <b>Gurney Drive Hawker Centre</b>, one of Penang’s most iconic food destinations. Buzzing with local energy and aromatic delights, this open-air food haven is the perfect place to sample the island’s legendary street food. From savory char kway teow and crispy lor bak to rich Penang laksa and sweet apom balik, the variety is endless and irresistibly delicious. 
+        As night falls, treat your taste buds to an unforgettable culinary experience at <b>Gurney Drive Hawker Centre</b>, one of Penang’s most iconic food destinations. Buzzing with local energy and aromatic delights, this open-air food haven is the perfect place to sample the island’s legendary street food. From savory char kway teow and crispy lor bak to rich Penang laksa and sweet apom balik, the variety is endless and irresistibly delicious.
                 </br>
         </br>
         <li>
@@ -714,7 +693,7 @@ You can also consider day trips to <b>Genting Highlands or Cameron Highlands</b>
       },
       {
         type: "content",
-        text: `       
+        text: `
         For those eager to add some shopping to their itinerary, Kuala Lumpur offers several fantastic options perfect for picking up unique souvenirs, tasty local snacks, and traditional crafts. Start at the bustling <b>Central Market</b>, a cultural landmark known for its vibrant stalls selling handmade batik, intricate handicrafts, and authentic Malaysian artworks—ideal for finding one-of-a-kind gifts.
         `,
       },
@@ -733,7 +712,7 @@ You can also consider day trips to <b>Genting Highlands or Cameron Highlands</b>
       },
       {
         type: "content",
-        text: `       
+        text: `
 If you prefer modern shopping experiences, head to <b>Suria KLCC</b>, located right beneath the iconic Petronas Towers. Here, you’ll find a wide range of international brands, specialty stores, and gourmet food outlets—perfect for both high-end shopping and casual browsing. Another great choice is <b>Pavilion Mall</b>, a stylish shopping destination offering everything from trendy fashion to local designer boutiques. Its lively atmosphere and diverse shops make it an enjoyable place to hunt for souvenirs and keepsakes.
 <br>
 <br>
@@ -809,7 +788,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-          Begin your second day in Langkawi with one of the island’s most unforgettable highlights—the thrilling ride on the <b>Langkawi SkyCab</b>(One of the Steepest in the world). This panoramic cable car journey takes you high above the island’s ancient rainforest, offering breathtaking views of cascading waterfalls, rugged mountain peaks, and the shimmering Andaman Sea. 
+          Begin your second day in Langkawi with one of the island’s most unforgettable highlights—the thrilling ride on the <b>Langkawi SkyCab</b>(One of the Steepest in the world). This panoramic cable car journey takes you high above the island’s ancient rainforest, offering breathtaking views of cascading waterfalls, rugged mountain peaks, and the shimmering Andaman Sea.
         `,
       },
       {
@@ -886,7 +865,7 @@ export const MALAYSIA_SIXTEEN_DAYS_ITINERARY = [
       {
         type: "content",
         text: `
-        As evening approaches, dive into Langkawi’s local culture by visiting a Langkawi Night Market. These markets rotate locations throughout the week, so check our article about the <b><a href="/malaysia/langkawi/travel-guide#what’s-the-street-market-schedule" target="_blank" class="text-teal-600 underline">Langkawi Night Market Guide</a></b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe. 
+        As evening approaches, dive into Langkawi’s local culture by visiting a Langkawi Night Market. These markets rotate locations throughout the week, so check our article about the <b><a href="/malaysia/langkawi/travel-guide#what’s-the-street-market-schedule" target="_blank" class="text-teal-600 underline">Langkawi Night Market Guide</a></b> to locate the area that is hosting. Wander through the stalls filled with aromatic Malaysian street food, local snacks, handmade souvenirs, and tropical fruits. It’s a great place to interact with locals, try something new, and soak in the island’s authentic vibe.
         `,
       },
     ],
@@ -1033,7 +1012,7 @@ Once at the summit, you'll be treated to sweeping, bird’s-eye views of <b>Geor
         text: `
         After an overnight journey, you’ll arrive early at <b>Kuala Besut Jetty</b>, the gateway to the pristine <b>Perhentian Islands</b>. Catch a morning ferry to either Perhentian Besar (Big Island) or Perhentian Kecil (Small Island), both offering turquoise waters, white sandy beaches, and a relaxed island vibe. As the boat approaches the islands, you’ll be greeted with scenes of lush greenery and crystal-clear sea—pure tropical bliss.
         <br>
-        <br> 
+        <br>
                <b>Quick tip</b> - book a stay in well advance, check out our full <b><a href="/malaysia/what-to-eat" target="_blank" class="text-teal-600 underline">Perhentian Island travel guide</a></b>`,
       },
       {
@@ -1418,7 +1397,7 @@ Once at the summit, you'll be treated to sweeping, bird’s-eye views of <b>Geor
       },
       {
         type: "content",
-        text: `       
+        text: `
         For those eager to add some shopping to their itinerary, Kuala Lumpur offers several fantastic options perfect for picking up unique souvenirs, tasty local snacks, and traditional crafts. Start at the bustling <b>Central Market</b>, a cultural landmark known for its vibrant stalls selling handmade batik, intricate handicrafts, and authentic Malaysian artworks—ideal for finding one-of-a-kind gifts.
         `,
       },
@@ -1437,7 +1416,7 @@ Once at the summit, you'll be treated to sweeping, bird’s-eye views of <b>Geor
       },
       {
         type: "content",
-        text: `       
+        text: `
 If you prefer modern shopping experiences, head to <b>Suria KLCC</b>, located right beneath the iconic Petronas Towers. Here, you’ll find a wide range of international brands, specialty stores, and gourmet food outlets—perfect for both high-end shopping and casual browsing. Another great choice is <b>Pavilion Mall</b>, a stylish shopping destination offering everything from trendy fashion to local designer boutiques. Its lively atmosphere and diverse shops make it an enjoyable place to hunt for souvenirs and keepsakes.
 <br>
 <br>
@@ -1526,7 +1505,7 @@ export const MALAYSIA_TOP_THINGS_TO_DO = {
     {
       id: 4,
       title: "Scuba at Sipadan Island",
-      description: `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.  
+      description: `Sipadan Island is often hailed as not only Malaysia’s but one of the world’s best dive sites, thanks to its dramatic wall dives and extraordinary marine biodiversity. Surrounded by deep waters, it's home to large schools of barracudas, reef sharks, sea turtles, and countless tropical fish. The island's reefs drop steeply into the abyss, making it ideal for drift and deep dives. With strict conservation rules, only 176 divers are allowed per day, ensuring a pristine underwater environment. Strong currents, deep walls, and pelagic sightings make it ideal for certified(mandatory to hold a diver certificate) and confident divers.
         </br >
         </br>
         Malaysia offers a wide range of scuba diving options, explore our detailed guide to discover the <b><a href="/malaysia/best-places-for-scuba" target="_blank" class="text-teal-600 underline">top places for scuba in Malaysia</a></b> tailored to your convenience and experience level.
